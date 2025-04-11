@@ -25,7 +25,7 @@ const History = () => {
           <div className="relative">
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1485833077593-4278bba3f11f?auto=format&fit=crop&q=80" 
+                src="https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F8ca35eaaf2ad31fa6276d27a94dd89f4b8a4f36d%2Fwinton.png?auto=format&fit=crop&q=80" 
                 alt="New Zealand farm landscape" 
                 className="w-full h-auto"
               />
