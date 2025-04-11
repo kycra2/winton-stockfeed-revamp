@@ -21,8 +21,9 @@ const History = () => {
               Today, with seven depots nationwide and the largest molasses storage network in New Zealand, we're proud to remain 100% Kiwi-owned while supporting farmers across the country with innovative feed solutions.
             </p>
           </div>
-          
-       <div className="relative">
+
+          {/* ✅ Fixed Image + Label Container */}
+          <div className="relative">
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F8ca35eaaf2ad31fa6276d27a94dd89f4b8a4f36d%2Fwinton.png?auto=format&fit=crop&q=80" 
@@ -30,8 +31,10 @@ const History = () => {
                 className="w-full h-auto"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 hidden md:block">
-              <div className="bg-wsf-green text-white p-4 rounded-lg shadow-lg">
+
+            {/* 🛠️ Adjusted Position & Made Sure It's Inside the Bounds */}
+            <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6">
+              <div className="bg-wsf-green text-white p-4 rounded-lg shadow-lg max-w-xs">
                 <p className="font-bold text-xl">Since 1988</p>
                 <p>Supporting NZ Agriculture</p>
               </div>
