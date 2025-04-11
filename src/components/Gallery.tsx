@@ -3,7 +3,7 @@ import React from 'react';
 
 const images = [
   {
-    url: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?auto=format&fit=crop&q=80",
+    url: "https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F9aaac91e9ae62618b2051d61c8a7c904fa12064d%2Fmolasses-winton.jpg?auto=format&fit=crop&q=80",
     alt: "New Zealand cattle grazing on rolling hills",
     caption: "Quality feed leads to healthier livestock"
   },
