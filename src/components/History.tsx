@@ -30,7 +30,7 @@ const History = () => {
                 className="w-full h-auto"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 hidden md:block">
+            <div className="absolute -bottom-6 -left-4 hidden md:block">
               <div className="bg-wsf-green text-white p-4 rounded-lg shadow-lg">
                 <p className="font-bold text-xl">Since 1988</p>
                 <p>Supporting NZ Agriculture</p>
