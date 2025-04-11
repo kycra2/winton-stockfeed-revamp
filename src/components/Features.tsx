@@ -16,7 +16,7 @@ const featuresData = [
   {
     icon: <Truck className="w-10 h-10 text-wsf-green" />,
     title: "Nationwide Reach with 7 Depots Across NZ",
-    description: "Winton StockFeed operates seven major depots across the country, including the largest molasses storage network in New Zealand. Our efficient logistics ensure timely delivery of feed straight to your farm – no matter where you're located."
+    description: "Winton StockFeed operates seven major depots across the country for Molasses, which means we have the largest storage network in New Zealand. Our efficient logistics ensure timely delivery of feed straight to your farm – no matter where you're located."
   }
 ];
 
