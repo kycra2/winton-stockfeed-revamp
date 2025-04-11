@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-wsf-blue-dark/90 to-wsf-blue/80" />
         <img
-          src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?auto=format&fit=crop&q=80"
+          src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?auto=format&fit=crop&q=80"
           alt="New Zealand dairy farm landscape"
           className="w-full h-full object-cover"
         />
