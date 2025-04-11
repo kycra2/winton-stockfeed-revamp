@@ -23,7 +23,7 @@ const Gallery = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container-custom">
-        <h2 className="section-title text-center mb-12">New Zealand's Finest Pastures</h2>
+        <h2 className="section-title text-center mb-12">New Zealand's Finest Stockfeed</h2>
         
         <div className="grid md:grid-cols-3 gap-8">
           {images.map((image, index) => (
