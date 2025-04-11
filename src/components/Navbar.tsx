@@ -42,8 +42,12 @@ const Navbar = () => {
       )}
     >
       <div className="container-custom flex justify-between items-center">
-        <a href="#" className="flex items-center gap-2">
-          <span className="text-wsf-blue-dark text-xl md:text-2xl font-bold">Winton StockFeed</span>
+        <a href="#" className="flex items-center">
+          <img 
+            src="/lovable-uploads/6c84f9ee-b048-4fbb-a3b3-6edaf613fd47.png" 
+            alt="Winton StockFeed Logo" 
+            className="h-12 md:h-16" 
+          />
         </a>
         
         {/* Desktop Navigation */}
