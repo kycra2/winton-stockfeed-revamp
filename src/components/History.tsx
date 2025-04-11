@@ -22,22 +22,25 @@ const History = () => {
             </p>
           </div>
           
-       <section>
-  <div className="relative">
-    <div className="rounded-lg overflow-hidden shadow-lg">
-      <img 
-        src="https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F8ca35eaaf2ad31fa6276d27a94dd89f4b8a4f36d%2Fwinton.png?auto=format&fit=crop&q=80" 
-        alt="New Zealand farm landscape" 
-        className="w-full h-auto"
-      />
-    </div>
-
-    {/* This is positioned relative to the image above */}
-    <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6">
-      <div className="bg-wsf-green text-white p-4 rounded-lg shadow-lg max-w-xs">
-        <p className="font-bold text-xl">Since 1988</p>
-        <p>Supporting NZ Agriculture</p>
+       <div className="relative">
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F8ca35eaaf2ad31fa6276d27a94dd89f4b8a4f36d%2Fwinton.png?auto=format&fit=crop&q=80" 
+                alt="New Zealand farm landscape" 
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="absolute -bottom-6 -left-6 hidden md:block">
+              <div className="bg-wsf-green text-white p-4 rounded-lg shadow-lg">
+                <p className="font-bold text-xl">Since 1988</p>
+                <p>Supporting NZ Agriculture</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+  );
+};
+
+export default History;
