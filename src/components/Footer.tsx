@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-wsf-green-dark text-white">
+    <footer className="bg-wsf-blue-dark text-white">
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-wsf-green pt-6 mt-8 text-center">
+        <div className="border-t border-wsf-blue pt-6 mt-8 text-center">
           <p>&copy; {new Date().getFullYear()} Winton StockFeed Ltd. All rights reserved.</p>
         </div>
       </div>

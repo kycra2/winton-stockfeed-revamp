@@ -3,9 +3,9 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className="relative pt-16 md:pt-24 bg-wsf-green overflow-hidden">
+    <div className="relative pt-16 md:pt-24 bg-wsf-blue overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-wsf-green-dark/90 to-wsf-green/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-wsf-blue-dark/90 to-wsf-blue/80" />
         <img
           src="https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?auto=format&fit=crop&q=80"
           alt="New Zealand dairy farm landscape"

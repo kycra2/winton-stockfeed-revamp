@@ -43,7 +43,7 @@ const Navbar = () => {
     >
       <div className="container-custom flex justify-between items-center">
         <a href="#" className="flex items-center gap-2">
-          <span className="text-wsf-green-dark text-xl md:text-2xl font-bold">Winton StockFeed</span>
+          <span className="text-wsf-blue-dark text-xl md:text-2xl font-bold">Winton StockFeed</span>
         </a>
         
         {/* Desktop Navigation */}
@@ -57,7 +57,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-gray-700 hover:text-wsf-green"
+          className="md:hidden text-gray-700 hover:text-wsf-blue"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -72,7 +72,7 @@ const Navbar = () => {
               <a 
                 key={item.name} 
                 href={item.href} 
-                className="block py-2 text-gray-700 hover:text-wsf-green"
+                className="block py-2 text-gray-700 hover:text-wsf-blue"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}

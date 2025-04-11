@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,12 +62,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Winton Stock Feed
-				'wsf-green': {
-					light: '#5BA671',
-					DEFAULT: '#3a7d44',
-					dark: '#1e5631',
+				// Custom colors for Winton Stock Feed - Updated to use the blue color
+				'wsf-blue': {
+					light: '#2680c2', // Lighter blue
+					DEFAULT: '#01518a', // The requested blue
+					dark: '#013764', // Darker blue
 				},
+				// Keep other colors but change references from green to blue
 				'wsf-brown': {
 					light: '#A67C52',
 					DEFAULT: '#8B5A2B',
