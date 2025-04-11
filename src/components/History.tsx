@@ -30,15 +30,14 @@ const History = () => {
                 className="w-full h-auto"
               />
             </div>
-            <div className="absolute -bottom-6 -left-4 hidden md:block">
-              <div className="bg-wsf-green text-white p-4 rounded-lg shadow-lg">
-                <p className="font-bold text-xl">Since 1988</p>
-                <p>Supporting NZ Agriculture</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div className="relative">
+  <div className="absolute -bottom-6 left-4 md:left-6">
+    <div className="bg-wsf-green text-white p-4 rounded-lg shadow-lg max-w-xs">
+      <p className="font-bold text-xl">Since 1988</p>
+      <p>Supporting NZ Agriculture</p>
+    </div>
+  </div>
+</div>
     </section>
   );
 };
