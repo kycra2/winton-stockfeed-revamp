@@ -22,7 +22,7 @@ const History = () => {
             </p>
           </div>
           
-        <section>
+       <section>
   <div className="relative">
     <div className="rounded-lg overflow-hidden shadow-lg">
       <img 
@@ -41,5 +41,4 @@ const History = () => {
     </div>
   </div>
 </section>
-
 export default History;
