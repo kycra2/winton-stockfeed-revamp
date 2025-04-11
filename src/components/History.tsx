@@ -41,4 +41,3 @@ const History = () => {
     </div>
   </div>
 </section>
-export default History;
