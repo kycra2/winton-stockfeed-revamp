@@ -13,7 +13,7 @@ const images = [
     caption: "Supporting New Zealand farmers since 1988"
   },
   {
-    url: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?auto=format&fit=crop&q=80",
+    url: "https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2Fd676cb3ccf87ba6e5b3b24c02420bcffe734a3db%2Fwinton-3.png?auto=format&fit=crop&q=80",
     alt: "Farm animals grazing at daybreak",
     caption: "Sustainable farming practices for better outcomes"
   }
