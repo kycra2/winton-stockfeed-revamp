@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="relative pt-16 md:pt-24 bg-wsf-blue overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-wsf-blue-dark/60 to-wsf-blue/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-wsf-blue-dark/30 to-wsf-blue/10" />
         <img
           src="https://images.pexels.com/photos/7865813/pexels-photo-7865813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2?auto=format&fit=crop&q=80"
           alt="New Zealand dairy farm landscape"
