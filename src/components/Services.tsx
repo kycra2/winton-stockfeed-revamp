@@ -39,8 +39,7 @@ const services = [
   {
     id: 'feed-mill',
     icon: <Factory className="w-8 h-8" />,
-    title: 'Pelleted Feed Mill Products (Southland and Otago Only)
-. ',
+    title: 'Pelleted Feed Mill Products (Southland and Otago Only)',
     description: 'Custom-milled feed products from local growers tailored to meet specific nutritional requirements for your livestock.',
     color: 'text-red-600',
     bgColor: 'bg-red-50'
