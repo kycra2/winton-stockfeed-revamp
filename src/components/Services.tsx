@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Package, Leaf, FileText, Clipboard, Factory, Box } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -12,18 +11,17 @@ const services = [
     color: 'text-blue-600',
     bgColor: 'bg-blue-50'
   },
- {
-  id: 'stock-feed',
-  image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2Fe9341676bdb9b6255fddc1382fb5ad629fe3669c%2Fwinton-sheep-farmer.jpg',
-  title: 'Stock Feed',
-  description: 'Nutritionally balanced feed solutions for all types of livestock, ensuring optimal growth and performance.',
-  color: 'text-green-600',
-  bgColor: 'bg-green-50',
-},
-
+  {
+    id: 'stock-feed',
+    image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2Fe9341676bdb9b6255fddc1382fb5ad629fe3669c%2Fwinton-sheep-farmer.jpg',
+    title: 'Stock Feed',
+    description: 'Nutritionally balanced feed solutions for all types of livestock, ensuring optimal growth and performance.',
+    color: 'text-green-600',
+    bgColor: 'bg-green-50',
+  },
   {
     id: 'resources',
-    icon: <FileText className="w-8 h-8" />,
+    image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2Fe9341676bdb9b6255fddc1382fb5ad629fe3669c%2Fwinton-sheep-farmer.jpg',
     title: 'Resources',
     description: 'Helpful guides, articles, and tools to help you make informed decisions about your feed management strategy.',
     color: 'text-purple-600',
@@ -31,7 +29,7 @@ const services = [
   },
   {
     id: 'feed-quality',
-    icon: <Clipboard className="w-8 h-8" />,
+    image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2Fe9341676bdb9b6255fddc1382fb5ad629fe3669c%2Fwinton-sheep-farmer.jpg',
     title: 'Feed Quality Declarations',
     description: 'Detailed information on the nutritional composition and quality standards of all our feed products.',
     color: 'text-orange-600',
@@ -62,16 +60,24 @@ const Services = () => {
         <h2 className="section-title text-center mb-12">Our Services</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <div 
               key={service.id} 
               className="service-card"
             >
-              <div className={cn("p-3 rounded-full w-16 h-16 flex items-center justify-center mb-4", service.bgColor)}>
-                <div className={service.color}>
-                  {service.icon}
+              {service.image ? (
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full aspect-square object-cover rounded-xl mb-4"
+                />
+              ) : (
+                <div className={cn("p-3 rounded-full w-16 h-16 flex items-center justify-center mb-4", service.bgColor)}>
+                  <div className={service.color}>
+                    {service.icon}
+                  </div>
                 </div>
-              </div>
+              )}
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>
               <a href={`#${service.id}`} className="mt-4 inline-block text-wsf-green hover:underline">
