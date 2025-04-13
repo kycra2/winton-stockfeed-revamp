@@ -14,13 +14,7 @@ const services = [
   },
  {
   id: 'stock-feed',
-  icon: (
-    <img 
-      src="https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2Fe9341676bdb9b6255fddc1382fb5ad629fe3669c%2Fwinton-sheep-farmer.jpg" 
-      alt="Stock Feed" 
-      className="w-8 h-8 rounded-full object-cover" 
-    />
-  ),
+  image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2Fe9341676bdb9b6255fddc1382fb5ad629fe3669c%2Fwinton-sheep-farmer.jpg',
   title: 'Stock Feed',
   description: 'Nutritionally balanced feed solutions for all types of livestock, ensuring optimal growth and performance.',
   color: 'text-green-600',
