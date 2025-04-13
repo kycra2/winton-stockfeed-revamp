@@ -18,10 +18,10 @@ const images = [
   }
 ];
 
-const Gallery = () => {
+const StockfeedSection = () => {
   return (
     <section
-      className="py-16 relative bg-cover bg-center"
+      className="relative bg-cover bg-center py-20"
       style={{
         backgroundImage: `url('https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F6a3a7512378f64b3ca9ad6213ae97cdaf2a686a8%2Fimage_fx%20%283%29.jpg')`,
       }}
@@ -29,15 +29,15 @@ const Gallery = () => {
       {/* Blue overlay */}
       <div className="absolute inset-0 bg-blue-900 opacity-60 z-0"></div>
 
-      <h2 className="section-title text-center mb-12 text-white">
-  New Zealand's Finest Stockfeed
-</h2>
-
-
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+        <h2 className="text-4xl font-bold text-center mb-12 text-white">
+          New Zealand's Finest Stockfeed
+        </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {images.map((image, index) => (
-            <div key={index} className="overflow-hidden rounded-lg shadow-md">
+            <div key={index} className="overflow-hidden rounded-lg shadow-lg">
               <div className="relative h-64 overflow-hidden">
                 <img
                   src={image.url}
@@ -56,4 +56,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default StockfeedSection;
