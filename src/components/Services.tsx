@@ -15,7 +15,7 @@ const services = [
   },
   {
     id: 'resources',
-    image: 'https://example.com/images/resources.jpg',
+    image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F2c7ab52ca96fdd80772a2ddbadfcfa18c8a7b56c%2FScreenshot%202025-04-14%20at%2011.51.53%E2%80%AFAM.png',
     title: 'Resources',
     description: 'Helpful guides, articles, and tools to help you make informed decisions about your feed management strategy.',
   },
