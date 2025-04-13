@@ -9,7 +9,7 @@ const services = [
   },
   {
     id: 'stock-feed',
-    image: 'https://example.com/images/stock-feed.jpg',
+    image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F24941eb2c8c3a60082a8175903e917e2734ab669%2Fimage_fx%20%287%29.jpg',
     title: 'Stock Feed',
     description: 'Nutritionally balanced feed solutions for all types of livestock, ensuring optimal growth and performance.',
   },
