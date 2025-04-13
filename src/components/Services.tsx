@@ -21,7 +21,7 @@ const services = [
   },
   {
     id: 'feed-quality',
-    image: 'https://example.com/images/feed-quality.jpg',
+    image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F8c3355a169fd4bf8c64428f20e235da18fd49ccb%2Fimage_fx%20%284%29.jpg',
     title: 'Feed Quality Declarations',
     description: 'Detailed information on the nutritional composition and quality standards of all our feed products.',
   },
