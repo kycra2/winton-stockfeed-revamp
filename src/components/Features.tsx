@@ -5,7 +5,7 @@ import { MessageCircle, DollarSign, Truck } from 'lucide-react';
 const featuresData = [
   {
     icon: <MessageCircle className="w-10 h-10 text-wsf-green" />,
-    title: "Expert Advice on All Things Feed",
+    title: "Expert Advice on All Things Stock Feed Related",
     description: "With decades of hands-on experience, our team understands how to get the most out of your feed strategy. Whether you're looking to boost production, fill feed gaps, or fine-tune your ration, we offer friendly, practical advice backed by real results."
   },
   {
