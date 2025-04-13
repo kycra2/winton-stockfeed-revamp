@@ -29,8 +29,11 @@ const Gallery = () => {
       {/* Blue overlay */}
       <div className="absolute inset-0 bg-blue-900 opacity-60 z-0"></div>
 
-      <div className="relative z-10 container-custom text-white">
-        <h2 className="section-title text-center mb-12">New Zealand's Finest Stockfeed</h2>
+      <h2 className="section-title text-center mb-12 text-white">
+  New Zealand's Finest Stockfeed
+</h2>
+
+
 
         <div className="grid md:grid-cols-3 gap-8">
           {images.map((image, index) => (
