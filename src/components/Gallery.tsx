@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const images = [
@@ -21,10 +20,18 @@ const images = [
 
 const Gallery = () => {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container-custom">
+    <section
+      className="py-16 relative bg-cover bg-center"
+      style={{
+        backgroundImage: `url('https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F6a3a7512378f64b3ca9ad6213ae97cdaf2a686a8%2Fimage_fx%20%283%29.jpg')`,
+      }}
+    >
+      {/* Blue overlay */}
+      <div className="absolute inset-0 bg-blue-900 opacity-60 z-0"></div>
+
+      <div className="relative z-10 container-custom text-white">
         <h2 className="section-title text-center mb-12">New Zealand's Finest Stockfeed</h2>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           {images.map((image, index) => (
             <div key={index} className="overflow-hidden rounded-lg shadow-md">
