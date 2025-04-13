@@ -24,10 +24,9 @@ const services = [
   title: 'Stock Feed',
   description: 'Nutritionally balanced feed solutions for all types of livestock, ensuring optimal growth and performance.',
   color: 'text-green-600',
-  bgColor: 'bg-green-50'
-}
+  bgColor: 'bg-green-50',
+},
 
-  },
   {
     id: 'resources',
     icon: <FileText className="w-8 h-8" />,
