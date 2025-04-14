@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-wsf-blue-dark/30 to-wsf-blue/10" />
         <img
-          src="https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F3887bb296630f977ceaff36fa08445841c952a65%2FWFL_LandingPage_Panorama.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2?auto=format&fit=crop&q=80"
+          src="https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F3ea2475657f394ce280c23d9ed0d427ab89a66e0%2Fwinton-hero.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2?auto=format&fit=crop&q=80"
           alt="New Zealand dairy farm landscape"
           className="w-full h-full object-cover"
         />
