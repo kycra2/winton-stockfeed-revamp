@@ -20,7 +20,7 @@ const Hero = () => {
         
         <div className="max-w-3xl space-y-4 animate-fade-in" style={{animationDelay: '0.2s'}}>
           <p className="text-lg">
-            Operating since 1988, Winton StockFeed is proud to be NZ's only independent molasses importer — but we're much more than that. We specialise in a wide range of high-quality stock feeds including PKE, Soyhulls, Dried Grain Extract (DGE), and other essential feed options tailored to support Kiwi farmers year-round.
+            Operating since 1988, Winton StockFeed is proud to be NZ's only independent national molasses importer and supplier — but we're much more than that. We specialise in a wide range of high-quality stock feeds including PKE, Soyhulls, Distillers Dried Grains (DDGS), and other essential feed options tailored to support Kiwi farmers year-round.
           </p>
           
           <div className="pt-6">
