@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Hero = () => {
@@ -22,12 +21,6 @@ const Hero = () => {
           <p className="text-lg">
             Operating since 1988, Winton StockFeed is proud to be NZ's only independent national molasses importer and supplier — but we're much more than that. We specialise in a wide range of high-quality stock feeds including PKE, Soyhulls, Distillers Dried Grains (DDGS), and other essential feed options tailored to support Kiwi farmers year-round.
           </p>
-          
-          <div className="pt-6">
-            <a href="#services" className="btn-primary">
-              Explore Our Products
-            </a>
-          </div>
         </div>
       </div>
     </div>
