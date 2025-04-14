@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
+import BlendingFacility from '@/components/BlendingFacility';
 import Services from '@/components/Services';
 import Gallery from '@/components/Gallery';
 import History from '@/components/History';
@@ -15,6 +16,7 @@ const Index = () => {
       <main>
         <Hero />
         <Features />
+        <BlendingFacility />
         <Services />
         <Gallery />
         <History />
