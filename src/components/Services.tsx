@@ -26,9 +26,9 @@ const services = [
     description: 'Detailed information on the nutritional composition and quality standards of all our feed products.',
   },
   {
-    id: 'feed-mill',
+    id: 'sheep-feed',
     image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F5d8d4074ab50fc3c2adef5f40f4e878a96cbf16b%2Fimage_fx%20%285%29.jpg',
-    title: 'Pelleted Feed Mill Products (Southland and Otago Only)',
+    title: 'Sheep Feed',
     description: 'Custom-milled feed products from local growers tailored to meet specific nutritional requirements for your livestock.',
   },
   {
