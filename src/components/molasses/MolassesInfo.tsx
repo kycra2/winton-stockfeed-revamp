@@ -42,7 +42,7 @@ The perfect animal feed additive. Whether new to molasses or a serial user, Wint
           
           <div className="rounded-lg overflow-hidden shadow-xl">
             <img 
-              src="https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F453633e9a01893ff3ad876b2e5994404063ec87b%2FScreenshot%202025-04-14%20at%2012.07.47%E2%80%AFPM.png" 
+              src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/molasses-dairy-herd-feed.png?raw=true" 
               alt="Molasses being poured into feed" 
               className="w-full h-auto" 
             />
