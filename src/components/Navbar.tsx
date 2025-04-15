@@ -9,7 +9,7 @@ const navItems = [
   { name: 'Dairy Feed', href: '#dairy-feed' },
   { name: 'Calf Feed', href: '#calf-feed' },
   { name: 'Sheep Feed', href: '#sheep-feed' },
-  { name: 'Deer Feeds', href: '#deer-feed' },
+  { name: 'Deer Feed', href: '#deer-feed' },
   { name: 'Feed Trailers', href: '#feed-trailers' },
   { name: 'Contact Us', href: '#contact-us' }
 ];
