@@ -22,9 +22,9 @@ const StockfeedSection = () => {
   which means there is one thing less farmers have to worry about.
 </p>
 
-<h2 className="mt-6 text-2xl font-semibold">
+<h3 className="mt-6 text-2xl font-semibold">
   It has never been so easy to include minerals in your silo blend.
-</h2>
+</h3>
       </div>
     </section>
   );
