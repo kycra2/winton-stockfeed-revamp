@@ -14,20 +14,21 @@ const StockfeedSection = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
         <h2 className="text-4xl font-bold text-center mb-12 text-white">
-         It has never been so easy to include minerals in your silo blend.
+          It has never been so easy to include minerals in your silo blend.
         </h2>
+
+        <p className="mb-6">
+          Our typical raw material range can be selected from the following: PKE, Maize DDG, Crushed Grains, Soya Bean Meal, Soya Hulls, Grain Pellets and Molasses — all subject to availability.
+          Worth noting is that all our PKE is screened before being blended.
+        </p>
+
         <p>
-  Our typical raw material range can be selected from the following:
-PKE, Maize DDG, Crushed Grains, Soya Bean Meal, Soya Hulls, Grain Pellets and Molasses, all subject to availability. Worth noting is that all our PKE is screened before being blended.
-Our state of the art blending plant uses an automated system to provide blended dairy feeds with almost any additive made “straight on to the truck and delivered to your silo” which means there is one thing less farmers have to worry about.
-</p>
-
-
+          Our state-of-the-art blending plant uses an automated system to provide blended dairy feeds with almost any additive.
+          These blends are made straight onto the truck and delivered to your silo — meaning one less thing for farmers to worry about.
+        </p>
       </div>
     </section>
   );
 };
 
 export default StockfeedSection;
-
-
