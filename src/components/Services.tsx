@@ -42,27 +42,32 @@ const services = [
 const Services = () => {
   return (
     <section id="services" className="py-16 bg-white">
-      <div className="container-custom">
-        <h2 className="section-title text-center mb-12">Why Winton Stock Feed?</h2>
-We are a family owned business operating since 1988 and reliability and exceptional service is our priority.
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => (
-            <div key={service.id} className="service-card">
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-48 object-cover rounded-xl mb-4"
-              />
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
-              <a href={`#${service.id}`} className="mt-4 inline-block text-wsf-green hover:underline">
-                
-              </a>
-            </div>
-          ))}
+  <div className="container-custom">
+    <h2 className="section-title text-center mb-6">
+      Why Winton Stock Feed?
+    </h2>
+    <p className="text-center text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
+      We are a family owned business operating since 1988 and reliability and exceptional service is our priority.
+    </p>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map((service) => (
+        <div key={service.id} className="service-card">
+          <img
+            src={service.image}
+            alt={service.title}
+            className="w-full h-48 object-cover rounded-xl mb-4"
+          />
+          <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+          <p className="text-gray-600">{service.description}</p>
+          <a href={`#${service.id}`} className="mt-4 inline-block text-wsf-green hover:underline">
+            {/* optional link text */}
+          </a>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
+
   );
 };
 
