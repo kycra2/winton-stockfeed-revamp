@@ -11,7 +11,7 @@ const navItems = [
   { name: 'Sheep Feed', href: '#sheep-feed' },
   { name: 'Deer Feeds', href: '#deer-feed' },
   { name: 'Trailers', href: '#trailers' }
-  { name: 'Contact Us', href: '#trailers' }
+  { name: 'Contact Us', href: '#contact-us' }
 ];
 
 const Navbar = () => {
