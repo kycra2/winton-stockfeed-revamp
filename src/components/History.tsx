@@ -9,7 +9,7 @@ const History = () => {
           <div>
             <h2 className="section-title">Our History</h2>
             <p className="mb-4 text-gray-700">
-              Founded in 1988, Winton StockFeed began as a small family operation dedicated to providing quality feed solutions to local farmers. What started as a passion for agriculture has grown into one of New Zealand's most trusted independent feed suppliers.
+              Founded in 1988, Winton Stock Feed began as a small family operation dedicated to providing quality feed solutions to local farmers. What started as a passion for agriculture has grown into one of New Zealand's most trusted independent feed suppliers.
             </p>
             <p className="mb-4 text-gray-700">
               As pioneers in the molasses import industry, we established the country's first independent molasses terminal, breaking new ground for New Zealand farmers seeking alternative feed options.
