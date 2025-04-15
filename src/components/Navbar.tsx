@@ -1,11 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { cn } from "@/lib/utils";
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
-  { name: 'Home', href: '#' },
-  { name: 'Molasses', href: '#molasses' },
+  { name: 'Home', href: '/' },
+  { name: 'Molasses', href: '/molasses' },
   { name: 'Dairy Feed', href: '#dairy-feed' },
   { name: 'Calf Feed', href: '#calf-feed' },
   { name: 'Sheep Feed', href: '#sheep-feed' },
@@ -43,20 +44,26 @@ const Navbar = () => {
       )}
     >
       <div className="container-custom flex justify-between items-center">
-        <a href="#" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img 
             src="/lovable-uploads/6c84f9ee-b048-4fbb-a3b3-6edaf613fd47.png" 
             alt="Winton StockFeed Logo" 
             className="h-12 md:h-16" 
           />
-        </a>
+        </Link>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-1">
           {navItems.map((item) => (
-            <a key={item.name} href={item.href} className="navbar-item">
-              {item.name}
-            </a>
+            item.href.startsWith('/') ? (
+              <Link key={item.name} to={item.href} className="navbar-item">
+                {item.name}
+              </Link>
+            ) : (
+              <a key={item.name} href={item.href} className="navbar-item">
+                {item.name}
+              </a>
+            )
           ))}
         </nav>
 
@@ -74,14 +81,25 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-md">
           <div className="container-custom py-4 flex flex-col space-y-2">
             {navItems.map((item) => (
-              <a 
-                key={item.name} 
-                href={item.href} 
-                className="block py-2 text-gray-700 hover:text-wsf-blue"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item.name}
-              </a>
+              item.href.startsWith('/') ? (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="block py-2 text-gray-700 hover:text-wsf-blue"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a 
+                  key={item.name} 
+                  href={item.href} 
+                  className="block py-2 text-gray-700 hover:text-wsf-blue"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+              )
             ))}
           </div>
         </div>
