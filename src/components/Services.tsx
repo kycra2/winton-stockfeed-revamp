@@ -43,7 +43,8 @@ const Services = () => {
   return (
     <section id="services" className="py-16 bg-white">
       <div className="container-custom">
-        <h2 className="section-title text-center mb-12">Our Services</h2>
+        <h2 className="section-title text-center mb-12">Why Winton Stock Feed?</h2>
+Reliability (our own trucks, engineers for maintaining trucks and a full oddering including our new blending plant, means less stress and all your needs met with one phonecall. 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
             <div key={service.id} className="service-card">
