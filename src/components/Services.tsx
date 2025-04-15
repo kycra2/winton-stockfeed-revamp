@@ -35,9 +35,9 @@ const services = [
     id: 'modern-feed-blending-plant',
     image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F39369ba18d2396277ccdfdca3701af53ba132d1e%2Fimage_fx%20%2811%29.jpg',
     title: 'Modern Feed Blending Plant',
-    description: 'description: 'We can add in macro minerals, trace minerals and a range of feed additives, saving you time and money (no dusting or dosatron required) so your cows receive their daily requirements. Molasses can be added in varying levels through our blend store, ensuring improved palatability, utilisation of feed, and reducing dust in sheds.',
-',
-  }
+    description: 'We can add in macro minerals, trace minerals and a range of feed additives, saving you time and money (no dusting or dosatron required) so your cows receive their daily requirements. Molasses can be added in varying levels through our blend store, ensuring improved palatability, utilisation of feed, and reducing dust in sheds.'
+    ,
+  },
 ];
 
 const Services = () => {
