@@ -20,10 +20,10 @@ const services = [
     description: 'WSF supply heavy duty multi-purpose feed trailers. These trailers are ideal for feeding PKE or straw/hay in the paddock, Molasses can be added to the dry bales which increases feed intake..',
   },
   {
-    id: 'feed-quality',
+    id: 'Nutritional Advice',
     image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F8c3355a169fd4bf8c64428f20e235da18fd49ccb%2Fimage_fx%20%284%29.jpg',
-    title: 'Feed Quality Declarations',
-    description: 'Detailed information on the nutritional composition and quality standards of all our feed products.',
+    title: 'Nutritional Advice From Independent Industry Experts',
+    description: 'Get independent nutritional advice from our consultant.',
   },
   {
     id: 'sheep-feed',
