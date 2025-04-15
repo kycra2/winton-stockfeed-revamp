@@ -21,7 +21,7 @@ dairy feeds with almost any additive made “straight
 on to the truck and delivered to your silo” which
 means there is one thing less farmers have to worry
 about.
-<h2 It has never been so easy to include minerals in
+<h2></h2> It has never been so easy to include minerals in
 your silo blend.</h2>
       </div>
     </section>
