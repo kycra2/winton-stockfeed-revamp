@@ -49,16 +49,15 @@ office@wintonstockfeed.co.nz</span>
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
+            
             <ul className="space-y-2">
-              <li>Feed Mill
+              <li>Feed Mill<br></br>
 
 107 Clyde Street
 Invercargill
 
 Ph 03 236 6089</li>
-              <li>Saturday: 9am - 12pm</li>
-              <li>Sunday: Closed</li>
+              
             </ul>
           </div>
         </div>
