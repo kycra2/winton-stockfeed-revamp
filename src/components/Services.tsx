@@ -14,13 +14,13 @@ const services = [
     description: 'Our team have years of experience in both farming and the feed sector and are trained to help support our clients throughout the season.',
   },
   {
-    id: 'Feed Trailers',
+    id: 'feed-trailers',
     image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F9920dad17d1a04325207ef56cfce6c7771137b46%2FScreenshot%202025-04-14%20at%2011.53.58%E2%80%AFAM.png',
     title: 'Feed Trailers',
     description: 'WSF supply heavy duty multi-purpose feed trailers. These trailers are ideal for feeding PKE or straw/hay in the paddock. Molasses can be added to the dry bales which increases feed intake..',
   },
   {
-    id: 'Nutritional Advice',
+    id: 'nutitional-advice',
     image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F8c3355a169fd4bf8c64428f20e235da18fd49ccb%2Fimage_fx%20%284%29.jpg',
     title: 'Nutritional Advice From Independent Industry Experts',
     description: 'Get independent nutritional advice from our consultants.',
@@ -32,10 +32,12 @@ const services = [
     description: 'We maintain our fleet of trucks so you get reliablity and prompt deliveries.',
   },
   {
-    id: 'Molasses',
+    id: 'modern-feed-blending-plant',
     image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F39369ba18d2396277ccdfdca3701af53ba132d1e%2Fimage_fx%20%2811%29.jpg',
-    title: 'Molasses',
-    description: 'National supply of quality Molasses to farms across New Zealand.',
+    title: 'Modern Feed Blending Plant',
+    description: 'We can add in macro minerals, trace minerals and a range of feed additives, saving you time and money (no dusting or dosatron required) so your cows receive their daily requirements.
+
+Molasses can be added in varying levels through our blend store, ensuring improved palatability, utilisation of feed, and reducing dust in sheds..',
   }
 ];
 
