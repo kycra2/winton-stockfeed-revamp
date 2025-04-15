@@ -33,13 +33,13 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 mt-0.5" /> 
                 <span>Head Office
-Orders Free Phone 0800 MOLASSES Ph 0800 665 277 Main Office 139 Florence Rd, Winton 9782 Phone 03 236 6089 
+Main Office 139 Florence Rd, Winton 9782 Phone 03 236 6089 
 
 office@wintonstockfeed.co.nz</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-2" /> 
-                <span>0800 STOCKFEED (786 253)</span>
+                <span>Orders Free Phone 0800 MOLASSES Ph 0800 665 277</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-2" /> 
@@ -51,7 +51,12 @@ office@wintonstockfeed.co.nz</span>
           <div>
             <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
             <ul className="space-y-2">
-              <li>Monday - Friday: 8am - 5pm</li>
+              <li>Feed Mill
+
+107 Clyde Street
+Invercargill
+
+Ph 03 236 6089</li>
               <li>Saturday: 9am - 12pm</li>
               <li>Sunday: Closed</li>
             </ul>
