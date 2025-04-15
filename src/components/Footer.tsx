@@ -53,7 +53,7 @@ office@wintonstockfeed.co.nz</span>
             <ul className="space-y-2">
               <li>Feed Mill<br></br>
 
-107 Clyde Street
+107 Clyde Street<br></br>
 Invercargill
 
 Ph 03 236 6089</li>
