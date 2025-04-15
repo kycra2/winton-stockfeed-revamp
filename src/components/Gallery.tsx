@@ -16,6 +16,13 @@ const StockfeedSection = () => {
         <h2 className="text-4xl font-bold text-center mb-12 text-white">
           New Zealand's Finest Stockfeed
         </h2>
+        . Our state of the art blending plant uses an automated system to provide blended
+dairy feeds with almost any additive made “straight
+on to the truck and delivered to your silo” which
+means there is one thing less farmers have to worry
+about.
+“It has never been so easy to include minerals in
+your silo blend.”Unique to Winton Stock Feed is our revolutionary Bioplex 
       </div>
     </section>
   );
