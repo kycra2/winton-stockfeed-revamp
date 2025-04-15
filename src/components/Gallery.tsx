@@ -17,14 +17,14 @@ const StockfeedSection = () => {
           New Zealand's Finest Stockfeed
         </h2>
         <p>
-  Our state of the art blending plant uses an automated system to provide blended
-  dairy feeds with almost any additive made “straight on to the truck and delivered to your silo”
-  which means there is one thing less farmers have to worry about.
+  Our typical raw material range can be selected from the following:
+PKE, Maize DDG, Crushed Grains, Soya Bean Meal, Soya Hulls, Grain Pellets and Molasses, all subject to availability. Worth noting is that all our PKE is screened before being blended.
+Our state of the art blending plant uses an automated system to provide blended dairy feeds with almost any additive made “straight on to the truck and delivered to your silo” which means there is one thing less farmers have to worry about.
 </p>
 
-<h3 className="mt-6 text-2xl font-semibold">
+<h5 className="mt-6 text-2xl font-semibold">
   It has never been so easy to include minerals in your silo blend.
-</h3>
+</h5>
       </div>
     </section>
   );
