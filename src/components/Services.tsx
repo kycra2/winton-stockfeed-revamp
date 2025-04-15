@@ -27,7 +27,7 @@ const services = [
   },
   {
     id: 'reliable-transport',
-    image: 'src/components/images/winton-stock-feed-auger-truck.jpg',
+    image: 'https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/winton-stock-feed-auger-truck.jpg',
     title: 'Reliable Transport',
     description: 'We maintain our fleet of trucks so you get reliablity and prompt deliveries.',
   },
