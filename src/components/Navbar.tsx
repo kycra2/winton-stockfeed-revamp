@@ -8,9 +8,10 @@ const navItems = [
   { name: 'Molasses', href: '#molasses' },
   { name: 'Dairy Feed', href: '#dairy-feed' },
   { name: 'Calf Feed', href: '#calf-feed' },
-  { name: 'Resources', href: '#resources' },
-  { name: 'About Us', href: '#about' },
-  { name: 'Contact Us', href: '#contact' }
+  { name: 'Sheep Feed', href: '#sheep-feed' },
+  { name: 'Deer Feeds', href: '#deer-feed' },
+  { name: 'Trailers', href: '#trailers' }
+  { name: 'Contact Us', href: '#trailers' }
 ];
 
 const Navbar = () => {
