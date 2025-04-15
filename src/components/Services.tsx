@@ -34,8 +34,8 @@ const services = [
   {
     id: 'modern-feed-blending-plant',
     image: 'https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/stock-feed-blending-southland%20(1).jpg?raw=true',
-    title: 'Modern Feed Blending Plant',
-    description: 'We can add in macro minerals, trace minerals and a range of feed additives, saving you time and money (no dusting or dosatron required) so your cows receive their daily requirements. Molasses can be added in varying levels through our blend store, ensuring improved palatability, utilisation of feed, and reducing dust in sheds.'
+    title: 'Modern Feed Blending Facility',
+    description: 'We can add in macro minerals, trace minerals and a range of feed additives, saving you time and money (no dusting or dosatron required) so your cows receive their daily requirements. <br> Molasses can be added in varying levels through our blend store, ensuring improved palatability, utilisation of feed, and reducing dust in sheds.'
     ,
   },
 ];
