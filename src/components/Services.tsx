@@ -22,8 +22,8 @@ const services = [
   {
     id: 'nutitional-advice',
     image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F8c3355a169fd4bf8c64428f20e235da18fd49ccb%2Fimage_fx%20%284%29.jpg',
-    title: 'Nutritional Advice From Independent Industry Experts',
-    description: 'Get independent nutritional advice from our consultants.',
+    title: 'Nutritional Advice',
+    description: 'Get independent nutritional advice from our expert consultants. Conditions apply',
   },
   {
     id: 'reliable-transport',
