@@ -11,7 +11,7 @@ const services = [
     id: 'local-knowledge',
     image: 'https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/winton-staff%20(1).jpg?raw=true',
     title: 'Local Knowledge',
-    description: 'Nutritionally balanced feed solutions for all types of livestock, ensuring optimal growth and performance.',
+    description: 'Our team have years of experience in both farming and the feed sector and are trained to help support our clients throughout the season.',
   },
   {
     id: 'Feed Trailers',
