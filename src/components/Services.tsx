@@ -37,7 +37,7 @@ const services = [
     title: 'Modern Feed Blending Plant',
     description: 'We can add in macro minerals, trace minerals and a range of feed additives, saving you time and money (no dusting or dosatron required) so your cows receive their daily requirements.
 
-Molasses can be added in varying levels through our blend store, ensuring improved palatability, utilisation of feed, and reducing dust in sheds..',
+Molasses can be added in varying levels through our blend store, ensuring improved palatability, utilisation of feed, and reducing dust in sheds.',
   }
 ];
 
