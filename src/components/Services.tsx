@@ -9,7 +9,7 @@ const services = [
   },
   {
     id: 'local-knowledge',
-    image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F24941eb2c8c3a60082a8175903e917e2734ab669%2Fimage_fx%20%287%29.jpg',
+    image: 'https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/winton-staff%20(1).jpg?raw=true',
     title: 'Local Knowledge',
     description: 'Nutritionally balanced feed solutions for all types of livestock, ensuring optimal growth and performance.',
   },
