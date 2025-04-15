@@ -32,7 +32,10 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 mt-0.5" /> 
-                <span>123 Feed Road, Winton, Southland, New Zealand</span>
+                <span>Head Office
+Orders Free Phone 0800 MOLASSES Ph 0800 665 277 Main Office 139 Florence Rd, Winton 9782 Phone 03 236 6089 
+
+office@wintonstockfeed.co.nz</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-2" /> 
