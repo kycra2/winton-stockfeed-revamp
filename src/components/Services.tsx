@@ -2,15 +2,15 @@ import React from 'react';
 
 const services = [
   {
-    id: 'dairy-feed',
+    id: 'stock-feed',
     image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F90fd65c6bd2ac482d68218b3668a9f4c4f34d838%2Fsheep-dog-winton-wife.png',
-    title: 'Dairy Feed',
-    description: 'High-quality feed options specifically formulated for dairy cattle, designed to boost milk production and support animal health.',
+    title: 'Stock Feed',
+    description: 'High-quality feed options specifically formulated for your stock, designed to boost production and support animal health.',
   },
   {
-    id: 'stock-feed',
+    id: 'local-knowledge',
     image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F24941eb2c8c3a60082a8175903e917e2734ab669%2Fimage_fx%20%287%29.jpg',
-    title: 'Stock Feed',
+    title: 'Local Knowledge',
     description: 'Nutritionally balanced feed solutions for all types of livestock, ensuring optimal growth and performance.',
   },
   {
