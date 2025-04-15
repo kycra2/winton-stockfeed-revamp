@@ -14,7 +14,7 @@ const StockfeedSection = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
         <h2 className="text-4xl font-bold text-center mb-12 text-white">
-          New Zealand's Finest Stockfeed
+         It has never been so easy to include minerals in your silo blend.
         </h2>
         <p>
   Our typical raw material range can be selected from the following:
@@ -22,9 +22,7 @@ PKE, Maize DDG, Crushed Grains, Soya Bean Meal, Soya Hulls, Grain Pellets and Mo
 Our state of the art blending plant uses an automated system to provide blended dairy feeds with almost any additive made “straight on to the truck and delivered to your silo” which means there is one thing less farmers have to worry about.
 </p>
 
-<h5 className="mt-6 text-2xl font-semibold">
-  It has never been so easy to include minerals in your silo blend.
-</h5>
+
       </div>
     </section>
   );
