@@ -7,7 +7,7 @@ const MolassesHero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-wsf-blue-dark/60 to-wsf-blue/30" />
         <img
-          src="https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F5c749768366ea62dc0afa1dcef62ba9cbb1dff7f%2Fimage_fx.jpg"
+          src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/molasses-dairy-herd-feed.png?raw=true"
           alt="Molasses being poured"
           className="w-full h-full object-cover"
         />
