@@ -56,7 +56,7 @@ We are a family owned business operating since 1988 and reliability and exceptio
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>
               <a href={`#${service.id}`} className="mt-4 inline-block text-wsf-green hover:underline">
-                Learn more
+                
               </a>
             </div>
           ))}
