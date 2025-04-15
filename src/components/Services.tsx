@@ -26,10 +26,10 @@ const services = [
     description: 'Get independent nutritional advice from our consultant.',
   },
   {
-    id: 'sheep-feed',
-    image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F5d8d4074ab50fc3c2adef5f40f4e878a96cbf16b%2Fimage_fx%20%285%29.jpg',
-    title: 'Sheep Feed',
-    description: 'Custom-milled feed products from local growers tailored to meet specific nutritional requirements for your livestock.',
+    id: 'reliable-transport',
+    image: 'src/components/images/winton-stock-feed-auger-truck.jpg',
+    title: 'Reliable Transport',
+    description: 'We maintain our fleet of trucks so you get reliablity and prompt deliveries.',
   },
   {
     id: 'Molasses',
