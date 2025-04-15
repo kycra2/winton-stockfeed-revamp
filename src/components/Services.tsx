@@ -47,7 +47,7 @@ const Services = () => {
       Why Winton Stock Feed?
     </h2>
     <p className="text-center text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
-      We are a family owned business operating since 1988 and reliability and exceptional service is our priority.
+      We are a family owned business operating since 1988. Reliability and exceptional service is our priority for all customers.
     </p>
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       {services.map((service) => (
