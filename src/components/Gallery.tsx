@@ -9,7 +9,7 @@ const StockfeedSection = () => {
       }}
     >
       {/* Blue overlay */}
-      <div className="absolute inset-0 bg-blue-900 opacity-60 z-0"></div>
+      <div className="absolute inset-0 bg-blue-900 opacity-20 z-0"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
