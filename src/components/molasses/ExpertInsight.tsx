@@ -15,14 +15,14 @@ const ExpertInsight = () => {
           <div className="mb-12 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-wsf-blue/20 to-transparent z-0 rounded-xl"></div>
             <div className="relative z-10 p-8 backdrop-blur-sm rounded-xl border border-white/10 grid md:grid-cols-2 gap-8 items-center">
-              <div className="order-2 md:order-1">
+              <div className="order-2 md:order-1 space-y-6">
                 <h3 className="text-2xl font-bold mb-4 text-wsf-blue-light">Howard de Klerk</h3>
                 
-                <p className="mb-6 text-lg">
+                <p className="text-lg">
                   Howard de Klerk is a leading dairy nutrition consultant, optimising dairy systems to maximise dairy profits.
                 </p>
                 
-                <ul className="space-y-4 mb-8">
+                <ul className="space-y-4 mb-6">
                   <li className="flex items-start">
                     <span className="text-wsf-blue-light mr-2">•</span>
                     <span>Howard is highly experienced in formulating cost effective diets and observing cow signals with many years overseas and local experience in this area.</span>
