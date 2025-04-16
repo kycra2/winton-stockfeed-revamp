@@ -5,22 +5,24 @@ import { Button } from '@/components/ui/button';
 const ExpertInsight = () => {
   return (
     <section className="py-20 bg-black text-white">
-      <div className="container-custom">
+      <div className="container-custom px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             Read Below The Observations Of An Industry Expert On How Molasses Can Improve Your Farm Production
           </h2>
 
           <div className="relative mb-12">
-            <div className="grid md:grid-cols-2 gap-8 items-center bg-gradient-to-r from-wsf-blue/20 to-transparent p-8 rounded-xl border border-white/10 backdrop-blur-sm z-10 relative">
-              <div className="space-y-6">
-                <h3 className="text-2xl font-bold mb-4 text-wsf-blue-light">Howard de Klerk</h3>
+            <div className="relative z-10 grid md:grid-cols-2 gap-8 items-start bg-gradient-to-r from-wsf-blue/20 to-transparent p-8 rounded-xl border border-white/10 backdrop-blur-sm">
+              
+              {/* Text Section */}
+              <div className="space-y-6 order-2 md:order-1">
+                <h3 className="text-2xl font-bold text-wsf-blue-light">Howard de Klerk</h3>
 
                 <p className="text-lg">
                   Howard de Klerk is a leading dairy nutrition consultant, optimising dairy systems to maximise dairy profits.
                 </p>
 
-                <ul className="space-y-4 mb-6">
+                <ul className="space-y-4">
                   <li className="flex items-start">
                     <span className="text-wsf-blue-light mr-2">•</span>
                     <span>Howard is highly experienced in formulating cost effective diets and observing cow signals with many years overseas and local experience in this area.</span>
@@ -39,7 +41,7 @@ const ExpertInsight = () => {
                   For more information on how molasses can boost your productivity – download 2 of Howard's learnings below:
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
                   <Button
                     variant="outline"
                     size="lg"
@@ -72,7 +74,8 @@ const ExpertInsight = () => {
                 </div>
               </div>
 
-              <div className="flex justify-center">
+              {/* Image Section */}
+              <div className="order-1 md:order-2 flex justify-center items-start">
                 <img
                   src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/howard-de-klerk.jpg?raw=true"
                   alt="Howard de Klerk"
