@@ -9,6 +9,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -167,10 +168,12 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-md">
-          <div className="container-custom py-4 flex flex-col space-y-2">
-            {navItems.map(renderMobileNavItem)}
-          </div>
+        <div className="md:hidden bg-white shadow-md fixed top-[60px] left-0 right-0 max-h-[calc(100vh-60px)] overflow-hidden">
+          <ScrollArea className="h-[calc(100vh-60px)]">
+            <div className="container-custom py-4 flex flex-col space-y-2">
+              {navItems.map(renderMobileNavItem)}
+            </div>
+          </ScrollArea>
         </div>
       )}
     </header>
