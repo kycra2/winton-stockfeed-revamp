@@ -18,7 +18,7 @@ const MolassesInfo = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold mb-6 text-wsf-brown">What is Molasses?</h2>
-            <h2 className="text-3xl font-bold mb-6 text-wsf-brown">What is Molasses?</h2>
+            
 <p className="mb-4 text-gray-700 space-y-4">
   <span>
     Cane Molasses is a by-product of sugar refining – about 64% sugar on a dry matter basis.
