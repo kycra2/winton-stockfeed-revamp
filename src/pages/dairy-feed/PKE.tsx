@@ -61,8 +61,8 @@ const PKEPage: React.FC = () => {
         <section className="space-y-2">
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
-              src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/PKE-truck-delivery.jpg?raw=true" 
-              alt="Feeding PKE at a Farm in Drummond" 
+              src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/winton-stock-feed-auger-truck.jpg?raw=true" 
+              alt="Our PKE Delivery Truck" 
               className="w-full h-auto object-cover"
             />
           </div>
