@@ -1,9 +1,8 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Phone } from 'lucide-react';
+import { Phone, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const PKEPage: React.FC = () => {
@@ -88,6 +87,26 @@ const PKEPage: React.FC = () => {
             energy release and help maintain rumen pH in the optimum range for best rumen function 
             and animal performance.
           </p>
+        </section>
+
+        {/* Specs Download Section */}
+        <section className="bg-gray-50 p-6 rounded-lg shadow-md flex items-center justify-between">
+          <div>
+            <h3 className="text-xl font-semibold text-wsf-brown mb-2">
+              Download PKE Specifications
+            </h3>
+            <p className="text-gray-700 mb-4">
+              Get detailed information about our Palm Kernel Expeller (PKE) product.
+            </p>
+          </div>
+          <Button 
+            variant="outline" 
+            className="flex items-center gap-2"
+            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/169438_WSF_A4_Flyers_PKE.pdf', '_blank')}
+          >
+            <Download className="h-5 w-5" />
+            Download PDF
+          </Button>
         </section>
 
         {/* Contact Card */}
