@@ -90,9 +90,9 @@ const PKEPage: React.FC = () => {
         </section>
 
         {/* Specs Download Section */}
-        <section className="bg-gray-50 p-6 rounded-lg shadow-md flex items-center justify-between">
+        <section className="bg-wsf-blue bg-opacity-10 p-6 rounded-lg shadow-md flex items-center justify-between">
           <div>
-            <h3 className="text-xl font-semibold text-wsf-brown mb-2">
+            <h3 className="text-xl font-semibold text-wsf-blue mb-2">
               Download PKE Specifications
             </h3>
             <p className="text-gray-700 mb-4">
@@ -100,11 +100,11 @@ const PKEPage: React.FC = () => {
             </p>
           </div>
           <Button 
-            variant="outline" 
-            className="flex items-center gap-2"
+            variant="default" 
+            className="bg-wsf-blue hover:bg-wsf-blue-dark"
             onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/169438_WSF_A4_Flyers_PKE.pdf', '_blank')}
           >
-            <Download className="h-5 w-5" />
+            <Download className="h-5 w-5 mr-2" />
             Download PDF
           </Button>
         </section>
