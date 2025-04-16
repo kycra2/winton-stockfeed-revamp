@@ -81,7 +81,7 @@ const ExpertInsight = () => {
                     }
                   >
                     <Download className="mr-2 h-4 w-4" />
-                    Download Molasses In New Zealand
+                    Download Molasses In NZ
                   </Button>
                 </div>
               </div>
