@@ -15,7 +15,7 @@ const ExpertInsight = () => {
           <div className="mb-12 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-wsf-blue/20 to-transparent z-0 rounded-xl"></div>
             <div className="relative z-10 p-8 backdrop-blur-sm rounded-xl border border-white/10 grid md:grid-cols-2 gap-8 items-center">
-              <div>
+              <div className="order-2 md:order-1">
                 <h3 className="text-2xl font-bold mb-4 text-wsf-blue-light">Howard de Klerk</h3>
                 
                 <p className="mb-6 text-lg">
@@ -64,7 +64,7 @@ const ExpertInsight = () => {
                 </div>
               </div>
               
-              <div className="flex justify-center">
+              <div className="flex justify-center order-1 md:order-2">
                 <img 
                   src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/howard-de-klerk.jpg?raw=true" 
                   alt="Howard de Klerk" 
@@ -80,4 +80,3 @@ const ExpertInsight = () => {
 };
 
 export default ExpertInsight;
-
