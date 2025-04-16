@@ -37,7 +37,7 @@ const ExpertInsight = () => {
                   </li>
                 </ul>
 
-                <p className="text-lg font-medium">
+                <p className="text-lg font-small">
                   For more information on how molasses can boost your productivity – download 2 of Howard's learnings below:
                 </p>
 
