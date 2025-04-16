@@ -1,15 +1,15 @@
 
 import React from 'react';
-import { cow, sheep, Sprout } from 'lucide-react';
+import { Beef, Leaf, Sprout } from 'lucide-react';
 
 const applications = [
   {
-    icon: <cow size={48} className="text-wsf-green mb-4" />,
+    icon: <Beef size={48} className="text-wsf-green mb-4" />,
     title: "Dairy & Beef Cattle",
     description: "Add molasses to TMR mixes, silage or hay to increase dry matter intake and provide readily available energy. Ideal for boosting milk production and supporting rumen health."
   },
   {
-    icon: <sheep size={48} className="text-wsf-green mb-4" />,
+    icon: <Leaf size={48} className="text-wsf-green mb-4" />,
     title: "Sheep & Deer",
     description: "Perfect supplement during pregnancy, lactation and periods of high energy demand. Can be applied to hay, silage or added to grain mixes."
   },

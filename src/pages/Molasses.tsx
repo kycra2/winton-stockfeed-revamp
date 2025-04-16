@@ -7,6 +7,7 @@ import MolassesInfo from '@/components/molasses/MolassesInfo';
 import WhyMolasses from '@/components/molasses/WhyMolasses';
 import MolassesApplications from '@/components/molasses/MolassesApplications';
 import MolassesDepots from '@/components/molasses/MolassesDepots';
+import ExpertInsight from '@/components/molasses/ExpertInsight';
 
 const Molasses = () => {
   return (
@@ -16,6 +17,7 @@ const Molasses = () => {
         <MolassesHero />
         <MolassesInfo />
         <WhyMolasses />
+        <ExpertInsight />
         <MolassesApplications />
         <MolassesDepots />
       </main>
