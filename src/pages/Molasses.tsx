@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import MolassesHero from '@/components/molasses/MolassesHero';
 import MolassesInfo from '@/components/molasses/MolassesInfo';
-import MolassesProducts from '@/components/molasses/MolassesProducts';
+import WhyMolasses from '@/components/molasses/WhyMolasses';
 import MolassesApplications from '@/components/molasses/MolassesApplications';
 import MolassesDepots from '@/components/molasses/MolassesDepots';
 
@@ -15,7 +15,7 @@ const Molasses = () => {
       <main className="flex-grow">
         <MolassesHero />
         <MolassesInfo />
-        <MolassesProducts />
+        <WhyMolasses />
         <MolassesApplications />
         <MolassesDepots />
       </main>
