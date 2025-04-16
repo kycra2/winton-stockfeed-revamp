@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import MolassesHero from '@/components/molasses/MolassesHero';
 import MolassesInfo from '@/components/molasses/MolassesInfo';
 import WhyMolasses from '@/components/molasses/WhyMolasses';
-import MolassesApplications from '@/components/molasses/MolassesApplications';
+import MolassesLocations from '@/components/molasses/MolassesLocations';
 import MolassesDepots from '@/components/molasses/MolassesDepots';
 import ExpertInsight from '@/components/molasses/ExpertInsight';
 
@@ -18,7 +18,7 @@ const Molasses = () => {
         <MolassesInfo />
         <WhyMolasses />
         <ExpertInsight />
-        <MolassesApplications />
+        <MolassesLocations />
         <MolassesDepots />
       </main>
       <Footer />
