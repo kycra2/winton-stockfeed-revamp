@@ -67,7 +67,7 @@ const PKEPage: React.FC = () => {
             />
           </div>
           <p className="text-sm text-gray-600 italic text-center">
-            Feeding PKE at a Farm in Drummond, Central Southland
+            Our PKE Delivery Truck 
           </p>
         </section>
 
