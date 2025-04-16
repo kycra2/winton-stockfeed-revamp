@@ -2,12 +2,30 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from "@/lib/utils";
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'Molasses', href: '/molasses' },
-  { name: 'Dairy Feed', href: '#dairy-feed' },
+  { 
+    name: 'Dairy Feed', 
+    href: '#', 
+    children: [
+      { name: 'PKE', href: '/dairy-feed/pke' },
+      { name: 'Maize DDGS', href: '/dairy-feed/maize-ddgs' },
+      { name: 'Soy Bran Hulls', href: '/dairy-feed/soy-bran-hulls' },
+      { name: 'Soybean Meal', href: '/dairy-feed/soybean-meal' },
+      { name: 'Crushed Grain', href: '/dairy-feed/crushed-grain' },
+      { name: 'Precalver Pellets', href: '/dairy-feed/precalver-pellets' },
+      { name: 'Supreme Dairy Pellets', href: '/dairy-feed/supreme-dairy-pellets' },
+    ]
+  },
   { name: 'Calf Feed', href: '#calf-feed' },
   { name: 'Sheep Feed', href: '#sheep-feed' },
   { name: 'Deer Feed', href: '#deer-feed' },
@@ -34,6 +52,87 @@ const Navbar = () => {
     };
   }, []);
 
+  const renderNavItem = (item) => {
+    if (item.children) {
+      return (
+        <DropdownMenu key={item.name}>
+          <DropdownMenuTrigger className="navbar-item flex items-center gap-1 focus:outline-none">
+            {item.name} <ChevronDown className="h-4 w-4 opacity-70" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent
+            align="start"
+            className="w-48 bg-white"
+          >
+            {item.children.map((child) => (
+              <DropdownMenuItem key={child.name} asChild>
+                <Link 
+                  to={child.href}
+                  className="flex w-full cursor-default items-center px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-wsf-blue"
+                >
+                  {child.name}
+                </Link>
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      );
+    }
+
+    return item.href.startsWith('/') ? (
+      <Link key={item.name} to={item.href} className="navbar-item">
+        {item.name}
+      </Link>
+    ) : (
+      <a key={item.name} href={item.href} className="navbar-item">
+        {item.name}
+      </a>
+    );
+  };
+
+  const renderMobileNavItem = (item) => {
+    if (item.children) {
+      return (
+        <div key={item.name} className="mb-2">
+          <div className="flex items-center py-2 text-gray-700">
+            {item.name}
+          </div>
+          <div className="ml-4 flex flex-col space-y-2 border-l border-gray-200 pl-4">
+            {item.children.map((child) => (
+              <Link
+                key={child.name}
+                to={child.href}
+                className="py-2 text-gray-700 hover:text-wsf-blue"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {child.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    return item.href.startsWith('/') ? (
+      <Link
+        key={item.name}
+        to={item.href}
+        className="block py-2 text-gray-700 hover:text-wsf-blue"
+        onClick={() => setIsMobileMenuOpen(false)}
+      >
+        {item.name}
+      </Link>
+    ) : (
+      <a
+        key={item.name}
+        href={item.href}
+        className="block py-2 text-gray-700 hover:text-wsf-blue"
+        onClick={() => setIsMobileMenuOpen(false)}
+      >
+        {item.name}
+      </a>
+    );
+  };
+
   return (
     <header 
       className={cn(
@@ -54,17 +153,7 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-1">
-          {navItems.map((item) => (
-            item.href.startsWith('/') ? (
-              <Link key={item.name} to={item.href} className="navbar-item">
-                {item.name}
-              </Link>
-            ) : (
-              <a key={item.name} href={item.href} className="navbar-item">
-                {item.name}
-              </a>
-            )
-          ))}
+          {navItems.map(renderNavItem)}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -80,27 +169,7 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white shadow-md">
           <div className="container-custom py-4 flex flex-col space-y-2">
-            {navItems.map((item) => (
-              item.href.startsWith('/') ? (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block py-2 text-gray-700 hover:text-wsf-blue"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ) : (
-                <a 
-                  key={item.name} 
-                  href={item.href} 
-                  className="block py-2 text-gray-700 hover:text-wsf-blue"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
-              )
-            ))}
+            {navItems.map(renderMobileNavItem)}
           </div>
         </div>
       )}
