@@ -62,6 +62,10 @@ const FeedTrailersPage: React.FC = () => {
             Curved trough means cows can reach all the feed, high sides and large capacity 
             means no spillage during filling and minimises wastage during feeding.
           </p>
+          <p>
+            These trailers are ideal for feeding PKE or straw/hay in the paddock, 
+            Molasses can be added to the dry bales which increases feed intake.
+          </p>
         </section>
 
         {/* Specifications Section with Image */}
@@ -89,10 +93,28 @@ const FeedTrailersPage: React.FC = () => {
         {/* Video Section */}
         <section className="space-y-4">
           <h3 className="text-xl font-semibold">See examples of the feed trailers in the video below</h3>
-          <div className="aspect-video bg-gray-100 rounded-lg flex items-center justify-center">
-            {/* Video placeholder - This would be replaced with an actual video component */}
-            <p className="text-gray-500">Video content would be displayed here</p>
+          <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
+            <iframe 
+              className="w-full h-full" 
+              src="https://www.youtube.com/embed/akMcc8unf5c" 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowFullScreen
+            ></iframe>
           </div>
+        </section>
+
+        {/* WSF Team Support Section */}
+        <section className="space-y-4 bg-gray-50 p-6 rounded-lg">
+          <h3 className="text-xl font-semibold text-wsf-brown">Dedicated Support</h3>
+          <p>
+            All our services are fully supported by our local WSF team. Our team have years of experience 
+            in both farming and the feed sector and are trained to help support our clients throughout the season.
+          </p>
+          <p>
+            WSF also use an independent consultant nutritionist who can be made available to our clients throughout the year.
+          </p>
         </section>
 
         {/* Contact Card */}
