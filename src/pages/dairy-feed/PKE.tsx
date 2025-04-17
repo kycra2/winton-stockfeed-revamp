@@ -49,27 +49,28 @@ const PKEPage: React.FC = () => {
         </Card>
 
         {/* Benefits Section with Palm Nut Image */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-wsf-brown">About Palm Kernel</h2>
-          
-          <div className="flex flex-col md:flex-row gap-4 items-start">
-            <div className="flex-1">
-              <p>
-                Palm Kernel is a palatable feed stuff that is the by-product of palm oil extraction 
-                and is recommended for calf and ruminant feeds. Palm Nut Kernel has the ability to replace some higher 
-                cost protein sources while providing cost effective energy.
-              </p>
-            </div>
-            
-            <div className="md:w-1/3 w-full flex justify-center md:justify-end">
-              <img 
-                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/palm-nut.png" 
-                alt="Palm Nut" 
-                className="rounded-md shadow-sm max-h-48 object-contain"
-              />
-            </div>
-          </div>
-        </section>
+       <section className="space-y-4">
+  <h2 className="text-2xl font-semibold text-wsf-brown">About Palm Kernel</h2>
+  
+  <div className="flex flex-col md:flex-row gap-4 items-start">
+    <div className="flex-1">
+      <p>
+        Palm Kernel is a palatable feed stuff that is the by-product of palm oil extraction 
+        and is recommended for calf and ruminant feeds. Palm Nut Kernel has the ability to replace some higher 
+        cost protein sources while providing cost effective energy.
+      </p>
+    </div>
+    
+    <div className="md:w-1/3 w-full flex flex-col items-center md:items-end">
+      <img 
+        src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/palm-nut.png" 
+        alt="Palm Nut" 
+        className="rounded-md shadow-sm max-h-48 object-contain"
+      />
+      <p className="text-sm text-gray-600 italic mt-2">Palm Nut Kernel cut in half</p>
+    </div>
+  </div>
+</section>
 
         {/* Image section */}
         <section className="space-y-2">
