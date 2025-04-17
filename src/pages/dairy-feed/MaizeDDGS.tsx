@@ -32,8 +32,19 @@ const MaizeDDGSPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Maize Image Smaller */}
-        <div className="max-w-md mx-auto rounded-lg overflow-hidden shadow-md">
+        {/* Benefits Section */}
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold text-wsf-brown">About Maize DDGS</h2>
+          <p>
+            Maize DDGS is a sustainable feed option that makes efficient use of grain byproducts from ethanol production.
+          </p>
+          <p>
+            It offers an excellent protein source with digestible fiber that supports rumen health and improves overall animal performance.
+          </p>
+        </section>
+
+        {/* Smaller Maize Image Inserted Here */}
+        <div className="max-w-sm mx-auto rounded-lg overflow-hidden shadow-md">
           <img 
             src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Screenshot+2025-04-17+at+9.41.48%E2%80%AFAM.png" 
             alt="Maize DDGS" 
@@ -53,17 +64,6 @@ const MaizeDDGSPage: React.FC = () => {
             </p>
           </CardContent>
         </Card>
-
-        {/* Benefits Section */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-wsf-brown">About Maize DDGS</h2>
-          <p>
-            Maize DDGS is a sustainable feed option that makes efficient use of grain byproducts from ethanol production.
-          </p>
-          <p>
-            It offers an excellent protein source with digestible fiber that supports rumen health and improves overall animal performance.
-          </p>
-        </section>
 
         {/* Feed Image Section */}
         <section className="space-y-2">
