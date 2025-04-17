@@ -9,7 +9,7 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 const PrecalverPelletsPage: React.FC = () => {
   return (
     <ProductLayout title="Precalver Pellets">
-      <div className="space-y-8">
+      <div className="space-y-12">
         {/* Intro Section with Image */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
@@ -37,8 +37,8 @@ const PrecalverPelletsPage: React.FC = () => {
         </section>
 
         {/* Key Benefits - 2 columns for desktop */}
-        <section className="space-y-6">
-          <h2 className="text-2xl font-semibold text-wsf-brown">Key Benefits</h2>
+        <section className="space-y-8">
+          <h2 className="text-2xl font-semibold text-wsf-brown pb-2 border-b border-gray-200">Key Benefits</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {/* Column 1 */}
             <div className="space-y-6">
@@ -128,34 +128,38 @@ const PrecalverPelletsPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Usage Recommendations - Fixed Section */}
-        <section className="space-y-6 p-6 bg-gray-50 rounded-lg shadow-sm">
-          <h2 className="text-2xl font-semibold text-wsf-brown mb-4">Usage Recommendations</h2>
-          <div className="space-y-4">
-            <div className="bg-white p-4 rounded border-l-4 border-wsf-blue">
-              <p className="text-base">
-                Feed Pre-Calver Pellets during the critical 3-4 weeks before calving to help prepare 
-                the cow's metabolism for the demands of calving and lactation.
-              </p>
-            </div>
-            <div className="bg-white p-4 rounded border-l-4 border-wsf-blue">
-              <p className="text-base">
-                Recommended feeding rates vary based on farm conditions and individual cow needs. 
-                Typically, 1-2kg per cow per day provides optimal benefits when used as part of a 
-                balanced transition diet.
-              </p>
-            </div>
-            <div className="bg-white p-4 rounded border-l-4 border-wsf-blue">
-              <p className="text-base">
-                For best results, introduce gradually and ensure consistent daily feeding throughout 
-                the pre-calving period.
-              </p>
+        {/* Usage Recommendations - Completely Redesigned Section */}
+        <section className="mt-16 pt-8 border-t border-gray-200">
+          <h2 className="text-2xl font-semibold text-wsf-brown mb-6">Usage Recommendations</h2>
+          <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
+            <div className="space-y-6">
+              <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-wsf-blue">
+                <p className="text-base">
+                  Feed Pre-Calver Pellets during the critical 3-4 weeks before calving to help prepare 
+                  the cow's metabolism for the demands of calving and lactation.
+                </p>
+              </div>
+              
+              <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-wsf-blue">
+                <p className="text-base">
+                  Recommended feeding rates vary based on farm conditions and individual cow needs. 
+                  Typically, 1-2kg per cow per day provides optimal benefits when used as part of a 
+                  balanced transition diet.
+                </p>
+              </div>
+              
+              <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-wsf-blue">
+                <p className="text-base">
+                  For best results, introduce gradually and ensure consistent daily feeding throughout 
+                  the pre-calving period.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Contact Card - Added mt-12 for extra spacing */}
-        <section className="mt-12">
+        {/* Contact Card */}
+        <section className="mt-16 pt-8 border-t border-gray-200">
           <Card className="bg-wsf-blue text-white border-none shadow-lg">
             <CardContent className="p-6 space-y-4">
               <div className="flex items-center gap-2">
