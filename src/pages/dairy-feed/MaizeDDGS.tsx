@@ -17,7 +17,7 @@ const MaizeDDGSPage: React.FC = () => {
               starch fraction of Maize is fermented with yeasts to produce ethanol.
             </p>
             <p>
-              Maize DDGS is a high-quality livestock feed supplement containing over 30% protein that helps maximize animal performance.
+              Maize DDGS is a high-quality livestock feed supplement containing over 30% protein that helps maximize animal performance. Download our PDF specifications sheet on this page for accurate breakdowns. 
             </p>
             <p>
               This nutrient-rich byproduct of ethanol production provides essential energy without causing digestive issues and includes valuable B-vitamins that improve palatability.
@@ -36,10 +36,8 @@ const MaizeDDGSPage: React.FC = () => {
         <Card className="bg-accent border-none shadow-md">
           <CardContent className="p-6 space-y-4">
             <h2 className="text-xl font-semibold text-wsf-blue">Optimal Nutrition Solution</h2>
-            <p>Perfect for mixing with silage, Maize DDGS can be included in up to 20% of daily feed intake for optimal nutritional balance and cost-effectiveness.</p>
-            <Button variant="default" asChild className="mt-2">
-              <Link to="#feed-solutions">Explore feeding solutions</Link>
-            </Button>
+            <p>Perfect for mixing with silage, Maize DDGS can be included in up to 20% of daily feed intake for optimal nutritional balance and cost-effectiveness.</p> Download our PDF specifications sheet on this page for accurate breakdowns.
+            
             <p className="pt-2 text-gray-700">
               Talk to our specialists to learn how to integrate Maize DDGS into your feeding program.
             </p>
