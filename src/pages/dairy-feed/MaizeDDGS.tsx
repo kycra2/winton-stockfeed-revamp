@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -9,6 +10,17 @@ const MaizeDDGSPage: React.FC = () => {
   return (
     <ProductLayout title="Maize DDGS">
       <div className="space-y-8">
+        {/* New Top Image Section */}
+        <section className="mb-8">
+          <div className="rounded-lg overflow-hidden shadow-md">
+            <img 
+              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/farmers-southland-new-zealand+(1).png" 
+              alt="Farmers in Southland, New Zealand" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </section>
+
         {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
