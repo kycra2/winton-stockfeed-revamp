@@ -9,6 +9,15 @@ const PKEPage: React.FC = () => {
   return (
     <ProductLayout title="Palm Kernel Expeller (PKE)">
       <div className="space-y-8">
+        {/* New top image */}
+        <section className="rounded-lg overflow-hidden shadow-md">
+          <img 
+            src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/palm-nut.png" 
+            alt="Palm Nut" 
+            className="w-full h-auto object-cover"
+          />
+        </section>
+
         {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
@@ -26,10 +35,13 @@ const PKEPage: React.FC = () => {
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
-              src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/PKE-Feed-Southland.png?raw=true" 
-              alt="PKE Feed Southland" 
+              src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/winton-stock-feed-auger-truck.jpg?raw=true" 
+              alt="Our PKE Delivery Truck" 
               className="w-full h-auto object-cover"
             />
+            <p className="text-sm text-gray-600 italic text-center py-2">
+              Our PKE Delivery Truck 
+            </p>
           </div>
         </section>
 
@@ -57,17 +69,17 @@ const PKEPage: React.FC = () => {
           </p>
         </section>
 
-        {/* Image section */}
+        {/* Moved image section - original top image */}
         <section className="space-y-2">
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
-              src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/winton-stock-feed-auger-truck.jpg?raw=true" 
-              alt="Our PKE Delivery Truck" 
+              src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/PKE-Feed-Southland.png?raw=true" 
+              alt="PKE Feed Southland" 
               className="w-full h-auto object-cover"
             />
           </div>
           <p className="text-sm text-gray-600 italic text-center">
-            Our PKE Delivery Truck 
+            Premium PKE Feed Southland
           </p>
         </section>
 
@@ -91,19 +103,19 @@ const PKEPage: React.FC = () => {
           </p>
         </section>
 
-        {/* Specs Download Section */}
-        <section className="bg-wsf-blue bg-opacity-10 p-6 rounded-lg shadow-md flex items-center justify-between">
+        {/* Specs Download Section - Fixed for responsiveness */}
+        <section className="bg-wsf-blue bg-opacity-10 p-6 rounded-lg shadow-md flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <h3 className="text-xl font-semibold text-wsf-blue mb-2">
               Download PKE Specifications
             </h3>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-2">
               Get detailed information about our Palm Kernel Expeller (PKE) product.
             </p>
           </div>
           <Button 
             variant="default" 
-            className="bg-wsf-blue hover:bg-wsf-blue-dark"
+            className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
             onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/169438_WSF_A4_Flyers_PKE.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
