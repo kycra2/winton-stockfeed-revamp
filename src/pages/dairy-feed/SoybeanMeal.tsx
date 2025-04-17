@@ -29,12 +29,12 @@ const SoybeanMealPage: React.FC = () => {
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/soybean-meal-winton-stock-feed.png" 
+              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/soy-bran-winton-nz+(1).png" 
               alt="Soybean Meal" 
               className="w-full h-auto object-cover"
             />
             <p className="text-sm text-gray-600 italic text-center py-2">
-              Premium Soybean Meal
+              Quality Feed For New Zealand Farmers 
             </p>
           </div>
         </section>
