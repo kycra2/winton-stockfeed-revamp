@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -67,9 +66,9 @@ const DeerFeed = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button variant="outline" className="gap-2">
+          <Button variant="default" className="gap-2">
             <FileDown className="h-4 w-4" />
-            Download Deer Feed Information PDF
+            Download Deer Feed PDF
           </Button>
         </a>
       </div>
