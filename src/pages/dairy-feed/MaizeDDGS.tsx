@@ -65,17 +65,17 @@ const MaizeDDGSPage: React.FC = () => {
           </CardContent>
         </Card>
 
-        {/* Feed Image Section */}
+        {/* Image section */}
         <section className="space-y-2">
-          <div className="max-w-3xl mx-auto rounded-lg overflow-hidden shadow-md">
+          <div className="rounded-lg overflow-hidden shadow-md">
             <img 
               src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/winton-stock-feed-auger-truck.jpg?raw=true" 
-              alt="Maize DDGS Feed" 
+              alt="Our PKE Delivery Truck" 
               className="w-full h-auto object-cover"
             />
           </div>
           <p className="text-sm text-gray-600 italic text-center">
-            Premium quality Maize DDGS feed
+            Our PKE Delivery Truck 
           </p>
         </section>
 
