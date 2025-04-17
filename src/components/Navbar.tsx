@@ -14,6 +14,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'Molasses', href: '/molasses' },
+  { name: 'Feed Trailers', href: '/feed-trailers' },
   { 
     name: 'Dairy Feed', 
     href: '#', 
@@ -30,7 +31,6 @@ const navItems = [
   { name: 'Calf Feed', href: '#calf-feed' },
   { name: 'Sheep Feed', href: '#sheep-feed' },
   { name: 'Deer Feed', href: '#deer-feed' },
-  { name: 'Feed Trailers', href: '/feed-trailers' },
   { name: 'Contact Us', href: '#contact-us' }
 ];
 
