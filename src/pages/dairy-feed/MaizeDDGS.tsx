@@ -127,7 +127,8 @@ const MaizeDDGSPage: React.FC = () => {
             </p>
             <p>
               We can open an account for you and get your first order going all with one call.
-            </p>  <p className="text-gray-700">All prices are Ex Store, Exclusive of GST, and subject to change, call us for the latest prices.</p>
+All prices are Ex Store, Exclusive of GST, and subject to change, call us for the latest prices.
+            </p>  <p className="text-gray-700"</p>
           </CardContent>
         </Card>
       </div>
