@@ -64,7 +64,7 @@ const PKEPage: React.FC = () => {
             <div className="md:w-1/3 w-full flex justify-center md:justify-end">
               <img 
                 src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/palm-nut.png" 
-                alt="Palm Nut" 
+                alt="Palm Nut" Palm Nut Kernel
                 className="rounded-md shadow-sm max-h-48 object-contain"
               />
             </div>
