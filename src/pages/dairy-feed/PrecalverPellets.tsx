@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -129,41 +130,43 @@ const PrecalverPelletsPage: React.FC = () => {
         </section>
 
         {/* Usage Recommendations */}
-        <section className="space-y-4">
+        <section className="space-y-6 p-6 bg-gray-50 rounded-lg shadow-sm">
           <h2 className="text-2xl font-semibold text-wsf-brown">Usage Recommendations</h2>
-          <div className="space-y-2">
-            <p>
+          <div className="space-y-4">
+            <p className="bg-white p-3 rounded border-l-4 border-wsf-blue">
               Feed Pre-Calver Pellets during the critical 3-4 weeks before calving to help prepare 
               the cow's metabolism for the demands of calving and lactation.
             </p>
-            <p>
+            <p className="bg-white p-3 rounded border-l-4 border-wsf-blue">
               Recommended feeding rates vary based on farm conditions and individual cow needs. 
               Typically, 1-2kg per cow per day provides optimal benefits when used as part of a 
               balanced transition diet.
             </p>
-            <p>
+            <p className="bg-white p-3 rounded border-l-4 border-wsf-blue">
               For best results, introduce gradually and ensure consistent daily feeding throughout 
               the pre-calving period.
             </p>
           </div>
         </section>
 
-        {/* Contact Card */}
-        <Card className="bg-wsf-blue text-white border-none shadow-lg">
-          <CardContent className="p-6 space-y-4">
-            <div className="flex items-center gap-2">
-              <Phone className="h-5 w-5" />
-              <h3 className="text-xl font-semibold">Get in Touch</h3>
-            </div>
-            <p>
-              Call us on 0800 665277 or 03 2366089.
-            </p>
-            <p>
-              We can discuss your herd's specific needs and recommend the right feeding program 
-              for your pre-calving cows.
-            </p>
-          </CardContent>
-        </Card>
+        {/* Contact Card - Added mt-12 for extra spacing */}
+        <section className="mt-12">
+          <Card className="bg-wsf-blue text-white border-none shadow-lg">
+            <CardContent className="p-6 space-y-4">
+              <div className="flex items-center gap-2">
+                <Phone className="h-5 w-5" />
+                <h3 className="text-xl font-semibold">Get in Touch</h3>
+              </div>
+              <p>
+                Call us on 0800 665277 or 03 2366089.
+              </p>
+              <p>
+                We can discuss your herd's specific needs and recommend the right feeding program 
+                for your pre-calving cows.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
       </div>
     </ProductLayout>
   );
