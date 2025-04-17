@@ -1,15 +1,17 @@
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const SoyBranHullsPage: React.FC = () => {
   return (
     <ProductLayout title="Soy Bran Hulls">
       <div className="space-y-8">
-        {/* Intro Section */}
+        {/* Intro Section with BBQ image at top right */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <p className="text-lg">
@@ -26,30 +28,44 @@ const SoyBranHullsPage: React.FC = () => {
             </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
-            <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/soy-bran-hulls-winton-stock-feed.png" 
-              alt="Soy Bran Hulls" 
-              className="w-full h-auto object-cover"
-            />
-            <p className="text-sm text-gray-600 italic text-center py-2">
-              Soy Bran Hulls
-            </p>
+            <AspectRatio ratio={16/9} className="bg-muted">
+              <img 
+                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/winton-stock-feed-bbq.png" 
+                alt="Winton Stock Feed BBQ" 
+                className="w-full h-full object-cover"
+              />
+            </AspectRatio>
           </div>
         </section>
 
-        {/* Quick Info Card */}
-        <Card className="bg-accent border-none shadow-md">
-          <CardContent className="p-6 space-y-4">
-            <h2 className="text-xl font-semibold text-wsf-blue">High-Quality Feed Supplement</h2>
-            <p>
-              With their high fiber content and excellent digestibility, Soy Bran Hulls are 
-              an effective addition to dairy rations, helping to maintain proper rumen function.
-            </p>
-            <p className="pt-2 text-gray-700">
-              Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding program.
-            </p>
-          </CardContent>
-        </Card>
+        {/* Quick Info Card with Image Beside It */}
+        <div className="grid md:grid-cols-5 gap-6">
+          <Card className="bg-accent border-none shadow-md md:col-span-3">
+            <CardContent className="p-6 space-y-4">
+              <h2 className="text-xl font-semibold text-wsf-blue">High-Quality Feed Supplement</h2>
+              <p>
+                With their high fiber content and excellent digestibility, Soy Bran Hulls are 
+                an effective addition to dairy rations, helping to maintain proper rumen function.
+              </p>
+              <p className="pt-2 text-gray-700">
+                Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding program.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <div className="md:col-span-2 rounded-lg overflow-hidden shadow-md flex items-center">
+            <div>
+              <img 
+                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/soy-bran-hulls-winton-stock-feed.png" 
+                alt="Soy Bran Hulls" 
+                className="w-full h-auto object-cover"
+              />
+              <p className="text-sm text-gray-600 italic text-center py-2">
+                Soy Bran Hulls
+              </p>
+            </div>
+          </div>
+        </div>
 
         {/* Benefits Section */}
         <section className="space-y-4">
