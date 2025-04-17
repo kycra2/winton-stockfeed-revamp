@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from "@/lib/utils";
@@ -28,8 +27,7 @@ const navItems = [
       { name: 'Supreme Dairy Pellets', href: '/dairy-feed/supreme-dairy-pellets' },
     ]
   },
-  { name: 'Calf Feed', href: '#calf-feed' },
-  { name: 'Sheep Feed', href: '#sheep-feed' },
+  { name: 'Sheep Feed', href: '/sheep-feed' },
   { name: 'Deer Feed', href: '/deer-feed' },
   { name: 'Contact Us', href: '/contact-us' }
 ];

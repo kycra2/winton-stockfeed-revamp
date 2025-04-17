@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,15 +9,7 @@ import NotFound from "./pages/NotFound";
 import FeedTrailersPage from "./pages/FeedTrailers";
 import DeerFeed from "./pages/DeerFeed";
 import ContactUs from "./pages/ContactUs";
-
-// Import dairy feed pages
-import PKEPage from "./pages/dairy-feed/PKE";
-import MaizeDDGSPage from "./pages/dairy-feed/MaizeDDGS";
-import SoyBranHullsPage from "./pages/dairy-feed/SoyBranHulls";
-import SoybeanMealPage from "./pages/dairy-feed/SoybeanMeal";
-import CrushedGrainPage from "./pages/dairy-feed/CrushedGrain";
-import PrecalverPelletsPage from "./pages/dairy-feed/PrecalverPellets";
-import SupremeDairyPelletsPage from "./pages/dairy-feed/SupremeDairyPellets";
+import SheepFeedPage from "./pages/SheepFeed";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +24,7 @@ const App = () => (
           <Route path="/molasses" element={<Molasses />} />
           <Route path="/feed-trailers" element={<FeedTrailersPage />} />
           <Route path="/deer-feed" element={<DeerFeed />} />
+          <Route path="/sheep-feed" element={<SheepFeedPage />} />
           <Route path="/contact-us" element={<ContactUs />} />
           
           {/* Dairy Feed Product Routes */}
