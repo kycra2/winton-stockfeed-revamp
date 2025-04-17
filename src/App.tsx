@@ -8,15 +8,7 @@ import Molasses from "./pages/Molasses";
 import NotFound from "./pages/NotFound";
 import FeedTrailersPage from "./pages/FeedTrailers";
 import DeerFeed from "./pages/DeerFeed";
-
-// Dairy Feed Product Pages
-import PKEPage from "./pages/dairy-feed/PKE";
-import MaizeDDGSPage from "./pages/dairy-feed/MaizeDDGS";
-import SoyBranHullsPage from "./pages/dairy-feed/SoyBranHulls";
-import SoybeanMealPage from "./pages/dairy-feed/SoybeanMeal";
-import CrushedGrainPage from "./pages/dairy-feed/CrushedGrain";
-import PrecalverPelletsPage from "./pages/dairy-feed/PrecalverPellets";
-import SupremeDairyPelletsPage from "./pages/dairy-feed/SupremeDairyPellets";
+import ContactUs from "./pages/ContactUs";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +23,7 @@ const App = () => (
           <Route path="/molasses" element={<Molasses />} />
           <Route path="/feed-trailers" element={<FeedTrailersPage />} />
           <Route path="/deer-feed" element={<DeerFeed />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           
           {/* Dairy Feed Product Routes */}
           <Route path="/dairy-feed/pke" element={<PKEPage />} />
