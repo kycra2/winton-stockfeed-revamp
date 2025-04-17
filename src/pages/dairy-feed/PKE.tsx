@@ -56,7 +56,7 @@ const PKEPage: React.FC = () => {
             <div className="flex-1">
               <p>
                 Palm Kernel is a palatable feed stuff that is the by-product of palm oil extraction 
-                and is recommended for calf and ruminant feeds. It has the ability to replace some higher 
+                and is recommended for calf and ruminant feeds. Palm Nut Kernel has the ability to replace some higher 
                 cost protein sources while providing cost effective energy.
               </p>
             </div>
