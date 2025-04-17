@@ -132,7 +132,7 @@ const MaizeDDGSPage: React.FC = () => {
   All prices are Ex Store, Exclusive of GST, and subject to change, call us for the latest prices.
 </p>
 
-            <p className="text-gray-700"</p>
+            <p>className="text-gray-700"</p>
           </CardContent>
         </Card>
       </div>
