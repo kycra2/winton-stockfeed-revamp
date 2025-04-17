@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -129,23 +128,29 @@ const PrecalverPelletsPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Usage Recommendations */}
+        {/* Usage Recommendations - Fixed Section */}
         <section className="space-y-6 p-6 bg-gray-50 rounded-lg shadow-sm">
-          <h2 className="text-2xl font-semibold text-wsf-brown">Usage Recommendations</h2>
+          <h2 className="text-2xl font-semibold text-wsf-brown mb-4">Usage Recommendations</h2>
           <div className="space-y-4">
-            <p className="bg-white p-3 rounded border-l-4 border-wsf-blue">
-              Feed Pre-Calver Pellets during the critical 3-4 weeks before calving to help prepare 
-              the cow's metabolism for the demands of calving and lactation.
-            </p>
-            <p className="bg-white p-3 rounded border-l-4 border-wsf-blue">
-              Recommended feeding rates vary based on farm conditions and individual cow needs. 
-              Typically, 1-2kg per cow per day provides optimal benefits when used as part of a 
-              balanced transition diet.
-            </p>
-            <p className="bg-white p-3 rounded border-l-4 border-wsf-blue">
-              For best results, introduce gradually and ensure consistent daily feeding throughout 
-              the pre-calving period.
-            </p>
+            <div className="bg-white p-4 rounded border-l-4 border-wsf-blue">
+              <p className="text-base">
+                Feed Pre-Calver Pellets during the critical 3-4 weeks before calving to help prepare 
+                the cow's metabolism for the demands of calving and lactation.
+              </p>
+            </div>
+            <div className="bg-white p-4 rounded border-l-4 border-wsf-blue">
+              <p className="text-base">
+                Recommended feeding rates vary based on farm conditions and individual cow needs. 
+                Typically, 1-2kg per cow per day provides optimal benefits when used as part of a 
+                balanced transition diet.
+              </p>
+            </div>
+            <div className="bg-white p-4 rounded border-l-4 border-wsf-blue">
+              <p className="text-base">
+                For best results, introduce gradually and ensure consistent daily feeding throughout 
+                the pre-calving period.
+              </p>
+            </div>
           </div>
         </section>
 
