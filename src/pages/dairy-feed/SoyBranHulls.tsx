@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -89,7 +88,7 @@ const SoyBranHullsPage: React.FC = () => {
           </p>
         </section>
 
-        {/* Specs Download Section - Mobile friendly placement */}
+        {/* Specs Download Section - Smaller button that doesn't stretch */}
         <section className="bg-wsf-blue bg-opacity-10 p-6 rounded-lg shadow-md">
           <div className="flex flex-col gap-4">
             <div>
@@ -100,14 +99,16 @@ const SoyBranHullsPage: React.FC = () => {
                 Get detailed information about our Soy Bran Hulls product.
               </p>
             </div>
-            <Button 
-              variant="default" 
-              className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-              onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/2019_WSF_SOY_HULLS_BRAN.pdf', '_blank')}
-            >
-              <Download className="h-5 w-5 mr-2" />
-              Download PDF
-            </Button>
+            <div className="flex">
+              <Button 
+                variant="default" 
+                className="bg-wsf-blue hover:bg-wsf-blue-dark inline-flex"
+                onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/2019_WSF_SOY_HULLS_BRAN.pdf', '_blank')}
+              >
+                <Download className="h-5 w-5 mr-2" />
+                Download PDF
+              </Button>
+            </div>
           </div>
         </section>
 
