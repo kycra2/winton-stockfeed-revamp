@@ -80,7 +80,7 @@ const MaizeDDGSPage: React.FC = () => {
         </section>
 
         {/* Details Section */}
-        <section className="space-y-4">
+        <section className="space-y-4 leading-relaxed">
           <p>
             Maize DDGS is available in consistent supply throughout the year, offering a reliable feed option for your livestock.
           </p>
@@ -97,11 +97,11 @@ const MaizeDDGSPage: React.FC = () => {
 
         {/* Specs Download Section */}
         <section className="bg-wsf-blue bg-opacity-10 p-6 rounded-lg shadow-md flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div>
+          <div className="flex-grow pr-4">
             <h3 className="text-xl font-semibold text-wsf-blue mb-2">
               Download Maize DDGS Specifications
             </h3>
-            <p className="text-gray-700 mb-2">
+            <p className="text-gray-700">
               Get detailed information about our Maize DDGS product.
             </p>
           </div>
