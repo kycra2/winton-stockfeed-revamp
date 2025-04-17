@@ -9,14 +9,16 @@ const DeerFeed = () => {
     <ProductLayout title="Deer Feed">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-6">
-          <section>
-            <p className="text-gray-700 mb-4">
-              WSF Deer Nuts are a high density diet to assist hinds and stags to achieve target live weights. 
-              Improving condition will assist stock to reach their genetic potential for velvet production and weight gain. 
-              WSF Deer Nuts provide an ideal way to supplement feed without the wastage of grains and to ensure the correct 
-              balance of vitamins and minerals. They can be kept up to 4 months without deterioration.
-            </p> <p></p>Available in 25kg bags, bulk bags and bulk delivery </p>
-          </section>
+         <section className="space-y-4">
+  <p>
+    WSF Deer Nuts provide an ideal way to supplement feed without the wastage of grains and to ensure the correct
+    balance of vitamins and minerals. They can be kept up to 4 months without deterioration.
+  </p>
+  <p>
+    Available in 25kg bags, bulk bags and bulk delivery.
+  </p>
+</section>
+
 
           <section>
             <h2 className="text-xl font-semibold mb-4">Typical Analysis</h2>
