@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -132,19 +131,21 @@ const PrecalverPelletsPage: React.FC = () => {
         {/* Usage Recommendations */}
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold text-wsf-brown">Usage Recommendations</h2>
-          <p>
-            Feed Pre-Calver Pellets during the critical 3-4 weeks before calving to help prepare 
-            the cow's metabolism for the demands of calving and lactation.
-          </p>
-          <p>
-            Recommended feeding rates vary based on farm conditions and individual cow needs. 
-            Typically, 1-2kg per cow per day provides optimal benefits when used as part of a 
-            balanced transition diet.
-          </p>
-          <p>
-            For best results, introduce gradually and ensure consistent daily feeding throughout 
-            the pre-calving period.
-          </p>
+          <div className="space-y-2">
+            <p>
+              Feed Pre-Calver Pellets during the critical 3-4 weeks before calving to help prepare 
+              the cow's metabolism for the demands of calving and lactation.
+            </p>
+            <p>
+              Recommended feeding rates vary based on farm conditions and individual cow needs. 
+              Typically, 1-2kg per cow per day provides optimal benefits when used as part of a 
+              balanced transition diet.
+            </p>
+            <p>
+              For best results, introduce gradually and ensure consistent daily feeding throughout 
+              the pre-calving period.
+            </p>
+          </div>
         </section>
 
         {/* Contact Card */}
