@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Package, Truck } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const FeedTrailersPage: React.FC = () => {
   return (
@@ -24,29 +25,21 @@ const FeedTrailersPage: React.FC = () => {
           </p>
         </section>
 
-        {/* Image Gallery */}
+        {/* Image Gallery - Updated to show full images */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="rounded-lg overflow-hidden shadow-md">
-            <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/feed-trailer-winton-stock-feed-3.jpg" 
-              alt="Winton Stock Feed Trailer" 
-              className="w-full h-64 object-cover"
-            />
-          </div>
-          <div className="rounded-lg overflow-hidden shadow-md">
-            <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/feed-trailer-winton-stock-feed.jpg" 
-              alt="Winton Stock Feed Trailer" 
-              className="w-full h-64 object-cover"
-            />
-          </div>
-          <div className="rounded-lg overflow-hidden shadow-md">
-            <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/feed-trailer-winton-stock-feed-1.jpg" 
-              alt="Winton Stock Feed Trailer" 
-              className="w-full h-64 object-cover"
-            />
-          </div>
+          {[
+            "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/feed-trailer-winton-stock-feed-3.jpg",
+            "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/feed-trailer-winton-stock-feed.jpg",
+            "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/feed-trailer-winton-stock-feed-1.jpg"
+          ].map((src, index) => (
+            <div key={index} className="rounded-lg overflow-hidden shadow-md">
+              <img 
+                src={src}
+                alt={`Winton Stock Feed Trailer ${index + 1}`}
+                className="w-full h-auto"
+              />
+            </div>
+          ))}
         </section>
 
         {/* Benefits Section */}
@@ -85,7 +78,7 @@ const FeedTrailersPage: React.FC = () => {
             <img 
               src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/winton-stock-feed-trailer-specs.jpg" 
               alt="Winton Stock Feed Trailer Specifications" 
-              className="w-full h-auto object-cover"
+              className="w-full h-auto"
             />
           </div>
         </section>
