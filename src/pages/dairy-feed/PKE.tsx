@@ -58,7 +58,11 @@ const PKEPage: React.FC = () => {
             <p>
               It has the ability to replace some higher cost protein sources while providing 
               cost effective energy.
-            </p>
+            </p>  <p>
+            This product can also help balance diets that are high in maize silage and also diets 
+            low in digestible protein and high in fibre. Palm Kernel meal is also an excellent 
+            economic emergency and drought relief feedstuff. </p>
+            
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
@@ -91,11 +95,7 @@ const PKEPage: React.FC = () => {
             larger ruminants. It can negate some of the negative effects of feeding high starch 
             levels on rumen health because it is supplying energy from the oil portion.
           </p>
-          <p>
-            This product can also help balance diets that are high in maize silage and also diets 
-            low in digestible protein and high in fibre. Palm Kernel meal is also an excellent 
-            economic emergency and drought relief feedstuff. </p>
-            
+         
              <p>Palm Kernel is a slow but very fermentable 
             product. Palm Kernel has high digestibility in ruminants, therefore provides constant 
             energy release and help maintain rumen pH in the optimum range for best rumen function 
