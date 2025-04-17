@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,6 +7,7 @@ import Index from "./pages/Index";
 import Molasses from "./pages/Molasses";
 import NotFound from "./pages/NotFound";
 import FeedTrailersPage from "./pages/FeedTrailers";
+import DeerFeed from "./pages/DeerFeed";
 
 // Dairy Feed Product Pages
 import PKEPage from "./pages/dairy-feed/PKE";
@@ -30,6 +30,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/molasses" element={<Molasses />} />
           <Route path="/feed-trailers" element={<FeedTrailersPage />} />
+          <Route path="/deer-feed" element={<DeerFeed />} />
           
           {/* Dairy Feed Product Routes */}
           <Route path="/dairy-feed/pke" element={<PKEPage />} />
