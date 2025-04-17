@@ -15,7 +15,7 @@ const DeerFeed = () => {
               Improving condition will assist stock to reach their genetic potential for velvet production and weight gain. 
               WSF Deer Nuts provide an ideal way to supplement feed without the wastage of grains and to ensure the correct 
               balance of vitamins and minerals. They can be kept up to 4 months without deterioration.
-            </p>
+            </p> <p></p>Available in 25kg bags, bulk bags and bulk delivery </p>
           </section>
 
           <section>
