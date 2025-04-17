@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -9,48 +8,47 @@ import { Link } from 'react-router-dom';
 const MaizeDDGSPage: React.FC = () => {
   return (
     <ProductLayout title="Maize DDGS">
-      <div className="space-y-8">
-        {/* New Top Image Section */}
-        <section className="mb-8">
-          <div className="rounded-lg overflow-hidden shadow-md">
+      <div className="space-y-10">
+        {/* Intro Section with Image Beside Text */}
+        <section className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="max-w-sm md:max-w-md mx-auto">
             <img 
               src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/farmers-southland-new-zealand+(1).png" 
               alt="Farmers in Southland, New Zealand" 
-              className="w-full h-auto object-cover"
+              className="rounded-lg shadow-md w-full h-auto object-cover"
             />
           </div>
-        </section>
-
-        {/* Intro Section */}
-        <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <p className="text-lg">
-              Distiller's Dried Grains with soluble (DDGS) are the dried residues remaining after the
-              starch fraction of Maize is fermented with yeasts to produce ethanol.
+              Distiller's Dried Grains with Solubles (DDGS) are the dried residues remaining after the
+              starch fraction of maize is fermented with yeasts to produce ethanol.
             </p>
             <p>
-              Maize DDGS is a high-quality livestock feed supplement containing over 30% protein that helps maximize animal performance. Download our PDF specifications sheet on this page for accurate breakdowns. 
+              Maize DDGS is a high-quality livestock feed supplement containing over 30% protein that helps maximize animal performance.
             </p>
             <p>
               This nutrient-rich byproduct of ethanol production provides essential energy without causing digestive issues and includes valuable B-vitamins that improve palatability.
             </p>
           </div>
-          <div className="rounded-lg overflow-hidden shadow-md">
-            <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Screenshot+2025-04-17+at+9.41.48%E2%80%AFAM.png" 
-              alt="Maize DDGS" 
-              className="w-full h-auto object-cover"
-            />
-          </div>
         </section>
+
+        {/* Maize Image Smaller */}
+        <div className="max-w-md mx-auto rounded-lg overflow-hidden shadow-md">
+          <img 
+            src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Screenshot+2025-04-17+at+9.41.48%E2%80%AFAM.png" 
+            alt="Maize DDGS" 
+            className="w-full h-auto object-cover"
+          />
+        </div>
 
         {/* Quick Info Card */}
         <Card className="bg-accent border-none shadow-md">
           <CardContent className="p-6 space-y-4">
             <h2 className="text-xl font-semibold text-wsf-blue">Optimal Nutrition Solution</h2>
-            <p>Perfect for mixing with silage, Maize DDGS can be included in up to 20% of daily feed intake for optimal nutritional balance and cost-effectiveness.</p> Download our PDF specifications sheet on this page for accurate breakdowns.
-            
-            <p className="pt-2 text-gray-700">
+            <p>
+              Perfect for mixing with silage, Maize DDGS can be included in up to 20% of daily feed intake for optimal nutritional balance and cost-effectiveness.
+            </p>
+            <p className="text-gray-700">
               Talk to our specialists to learn how to integrate Maize DDGS into your feeding program.
             </p>
           </CardContent>
@@ -67,9 +65,9 @@ const MaizeDDGSPage: React.FC = () => {
           </p>
         </section>
 
-        {/* Image section */}
+        {/* Feed Image Section */}
         <section className="space-y-2">
-          <div className="rounded-lg overflow-hidden shadow-md">
+          <div className="max-w-3xl mx-auto rounded-lg overflow-hidden shadow-md">
             <img 
               src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/winton-stock-feed-auger-truck.jpg?raw=true" 
               alt="Maize DDGS Feed" 
