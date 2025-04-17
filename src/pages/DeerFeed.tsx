@@ -41,8 +41,8 @@ const DeerFeed = () => {
 
         <div>
           <img 
-            src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&q=80&w=800"
-            alt="Deer grazing"
+            src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/deer-feed-new-zealand-farm+(1)+(1).png"
+            alt="New Zealand deer farm"
             className="rounded-lg shadow-md w-full h-auto mb-6"
           />
         </div>
