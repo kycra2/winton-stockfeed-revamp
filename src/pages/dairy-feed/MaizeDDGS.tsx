@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -97,8 +98,8 @@ const MaizeDDGSPage: React.FC = () => {
 
         {/* Specs Download Section */}
         <section className="bg-wsf-blue bg-opacity-10 p-6 rounded-lg shadow-md flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div className="flex-grow pr-4">
-            <h3 className="text-xl font-semibold text-wsf-blue mb-2">
+          <div className="flex-grow pr-4 space-y-2">
+            <h3 className="text-xl font-semibold text-wsf-blue">
               Download Maize DDGS Specifications
             </h3>
             <p className="text-gray-700">
