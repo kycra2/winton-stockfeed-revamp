@@ -11,7 +11,7 @@ const MaizeDDGSPage: React.FC = () => {
       <div className="space-y-10">
         {/* Intro Section with Image Beside Text */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="max-w-xl mx-auto"> {/* Enlarged image */}
+          <div className="max-w-xl mx-auto">
             <img 
               src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/farmers-southland-new-zealand+(1).png" 
               alt="Farmers in Southland, New Zealand" 
@@ -43,7 +43,7 @@ const MaizeDDGSPage: React.FC = () => {
               It offers an excellent protein source with digestible fiber that supports rumen health and improves overall animal performance.
             </p>
           </div>
-          <div className="max-w-xs mx-auto rounded-lg overflow-hidden shadow-md"> {/* Smaller image */}
+          <div className="max-w-xs mx-auto rounded-lg overflow-hidden shadow-md">
             <img 
               src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Screenshot+2025-04-17+at+9.41.48%E2%80%AFAM.png" 
               alt="Maize DDGS" 
@@ -126,18 +126,15 @@ const MaizeDDGSPage: React.FC = () => {
               Call us on 0800 665277 or 03 2366089.
             </p>
             <p>
-  We can open an account for you and get your first order going all with one call.
-</p>
-<p className="text-gray-700">
-  All prices are Ex Store, Exclusive of GST, and subject to change, call us for the latest prices.
-</p>
-
-            <p>className="text-gray-700"</p>
+              We can open an account for you and get your first order going all with one call.
+            </p>
+            <p className="text-white">
+              All prices are Ex Store, Exclusive of GST, and subject to change, call us for the latest prices.
+            </p>
           </CardContent>
         </Card>
       </div>
     </ProductLayout>
-   
   );
 };
 
