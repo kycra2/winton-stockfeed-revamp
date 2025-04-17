@@ -127,21 +127,12 @@ const MaizeDDGSPage: React.FC = () => {
             </p>
             <p>
               We can open an account for you and get your first order going all with one call.
-            </p>
+            </p>  <p className="text-gray-700">All prices are Ex Store, Exclusive of GST, and subject to change, call us for the latest prices.</p>
           </CardContent>
         </Card>
       </div>
     </ProductLayout>
-    <Card className="mt-12 p-6 bg-gray-50">
-        <div className="space-y-4">
-          <p className="text-gray-700">All our grain is sourced locally from local growers.</p>
-          <div className="border-t pt-4">
-            <h3 className="font-semibold mb-2">Pricing Terms & Conditions</h3>
-            <p className="text-gray-700">All prices are Ex Store, Exclusive of GST, and subject to change, call us for the latest prices.</p>
-          </div>
-        </div>
-      </Card>
-    </ProductLayout>
+   
   );
 };
 
