@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -12,7 +11,7 @@ const MaizeDDGSPage: React.FC = () => {
       <div className="space-y-10">
         {/* Intro Section with Image Beside Text */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="max-w-sm md:max-w-md mx-auto">
+          <div className="max-w-xl mx-auto"> {/* Enlarged image */}
             <img 
               src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/farmers-southland-new-zealand+(1).png" 
               alt="Farmers in Southland, New Zealand" 
@@ -44,7 +43,7 @@ const MaizeDDGSPage: React.FC = () => {
               It offers an excellent protein source with digestible fiber that supports rumen health and improves overall animal performance.
             </p>
           </div>
-          <div className="max-w-sm mx-auto rounded-lg overflow-hidden shadow-md">
+          <div className="max-w-xs mx-auto rounded-lg overflow-hidden shadow-md"> {/* Smaller image */}
             <img 
               src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Screenshot+2025-04-17+at+9.41.48%E2%80%AFAM.png" 
               alt="Maize DDGS" 
