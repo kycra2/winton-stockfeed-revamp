@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Molasses from "./pages/Molasses";
 import NotFound from "./pages/NotFound";
+import FeedTrailersPage from "./pages/FeedTrailers";
 
 // Dairy Feed Product Pages
 import PKEPage from "./pages/dairy-feed/PKE";
@@ -28,6 +29,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/molasses" element={<Molasses />} />
+          <Route path="/feed-trailers" element={<FeedTrailersPage />} />
           
           {/* Dairy Feed Product Routes */}
           <Route path="/dairy-feed/pke" element={<PKEPage />} />
