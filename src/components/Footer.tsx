@@ -57,15 +57,24 @@ const Footer = () => {
           </div>
           
           <div>
-            
             <ul className="space-y-2">
               <li>Feed Mill<br></br>
-
-107 Clyde Street<br></br>
-Invercargill
-
-Ph 03 236 6089</li>
-              
+                107 Clyde Street<br></br>
+                Invercargill<br></br>
+                <a 
+                  href="tel:0323660889" 
+                  className="hover:text-wsf-cream transition-colors"
+                >
+                  Ph 03 236 6089
+                </a>
+                <br></br>
+                <a 
+                  href="mailto:office@wintonstockfeed.co.nz" 
+                  className="hover:text-wsf-cream transition-colors"
+                >
+                  office@wintonstockfeed.co.nz
+                </a>
+              </li>
             </ul>
           </div>
         </div>
