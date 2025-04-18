@@ -40,7 +40,7 @@ const PKEPage: React.FC = () => {
             <h2 className="text-xl font-semibold text-wsf-blue">New to PKE?</h2>
             <p>Need a quick way to get feeding without the waste?</p>
             <Button variant="default" asChild className="mt-2">
-              <Link to="#feed-trailers">Check out these great trailers here!</Link>
+              <Link to="/feed-trailers">Check out these great trailers here!</Link>
             </Button>
             <p className="pt-2 text-gray-700">
               Go to our Sales page to talk to a rep near you for today's PKE pricing.
