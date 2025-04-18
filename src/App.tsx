@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -11,8 +10,8 @@ import FeedTrailersPage from "./pages/FeedTrailers";
 import DeerFeed from "./pages/DeerFeed";
 import ContactUs from "./pages/ContactUs";
 import SheepFeedPage from "./pages/SheepFeed";
+import AboutUs from "./pages/AboutUs";
 
-// Import all dairy feed page components
 import PKEPage from "./pages/dairy-feed/PKE";
 import MaizeDDGSPage from "./pages/dairy-feed/MaizeDDGS";
 import SoyBranHullsPage from "./pages/dairy-feed/SoyBranHulls";
@@ -31,13 +30,13 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/molasses" element={<Molasses />} />
           <Route path="/feed-trailers" element={<FeedTrailersPage />} />
           <Route path="/deer-feed" element={<DeerFeed />} />
           <Route path="/sheep-feed" element={<SheepFeedPage />} />
           <Route path="/contact-us" element={<ContactUs />} />
           
-          {/* Dairy Feed Product Routes */}
           <Route path="/dairy-feed/pke" element={<PKEPage />} />
           <Route path="/dairy-feed/maize-ddgs" element={<MaizeDDGSPage />} />
           <Route path="/dairy-feed/soy-bran-hulls" element={<SoyBranHullsPage />} />
@@ -46,7 +45,6 @@ const App = () => (
           <Route path="/dairy-feed/precalver-pellets" element={<PrecalverPelletsPage />} />
           <Route path="/dairy-feed/supreme-dairy-pellets" element={<SupremeDairyPelletsPage />} />
           
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

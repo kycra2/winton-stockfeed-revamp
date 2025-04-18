@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -18,12 +18,12 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-wsf-cream transition-colors">Home</a></li>
-              <li><a href="#molasses" className="hover:text-wsf-cream transition-colors">Molasses</a></li>
-              <li><a href="#dairy-feed" className="hover:text-wsf-cream transition-colors">Dairy Feed</a></li>
-              <li><a href="#resources" className="hover:text-wsf-cream transition-colors">Resources</a></li>
-              <li><a href="#about" className="hover:text-wsf-cream transition-colors">About Us</a></li>
-              <li><a href="#contact" className="hover:text-wsf-cream transition-colors">Contact Us</a></li>
+              <li><Link to="/" className="hover:text-wsf-cream transition-colors">Home</Link></li>
+              <li><Link to="/molasses" className="hover:text-wsf-cream transition-colors">Molasses</Link></li>
+              <li><Link to="/dairy-feed" className="hover:text-wsf-cream transition-colors">Dairy Feed</Link></li>
+              <li><Link to="/resources" className="hover:text-wsf-cream transition-colors">Resources</Link></li>
+              <li><Link to="/about-us" className="hover:text-wsf-cream transition-colors">About Us</Link></li>
+              <li><Link to="/contact-us" className="hover:text-wsf-cream transition-colors">Contact Us</Link></li>
             </ul>
           </div>
           
