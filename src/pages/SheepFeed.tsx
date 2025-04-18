@@ -46,7 +46,7 @@ const SheepFeedPage = () => {
 
         <div>
           <img 
-            src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/sheep-feed-new-zealand-farm.png"
+            src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/sheep-feed-new-zealand.png"
             alt="New Zealand sheep farm"
             className="rounded-lg shadow-md w-full h-auto mb-6"
           />
