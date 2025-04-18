@@ -32,17 +32,26 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 mt-0.5" /> 
                 <span>Head Office<br></br>
-139 Florence Rd, Winton 9782 Phone 03 236 6089 <br></br>
-
-office@wintonstockfeed.co.nz</span>
+                139 Florence Rd, Winton 9782 Phone 03 236 6089 <br></br>
+                office@wintonstockfeed.co.nz</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-2" /> 
-                <span>Orders Free Phone 0800 MOLASSES Ph 0800 665 277</span>
+                <a 
+                  href="tel:0800665277" 
+                  className="hover:text-wsf-cream transition-colors"
+                >
+                  Orders Free Phone 0800 MOLASSES Ph 0800 665 277
+                </a>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-2" /> 
-                <span>info@wintonstockfeed.co.nz</span>
+                <a 
+                  href="mailto:info@wintonstockfeed.co.nz" 
+                  className="hover:text-wsf-cream transition-colors"
+                >
+                  info@wintonstockfeed.co.nz
+                </a>
               </li>
             </ul>
           </div>
