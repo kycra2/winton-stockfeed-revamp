@@ -90,7 +90,7 @@ const SheepFeedPage = () => {
             <Package2 className="h-6 w-6" />
             <p>Available in 25kg bags, bulk bags and bulk delivery.</p>
           </div>
-          <div className="mt-4 text-sm text-gray-600 italic">
+          <div className="mt-4 text-sm text-gray-600 ">
             All prices are Ex Store, Exclusive of GST, and subject to change, call us for the latest prices.
           </div>
         </Card>
