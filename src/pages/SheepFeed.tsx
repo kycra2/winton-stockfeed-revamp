@@ -88,7 +88,8 @@ const SheepFeedPage = () => {
         <Card className="p-6 bg-gray-50">
           <div className="flex items-center gap-4 text-gray-700">
             <Package2 className="h-6 w-6" />
-            <p>Available in 25kg bags, bulk bags and bulk delivery.</p> <p> All prices are Ex Store, Exclusive of GST, and subject to change, call us for the latest prices.</p>
+            <p>Available in 25kg bags, bulk bags and bulk delivery.</p> 
+            <p> All prices are Ex Store, Exclusive of GST, and subject to change, call us for the latest prices.</p>
           </div>
           
         </Card>
