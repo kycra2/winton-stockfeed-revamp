@@ -60,7 +60,7 @@ const ExpertInsight = () => {
                     className="w-full border-wsf-blue-light text-wsf-blue-light hover:bg-wsf-blue-light hover:text-white"
                     onClick={() =>
                       window.open(
-                        '/src/components/molasses/con005hdeklerkdairycowmineralbasics.pdf',
+                        'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/con005hdeklerkdairycowmineralbasics+(1).pdf',
                         '_blank'
                       )
                     }
@@ -75,7 +75,7 @@ const ExpertInsight = () => {
                     className="w-full border-wsf-blue-light text-wsf-blue-light hover:bg-wsf-blue-light hover:text-white"
                     onClick={() =>
                       window.open(
-                        '/src/components/molasses/J22164_WSF_Molasses_Flyer_A4_2019.pdf',
+                        'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/J22164_WSF_Molasses_Flyer_A4_2019.pdf',
                         '_blank'
                       )
                     }
