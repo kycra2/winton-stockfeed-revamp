@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -136,6 +137,9 @@ const PKEPage: React.FC = () => {
             <p>
               We can open an account for you and get your first order going all with one call.
             </p>
+            <div className="mt-4 text-sm text-gray-200 italic">
+              All prices are Ex Store, Exclusive of GST, and subject to change, call us for the latest prices.
+            </div>
           </CardContent>
         </Card>
       </div>
@@ -144,3 +148,4 @@ const PKEPage: React.FC = () => {
 };
 
 export default PKEPage;
+
