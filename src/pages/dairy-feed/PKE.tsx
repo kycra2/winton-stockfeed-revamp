@@ -43,7 +43,7 @@ const PKEPage: React.FC = () => {
               <Link to="/feed-trailers">Check out these great trailers here!</Link>
             </Button>
             <p className="pt-2 text-gray-700">
-              Go to our Sales page to talk to a rep near you for today's PKE pricing.
+              Contact us or to talk to a rep near you for today's PKE pricing.
             </p>
           </CardContent>
         </Card>
