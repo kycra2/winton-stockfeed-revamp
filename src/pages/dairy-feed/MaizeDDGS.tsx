@@ -7,21 +7,19 @@ import { Phone, Download } from 'lucide-react';
 
 const MaizeDDGSPage: React.FC = () => {
   return (
-     <ProductLayout title="Palm Kernel Expeller (PKE)">
+     <ProductLayout title="Maize DDGS">
       <div className="space-y-8">
         {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <p className="text-lg">
-              Winton Stock Feed supplies the Southland and South Otago Region with Palm Kernel.
+              Distiller's Dried Grains with Solubles (DDGS) are the dried residues remaining after the starch fraction of maize is fermented with yeasts to produce ethanol.
             </p>
             <p>
-              We have our own Auger and Bulk Trucks to deliver into silos and sheds on farm, 
-              so we have complete control of our product from ship to farm.
+              Maize DDGS is a high-quality livestock feed supplement containing over 30% protein that helps maximise animal performance.
             </p>
             <p>
-              We offer PKE contracts and spot pricing through our locations in Timaru, 
-              Christchurch, New Plymouth, Mt Maunganui and Waharoa.
+              This nutrient-rich byproduct of ethanol production provides essential energy without causing digestive issues and includes valuable B-vitamins that improve palatability.
             </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
