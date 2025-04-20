@@ -39,10 +39,12 @@ Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding pr
           <CardContent className="p-6 space-y-4">
             <h2 className="text-xl font-semibold text-wsf-blue">Optimal Nutrition Solution</h2>
             <p>
-              Perfect for mixing with silage, Maize DDGS can be included in up to 20% of daily feed intake for optimal nutritional balance and cost-effectiveness.
+              With their high fiber content and excellent digestibility, Soy Bran Hulls are an effective addition to dairy rations, helping to maintain proper rumen function.
+
+
             </p>
             <p className="text-gray-700">
-              Talk to our specialists to learn how to integrate Maize DDGS into your feeding program.
+              Talk to our specialists to learn how to integrate Soy Bran Hulls into your feeding program.
             </p>
           </CardContent>
         </Card>
