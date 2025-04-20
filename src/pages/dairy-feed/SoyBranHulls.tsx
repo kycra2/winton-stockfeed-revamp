@@ -8,42 +8,42 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const SoyBranHullsPage: React.FC = () => {
   return (
-    <ProductLayout title="Soy Bran Hulls">
+     <ProductLayout title="Maize DDGS">
       <div className="space-y-8">
         {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <p className="text-lg">
-              Soy Bran Hulls are the outer covering of the soybean. They are separated from 
-              the bean during processing and are a valuable source of digestible fiber.
+              Distiller's Dried Grains with Solubles (DDGS) are the dried residues remaining after the starch fraction of maize is fermented with yeasts to produce ethanol.
             </p>
             <p>
-              This byproduct from soybean oil extraction provides a highly digestible feed 
-              option that is both nutritious and economical for livestock producers.
+              Maize DDGS is a high-quality livestock feed supplement containing over 30% protein that helps maximise animal performance.
             </p>
             <p>
-              Soy Bran Hulls are particularly effective when added to dairy feed rations, 
-              helping to improve rumen function and overall animal health.
+              This nutrient-rich byproduct of ethanol production provides essential energy without causing digestive issues and includes valuable B-vitamins that improve palatability.
             </p>
+          </div>
+          <div className="rounded-lg overflow-hidden shadow-md">
+            <img 
+              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/friesian-cows-feed-new-zealand+(1).png" 
+              alt="Feeding out for cattle" 
+              className="w-full h-auto object-cover"
+            />
           </div>
         </section>
 
-        {/* Benefits Section */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-wsf-brown">About Soy Bran Hulls</h2>
-          <div className="grid md:grid-cols-5 gap-6">
-            <Card className="bg-accent border-none shadow-md md:col-span-3">
-              <CardContent className="p-6 space-y-4">
-                <h2 className="text-xl font-semibold text-wsf-blue">High-Quality Feed Supplement</h2>
-                <p>
-                  With their high fiber content and excellent digestibility, Soy Bran Hulls are 
-                  an effective addition to dairy rations, helping to maintain proper rumen function.
-                </p>
-                <p className="pt-2 text-gray-700">
-                  Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding program.
-                </p>
-              </CardContent>
-            </Card>
+        {/* Quick Info Card */}
+        <Card className="bg-accent border-none shadow-md">
+          <CardContent className="p-6 space-y-4">
+            <h2 className="text-xl font-semibold text-wsf-blue">Optimal Nutrition Solution</h2>
+            <p>
+              Perfect for mixing with silage, Maize DDGS can be included in up to 20% of daily feed intake for optimal nutritional balance and cost-effectiveness.
+            </p>
+            <p className="text-gray-700">
+              Talk to our specialists to learn how to integrate Maize DDGS into your feeding program.
+            </p>
+          </CardContent>
+        </Card>
             
            
         </section>
