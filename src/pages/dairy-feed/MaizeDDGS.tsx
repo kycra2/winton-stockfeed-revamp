@@ -45,7 +45,7 @@ const MaizeDDGSPage: React.FC = () => {
           </div>
           <div className="max-w-xs mx-auto rounded-lg overflow-hidden shadow-md">
             <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Screenshot+2025-04-17+at+9.41.48%E2%80%AFAM.png" 
+              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/maizeDDGS-nz.png" 
               alt="Maize DDGS" 
               className="w-full h-auto object-cover"
             />
