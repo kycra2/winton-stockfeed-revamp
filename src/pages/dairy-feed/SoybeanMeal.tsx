@@ -33,7 +33,7 @@ const SoybeanMealPage: React.FC = () => {
               className="w-full h-auto object-cover"
             />
             <p className="text-sm text-gray-600 italic text-center py-2">
-              Help your herd prosper with Soybean Meal 
+           
             </p>
           </div>
         </section>
