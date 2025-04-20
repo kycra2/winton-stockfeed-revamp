@@ -3,13 +3,12 @@ import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Download } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const MaizeDDGSPage: React.FC = () => {
   return (
     <ProductLayout title="Maize DDGS">
       <div className="space-y-10">
-        {/* Intro Section with Image Beside Text */}
+        {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <p className="text-lg">

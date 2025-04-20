@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -10,7 +11,7 @@ const SoyBranHullsPage: React.FC = () => {
   return (
     <ProductLayout title="Soy Bran Hulls">
       <div className="space-y-8">
-        {/* Intro Section with BBQ image at top right */}
+        {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <p className="text-lg">
@@ -37,7 +38,7 @@ const SoyBranHullsPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Quick Info Card with Image Beside It */}
+        {/* Benefits Section */}
         <div className="grid md:grid-cols-5 gap-6">
           <Card className="bg-accent border-none shadow-md md:col-span-3">
             <CardContent className="p-6 space-y-4">
