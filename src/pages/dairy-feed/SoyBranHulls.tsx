@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -104,28 +103,24 @@ const SoyBranHullsPage: React.FC = () => {
           </p>
         </section>
 
-        {/* Specs Download Section - Smaller button that doesn't stretch */}
-        <section className="bg-wsf-blue bg-opacity-10 p-6 rounded-lg shadow-md">
-          <div className="flex flex-col gap-4">
-            <div>
-              <h3 className="text-xl font-semibold text-wsf-blue mb-2">
-                Download Soy Bran Hulls Specifications
-              </h3>
-              <p className="text-gray-700 mb-2">
-                Get detailed information about our Soy Bran Hulls product.
-              </p>
-            </div>
-            <div className="flex">
-              <Button 
-                variant="default" 
-                className="bg-wsf-blue hover:bg-wsf-blue-dark inline-flex"
-                onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/2019_WSF_SOY_HULLS_BRAN.pdf', '_blank')}
-              >
-                <Download className="h-5 w-5 mr-2" />
-                Download PDF
-              </Button>
-            </div>
+        {/* Specs Download Section - Fixed for mobile */}
+        <section className="bg-wsf-blue bg-opacity-10 p-6 rounded-lg shadow-md flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <h3 className="text-xl font-semibold text-wsf-blue mb-2">
+              Download Soy Bran Hulls Specifications
+            </h3>
+            <p className="text-gray-700 mb-2">
+              Get detailed information about our Soy Bran Hulls product.
+            </p>
           </div>
+          <Button 
+            variant="default" 
+            className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
+            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/2019_WSF_SOY_HULLS_BRAN.pdf', '_blank')}
+          >
+            <Download className="h-5 w-5 mr-2" />
+            Download PDF
+          </Button>
         </section>
 
         {/* Contact Card */}
