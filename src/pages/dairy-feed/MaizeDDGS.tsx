@@ -22,32 +22,27 @@ const MaizeDDGSPage: React.FC = () => {
               This nutrient-rich byproduct of ethanol production provides essential energy without causing digestive issues and includes valuable B-vitamins that improve palatability.
             </p>
           </div>
-          <div className="max-w-xl mx-auto">
-            <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/farmers-southland-new-zealand+(1).png" 
-              alt="Farmers in Southland, New Zealand" 
-              className="rounded-lg shadow-md w-full h-auto object-cover"
-            />
-          </div>
         </section>
 
         {/* About Maize DDGS Section with Image Beside Text */}
-        <section className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-wsf-brown">About Maize DDGS</h2>
-            <p>
-              Maize DDGS is a sustainable feed option that makes efficient use of grain byproducts from ethanol production.
-            </p>
-            <p>
-              It offers an excellent protein source with digestible fiber that supports rumen health and improves overall animal performance.
-            </p>
-          </div>
-          <div className="max-w-xs mx-auto rounded-lg overflow-hidden shadow-md">
-            <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/maizeDDGS-nz.png" 
-              alt="Maize DDGS" 
-              className="w-full h-auto object-cover"
-            />
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold text-wsf-brown">About Maize DDGS</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-4">
+              <p>
+                Maize DDGS is a sustainable feed option that makes efficient use of grain byproducts from ethanol production.
+              </p>
+              <p>
+                It offers an excellent protein source with digestible fiber that supports rumen health and improves overall animal performance.
+              </p>
+            </div>
+            <div className="max-w-xs mx-auto rounded-lg overflow-hidden shadow-md">
+              <img 
+                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/maizeDDGS-nz.png" 
+                alt="Maize DDGS" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </div>
         </section>
 

@@ -1,10 +1,8 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Download } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const SoyBranHullsPage: React.FC = () => {
@@ -27,45 +25,39 @@ const SoyBranHullsPage: React.FC = () => {
               helping to improve rumen function and overall animal health.
             </p>
           </div>
-          <div className="rounded-lg overflow-hidden shadow-md">
-            <AspectRatio ratio={16/9} className="bg-muted">
-              <img 
-                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/friesian-cows-feed-new-zealand+(1).png" 
-                alt="Winton Stock Feed BBQ" 
-                className="w-full h-full object-cover"
-              />
-            </AspectRatio>
-          </div>
         </section>
 
         {/* Benefits Section */}
-        <div className="grid md:grid-cols-5 gap-6">
-          <Card className="bg-accent border-none shadow-md md:col-span-3">
-            <CardContent className="p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-wsf-blue">High-Quality Feed Supplement</h2>
-              <p>
-                With their high fiber content and excellent digestibility, Soy Bran Hulls are 
-                an effective addition to dairy rations, helping to maintain proper rumen function.
-              </p>
-              <p className="pt-2 text-gray-700">
-                Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding program.
-              </p>
-            </CardContent>
-          </Card>
-          
-          <div className="md:col-span-2 rounded-lg overflow-hidden shadow-md flex items-center">
-            <div>
-              <img 
-                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Soy-bran-hulls.png" 
-                alt="Soy Bran Hulls" 
-                className="w-full h-auto object-cover"
-              />
-              <p className="text-sm text-gray-600 italic text-center py-2">
-                Soy Bran Hulls
-              </p>
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold text-wsf-brown">About Soy Bran Hulls</h2>
+          <div className="grid md:grid-cols-5 gap-6">
+            <Card className="bg-accent border-none shadow-md md:col-span-3">
+              <CardContent className="p-6 space-y-4">
+                <h2 className="text-xl font-semibold text-wsf-blue">High-Quality Feed Supplement</h2>
+                <p>
+                  With their high fiber content and excellent digestibility, Soy Bran Hulls are 
+                  an effective addition to dairy rations, helping to maintain proper rumen function.
+                </p>
+                <p className="pt-2 text-gray-700">
+                  Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding program.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <div className="md:col-span-2 rounded-lg overflow-hidden shadow-md flex items-center">
+              <div>
+                <img 
+                  src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Soy-bran-hulls.png" 
+                  alt="Soy Bran Hulls" 
+                  className="w-full h-auto object-cover"
+                />
+                <p className="text-sm text-gray-600 italic text-center py-2">
+                  Soy Bran Hulls
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Benefits Section */}
         <section className="space-y-4">
