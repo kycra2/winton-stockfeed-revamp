@@ -54,7 +54,7 @@ const MaizeDDGSPage: React.FC = () => {
             />
           </div>
           <p className="text-sm text-gray-600 italic text-center">
-            Our PKE Delivery Truck 
+            Our Delivery Truck 
           </p>
         </section>
 
