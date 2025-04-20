@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -63,6 +62,29 @@ const CrushedGrainPage: React.FC = () => {
             </div>
           </CardContent>
         </Card>
+
+              {/* Product Image Section */}
+      <section className="mt-8 grid md:grid-cols-2 gap-6 items-center">
+        <div className="space-y-4">
+          <h2 className="text-xl font-semibold">Premium Crushed Grain Feed: Quality Energy Source</h2>
+          <p className="text-gray-700">
+            Our crushed grain feed is meticulously processed to provide optimal particle size for improved 
+            digestibility and reduced feed waste. Made from locally sourced grains, it's an excellent 
+            energy supplement for your dairy herd.
+          </p>
+          <p className="text-gray-700">
+            The consistent crushing process ensures reliable quality and maximizes the nutritional value 
+            of every grain, supporting peak milk production and herd health.
+          </p>
+        </div>
+        <div>
+          <img 
+            src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/crushed-grain-dairy-feed.png"
+            alt="Crushed Grain Dairy Feed Product"
+            className="rounded-lg shadow-md w-full h-auto object-cover"
+          />
+        </div>
+      </section>
 
         {/* Benefits Section */}
         <section className="space-y-4">
