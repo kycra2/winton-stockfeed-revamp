@@ -43,7 +43,7 @@ const PKEPage: React.FC = () => {
               <Link to="/feed-trailers">Check out these great trailers here!</Link>
             </Button>
             <p className="pt-2 text-gray-700">
-              Contact us or to talk to a rep near you for today's PKE pricing.
+              <Link to="/contact-us" className="text-wsf-blue hover:underline">Contact us</Link> or to talk to a rep near you for today's PKE pricing.
             </p>
           </CardContent>
         </Card>
@@ -59,11 +59,12 @@ const PKEPage: React.FC = () => {
             <p>
               It has the ability to replace some higher cost protein sources while providing 
               cost effective energy.
-            </p>  <p>
-            This product can also help balance diets that are high in maize silage and also diets 
-            low in digestible protein and high in fibre. Palm Kernel meal is also an excellent 
-            economic emergency and drought relief feedstuff. </p>
-            
+            </p>  
+            <p>
+              This product can also help balance diets that are high in maize silage and also diets 
+              low in digestible protein and high in fibre. Palm Kernel meal is also an excellent 
+              economic emergency and drought relief feedstuff. 
+            </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
@@ -96,8 +97,8 @@ const PKEPage: React.FC = () => {
             larger ruminants. It can negate some of the negative effects of feeding high starch 
             levels on rumen health because it is supplying energy from the oil portion.
           </p>
-         
-             <p>Palm Kernel is a slow but very fermentable 
+          <p>
+            Palm Kernel is a slow but very fermentable 
             product. Palm Kernel has high digestibility in ruminants, therefore provides constant 
             energy release and help maintain rumen pH in the optimum range for best rumen function 
             and animal performance.
