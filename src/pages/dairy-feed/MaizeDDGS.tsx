@@ -7,43 +7,29 @@ import { Phone, Download } from 'lucide-react';
 
 const MaizeDDGSPage: React.FC = () => {
   return (
-    <ProductLayout title="Maize DDGS">
-      <div className="space-y-10">
+     <ProductLayout title="Palm Kernel Expeller (PKE)">
+      <div className="space-y-8">
         {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <p className="text-lg">
-              Distiller's Dried Grains with Solubles (DDGS) are the dried residues remaining after the
-              starch fraction of maize is fermented with yeasts to produce ethanol.
+              Winton Stock Feed supplies the Southland and South Otago Region with Palm Kernel.
             </p>
             <p>
-              Maize DDGS is a high-quality livestock feed supplement containing over 30% protein that helps maximize animal performance.
+              We have our own Auger and Bulk Trucks to deliver into silos and sheds on farm, 
+              so we have complete control of our product from ship to farm.
             </p>
             <p>
-              This nutrient-rich byproduct of ethanol production provides essential energy without causing digestive issues and includes valuable B-vitamins that improve palatability.
+              We offer PKE contracts and spot pricing through our locations in Timaru, 
+              Christchurch, New Plymouth, Mt Maunganui and Waharoa.
             </p>
           </div>
-        </section>
-
-        {/* About Maize DDGS Section with Image Beside Text */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-wsf-brown">About Maize DDGS</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-4">
-              <p>
-                Maize DDGS is a sustainable feed option that makes efficient use of grain byproducts from ethanol production.
-              </p>
-              <p>
-                It offers an excellent protein source with digestible fiber that supports rumen health and improves overall animal performance.
-              </p>
-            </div>
-            <div className="max-w-xs mx-auto rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/maizeDDGS-nz.png" 
-                alt="Maize DDGS" 
-                className="w-full h-auto object-cover"
-              />
-            </div>
+          <div className="rounded-lg overflow-hidden shadow-md">
+            <img 
+              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/female-farmer-winton-stock-feed-southland+(1).png" 
+              alt="Female Farmer at Winton Stock Feed" 
+              className="w-full h-auto object-cover"
+            />
           </div>
         </section>
 
