@@ -11,13 +11,6 @@ const MaizeDDGSPage: React.FC = () => {
       <div className="space-y-10">
         {/* Intro Section with Image Beside Text */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="max-w-xl mx-auto">
-            <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/farmers-southland-new-zealand+(1).png" 
-              alt="Farmers in Southland, New Zealand" 
-              className="rounded-lg shadow-md w-full h-auto object-cover"
-            />
-          </div>
           <div className="space-y-4">
             <p className="text-lg">
               Distiller's Dried Grains with Solubles (DDGS) are the dried residues remaining after the
@@ -29,6 +22,13 @@ const MaizeDDGSPage: React.FC = () => {
             <p>
               This nutrient-rich byproduct of ethanol production provides essential energy without causing digestive issues and includes valuable B-vitamins that improve palatability.
             </p>
+          </div>
+          <div className="max-w-xl mx-auto">
+            <img 
+              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/farmers-southland-new-zealand+(1).png" 
+              alt="Farmers in Southland, New Zealand" 
+              className="rounded-lg shadow-md w-full h-auto object-cover"
+            />
           </div>
         </section>
 
