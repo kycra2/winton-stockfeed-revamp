@@ -46,7 +46,7 @@ const SoyBranHullsPage: React.FC = () => {
         </Card>
             
            
-        </section>
+    
 
         {/* Benefits Section */}
         <section className="space-y-4">
