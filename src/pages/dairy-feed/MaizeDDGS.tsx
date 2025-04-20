@@ -49,7 +49,7 @@ const MaizeDDGSPage: React.FC = () => {
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
               src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/winton-stock-feed-auger-truck.jpg?raw=true" 
-              alt="Our PKE Delivery Truck" 
+              alt="Our Delivery Truck" 
               className="w-full h-auto object-cover"
             />
           </div>
