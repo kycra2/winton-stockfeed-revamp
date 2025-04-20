@@ -8,19 +8,21 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const SoyBranHullsPage: React.FC = () => {
   return (
-     <ProductLayout title="Maize DDGS">
+     <ProductLayout title="Soybran Hulls">
       <div className="space-y-8">
         {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <p className="text-lg">
-              Distiller's Dried Grains with Solubles (DDGS) are the dried residues remaining after the starch fraction of maize is fermented with yeasts to produce ethanol.
+              Soy Bran Hulls are the outer covering of the soybean. They are separated from the bean during processing and are a valuable source of digestible fiber.
             </p>
             <p>
-              Maize DDGS is a high-quality livestock feed supplement containing over 30% protein that helps maximise animal performance.
+              This byproduct from soybean oil extraction provides a highly digestible feed option that is both nutritious and economical for livestock producers.
             </p>
             <p>
-              This nutrient-rich byproduct of ethanol production provides essential energy without causing digestive issues and includes valuable B-vitamins that improve palatability.
+              Soy Bran Hulls are particularly effective when added to dairy feed rations, helping to improve rumen function and overall animal health. With their high fiber content and excellent digestibility, Soy Bran Hulls are an effective addition to dairy rations, helping to maintain proper rumen function.
+
+Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding program.
             </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
