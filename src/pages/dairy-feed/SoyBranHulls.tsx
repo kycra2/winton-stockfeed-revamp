@@ -55,7 +55,7 @@ const SoyBranHullsPage: React.FC = () => {
           <div className="md:col-span-2 rounded-lg overflow-hidden shadow-md flex items-center">
             <div>
               <img 
-                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/soy-bran-hulls-winton-stock-feed.png" 
+                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Soy-bran-hulls.png" 
                 alt="Soy Bran Hulls" 
                 className="w-full h-auto object-cover"
               />
