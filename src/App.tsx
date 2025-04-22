@@ -19,6 +19,7 @@ import SoybeanMealPage from "./pages/dairy-feed/SoybeanMeal";
 import CrushedGrainPage from "./pages/dairy-feed/CrushedGrain";
 import PrecalverPelletsPage from "./pages/dairy-feed/PrecalverPellets";
 import SupremeDairyPelletsPage from "./pages/dairy-feed/SupremeDairyPellets";
+import HealthAndSafety from './pages/HealthAndSafety';
 
 const queryClient = new QueryClient();
 
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/dairy-feed/precalver-pellets" element={<PrecalverPelletsPage />} />
           <Route path="/dairy-feed/supreme-dairy-pellets" element={<SupremeDairyPelletsPage />} />
           
+          <Route path="/health-and-safety" element={<HealthAndSafety />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

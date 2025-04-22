@@ -88,6 +88,11 @@ const Footer = () => {
                   office@wintonstockfeed.co.nz
                 </a>
               </li>
+              <li>
+                <Link to="/health-and-safety" className="hover:text-wsf-cream transition-colors">
+                  Health and Safety
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
