@@ -11,6 +11,7 @@ import DeerFeed from "./pages/DeerFeed";
 import ContactUs from "./pages/ContactUs";
 import SheepFeedPage from "./pages/SheepFeed";
 import AboutUs from "./pages/AboutUs";
+import CondoseCalculator from "./pages/CondoseCalculator";
 
 import PKEPage from "./pages/dairy-feed/PKE";
 import MaizeDDGSPage from "./pages/dairy-feed/MaizeDDGS";
@@ -37,7 +38,6 @@ const App = () => (
           <Route path="/deer-feed" element={<DeerFeed />} />
           <Route path="/sheep-feed" element={<SheepFeedPage />} />
           <Route path="/contact-us" element={<ContactUs />} />
-          
           <Route path="/dairy-feed/pke" element={<PKEPage />} />
           <Route path="/dairy-feed/maize-ddgs" element={<MaizeDDGSPage />} />
           <Route path="/dairy-feed/soy-bran-hulls" element={<SoyBranHullsPage />} />
@@ -45,8 +45,8 @@ const App = () => (
           <Route path="/dairy-feed/crushed-grain" element={<CrushedGrainPage />} />
           <Route path="/dairy-feed/precalver-pellets" element={<PrecalverPelletsPage />} />
           <Route path="/dairy-feed/supreme-dairy-pellets" element={<SupremeDairyPelletsPage />} />
-          
           <Route path="/health-and-safety" element={<HealthAndSafety />} />
+          <Route path="/condose-calculator" element={<CondoseCalculator />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
