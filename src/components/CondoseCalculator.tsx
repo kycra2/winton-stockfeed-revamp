@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Card } from './ui/card';
 import { Input } from './ui/input';
@@ -12,14 +11,12 @@ const CondoseCalculator = () => {
   const [waterKg, setWaterKg] = useState<number>(0);
   const [mixPerCow, setMixPerCow] = useState<number>(0);
   
-  // Calculated values
   const [recommendedWater, setRecommendedWater] = useState<number>(0);
   const [totalInsoluble, setTotalInsoluble] = useState<number>(0);
   const [total, setTotal] = useState<number>(0);
   const [ratioWarning, setRatioWarning] = useState<boolean>(false);
   const [maxWeightWarning, setMaxWeightWarning] = useState<boolean>(false);
   
-  // Calculate values for the results table
   const [totalInsolubleGrCowDay, setTotalInsolubleGrCowDay] = useState<number>(0);
   const [totalInsolublePerc, setTotalInsolublePerc] = useState<number>(0);
   const [magnesiumOxideGrCowDay, setMagnesiumOxideGrCowDay] = useState<number>(0);
@@ -34,13 +31,11 @@ const CondoseCalculator = () => {
   const [molassesPerc, setMolassesPerc] = useState<number>(0);
   const [molassesRatio, setMolassesRatio] = useState<number>(0);
 
-  // Helper function to round to 2 decimal places
   const round2dec = (num: number): number => {
     if (isNaN(num)) return 0;
     return Math.round((num + Number.EPSILON) * 100) / 100;
   };
 
-  // Handle number input changes with validation
   const handleNumberInput = (setValue: React.Dispatch<React.SetStateAction<number>>, value: string) => {
     const numValue = value === '' ? 0 : Number(value);
     if (!isNaN(numValue)) {
@@ -48,61 +43,47 @@ const CondoseCalculator = () => {
     }
   };
 
-  // Update calculations when inputs change
   useEffect(() => {
-    // Calculate total insoluble
     const insolubleTotal = magnesiumOxideKg + limeFlourKg + healthyCowKg;
     setTotalInsoluble(insolubleTotal);
     
-    // Calculate recommended water amount (10% of molasses)
     const recWater = molassesKg * 0.1;
     setRecommendedWater(recWater);
     
-    // Calculate total weight
     const totalWeight = molassesKg + insolubleTotal + waterKg;
     setTotal(totalWeight);
     
-    // Check if total exceeds bin size
     setMaxWeightWarning(totalWeight > binSize);
     
-    // Calculate ratio and check warning
     const ratio = insolubleTotal > 0 ? molassesKg / insolubleTotal : 0;
     setMolassesRatio(ratio);
     setRatioWarning(ratio < 6 && insolubleTotal > 0);
     
-    // Calculate percentages and g/cow/day values
     if (totalWeight > 0) {
-      // Total insoluble calculations
       const totalInsPerc = insolubleTotal / totalWeight;
       setTotalInsolublePerc(totalInsPerc);
       setTotalInsolubleGrCowDay(round2dec(totalInsPerc * mixPerCow));
       
-      // Magnesium oxide calculations
       const magOxPerc = magnesiumOxideKg / totalWeight;
       setMagnesiumOxidePerc(magOxPerc);
       setMagnesiumOxideGrCowDay(round2dec(magOxPerc * mixPerCow));
       
-      // Lime flour calculations
       const limePerc = limeFlourKg / totalWeight;
       setLimeFlourPerc(limePerc);
       setLimeFlourGrCowDay(round2dec(limePerc * mixPerCow));
       
-      // Healthy cow calculations
       const healthyCowPerc = healthyCowKg / totalWeight;
       setHealthyCowPerc(healthyCowPerc);
       setHealthyCowGrCowDay(round2dec(healthyCowPerc * mixPerCow));
       
-      // Water calculations
       const waterPercValue = waterKg / totalWeight;
       setWaterPerc(waterPercValue);
       setWaterGrCowDay(round2dec(waterPercValue * mixPerCow));
       
-      // Molasses calculations
       const molassesPercValue = molassesKg / totalWeight;
       setMolassesPerc(molassesPercValue);
       setMolassesGrCowDay(round2dec(molassesPercValue * mixPerCow));
     } else {
-      // Reset values when total weight is 0
       setTotalInsolublePerc(0);
       setTotalInsolubleGrCowDay(0);
       setMagnesiumOxidePerc(0);
@@ -117,6 +98,12 @@ const CondoseCalculator = () => {
       setMolassesGrCowDay(0);
     }
   }, [molassesKg, magnesiumOxideKg, limeFlourKg, healthyCowKg, waterKg, mixPerCow, binSize]);
+
+  const [binSizeWarning, setBinSizeWarning] = useState<string>('');
+
+  useEffect(() => {
+    setBinSizeWarning(`*The maximum weight of mix that can be mixed in the Conedose system is ${binSize}kg`);
+  }, [binSize]);
 
   return (
     <div className="w-full max-w-4xl mx-auto">
@@ -137,7 +124,6 @@ const CondoseCalculator = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Inputs */}
           <div className="inputs">
             <table className="w-full border-collapse">
               <thead>
@@ -249,7 +235,6 @@ const CondoseCalculator = () => {
             </table>
           </div>
           
-          {/* Outputs */}
           <div className="outputs">
             <table className="w-full border-collapse border border-gray-300">
               <thead>
