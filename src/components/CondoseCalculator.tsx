@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Card } from './ui/card';
+import { Input } from './ui/input';
 
 const CondoseCalculator = () => {
   const [binSize, setBinSize] = useState<number>(1000);
@@ -35,7 +36,16 @@ const CondoseCalculator = () => {
 
   // Helper function to round to 2 decimal places
   const round2dec = (num: number): number => {
+    if (isNaN(num)) return 0;
     return Math.round((num + Number.EPSILON) * 100) / 100;
+  };
+
+  // Handle number input changes with validation
+  const handleNumberInput = (setValue: React.Dispatch<React.SetStateAction<number>>, value: string) => {
+    const numValue = value === '' ? 0 : Number(value);
+    if (!isNaN(numValue)) {
+      setValue(numValue);
+    }
   };
 
   // Update calculations when inputs change
@@ -60,31 +70,51 @@ const CondoseCalculator = () => {
     setMolassesRatio(ratio);
     setRatioWarning(ratio < 6 && insolubleTotal > 0);
     
-    // Calculate percentages and g/cow/day values if mixPerCow is set
-    if (mixPerCow > 0 && totalWeight > 0) {
+    // Calculate percentages and g/cow/day values
+    if (totalWeight > 0) {
+      // Total insoluble calculations
       const totalInsPerc = insolubleTotal / totalWeight;
       setTotalInsolublePerc(totalInsPerc);
       setTotalInsolubleGrCowDay(round2dec(totalInsPerc * mixPerCow));
       
+      // Magnesium oxide calculations
       const magOxPerc = magnesiumOxideKg / totalWeight;
       setMagnesiumOxidePerc(magOxPerc);
       setMagnesiumOxideGrCowDay(round2dec(magOxPerc * mixPerCow));
       
+      // Lime flour calculations
       const limePerc = limeFlourKg / totalWeight;
       setLimeFlourPerc(limePerc);
       setLimeFlourGrCowDay(round2dec(limePerc * mixPerCow));
       
+      // Healthy cow calculations
       const healthyCowPerc = healthyCowKg / totalWeight;
       setHealthyCowPerc(healthyCowPerc);
       setHealthyCowGrCowDay(round2dec(healthyCowPerc * mixPerCow));
       
+      // Water calculations
       const waterPercValue = waterKg / totalWeight;
       setWaterPerc(waterPercValue);
       setWaterGrCowDay(round2dec(waterPercValue * mixPerCow));
       
+      // Molasses calculations
       const molassesPercValue = molassesKg / totalWeight;
       setMolassesPerc(molassesPercValue);
       setMolassesGrCowDay(round2dec(molassesPercValue * mixPerCow));
+    } else {
+      // Reset values when total weight is 0
+      setTotalInsolublePerc(0);
+      setTotalInsolubleGrCowDay(0);
+      setMagnesiumOxidePerc(0);
+      setMagnesiumOxideGrCowDay(0);
+      setLimeFlourPerc(0);
+      setLimeFlourGrCowDay(0);
+      setHealthyCowPerc(0);
+      setHealthyCowGrCowDay(0);
+      setWaterPerc(0);
+      setWaterGrCowDay(0);
+      setMolassesPerc(0);
+      setMolassesGrCowDay(0);
     }
   }, [molassesKg, magnesiumOxideKg, limeFlourKg, healthyCowKg, waterKg, mixPerCow, binSize]);
 
@@ -124,7 +154,7 @@ const CondoseCalculator = () => {
                       type="number" 
                       className="w-full border rounded px-2 py-1"
                       value={molassesKg || ''}
-                      onChange={(e) => setMolassesKg(Number(e.target.value))}
+                      onChange={(e) => handleNumberInput(setMolassesKg, e.target.value)}
                     />
                   </td>
                 </tr>
@@ -135,7 +165,7 @@ const CondoseCalculator = () => {
                       type="number" 
                       className="w-full border rounded px-2 py-1"
                       value={magnesiumOxideKg || ''}
-                      onChange={(e) => setMagnesiumOxideKg(Number(e.target.value))}
+                      onChange={(e) => handleNumberInput(setMagnesiumOxideKg, e.target.value)}
                     />
                   </td>
                 </tr>
@@ -146,7 +176,7 @@ const CondoseCalculator = () => {
                       type="number" 
                       className="w-full border rounded px-2 py-1"
                       value={limeFlourKg || ''}
-                      onChange={(e) => setLimeFlourKg(Number(e.target.value))}
+                      onChange={(e) => handleNumberInput(setLimeFlourKg, e.target.value)}
                     />
                   </td>
                 </tr>
@@ -157,7 +187,7 @@ const CondoseCalculator = () => {
                       type="number" 
                       className="w-full border rounded px-2 py-1"
                       value={healthyCowKg || ''}
-                      onChange={(e) => setHealthyCowKg(Number(e.target.value))}
+                      onChange={(e) => handleNumberInput(setHealthyCowKg, e.target.value)}
                     />
                   </td>
                 </tr>
@@ -168,7 +198,7 @@ const CondoseCalculator = () => {
                       type="number" 
                       className="w-full border rounded px-2 py-1"
                       value={waterKg || ''}
-                      onChange={(e) => setWaterKg(Number(e.target.value))}
+                      onChange={(e) => handleNumberInput(setWaterKg, e.target.value)}
                     />
                   </td>
                 </tr>
@@ -184,7 +214,7 @@ const CondoseCalculator = () => {
                       type="number" 
                       className="w-full border rounded px-2 py-1"
                       value={mixPerCow || ''}
-                      onChange={(e) => setMixPerCow(Number(e.target.value))}
+                      onChange={(e) => handleNumberInput(setMixPerCow, e.target.value)}
                     />
                   </td>
                 </tr>
@@ -235,32 +265,32 @@ const CondoseCalculator = () => {
               <tbody>
                 <tr className="bg-gray-50">
                   <td className="py-2 px-2 border-b border-gray-300 font-medium">Insolubles</td>
-                  <td className="py-2 px-2 text-center border-b border-gray-300">{round2dec(totalInsolubleGrCowDay)}</td>
+                  <td className="py-2 px-2 text-center border-b border-gray-300">{totalInsolubleGrCowDay}</td>
                   <td className="py-2 px-2 text-center border-b border-gray-300">{round2dec(totalInsolublePerc * 100)}%</td>
                 </tr>
                 <tr>
                   <td className="py-2 px-2 border-b border-gray-300">Magnesium Oxide</td>
-                  <td className="py-2 px-2 text-center border-b border-gray-300">{round2dec(magnesiumOxideGrCowDay)}</td>
+                  <td className="py-2 px-2 text-center border-b border-gray-300">{magnesiumOxideGrCowDay}</td>
                   <td className="py-2 px-2 text-center border-b border-gray-300">{round2dec(magnesiumOxidePerc * 100)}%</td>
                 </tr>
                 <tr>
                   <td className="py-2 px-2 border-b border-gray-300">Lime Flour</td>
-                  <td className="py-2 px-2 text-center border-b border-gray-300">{round2dec(limeFlourGrCowDay)}</td>
+                  <td className="py-2 px-2 text-center border-b border-gray-300">{limeFlourGrCowDay}</td>
                   <td className="py-2 px-2 text-center border-b border-gray-300">{round2dec(limeFlourPerc * 100)}%</td>
                 </tr>
                 <tr>
                   <td className="py-2 px-2 border-b border-gray-300">Healthy Cow 80/20</td>
-                  <td className="py-2 px-2 text-center border-b border-gray-300">{round2dec(healthyCowGrCowDay)}</td>
+                  <td className="py-2 px-2 text-center border-b border-gray-300">{healthyCowGrCowDay}</td>
                   <td className="py-2 px-2 text-center border-b border-gray-300">{round2dec(healthyCowPerc * 100)}%</td>
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="py-2 px-2 border-b border-gray-300 font-medium">Water</td>
-                  <td className="py-2 px-2 text-center border-b border-gray-300">{round2dec(waterGrCowDay)}</td>
+                  <td className="py-2 px-2 text-center border-b border-gray-300">{waterGrCowDay}</td>
                   <td className="py-2 px-2 text-center border-b border-gray-300">{round2dec(waterPerc * 100)}%</td>
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="py-2 px-2 border-b border-gray-300 font-medium">Molasses</td>
-                  <td className="py-2 px-2 text-center border-b border-gray-300">{round2dec(molassesGrCowDay)}</td>
+                  <td className="py-2 px-2 text-center border-b border-gray-300">{molassesGrCowDay}</td>
                   <td className="py-2 px-2 text-center border-b border-gray-300">{round2dec(molassesPerc * 100)}%</td>
                 </tr>
                 <tr className="bg-wsf-blue-dark text-white">
