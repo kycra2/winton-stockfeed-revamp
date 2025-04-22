@@ -4,12 +4,12 @@ import { Input } from './ui/input';
 
 const CondoseCalculator = () => {
   const [binSize, setBinSize] = useState<number>(1000);
-  const [molassesKg, setMolassesKg] = useState<number>(0);
-  const [magnesiumOxideKg, setMagnesiumOxideKg] = useState<number>(0);
-  const [limeFlourKg, setLimeFlourKg] = useState<number>(0);
-  const [healthyCowKg, setHealthyCowKg] = useState<number>(0);
-  const [waterKg, setWaterKg] = useState<number>(0);
-  const [mixPerCow, setMixPerCow] = useState<number>(0);
+  const [molassesKg, setMolassesKg] = useState<number>(600);
+  const [magnesiumOxideKg, setMagnesiumOxideKg] = useState<number>(25);
+  const [limeFlourKg, setLimeFlourKg] = useState<number>(75);
+  const [healthyCowKg, setHealthyCowKg] = useState<number>(46);
+  const [waterKg, setWaterKg] = useState<number>(90);
+  const [mixPerCow, setMixPerCow] = useState<number>(1000);
   
   const [recommendedWater, setRecommendedWater] = useState<number>(0);
   const [totalInsoluble, setTotalInsoluble] = useState<number>(0);
