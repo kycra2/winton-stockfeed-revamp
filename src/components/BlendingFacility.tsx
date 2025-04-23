@@ -15,9 +15,11 @@ const BlendingFacility = () => {
             Our New State Of The Art Blending Facility
           </h2>
           <p className="mb-4">
-            We can add in macro minerals, trace minerals and a range of feed additives,
-            saving you time and money (no dusting or dosatron required) so your cows receive
-            their daily requirements.
+            Looking after your cows' health and nutrition shouldn’t be complicated.
+
+We can include essential macro minerals, trace minerals, and a wide range of feed additives directly into your blend—no dusting or dosatron needed. That means your cows get exactly what they need each day, saving you time and hassle.
+
+
           </p>
           <p>
             Molasses can be added in varying levels through our blend store, ensuring improved
