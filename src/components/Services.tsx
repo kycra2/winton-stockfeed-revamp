@@ -27,7 +27,7 @@ const services = [
   },
   {
     id: 'reliable-transport',
-    image: 'https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/winton-stock-feed-auger-truck.jpg?raw=true',
+    image: 'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/wsf+(1).png',
     title: 'Our Own Reliable Transport',
     description: 'We maintain our fleet of trucks so you get reliablity and prompt deliveries. From phonecall to delivery you only deal with Winton Stock Feed staff.',
   },
