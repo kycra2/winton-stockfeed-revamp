@@ -22,13 +22,13 @@ const services = [
   {
     id: 'nutitional-advice',
     image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F8c3355a169fd4bf8c64428f20e235da18fd49ccb%2Fimage_fx%20%284%29.jpg',
-    title: 'Nutritional Advice',
-    description: 'Get independent nutritional advice from our expert consultants. Conditions apply',
+    title: 'Free Independent Nutritional Advice',
+    description: 'Boost milk production by changing your feed ratios with our independent nutritional consultant. ',
   },
   {
     id: 'reliable-transport',
     image: 'https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/winton-stock-feed-auger-truck.jpg?raw=true',
-    title: 'Reliable Transport',
+    title: 'Our Own Reliable Transport',
     description: 'We maintain our fleet of trucks so you get reliablity and prompt deliveries. From phonecall to delivery you only deal with Winton Stock Feed staff.',
   },
   {
