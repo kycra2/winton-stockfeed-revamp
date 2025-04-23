@@ -4,7 +4,7 @@ const services = [
   {
     id: 'stock-feed',
     image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F90fd65c6bd2ac482d68218b3668a9f4c4f34d838%2Fsheep-dog-winton-wife.png',
-    title: 'Stock Feed',
+    title: 'High Quality Feed Options',
     description: 'High-quality feed options specifically formulated for your stock, designed to boost production and support animal health.',
   },
   {
