@@ -21,7 +21,7 @@ const services = [
   },
   {
     id: 'nutitional-advice',
-    image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F8c3355a169fd4bf8c64428f20e235da18fd49ccb%2Fimage_fx%20%284%29.jpg',
+    image: 'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/indepoendent-nutritionist+(1).png',
     title: 'Free Independent Nutritional Advice',
     description: 'Boost milk production by changing your feed ratios with our independent nutritional consultant. ',
   },
