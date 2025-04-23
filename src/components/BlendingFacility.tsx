@@ -15,9 +15,9 @@ const BlendingFacility = () => {
             Our New State Of The Art Blending Facility
           </h2>
           <p className="mb-4">
-            Looking after your cows' health and nutrition shouldn’t be complicated.
+            Looking after your cows' health and nutrition shouldn’t be complicated.</p>
 
-We can include essential macro minerals, trace minerals, and a wide range of feed additives directly into your blend—no dusting or dosatron needed. That means your cows get exactly what they need each day, saving you time and hassle.
+<p>We can include essential macro minerals, trace minerals, and a wide range of feed additives directly into your blend—no dusting or dosatron needed. That means your cows get exactly what they need each day, saving you time and hassle.
 
 
           </p>
