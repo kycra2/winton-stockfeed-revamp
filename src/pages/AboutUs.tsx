@@ -11,7 +11,7 @@ const AboutUs = () => {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-wsf-blue-dark">Company Overview</h2>
             <p className="leading-relaxed">
-              Located in Winton, Central Southland, Winton Stock Feed is a privately owned business that was started in 1988. The company employs around 20 people.
+              Located in Winton, Central Southland, Winton Stock Feed is a privately owned business that was started in 1988. The company employs around 40 people.
             </p>
 
             <p className="leading-relaxed">
