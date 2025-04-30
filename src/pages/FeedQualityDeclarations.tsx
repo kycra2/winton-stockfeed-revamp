@@ -16,7 +16,7 @@ const FeedQualityDeclarations = () => {
         
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <div className="border border-gray-200 rounded-lg p-6 shadow-sm bg-white">
-            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Molasses Feed Declaration</h2>
+            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Molasses Feed Declaration 23/24</h2>
             <p className="mb-4 text-gray-700">
               Feed declaration for Molasses products for the 2023-2024 season with detailed nutritional 
               information and quality specifications.
@@ -37,7 +37,7 @@ const FeedQualityDeclarations = () => {
           </div>
 
           <div className="border border-gray-200 rounded-lg p-6 shadow-sm bg-white">
-            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Molasses Feed Declaration</h2>
+            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Molasses Feed Declaration 24/25</h2>
             <p className="mb-4 text-gray-700">
               Feed declaration for Molasses products for the 2024-2025 season with detailed nutritional 
               information and quality specifications.
@@ -58,7 +58,7 @@ const FeedQualityDeclarations = () => {
           </div>
 
           <div className="border border-gray-200 rounded-lg p-6 shadow-sm bg-white">
-            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Dry Feed Declaration</h2>
+            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Dry Feed Declaration 23/24</h2>
             <p className="mb-4 text-gray-700">
               Feed declaration for dry feed products with detailed nutritional 
               information and quality specifications.
@@ -79,7 +79,7 @@ const FeedQualityDeclarations = () => {
           </div>
 
           <div className="border border-gray-200 rounded-lg p-6 shadow-sm bg-white">
-            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Dry Feed Declaration</h2>
+            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Dry Feed Declaration 24/25</h2>
             <p className="mb-4 text-gray-700">
               Feed declaration for dry feed products for the 2024-2025 season with detailed nutritional 
               information and quality specifications.
@@ -100,7 +100,7 @@ const FeedQualityDeclarations = () => {
           </div>
 
           <div className="border border-gray-200 rounded-lg p-6 shadow-sm bg-white">
-            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Stock Feed Declaration</h2>
+            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Stock Feed Declaration 23/24</h2>
             <p className="mb-4 text-gray-700">
               Feed declaration for stock feed products for the 2023-2024 season with detailed nutritional 
               information and quality specifications.
@@ -121,7 +121,7 @@ const FeedQualityDeclarations = () => {
           </div>
 
           <div className="border border-gray-200 rounded-lg p-6 shadow-sm bg-white">
-            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Stock Feed Declaration</h2>
+            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Stock Feed Declaration 24/25</h2>
             <p className="mb-4 text-gray-700">
               Feed declaration for stock feed products for the 2024-2025 season with detailed nutritional 
               information and quality specifications.
