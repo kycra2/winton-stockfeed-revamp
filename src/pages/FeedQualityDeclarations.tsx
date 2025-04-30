@@ -73,7 +73,7 @@ const FeedQualityDeclarations = () => {
                 className="flex items-center gap-2"
               >
                 <FileText className="w-5 h-5" />
-                Dry Feed Declaration
+                Dry Feed Declaration 23/24
               </a>
             </Button>
           </div>
