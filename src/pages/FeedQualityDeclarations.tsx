@@ -115,7 +115,7 @@ const FeedQualityDeclarations = () => {
                 className="flex items-center gap-2"
               >
                 <FileText className="w-5 h-5" />
-                Stock Feed Declaration 23/24
+                Stock Feed Pellets Declaration 23/24
               </a>
             </Button>
           </div>
@@ -136,7 +136,7 @@ const FeedQualityDeclarations = () => {
                 className="flex items-center gap-2"
               >
                 <FileText className="w-5 h-5" />
-                Stock Feed Declaration 24/25
+                Stock Feed Pellets Declaration 24/25
               </a>
             </Button>
           </div>
