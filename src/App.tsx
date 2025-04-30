@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,6 +13,7 @@ import ContactUs from "./pages/ContactUs";
 import SheepFeedPage from "./pages/SheepFeed";
 import AboutUs from "./pages/AboutUs";
 import CondoseCalculator from "./pages/CondoseCalculator";
+import FeedQualityDeclarations from "./pages/FeedQualityDeclarations";
 
 import PKEPage from "./pages/dairy-feed/PKE";
 import MaizeDDGSPage from "./pages/dairy-feed/MaizeDDGS";
@@ -47,6 +49,7 @@ const App = () => (
           <Route path="/dairy-feed/supreme-dairy-pellets" element={<SupremeDairyPelletsPage />} />
           <Route path="/health-and-safety" element={<HealthAndSafety />} />
           <Route path="/condose-calculator" element={<CondoseCalculator />} />
+          <Route path="/feed-quality-declarations" element={<FeedQualityDeclarations />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
