@@ -24,6 +24,7 @@ const navItems = [
       { name: 'Crushed Grain', href: '/dairy-feed/crushed-grain' },
       { name: 'Precalver Pellets', href: '/dairy-feed/precalver-pellets' },
       { name: 'Supreme Dairy Pellets', href: '/dairy-feed/supreme-dairy-pellets' },
+      { name: 'Dairy Feed Enzymes', href: '/dairy-feed/dairy-feed-enzymes' },
     ]
   },
   { name: 'Sheep Feed', href: '/sheep-feed' },

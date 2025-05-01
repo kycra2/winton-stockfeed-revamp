@@ -22,6 +22,7 @@ import SoybeanMealPage from "./pages/dairy-feed/SoybeanMeal";
 import CrushedGrainPage from "./pages/dairy-feed/CrushedGrain";
 import PrecalverPelletsPage from "./pages/dairy-feed/PrecalverPellets";
 import SupremeDairyPelletsPage from "./pages/dairy-feed/SupremeDairyPellets";
+import DairyFeedEnzymesPage from "./pages/dairy-feed/DairyFeedEnzymes";
 import HealthAndSafety from './pages/HealthAndSafety';
 
 const queryClient = new QueryClient();
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/dairy-feed/crushed-grain" element={<CrushedGrainPage />} />
           <Route path="/dairy-feed/precalver-pellets" element={<PrecalverPelletsPage />} />
           <Route path="/dairy-feed/supreme-dairy-pellets" element={<SupremeDairyPelletsPage />} />
+          <Route path="/dairy-feed/dairy-feed-enzymes" element={<DairyFeedEnzymesPage />} />
           <Route path="/health-and-safety" element={<HealthAndSafety />} />
           <Route path="/condose-calculator" element={<CondoseCalculator />} />
           <Route path="/feed-quality-declarations" element={<FeedQualityDeclarations />} />
