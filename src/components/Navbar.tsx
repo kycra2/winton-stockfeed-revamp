@@ -25,25 +25,25 @@ const navItems = [
       { name: 'Precalver Pellets', href: '/dairy-feed/precalver-pellets' },
       { name: 'Supreme Dairy Pellets', href: '/dairy-feed/supreme-dairy-pellets' },
       { name: 'GC Pellets', href: '/dairy-feed/dairy-feed-enzymes' },
-     
     ]
   },
-  name: 'Sheep/Calf Feed', 
+  {
+    name: 'Sheep/Calf Feed', 
     href: '#', 
     children: [
-  { name: 'Sheep Feed', href: '/sheep-feed' },
-
-   { name: 'Calf Grower 16%', href: '/dairy-feed/calf-grower-16' },
+      { name: 'Sheep Feed', href: '/sheep-feed' },
+      { name: 'Calf Grower 16%', href: '/dairy-feed/calf-grower-16' },
       { name: 'Calf Grower 20%', href: '/dairy-feed/calf-grower-20' },
       { name: 'Calf Blend 17%', href: '/dairy-feed/calf-blend-17' },
       { name: 'Calf Muesli 18%', href: '/dairy-feed/calf-muesli-18' },
       { name: 'Eco Calf Finisher', href: '/dairy-feed/eco-calf-finisher' },
-  { name: 'Deer Feed', href: '/deer-feed' },
-     ]
+      { name: 'Deer Feed', href: '/deer-feed' },
+    ]
   },
-   { name: 'Feed Trailers', href: '/feed-trailers' },
+  { name: 'Feed Trailers', href: '/feed-trailers' },
   { name: 'Contact Us', href: '/contact-us' }
 ];
+
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
