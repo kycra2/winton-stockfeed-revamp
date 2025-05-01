@@ -46,10 +46,10 @@ const Footer = () => {
                 <span>Head Office<br></br>
                 139 Florence Rd, Winton 9782 <br></br>
                 <a 
-                  href="tel:0323660889" 
+                href="tel:0323660889" 
                   className="ml-2 hover:text-wsf-cream transition-colors"
                 >
-                  Phone 03 236 6089
+                Phone 03 236 6089
                 </a>
                 <br></br>
                 <a 
