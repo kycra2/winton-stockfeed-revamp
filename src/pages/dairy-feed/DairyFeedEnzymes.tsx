@@ -8,19 +8,19 @@ import { Link } from 'react-router-dom';
 
 const DairyFeedEnzymesPage: React.FC = () => {
   return (
-    <ProductLayout title="Dairy Feed Enzymes">
+    <ProductLayout title="GC Pellets">
       <div className="space-y-10 mb-12">
         {/* Intro Section with Image */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-wsf-brown">Maximize Feed Efficiency with Dairy Feed Enzymes</h2>
+            <h2 className="text-2xl font-semibold text-wsf-brown">Maximize Feed Efficiency with GC Pellets</h2>
             <p className="text-base leading-relaxed">
-              Our Dairy Feed Enzymes supplement is specially formulated to improve digestibility and nutrient 
-              absorption in dairy cows. By breaking down complex feed components, these enzymes help release 
+              Our GC Pellets supplement is specially formulated to improve digestibility and nutrient 
+              absorption in dairy cows. By breaking down complex feed components, these pellets help release 
               more nutrients from the same amount of feed, improving feed conversion efficiency.
             </p>
             <p className="text-base leading-relaxed">
-              Developed specifically for New Zealand's pastoral-based dairy systems, our enzyme supplement 
+              Developed specifically for New Zealand's pastoral-based dairy systems, our GC Pellets
               works with a variety of feed types and helps reduce feed waste while optimizing milk production.
             </p>
             <div className="pt-4">
@@ -48,7 +48,7 @@ const DairyFeedEnzymesPage: React.FC = () => {
 
         {/* Benefits Section */}
         <section>
-          <h2 className="text-2xl font-semibold text-wsf-brown mb-6">Benefits of Dairy Feed Enzymes</h2>
+          <h2 className="text-2xl font-semibold text-wsf-brown mb-6">Benefits of GC Pellets</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <h3 className="text-xl font-medium mb-3 text-wsf-blue">Improved Digestibility</h3>
