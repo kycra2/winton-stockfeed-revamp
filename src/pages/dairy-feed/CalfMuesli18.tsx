@@ -7,32 +7,32 @@ import { Phone, Download } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Link } from 'react-router-dom';
 
-const SupremeDairyPelletsPage: React.FC = () => {
+const CalfMuesli18Page: React.FC = () => {
   return (
-    <ProductLayout title="Supreme Dairy Pellets">
+    <ProductLayout title="Calf Muesli 18%">
       <div className="space-y-8">
         {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-wsf-brown">Premium Dairy Nutrition Solution</h2>
+            <h2 className="text-2xl font-semibold text-wsf-brown">Premium Textured Calf Feed</h2>
             <p className="text-lg">
-              Our Supreme Dairy Pellets offer a comprehensive nutritional solution for high-producing 
-              dairy cows, designed to support peak milk production and maintain optimal animal health.
+              Our Calf Muesli 18% is a premium textured feed specially designed for optimal nutrition and 
+              early feed intake in young calves.
             </p>
             <p>
-              This premium feed is formulated with high-quality ingredients to provide balanced energy, 
-              protein, and essential nutrients for efficient milk production throughout lactation.
+              This palatable muesli-style feed contains 18% protein with a carefully balanced blend of grains, 
+              protein meals, and essential nutrients to promote healthy development.
             </p>
             <p>
-              Developed specifically for New Zealand farming systems, these pellets complement pasture-based 
-              diets and help optimize milk solids production while supporting cow condition.
+              The textured format encourages early feed consumption and helps transition calves from liquid 
+              to solid feed while supporting rumen development for long-term health and productivity.
             </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
             <AspectRatio ratio={16/9} className="bg-muted">
               <img 
-                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/dairy-pellets-feed.jpg" 
-                alt="Supreme Dairy Pellets" 
+                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/calf-muesli-feed.jpg" 
+                alt="Calf Muesli 18% Feed" 
                 className="w-full h-full object-cover"
               />
             </AspectRatio>
@@ -45,23 +45,23 @@ const SupremeDairyPelletsPage: React.FC = () => {
             <h2 className="text-xl font-semibold text-wsf-blue">Key Benefits</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-3">
-                <h3 className="font-semibold">Complete Nutrition</h3>
+                <h3 className="font-semibold">Textured Formula</h3>
                 <p>
-                  Balanced profile of energy, protein, vitamins, and minerals to support high milk production.
+                  Muesli-style texture encourages earlier feed intake and smoother weaning transition.
                 </p>
-                <h3 className="font-semibold">Quality Ingredients</h3>
+                <h3 className="font-semibold">Superior Palatability</h3>
                 <p>
-                  Made with premium ingredients for maximum digestibility and nutrient utilization.
+                  Highly palatable mix that calves readily consume, supporting consistent growth.
                 </p>
               </div>
               <div className="space-y-3">
-                <h3 className="font-semibold">Production Support</h3>
+                <h3 className="font-semibold">Balanced Nutrition</h3>
                 <p>
-                  Formulated to enhance milk volume and solids while supporting body condition.
+                  18% protein with optimal energy levels for growth and early rumen development.
                 </p>
-                <h3 className="font-semibold">Rumen Health</h3>
+                <h3 className="font-semibold">Added Coccidiostat</h3>
                 <p>
-                  Contains buffers and fiber sources that promote healthy rumen function.
+                  Contains coccidiosis prevention for added health protection during vulnerable stages.
                 </p>
               </div>
             </div>
@@ -75,7 +75,7 @@ const SupremeDairyPelletsPage: React.FC = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div>
                 <h3 className="text-wsf-blue font-medium">Protein</h3>
-                <p>16% minimum</p>
+                <p>18% minimum</p>
               </div>
               <div>
                 <h3 className="text-wsf-blue font-medium">Energy</h3>
@@ -83,34 +83,36 @@ const SupremeDairyPelletsPage: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-wsf-blue font-medium">Fiber</h3>
-                <p>12% maximum</p>
+                <p>10% maximum</p>
               </div>
               <div>
-                <h3 className="text-wsf-blue font-medium">Starch</h3>
-                <p>25% minimum</p>
+                <h3 className="text-wsf-blue font-medium">Calcium</h3>
+                <p>1.0%</p>
               </div>
               <div>
-                <h3 className="text-wsf-blue font-medium">Fat</h3>
-                <p>4% minimum</p>
+                <h3 className="text-wsf-blue font-medium">Phosphorus</h3>
+                <p>0.6%</p>
               </div>
               <div>
                 <h3 className="text-wsf-blue font-medium">Vitamins & Minerals</h3>
-                <p>Comprehensive</p>
+                <p>Complete profile</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Key Ingredients */}
+        {/* Feed Components */}
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold text-wsf-brown">Key Ingredients</h2>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>Premium grains for energy</li>
-            <li>High-quality protein sources</li>
+          <p>
+            Our Calf Muesli contains a premium blend of:
+          </p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Kibbled grains for digestibility</li>
+            <li>Quality protein meals</li>
+            <li>Molasses for palatability</li>
             <li>Essential vitamin and mineral premix</li>
-            <li>Digestible fiber sources</li>
-            <li>Rumen buffers for optimal pH</li>
-            <li>Protected fat for energy density</li>
+            <li>Carefully selected fiber sources</li>
           </ul>
         </section>
 
@@ -118,12 +120,12 @@ const SupremeDairyPelletsPage: React.FC = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold text-wsf-brown">Feeding Guidelines</h2>
           <p>
-            Feed at a rate of 2-6kg per cow per day depending on production level, pasture quality, 
-            and stage of lactation. Introduce gradually over several days when starting.
+            Introduce gradually from day 4, offering small amounts. As calves grow, increase feeding rate to 
+            1-2kg per head per day. Ensure clean, fresh water is always available.
           </p>
           <p>
-            For optimal results, distribute feeding throughout the day when possible. 
-            For tailored feeding programs specific to your herd, please consult with our nutrition specialists.
+            This premium textured feed is ideal for early introduction to solid feed and for promoting 
+            smooth weaning transitions. For detailed feeding plans, please consult our nutrition specialists.
           </p>
         </section>
 
@@ -160,4 +162,4 @@ const SupremeDairyPelletsPage: React.FC = () => {
   );
 };
 
-export default SupremeDairyPelletsPage;
+export default CalfMuesli18Page;

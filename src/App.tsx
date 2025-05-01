@@ -23,6 +23,11 @@ import CrushedGrainPage from "./pages/dairy-feed/CrushedGrain";
 import PrecalverPelletsPage from "./pages/dairy-feed/PrecalverPellets";
 import SupremeDairyPelletsPage from "./pages/dairy-feed/SupremeDairyPellets";
 import DairyFeedEnzymesPage from "./pages/dairy-feed/DairyFeedEnzymes";
+import CalfGrower16Page from "./pages/dairy-feed/CalfGrower16";
+import CalfGrower20Page from "./pages/dairy-feed/CalfGrower20";
+import CalfBlend17Page from "./pages/dairy-feed/CalfBlend17";
+import CalfMuesli18Page from "./pages/dairy-feed/CalfMuesli18";
+import EcoCalfFinisherPage from "./pages/dairy-feed/EcoCalfFinisher";
 import HealthAndSafety from './pages/HealthAndSafety';
 
 const queryClient = new QueryClient();
@@ -49,6 +54,11 @@ const App = () => (
           <Route path="/dairy-feed/precalver-pellets" element={<PrecalverPelletsPage />} />
           <Route path="/dairy-feed/supreme-dairy-pellets" element={<SupremeDairyPelletsPage />} />
           <Route path="/dairy-feed/dairy-feed-enzymes" element={<DairyFeedEnzymesPage />} />
+          <Route path="/dairy-feed/calf-grower-16" element={<CalfGrower16Page />} />
+          <Route path="/dairy-feed/calf-grower-20" element={<CalfGrower20Page />} />
+          <Route path="/dairy-feed/calf-blend-17" element={<CalfBlend17Page />} />
+          <Route path="/dairy-feed/calf-muesli-18" element={<CalfMuesli18Page />} />
+          <Route path="/dairy-feed/eco-calf-finisher" element={<EcoCalfFinisherPage />} />
           <Route path="/health-and-safety" element={<HealthAndSafety />} />
           <Route path="/condose-calculator" element={<CondoseCalculator />} />
           <Route path="/feed-quality-declarations" element={<FeedQualityDeclarations />} />

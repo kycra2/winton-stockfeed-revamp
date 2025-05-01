@@ -7,32 +7,32 @@ import { Phone, Download } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Link } from 'react-router-dom';
 
-const SupremeDairyPelletsPage: React.FC = () => {
+const CalfGrower16Page: React.FC = () => {
   return (
-    <ProductLayout title="Supreme Dairy Pellets">
+    <ProductLayout title="Calf Grower 16%">
       <div className="space-y-8">
         {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-wsf-brown">Premium Dairy Nutrition Solution</h2>
+            <h2 className="text-2xl font-semibold text-wsf-brown">Premium Calf Growth Formula</h2>
             <p className="text-lg">
-              Our Supreme Dairy Pellets offer a comprehensive nutritional solution for high-producing 
-              dairy cows, designed to support peak milk production and maintain optimal animal health.
+              Our Calf Grower 16% is specially formulated to provide balanced nutrition for growing calves, 
+              supporting healthy development and consistent weight gain.
             </p>
             <p>
-              This premium feed is formulated with high-quality ingredients to provide balanced energy, 
-              protein, and essential nutrients for efficient milk production throughout lactation.
+              With 16% protein content, this high-quality feed helps young animals develop strong 
+              frames and muscle while supporting their immune systems during crucial growth stages.
             </p>
             <p>
-              Developed specifically for New Zealand farming systems, these pellets complement pasture-based 
-              diets and help optimize milk solids production while supporting cow condition.
+              This premium blend is designed to complement New Zealand pastoral farming systems 
+              while providing the nutritional boost that growing calves need.
             </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
             <AspectRatio ratio={16/9} className="bg-muted">
               <img 
-                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/dairy-pellets-feed.jpg" 
-                alt="Supreme Dairy Pellets" 
+                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/calf-feed-new-zealand.jpg" 
+                alt="Calf Grower 16% Feed" 
                 className="w-full h-full object-cover"
               />
             </AspectRatio>
@@ -45,23 +45,23 @@ const SupremeDairyPelletsPage: React.FC = () => {
             <h2 className="text-xl font-semibold text-wsf-blue">Key Benefits</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-3">
-                <h3 className="font-semibold">Complete Nutrition</h3>
+                <h3 className="font-semibold">Balanced Nutrition</h3>
                 <p>
-                  Balanced profile of energy, protein, vitamins, and minerals to support high milk production.
+                  16% protein formula carefully balanced with energy sources for optimal growth.
                 </p>
                 <h3 className="font-semibold">Quality Ingredients</h3>
                 <p>
-                  Made with premium ingredients for maximum digestibility and nutrient utilization.
+                  Made from high-quality feed components for maximum digestibility and nutrient absorption.
                 </p>
               </div>
               <div className="space-y-3">
-                <h3 className="font-semibold">Production Support</h3>
+                <h3 className="font-semibold">Growth Support</h3>
                 <p>
-                  Formulated to enhance milk volume and solids while supporting body condition.
+                  Formulated to promote consistent growth rates and healthy rumen development.
                 </p>
-                <h3 className="font-semibold">Rumen Health</h3>
+                <h3 className="font-semibold">NZ Conditions</h3>
                 <p>
-                  Contains buffers and fiber sources that promote healthy rumen function.
+                  Specifically designed for New Zealand farming systems and conditions.
                 </p>
               </div>
             </div>
@@ -79,51 +79,38 @@ const SupremeDairyPelletsPage: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-wsf-blue font-medium">Energy</h3>
-                <p>12.5 MJ ME/kg DM</p>
+                <p>12 MJ ME/kg DM</p>
               </div>
               <div>
                 <h3 className="text-wsf-blue font-medium">Fiber</h3>
                 <p>12% maximum</p>
               </div>
               <div>
-                <h3 className="text-wsf-blue font-medium">Starch</h3>
-                <p>25% minimum</p>
+                <h3 className="text-wsf-blue font-medium">Calcium</h3>
+                <p>0.8%</p>
               </div>
               <div>
-                <h3 className="text-wsf-blue font-medium">Fat</h3>
-                <p>4% minimum</p>
+                <h3 className="text-wsf-blue font-medium">Phosphorus</h3>
+                <p>0.5%</p>
               </div>
               <div>
-                <h3 className="text-wsf-blue font-medium">Vitamins & Minerals</h3>
-                <p>Comprehensive</p>
+                <h3 className="text-wsf-blue font-medium">Selenium</h3>
+                <p>Added</p>
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Key Ingredients */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-wsf-brown">Key Ingredients</h2>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>Premium grains for energy</li>
-            <li>High-quality protein sources</li>
-            <li>Essential vitamin and mineral premix</li>
-            <li>Digestible fiber sources</li>
-            <li>Rumen buffers for optimal pH</li>
-            <li>Protected fat for energy density</li>
-          </ul>
         </section>
 
         {/* Feeding Recommendations */}
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold text-wsf-brown">Feeding Guidelines</h2>
           <p>
-            Feed at a rate of 2-6kg per cow per day depending on production level, pasture quality, 
-            and stage of lactation. Introduce gradually over several days when starting.
+            Feed at a rate of 1-2kg per calf per day depending on age, size, and condition. 
+            Introduce gradually and ensure fresh clean water is always available.
           </p>
           <p>
-            For optimal results, distribute feeding throughout the day when possible. 
-            For tailored feeding programs specific to your herd, please consult with our nutrition specialists.
+            This product is designed to complement good quality pasture or forage. 
+            Consult your nutritionist for specific feeding recommendations for your herd.
           </p>
         </section>
 
@@ -160,4 +147,4 @@ const SupremeDairyPelletsPage: React.FC = () => {
   );
 };
 
-export default SupremeDairyPelletsPage;
+export default CalfGrower16Page;

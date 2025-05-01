@@ -7,32 +7,32 @@ import { Phone, Download } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Link } from 'react-router-dom';
 
-const SupremeDairyPelletsPage: React.FC = () => {
+const CalfGrower20Page: React.FC = () => {
   return (
-    <ProductLayout title="Supreme Dairy Pellets">
+    <ProductLayout title="Calf Grower 20%">
       <div className="space-y-8">
         {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-wsf-brown">Premium Dairy Nutrition Solution</h2>
+            <h2 className="text-2xl font-semibold text-wsf-brown">High-Protein Calf Development Formula</h2>
             <p className="text-lg">
-              Our Supreme Dairy Pellets offer a comprehensive nutritional solution for high-producing 
-              dairy cows, designed to support peak milk production and maintain optimal animal health.
+              Our premium Calf Grower 20% feed is a high-protein formula designed to maximize growth 
+              potential in young calves during critical development stages.
             </p>
             <p>
-              This premium feed is formulated with high-quality ingredients to provide balanced energy, 
-              protein, and essential nutrients for efficient milk production throughout lactation.
+              With 20% protein content, this superior feed provides enhanced nutrition for optimal muscle 
+              development, skeletal growth, and immune system support.
             </p>
             <p>
-              Developed specifically for New Zealand farming systems, these pellets complement pasture-based 
-              diets and help optimize milk solids production while supporting cow condition.
+              Specifically formulated for New Zealand farming conditions, this high-performance feed 
+              helps producers achieve excellent growth rates and sturdy, healthy animals.
             </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
             <AspectRatio ratio={16/9} className="bg-muted">
               <img 
-                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/dairy-pellets-feed.jpg" 
-                alt="Supreme Dairy Pellets" 
+                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/calf-feeding-nz.jpg" 
+                alt="Calf Grower 20% Feed" 
                 className="w-full h-full object-cover"
               />
             </AspectRatio>
@@ -45,23 +45,23 @@ const SupremeDairyPelletsPage: React.FC = () => {
             <h2 className="text-xl font-semibold text-wsf-blue">Key Benefits</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-3">
-                <h3 className="font-semibold">Complete Nutrition</h3>
+                <h3 className="font-semibold">High Protein Formula</h3>
                 <p>
-                  Balanced profile of energy, protein, vitamins, and minerals to support high milk production.
+                  20% protein content for accelerated growth rates and optimal development.
                 </p>
-                <h3 className="font-semibold">Quality Ingredients</h3>
+                <h3 className="font-semibold">Superior Ingredients</h3>
                 <p>
-                  Made with premium ingredients for maximum digestibility and nutrient utilization.
+                  Premium quality components selected for digestibility and nutrient bioavailability.
                 </p>
               </div>
               <div className="space-y-3">
-                <h3 className="font-semibold">Production Support</h3>
+                <h3 className="font-semibold">Enhanced Development</h3>
                 <p>
-                  Formulated to enhance milk volume and solids while supporting body condition.
+                  Supports robust skeletal and muscle development for healthy, productive animals.
                 </p>
-                <h3 className="font-semibold">Rumen Health</h3>
+                <h3 className="font-semibold">Immune Support</h3>
                 <p>
-                  Contains buffers and fiber sources that promote healthy rumen function.
+                  Contains added vitamins and minerals that support immune function in young calves.
                 </p>
               </div>
             </div>
@@ -75,7 +75,7 @@ const SupremeDairyPelletsPage: React.FC = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div>
                 <h3 className="text-wsf-blue font-medium">Protein</h3>
-                <p>16% minimum</p>
+                <p>20% minimum</p>
               </div>
               <div>
                 <h3 className="text-wsf-blue font-medium">Energy</h3>
@@ -83,47 +83,34 @@ const SupremeDairyPelletsPage: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-wsf-blue font-medium">Fiber</h3>
-                <p>12% maximum</p>
+                <p>10% maximum</p>
               </div>
               <div>
-                <h3 className="text-wsf-blue font-medium">Starch</h3>
-                <p>25% minimum</p>
+                <h3 className="text-wsf-blue font-medium">Calcium</h3>
+                <p>1.0%</p>
               </div>
               <div>
-                <h3 className="text-wsf-blue font-medium">Fat</h3>
-                <p>4% minimum</p>
+                <h3 className="text-wsf-blue font-medium">Phosphorus</h3>
+                <p>0.6%</p>
               </div>
               <div>
-                <h3 className="text-wsf-blue font-medium">Vitamins & Minerals</h3>
-                <p>Comprehensive</p>
+                <h3 className="text-wsf-blue font-medium">Trace Minerals</h3>
+                <p>Fortified</p>
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Key Ingredients */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-wsf-brown">Key Ingredients</h2>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>Premium grains for energy</li>
-            <li>High-quality protein sources</li>
-            <li>Essential vitamin and mineral premix</li>
-            <li>Digestible fiber sources</li>
-            <li>Rumen buffers for optimal pH</li>
-            <li>Protected fat for energy density</li>
-          </ul>
         </section>
 
         {/* Feeding Recommendations */}
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold text-wsf-brown">Feeding Guidelines</h2>
           <p>
-            Feed at a rate of 2-6kg per cow per day depending on production level, pasture quality, 
-            and stage of lactation. Introduce gradually over several days when starting.
+            Recommended feeding rate is 1-2.5kg per head per day depending on age, size, and desired growth rate. 
+            Gradually introduce to the diet and ensure clean, fresh water is always available.
           </p>
           <p>
-            For optimal results, distribute feeding throughout the day when possible. 
-            For tailored feeding programs specific to your herd, please consult with our nutrition specialists.
+            This high-protein product is ideal for intensive rearing systems or when rapid growth is desired. 
+            For specific feeding programs tailored to your operation, please consult with our nutritional specialists.
           </p>
         </section>
 
@@ -133,7 +120,7 @@ const SupremeDairyPelletsPage: React.FC = () => {
           <ul className="list-disc pl-5 space-y-2">
             <li>25kg bags</li>
             <li>Bulk (1 tonne bags)</li>
-            <li>Bulk delivery available</li>
+            <li>Bulk delivery to farm</li>
           </ul>
         </section>
 
@@ -160,4 +147,4 @@ const SupremeDairyPelletsPage: React.FC = () => {
   );
 };
 
-export default SupremeDairyPelletsPage;
+export default CalfGrower20Page;
