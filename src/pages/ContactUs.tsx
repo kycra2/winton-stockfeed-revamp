@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { User, Users, Phone, Mail, MapPin } from 'lucide-react';
@@ -89,11 +88,15 @@ const ContactUs = () => {
             <ContactCard
               name="Bronwyn McCulloch"
               role="Admin"
+              phone="03 236 6089"
+              email="orders@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Bronwyn+McCulloch.jpg"
             />
             <ContactCard
               name="Tayla Muir"
               role="Admin"
+              phone="03 236 6089"
+              email="orders@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Tayla+Muir+.jpg"
             />
             <ContactCard
