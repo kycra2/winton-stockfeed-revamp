@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { User, Users, Phone, Mail, MapPin } from 'lucide-react';
@@ -67,6 +68,22 @@ const ContactUs = () => {
   return (
     <ProductLayout title="Contact Us">
       <div className="space-y-12">
+        {/* Office Locations Section - Moved to top */}
+        <section className="space-y-6">
+          <h2 className="text-2xl font-bold text-wsf-blue-dark">Our Locations</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ContactCard
+              name="Main Office"
+              location="139 Florence Road, Winton. PO Box 132 Winton 9741"
+              phone="03 236 6089"
+            />
+            <ContactCard
+              name="Engineering Workshop"
+              location="7 Montgomerie Street, Winton 9741"
+            />
+          </div>
+        </section>
+
         {/* Office Section */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold text-wsf-blue-dark">In The Office</h2>
@@ -105,18 +122,6 @@ const ContactUs = () => {
               phone="03 236 6089"
               email="robynl@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Robyn.jpg"
-            />
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <ContactCard
-              name="Main Office"
-              location="139 Florence Road, Winton. PO Box 132 Winton 9741"
-              phone="03 236 6089"
-            />
-            <ContactCard
-              name="Engineering Workshop"
-              location="7 Montgomerie Street, Winton 9741"
             />
           </div>
         </section>
