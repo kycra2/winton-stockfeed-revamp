@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { User, Users, Phone, Mail, MapPin } from 'lucide-react';
@@ -85,6 +86,21 @@ const ContactUs = () => {
               email="office@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Kathryn+McEwing+.jpg"
             />
+            <ContactCard
+              name="Bronwyn McCulloch"
+              role="Admin"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Bronwyn+McCulloch.jpg"
+            />
+            <ContactCard
+              name="Tayla Muir"
+              role="Admin"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Tayla+Muir+.jpg"
+            />
+            <ContactCard
+              name="Robyn Lindsay"
+              role="Accounts"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Robyn.jpg"
+            />
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -164,6 +180,7 @@ const ContactUs = () => {
               role="Accountant"
               phone="03 236 6089"
               email="sharyn@wintonstockfeed.co.nz"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Sharyn+Goodman.jpg"
             />
           </div>
         </section>
