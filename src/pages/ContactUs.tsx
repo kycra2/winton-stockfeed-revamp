@@ -14,43 +14,52 @@ const ContactCard = ({ name, role, phone, email, location, photoUrl }: {
   photoUrl?: string;
 }) => (
   <Card className="p-6 space-y-4">
-    <div className="flex items-start gap-4">
-      {photoUrl ? (
-        <Avatar className="h-24 w-24">
-          <AvatarImage src={photoUrl} alt={name} />
-          <AvatarFallback className="bg-wsf-blue/10 text-wsf-blue">
-            {name.split(' ').map(n => n[0]).join('')}
-          </AvatarFallback>
-        </Avatar>
-      ) : (
-        <div className="bg-wsf-blue/10 p-3 rounded-full">
-          <User className="h-6 w-6 text-wsf-blue" />
+    <div className="space-y-4">
+      {/* Contact Information */}
+      <div className="flex items-start gap-4">
+        {!photoUrl && (
+          <div className="bg-wsf-blue/10 p-3 rounded-full">
+            <User className="h-6 w-6 text-wsf-blue" />
+          </div>
+        )}
+        <div className="space-y-1 flex-1">
+          <h3 className="font-semibold text-lg">{name}</h3>
+          {role && <p className="text-gray-600">{role}</p>}
+          {phone && (
+            <div className="flex items-center gap-2">
+              <Phone className="h-4 w-4 text-gray-500" />
+              <span>{phone}</span>
+            </div>
+          )}
+          {email && (
+            <div className="flex items-center gap-2">
+              <Mail className="h-4 w-4 text-gray-500" />
+              <a href={`mailto:${email}`} className="text-wsf-blue hover:underline">
+                {email}
+              </a>
+            </div>
+          )}
+          {location && (
+            <div className="flex items-center gap-2">
+              <MapPin className="h-4 w-4 text-gray-500" />
+              <span>{location}</span>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Photo Section - Square and prominent */}
+      {photoUrl && (
+        <div className="flex justify-center pt-2">
+          <div className="w-32 h-32 rounded-lg overflow-hidden shadow-md">
+            <img 
+              src={photoUrl} 
+              alt={name} 
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
       )}
-      <div className="space-y-1">
-        <h3 className="font-semibold text-lg">{name}</h3>
-        {role && <p className="text-gray-600">{role}</p>}
-        {phone && (
-          <div className="flex items-center gap-2">
-            <Phone className="h-4 w-4 text-gray-500" />
-            <span>{phone}</span>
-          </div>
-        )}
-        {email && (
-          <div className="flex items-center gap-2">
-            <Mail className="h-4 w-4 text-gray-500" />
-            <a href={`mailto:${email}`} className="text-wsf-blue hover:underline">
-              {email}
-            </a>
-          </div>
-        )}
-        {location && (
-          <div className="flex items-center gap-2">
-            <MapPin className="h-4 w-4 text-gray-500" />
-            <span>{location}</span>
-          </div>
-        )}
-      </div>
     </div>
   </Card>
 );
