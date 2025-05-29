@@ -74,10 +74,18 @@ const ContactUs = () => {
           <h2 className="text-2xl font-bold text-wsf-blue-dark">In The Office</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ContactCard
-              name="Lisa Kennedy & Kathryn McEwing"
+              name="Lisa Kennedy"
               role="Sales Team Orders"
               phone="0800 Molasses (0800 665277)"
               email="office@wintonstockfeed.co.nz"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Lisa-kennedy.jpg"
+            />
+            <ContactCard
+              name="Kathryn McEwing"
+              role="Sales Team Orders"
+              phone="0800 Molasses (0800 665277)"
+              email="office@wintonstockfeed.co.nz"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Kathryn+McEwing+.jpg"
             />
           </div>
           
@@ -168,3 +176,4 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+
