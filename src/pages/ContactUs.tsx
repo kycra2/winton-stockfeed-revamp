@@ -3,19 +3,30 @@ import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { User, Users, Phone, Mail, MapPin } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
-const ContactCard = ({ name, role, phone, email, location }: {
+const ContactCard = ({ name, role, phone, email, location, photoUrl }: {
   name: string;
   role?: string;
   phone?: string;
   email?: string;
   location?: string;
+  photoUrl?: string;
 }) => (
   <Card className="p-6 space-y-4">
     <div className="flex items-start gap-4">
-      <div className="bg-wsf-blue/10 p-3 rounded-full">
-        <User className="h-6 w-6 text-wsf-blue" />
-      </div>
+      {photoUrl ? (
+        <Avatar className="h-16 w-16">
+          <AvatarImage src={photoUrl} alt={name} />
+          <AvatarFallback className="bg-wsf-blue/10 text-wsf-blue">
+            {name.split(' ').map(n => n[0]).join('')}
+          </AvatarFallback>
+        </Avatar>
+      ) : (
+        <div className="bg-wsf-blue/10 p-3 rounded-full">
+          <User className="h-6 w-6 text-wsf-blue" />
+        </div>
+      )}
       <div className="space-y-1">
         <h3 className="font-semibold text-lg">{name}</h3>
         {role && <p className="text-gray-600">{role}</p>}
@@ -106,6 +117,7 @@ const ContactUs = () => {
               role="Southland Sales Rep"
               phone="029 201 7361"
               email="andyc@wintonstockfeed.co.nz"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/andy.jpg"
             />
           </div>
         </section>
