@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { User, Users, Phone, Mail, MapPin } from 'lucide-react';
@@ -111,24 +109,21 @@ const ContactUs = () => {
               role="North Island"
               phone="021 838 261"
               email="jamies@wintonstockfeed.co.nz"
-            />
-            <ContactCard
-              name="Phillip Campbell"
-              role="North Otago- South Canterbury"
-              phone="021 863 345"
-              email="phillipc@wintonstockfeed.co.nz"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/jamie-stephens.avif"
             />
             <ContactCard
               name="Brendon Corbett"
               role="Southland Sales Rep"
               phone="021 311 281"
               email="brendonc@wintonstockfeed.co.nz"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Brendon+Corbett.jpg"
             />
             <ContactCard
               name="Riaan Crous"
               role="Southland Sales Rep"
               phone="021 912 699"
               email="riaan@wintonstockfeed.co.nz"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Riaan+Crous.jpg"
             />
             <ContactCard
               name="Andy Chrystall"
@@ -149,12 +144,14 @@ const ContactUs = () => {
               role="Director"
               phone="027 435 5176"
               email="nelson@wintonstockfeed.co.nz"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/nelson.jpg"
             />
             <ContactCard
               name="Pierre Neame"
               role="General Manager"
               phone="029 235 0737"
               email="pierre@wintonstockfeed.co.nz"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/pierre.jpg"
             />
             <ContactCard
               name="Dougal McDonald"
@@ -176,4 +173,3 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
-
