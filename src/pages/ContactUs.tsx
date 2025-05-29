@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { User, Users, Phone, Mail, MapPin } from 'lucide-react';
@@ -48,14 +49,14 @@ const ContactCard = ({ name, role, phone, email, location, photoUrl }: {
         </div>
       </div>
 
-      {/* Photo Section - Square and prominent with more padding */}
+      {/* Photo Section - Larger square with proper cropping */}
       {photoUrl && (
         <div className="flex justify-center pt-6 pb-2">
-          <div className="w-32 h-32 rounded-lg overflow-hidden shadow-md bg-gray-100">
+          <div className="w-48 h-48 rounded-lg overflow-hidden shadow-md bg-gray-100">
             <img 
               src={photoUrl} 
               alt={name} 
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover object-top"
             />
           </div>
         </div>
