@@ -16,7 +16,7 @@ const ContactCard = ({ name, role, phone, email, location, photoUrl }: {
   <Card className="p-6 space-y-4">
     <div className="flex items-start gap-4">
       {photoUrl ? (
-        <Avatar className="h-16 w-16">
+        <Avatar className="h-24 w-24">
           <AvatarImage src={photoUrl} alt={name} />
           <AvatarFallback className="bg-wsf-blue/10 text-wsf-blue">
             {name.split(' ').map(n => n[0]).join('')}
