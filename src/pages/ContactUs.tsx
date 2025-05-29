@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { User, Users, Phone, Mail, MapPin } from 'lucide-react';
@@ -178,12 +177,6 @@ const ContactUs = () => {
               phone="029 235 0737"
               email="pierre@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/pierre.jpg"
-            />
-            <ContactCard
-              name="Dougal McDonald"
-              role="Engineer"
-              phone="029 200 1629"
-              email="dougal@wintonstockfeed.co.nz"
             />
             <ContactCard
               name="Sharyn Goodman"
