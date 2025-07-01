@@ -28,6 +28,7 @@ import CalfGrower20Page from "./pages/dairy-feed/CalfGrower20";
 import CalfBlend17Page from "./pages/dairy-feed/CalfBlend17";
 import CalfMuesli18Page from "./pages/dairy-feed/CalfMuesli18";
 import EcoCalfFinisherPage from "./pages/dairy-feed/EcoCalfFinisher";
+import TapiocaPage from "./pages/dairy-feed/Tapioca";
 import HealthAndSafety from './pages/HealthAndSafety';
 
 const queryClient = new QueryClient();
@@ -59,6 +60,7 @@ const App = () => (
           <Route path="/dairy-feed/calf-blend-17" element={<CalfBlend17Page />} />
           <Route path="/dairy-feed/calf-muesli-18" element={<CalfMuesli18Page />} />
           <Route path="/dairy-feed/eco-calf-finisher" element={<EcoCalfFinisherPage />} />
+          <Route path="/dairy-feed/tapioca" element={<TapiocaPage />} />
           <Route path="/health-and-safety" element={<HealthAndSafety />} />
           <Route path="/condose-calculator" element={<CondoseCalculator />} />
           <Route path="/feed-quality-declarations" element={<FeedQualityDeclarations />} />

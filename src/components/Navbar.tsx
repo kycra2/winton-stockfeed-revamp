@@ -22,6 +22,7 @@ const navItems = [
       { name: 'Soy Bran Hulls', href: '/dairy-feed/soy-bran-hulls' },
       { name: 'Soybean Meal', href: '/dairy-feed/soybean-meal' },
       { name: 'Crushed Grain', href: '/dairy-feed/crushed-grain' },
+      { name: 'Tapioca', href: '/dairy-feed/tapioca' },
       { name: 'Precalver Pellets', href: '/dairy-feed/precalver-pellets' },
       { name: 'Supreme Dairy Pellets', href: '/dairy-feed/supreme-dairy-pellets' },
       { name: 'High Energy Pellets', href: '/dairy-feed/high-energy-pellets' },
@@ -43,7 +44,6 @@ const navItems = [
   { name: 'Feed Trailers', href: '/feed-trailers' },
   { name: 'Contact Us', href: '/contact-us' }
 ];
-
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
