@@ -64,7 +64,7 @@ const DeerFeed = () => {
 
       <div className="mt-8">
         <a 
-          href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/2018_WSF_Deer_Nuts.pdf"
+          href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Supreme+Deer+Nuts.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
