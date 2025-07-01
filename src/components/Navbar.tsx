@@ -24,7 +24,6 @@ const navItems = [
       { name: 'Crushed Grain', href: '/dairy-feed/crushed-grain' },
       { name: 'Tapioca', href: '/dairy-feed/tapioca' },
       { name: 'Precalver Pellets', href: '/dairy-feed/precalver-pellets' },
-      { name: 'Supreme Dairy Pellets', href: '/dairy-feed/supreme-dairy-pellets' },
       { name: 'High Energy Pellets', href: '/dairy-feed/high-energy-pellets' },
     ]
   },

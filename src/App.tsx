@@ -21,7 +21,6 @@ import SoyBranHullsPage from "./pages/dairy-feed/SoyBranHulls";
 import SoybeanMealPage from "./pages/dairy-feed/SoybeanMeal";
 import CrushedGrainPage from "./pages/dairy-feed/CrushedGrain";
 import PrecalverPelletsPage from "./pages/dairy-feed/PrecalverPellets";
-import SupremeDairyPelletsPage from "./pages/dairy-feed/SupremeDairyPellets";
 import HighEnergyPelletsPage from "./pages/dairy-feed/HighEnergyPellets";
 import CalfGrower16Page from "./pages/dairy-feed/CalfGrower16";
 import CalfGrower20Page from "./pages/dairy-feed/CalfGrower20";
@@ -53,7 +52,6 @@ const App = () => (
           <Route path="/dairy-feed/soybean-meal" element={<SoybeanMealPage />} />
           <Route path="/dairy-feed/crushed-grain" element={<CrushedGrainPage />} />
           <Route path="/dairy-feed/precalver-pellets" element={<PrecalverPelletsPage />} />
-          <Route path="/dairy-feed/supreme-dairy-pellets" element={<SupremeDairyPelletsPage />} />
           <Route path="/dairy-feed/high-energy-pellets" element={<HighEnergyPelletsPage />} />
           <Route path="/dairy-feed/calf-grower-16" element={<CalfGrower16Page />} />
           <Route path="/dairy-feed/calf-grower-20" element={<CalfGrower20Page />} />
