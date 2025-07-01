@@ -1,8 +1,10 @@
 
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Card } from '@/components/ui/card';
-import { Package2, AlertCircle } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Package2, AlertCircle, FileDown } from 'lucide-react';
 
 const SheepFeedPage = () => {
   return (
@@ -76,6 +78,19 @@ const SheepFeedPage = () => {
         </div>
       </section>
 
+      <div className="mt-8">
+        <a 
+          href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Sheep+Nuts.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button variant="default" className="gap-2">
+            <FileDown className="h-4 w-4" />
+            Download Sheep Nuts PDF
+          </Button>
+        </a>
+      </div>
+
       <section className="mt-8">
         <Card className="p-6 bg-gray-50">
           <div className="flex items-center gap-4 text-gray-700">
@@ -101,3 +116,4 @@ const SheepFeedPage = () => {
 };
 
 export default SheepFeedPage;
+
