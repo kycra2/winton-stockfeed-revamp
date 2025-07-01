@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Card } from '@/components/ui/card';
@@ -44,7 +46,7 @@ const SheepFeedPage = () => {
 
         <div>
           <img 
-            src="/lovable-uploads/cf8ae7a3-7c36-4b92-abfa-4c854710d102.png"
+            src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/sheep-feeding.png"
             alt="New Zealand sheep farm"
             className="rounded-lg shadow-md w-full h-auto mb-6"
           />
@@ -114,3 +116,4 @@ const SheepFeedPage = () => {
 };
 
 export default SheepFeedPage;
+
