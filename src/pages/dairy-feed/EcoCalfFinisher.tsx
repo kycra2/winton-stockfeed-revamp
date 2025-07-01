@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -142,6 +141,26 @@ const EcoCalfFinisherPage: React.FC = () => {
             <li>Bulk (1 tonne bags)</li>
             <li>Bulk delivery available</li>
           </ul>
+        </section>
+
+        {/* PDF Download Section */}
+        <section className="bg-wsf-blue bg-opacity-10 p-6 rounded-lg shadow-md flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <h3 className="text-xl font-semibold text-wsf-blue mb-2">
+              Download Eco Calf Finisher Specifications
+            </h3>
+            <p className="text-gray-700 mb-2">
+              Get detailed information about our Eco Calf Finisher product.
+            </p>
+          </div>
+          <Button 
+            variant="default" 
+            className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
+            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Eco+Calf+Finisher.pdf', '_blank')}
+          >
+            <Download className="h-5 w-5 mr-2" />
+            Download PDF
+          </Button>
         </section>
 
         {/* Contact Card */}
