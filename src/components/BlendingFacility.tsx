@@ -5,14 +5,14 @@ const BlendingFacility = () => {
     <section className="bg-black text-white py-16">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
         <img
-          src="https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/stock-feed-blending-southland%20(1).jpg?raw=true"
+          src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/stock-feed-blending-facility.png?raw=true"
           alt="Blending Facility"
           className="w-full md:w-1/2 rounded-lg"
         />
 
         <div className="md:w-1/2">
           <h2 className="text-3xl font-bold mb-4">
-            Our New State Of The Art Blending Facility
+            State Of The Art Blending Facility
           </h2>
           <p className="mb-4">
             Looking after your cows' health and nutrition shouldn’t be complicated.</p>
