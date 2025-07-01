@@ -87,7 +87,7 @@ const MaizeDDGSPage: React.FC = () => {
           <Button 
             variant="default" 
             className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/2018_WSF_Maize_DDGS.pdf', '_blank')}
+            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Maize+DDG.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download PDF
