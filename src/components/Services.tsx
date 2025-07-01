@@ -33,7 +33,7 @@ const services = [
   },
   {
     id: 'modern-feed-blending-plant',
-    image: 'https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/stock-feed-blending-southland%20(1).jpg?raw=true',
+    image: 'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/stock-feed-blending-facility.png?raw=true',
     title: 'Modern Feed Blending Facility',
     description: 'We can add in macro minerals, trace minerals and a range of feed additives, saving you time and money (no dusting or dosatron required) so your cows receive their daily requirements. '
     ,
