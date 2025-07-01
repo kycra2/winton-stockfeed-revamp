@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Card } from '@/components/ui/card';
@@ -50,26 +51,17 @@ const SheepFeedPage = () => {
         </div>
       </div>
 
-      <section className="mt-8 grid md:grid-cols-2 gap-6 items-center">
-        <div className="space-y-4">
-          <h2 className="text-xl font-semibold">Premium Sheep Nuts: Optimal Nutrition</h2>
-          <p className="text-gray-700">
-            Our Sheep Nuts are meticulously formulated to provide a balanced and economic feed solution 
-            for your livestock. Designed to supplement feed during periods of poor availability, these 
-            nuts ensure your sheep maintain optimal condition and health.
-          </p>
-          <p className="text-gray-700">
-            The carefully selected blend of grains, wheat products, and specialized mineral mix 
-            guarantees essential nutrients while minimizing feed wastage.
-          </p>
-        </div>
-        <div>
-          <img 
-            src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Sheep-Nuts.jpg"
-            alt="Sheep Nuts Product"
-            className="rounded-lg shadow-md w-full h-auto object-cover"
-          />
-        </div>
+      <section className="mt-8 space-y-6">
+        <h2 className="text-xl font-semibold">Premium Sheep Nuts: Optimal Nutrition</h2>
+        <p className="text-gray-700">
+          Our Sheep Nuts are meticulously formulated to provide a balanced and economic feed solution 
+          for your livestock. Designed to supplement feed during periods of poor availability, these 
+          nuts ensure your sheep maintain optimal condition and health.
+        </p>
+        <p className="text-gray-700">
+          The carefully selected blend of grains, wheat products, and specialized mineral mix 
+          guarantees essential nutrients while minimizing feed wastage.
+        </p>
       </section>
 
       <section className="mt-8 space-y-6">
