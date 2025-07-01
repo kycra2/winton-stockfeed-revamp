@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -130,7 +131,7 @@ const CrushedGrainPage: React.FC = () => {
           <Button 
             variant="default" 
             className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/2019_WSF_Crushed_Grain.pdf', '_blank')}
+            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Crushed+Grain.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download PDF
