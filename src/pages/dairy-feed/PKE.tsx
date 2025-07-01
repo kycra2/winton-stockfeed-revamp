@@ -118,7 +118,7 @@ const PKEPage: React.FC = () => {
           <Button 
             variant="default" 
             className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/169438_WSF_A4_Flyers_PKE.pdf', '_blank')}
+            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/PKE+-+Palm+Kernel.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download PDF
