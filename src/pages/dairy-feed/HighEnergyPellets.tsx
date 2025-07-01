@@ -3,24 +3,24 @@ import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-import { Phone, FileText } from 'lucide-react';
+import { Phone, FileText, FileDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const DairyFeedEnzymesPage: React.FC = () => {
+const HighEnergyPelletsPage: React.FC = () => {
   return (
-    <ProductLayout title="GC Pellets">
+    <ProductLayout title="High Energy Pellets">
       <div className="space-y-10 mb-12">
         {/* Intro Section with Image */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-wsf-brown">Maximize Feed Efficiency with GC Pellets</h2>
+            <h2 className="text-2xl font-semibold text-wsf-brown">Maximize Feed Efficiency with High Energy Pellets</h2>
             <p className="text-base leading-relaxed">
-              Our GC Pellets supplement is specially formulated to improve digestibility and nutrient 
+              Our High Energy Pellets supplement is specially formulated to improve digestibility and nutrient 
               absorption in dairy cows. By breaking down complex feed components, these pellets help release 
               more nutrients from the same amount of feed, improving feed conversion efficiency.
             </p>
             <p className="text-base leading-relaxed">
-              Developed specifically for New Zealand's pastoral-based dairy systems, our GC Pellets
+              Developed specifically for New Zealand's pastoral-based dairy systems, our High Energy Pellets
               works with a variety of feed types and helps reduce feed waste while optimizing milk production.
             </p>
             <div className="pt-4">
@@ -48,7 +48,7 @@ const DairyFeedEnzymesPage: React.FC = () => {
 
         {/* Benefits Section */}
         <section>
-          <h2 className="text-2xl font-semibold text-wsf-brown mb-6">Benefits of GC Pellets</h2>
+          <h2 className="text-2xl font-semibold text-wsf-brown mb-6">Benefits of High Energy Pellets</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <h3 className="text-xl font-medium mb-3 text-wsf-blue">Improved Digestibility</h3>
@@ -80,6 +80,20 @@ const DairyFeedEnzymesPage: React.FC = () => {
           </div>
         </section>
 
+        {/* PDF Download Section */}
+        <div className="mt-8">
+          <a 
+            href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/High+Energy+Pellets.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="default" className="gap-2">
+              <FileDown className="h-4 w-4" />
+              Download High Energy Pellets PDF
+            </Button>
+          </a>
+        </div>
+
         {/* Contact Section */}
         <section className="bg-wsf-blue/10 p-6 rounded-lg">
           <h2 className="text-xl font-semibold mb-4">Need More Information?</h2>
@@ -101,4 +115,4 @@ const DairyFeedEnzymesPage: React.FC = () => {
   );
 };
 
-export default DairyFeedEnzymesPage;
+export default HighEnergyPelletsPage;
