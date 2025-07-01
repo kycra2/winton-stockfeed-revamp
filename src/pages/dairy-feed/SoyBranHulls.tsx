@@ -102,7 +102,7 @@ Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding pr
           <Button 
             variant="default" 
             className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/2019_WSF_SOY_HULLS_BRAN.pdf', '_blank')}
+            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/soy-bran-hulls-2025.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download PDF
