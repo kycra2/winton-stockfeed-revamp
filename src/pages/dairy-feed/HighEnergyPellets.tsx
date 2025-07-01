@@ -35,12 +35,12 @@ const HighEnergyPelletsPage: React.FC = () => {
               </Button>
             </div>
           </div>
-          <div className="rounded-lg overflow-hidden shadow-md max-w-md mx-auto">
-            <AspectRatio ratio={4/3} className="bg-muted">
+          <div className="rounded-lg overflow-hidden shadow-md w-full max-w-lg">
+            <AspectRatio ratio={3/4} className="bg-muted">
               <img 
                 src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/southland-farmer-new-zealand+(1).jpg" 
                 alt="Southland farmer in New Zealand" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </AspectRatio>
           </div>
