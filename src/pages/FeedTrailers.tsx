@@ -3,7 +3,7 @@ import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Phone, Package, Truck } from 'lucide-react';
+import { Phone, Package, Truck, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 
@@ -108,6 +108,26 @@ const FeedTrailersPage: React.FC = () => {
           <p>
             WSF also use an independent consultant nutritionist who can be made available to our clients throughout the year.
           </p>
+        </section>
+
+        {/* Specs Download Section */}
+        <section className="bg-wsf-blue bg-opacity-10 p-6 rounded-lg shadow-md flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <h3 className="text-xl font-semibold text-wsf-blue mb-2">
+              Download Feed Trailer Specifications
+            </h3>
+            <p className="text-gray-700 mb-2">
+              Get detailed information about our Feed Trailers.
+            </p>
+          </div>
+          <Button 
+            variant="default" 
+            className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
+            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/169438+WSF+A4+Flyers+Trailer.pdf', '_blank')}
+          >
+            <Download className="h-5 w-5 mr-2" />
+            Download PDF
+          </Button>
         </section>
 
         {/* Contact Card */}
