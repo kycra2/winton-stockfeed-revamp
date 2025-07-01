@@ -3,7 +3,7 @@ import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-import { Phone, FileText, FileDown } from 'lucide-react';
+import { Phone, FileText, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const HighEnergyPelletsPage: React.FC = () => {
@@ -80,19 +80,25 @@ const HighEnergyPelletsPage: React.FC = () => {
           </div>
         </section>
 
-        {/* PDF Download Section */}
-        <div className="mt-8">
-          <a 
-            href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/High+Energy+Pellets.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+        {/* Specs Download Section - Fixed for mobile */}
+        <section className="bg-wsf-blue bg-opacity-10 p-6 rounded-lg shadow-md flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <h3 className="text-xl font-semibold text-wsf-blue mb-2">
+              Download High Energy Pellets Specifications
+            </h3>
+            <p className="text-gray-700 mb-2">
+              Get detailed information about our High Energy Pellets product.
+            </p>
+          </div>
+          <Button 
+            variant="default" 
+            className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
+            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/High+Energy+Pellets.pdf', '_blank')}
           >
-            <Button variant="default" className="gap-2">
-              <FileDown className="h-4 w-4" />
-              Download High Energy Pellets PDF
-            </Button>
-          </a>
-        </div>
+            <Download className="h-5 w-5 mr-2" />
+            Download PDF
+          </Button>
+        </section>
 
         {/* Contact Section */}
         <section className="bg-wsf-blue/10 p-6 rounded-lg">
