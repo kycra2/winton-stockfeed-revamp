@@ -1,9 +1,8 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Phone, Download } from 'lucide-react';
+import { Phone, Download, FileDown } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Link } from 'react-router-dom';
 
@@ -122,6 +121,20 @@ const PrecalverPelletsPage: React.FC = () => {
             <li>Bulk delivery available</li>
           </ul>
         </section>
+
+        {/* PDF Download Section */}
+        <div className="mt-8">
+          <a 
+            href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Pre+Calving+Pellet.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="default" className="gap-2">
+              <FileDown className="h-4 w-4" />
+              Download Precalver Pellets PDF
+            </Button>
+          </a>
+        </div>
 
         {/* Contact Card */}
         <Card className="bg-wsf-blue text-white border-none shadow-lg">
