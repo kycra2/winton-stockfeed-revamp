@@ -155,7 +155,7 @@ const ContactUs = () => {
               role="Southland Sales Rep"
               phone="029 201 7361"
               email="andyc@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/andy.jpg"
+              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/thumbnail_andy-new.jpg"
             />
           </div>
         </section>
