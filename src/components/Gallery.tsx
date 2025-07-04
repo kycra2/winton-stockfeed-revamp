@@ -5,7 +5,7 @@ const StockfeedSection = () => {
     <section
       className="relative bg-cover bg-center py-20"
       style={{
-        backgroundImage: `url('https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F6a3a7512378f64b3ca9ad6213ae97cdaf2a686a8%2Fimage_fx%20%283%29.jpg')`,
+        backgroundImage: `url('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/winton-stock-feed.png')`,
       }}
     >
       {/* Blue overlay */}
