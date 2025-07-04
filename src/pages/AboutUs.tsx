@@ -27,6 +27,26 @@ const AboutUs = () => {
           </div>
         </div>
 
+        {/* Video Section */}
+        <div className="space-y-4">
+          <h2 className="text-2xl font-semibold text-wsf-blue-dark">Our Story in Action</h2>
+          <div className="w-full">
+            <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg bg-gray-100">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/pKOtrZCR44Y?si=kfv_dfpcvJUbU6jB" 
+                title="YouTube video player" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen
+                className="absolute inset-0"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* Molasses Business Section */}
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold text-wsf-blue-dark">Molasses Business Development</h2>
