@@ -14,6 +14,7 @@ import SheepFeedPage from "./pages/SheepFeed";
 import AboutUs from "./pages/AboutUs";
 import CondoseCalculator from "./pages/CondoseCalculator";
 import FeedQualityDeclarations from "./pages/FeedQualityDeclarations";
+import Testimonials from "./pages/Testimonials";
 
 import PKEPage from "./pages/dairy-feed/PKE";
 import MaizeDDGSPage from "./pages/dairy-feed/MaizeDDGS";
@@ -62,6 +63,7 @@ const App = () => (
           <Route path="/health-and-safety" element={<HealthAndSafety />} />
           <Route path="/condose-calculator" element={<CondoseCalculator />} />
           <Route path="/feed-quality-declarations" element={<FeedQualityDeclarations />} />
+          <Route path="/testimonials" element={<Testimonials />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -35,6 +34,8 @@ const Footer = () => {
                   Feed Quality Declarations
                 </Link>
               </li>
+              
+              <li><Link to="/testimonials" className="hover:text-wsf-cream transition-colors">Testimonials</Link></li>
             </ul>
           </div>
           
