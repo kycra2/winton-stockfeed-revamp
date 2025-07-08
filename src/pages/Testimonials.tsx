@@ -25,12 +25,11 @@ const Testimonials = () => {
                 ))}
               </div>
               <blockquote className="text-gray-700 mb-4 italic">
-                "We've been using Winton Stock Feed's molasses for our dairy operation for over 5 years now. The quality is consistently excellent and the delivery service is reliable. Our cows love it and we've seen a noticeable improvement in milk production since switching to their products."
+                "Since introducing molasses to our goat herd, we've seen a remarkable improvement in animal health. Issues that used to take time and money to manage simply disappeared. Its now a daily part of our feeding routine- simple, effective and great for rumen health. Highly recommend"
               </blockquote>
               <div className="border-t pt-4">
-                <p className="font-semibold text-wsf-blue-dark">Sarah Thompson</p>
-                <p className="text-gray-600">Thompson Dairy Farm, Canterbury</p>
-                <p className="text-sm text-gray-500">Dairy Farmer - 450 cow operation</p>
+                <p className="font-semibold text-wsf-blue-dark">Nourish South</p>
+                <p className="text-gray-600">Goat Milk Farm Dunedin</p>
               </div>
             </CardContent>
           </Card>
@@ -43,12 +42,18 @@ const Testimonials = () => {
                 ))}
               </div>
               <blockquote className="text-gray-700 mb-4 italic">
-                "The team at Winton Stock Feed really understands our needs. Their PKE quality is outstanding and their technical support has been invaluable in helping us optimize our feed programs. Great service, competitive pricing, and most importantly - results we can see in our herd."
+                "Winton Stock Feeds are more than just a feed company. They are a vital part of the success of our business by providing a quality product, on-time and with excellent service. We look forward to enjoying a long-lasting and prosperous relationship."
               </blockquote>
-              <div className="border-t pt-4">
-                <p className="font-semibold text-wsf-blue-dark">Mike Johnson</p>
-                <p className="text-gray-600">Riverside Farm, Southland</p>
-                <p className="text-sm text-gray-500">Farm Manager - 600 cow dairy operation</p>
+              <div className="border-t pt-4 flex items-center gap-4">
+                <img 
+                  src="/lovable-uploads/89c11db7-36cb-4c2b-b1ec-350302978f41.png" 
+                  alt="Ramsay Dairies Logo" 
+                  className="h-12 w-auto"
+                />
+                <div>
+                  <p className="font-semibold text-wsf-blue-dark">Gregor & Lynne Ramsay</p>
+                  <p className="text-gray-600">Ramsay Dairies</p>
+                </div>
               </div>
             </CardContent>
           </Card>
