@@ -76,8 +76,8 @@ const Testimonials = () => {
                 <iframe 
                   width="100%" 
                   height="100%" 
-                  src="https://www.youtube.com/embed/pKOtrZCR44Y?si=kfv_dfpcvJUbU6jB" 
-                  title="Customer Testimonial - Winton Stock Feed" 
+                  src="https://www.youtube.com/embed/Pd7s4s9DKgc?si=mVQvl2Dz1pkB_Fcs" 
+                  title="YouTube video player" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                   referrerPolicy="strict-origin-when-cross-origin" 
