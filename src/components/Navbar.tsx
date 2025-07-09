@@ -26,6 +26,7 @@ const navItems = [
       { name: 'High Energy Pellets', href: '/dairy-feed/high-energy-pellets' },
     ]
   },
+  { name: 'Molasses', href: '/molasses' },
   {
     name: 'Sheep/Calf Feed', 
     href: '#', 
@@ -41,7 +42,7 @@ const navItems = [
   },
   { name: 'Feed Trailers', href: '/feed-trailers' },
  { name: 'About Us', href: '/about-us' },
-  { name: 'Molasses', href: '/molasses' },
+
   { name: 'Testimonials', href: '/testimonials' },
   { name: 'Contact Us', href: '/contact-us' }
 ];
