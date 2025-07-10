@@ -91,14 +91,14 @@ const ContactUs = () => {
               name="Lisa Kennedy"
               role="Sales Team Orders"
               phone="0800 Molasses (0800 665277)"
-              email="office@wintonstockfeed.co.nz"
+              email="orders@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Lisa-kennedy.jpg"
             />
             <ContactCard
               name="Kathryn McEwing"
               role="Sales Team Orders"
               phone="0800 Molasses (0800 665277)"
-              email="office@wintonstockfeed.co.nz"
+              email="orders@wintonstockfeed.co.nz –"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Kathryn+McEwing+.jpg"
             />
             <ContactCard
