@@ -18,7 +18,7 @@ const navItems = [
     children: [
       { name: 'PKE', href: '/dairy-feed/pke' },
       { name: 'Maize DDGS', href: '/dairy-feed/maize-ddgs' },
-      { name: 'Soy Bran Hulls', href: '/dairy-feed/soy-bran-hulls' },
+      { name: 'Soya Hulls', href: '/dairy-feed/soy-bran-hulls' },
       { name: 'Soybean Meal', href: '/dairy-feed/soybean-meal' },
       { name: 'Crushed Grain', href: '/dairy-feed/crushed-grain' },
       { name: 'Tapioca', href: '/dairy-feed/tapioca' },
