@@ -35,7 +35,7 @@ const AboutUs = () => {
               <iframe 
                 width="100%" 
                 height="100%" 
-                src="https://www.youtube.com/embed/pKOtrZCR44Y?si=kfv_dfpcvJUbU6jB" 
+                src="https://www.youtube.com/embed/azah79U3LNk?si=ELfgE3uFJoSjQALP" 
                 title="YouTube video player" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -95,7 +95,7 @@ const AboutUs = () => {
           </p>
 
           <p className="leading-relaxed">
-            The Company grew from being a Feed Mill based in the Southland and has become a New Zealand wide supplier and now serves many hundreds of farmers and Feed Mills and manufacturers. The company employs over 20 people including sales reps, covering the regions nationwide and molasses plants are run with a combination of contractor and company owned trucks.
+            The Company grew from being a Feed Mill based in the Southland and has become a New Zealand wide supplier and now serves many hundreds of farmers and Feed Mills and manufacturers. The company employs over 40 people including sales reps, covering the regions nationwide and molasses plants are run with a combination of contractor and company owned trucks.
           </p>
         </div>
 
