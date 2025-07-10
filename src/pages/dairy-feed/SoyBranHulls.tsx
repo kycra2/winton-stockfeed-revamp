@@ -8,21 +8,21 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const SoyBranHullsPage: React.FC = () => {
   return (
-     <ProductLayout title="Soybran Hulls">
+     <ProductLayout title="Soya Hulls">
       <div className="space-y-8">
         {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <p className="text-lg">
-              Soy Bran Hulls are the outer covering of the soybean. They are separated from the bean during processing and are a valuable source of digestible fibre.
+              Soya Hulls are the outer covering of the soybean. They are separated from the bean during processing and are a valuable source of digestible fibre.
             </p>
             <p>
               This byproduct from soybean oil extraction provides a highly digestible feed option that is both nutritious and economical for livestock producers.
             </p>
             <p>
-              Soy Bran Hulls are particularly effective when added to dairy feed rations, helping to improve rumen function and overall animal health. With their high fibre content and excellent digestibility, Soy Bran Hulls are an effective addition to dairy rations, helping to maintain proper rumen function.
+              Soya Hulls are particularly effective when added to dairy feed rations, helping to improve rumen function and overall animal health. With their high fibre content and excellent digestibility, Soya Hulls are an effective addition to dairy rations, helping to maintain proper rumen function.
 
-Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding program.
+Contact our sales team to discuss how Soya Hulls can benefit your feeding program.
             </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
@@ -39,12 +39,12 @@ Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding pr
           <CardContent className="p-6 space-y-4">
             <h2 className="text-xl font-semibold text-wsf-blue">Optimal Nutrition Solution</h2>
             <p>
-              With their high fibre content and excellent digestibility, Soy Bran Hulls are an effective addition to dairy rations, helping to maintain proper rumen function.
+              With their high fibre content and excellent digestibility, Soya Hulls are an effective addition to dairy rations, helping to maintain proper rumen function.
 
 
             </p>
             <p className="text-gray-700">
-              Talk to our specialists to learn how to integrate Soy Bran Hulls into your feeding program.
+              Talk to our specialists to learn how to integrate Soya Hulls into your feeding program.
             </p>
           </CardContent>
         </Card>
@@ -54,9 +54,9 @@ Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding pr
 
         {/* Benefits Section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-wsf-brown">About Soy Bran Hulls</h2>
+          <h2 className="text-2xl font-semibold text-wsf-brown">About Soya Hulls</h2>
           <p>
-            Soy Bran Hulls are an excellent source of digestible fibre with consistent quality 
+            Soya Hulls are an excellent source of digestible fibre with consistent quality 
             and nutrient composition, making them a reliable feed ingredient.
           </p>
           <p>
@@ -72,7 +72,7 @@ Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding pr
         {/* Details Section */}
         <section className="space-y-4">
           <p>
-            Soy Bran Hulls can be used as a partial replacement for forages in times of shortage, 
+            Soya Hulls can be used as a partial replacement for forages in times of shortage, 
             offering flexibility in feed formulation.
           </p>
           <p>
@@ -80,11 +80,11 @@ Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding pr
             with ease, enhancing overall feed efficiency.
           </p>
           <p>
-            For dairy cows, Soy Bran Hulls can help maintain milk fat percentages while providing 
+            For dairy cows, Soya Hulls can help maintain milk fat percentages while providing 
             energy for milk production, making them particularly valuable in dairy operations.
           </p>
           <p>
-            Our Soy Bran Hulls are sourced from quality suppliers and are available in bulk quantities 
+            Our Soya Hulls are sourced from quality suppliers and are available in bulk quantities 
             to meet the needs of farms of all sizes.
           </p>
         </section>
@@ -93,10 +93,10 @@ Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding pr
         <section className="bg-wsf-blue bg-opacity-10 p-6 rounded-lg shadow-md flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <h3 className="text-xl font-semibold text-wsf-blue mb-2">
-              Download Soy Bran Hulls Specifications
+              Download Soya Hulls Specifications
             </h3>
             <p className="text-gray-700 mb-2">
-              Get detailed information about our Soy Bran Hulls product.
+              Get detailed information about our Soya Hulls product.
             </p>
           </div>
           <Button 
