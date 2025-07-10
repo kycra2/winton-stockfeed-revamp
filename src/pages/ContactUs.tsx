@@ -138,21 +138,21 @@ const ContactUs = () => {
             />
             <ContactCard
               name="Brendon Corbett"
-              role="Southland Sales Rep"
+              role="Central / South Southland Sales Rep"
               phone="021 311 281"
               email="brendonc@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Brendon+Corbett.jpg"
             />
             <ContactCard
               name="Riaan Crous"
-              role="Southland Sales Rep"
+              role="Western Southland Sales Rep"
               phone="021 912 699"
               email="riaan@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Riaan+Crous.jpg"
             />
             <ContactCard
               name="Andy Chrystall"
-              role="Southland Sales Rep"
+              role="North Southland Sales Rep"
               phone="029 201 7361"
               email="andyc@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/thumbnail_andy-new.jpg"
