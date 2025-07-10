@@ -11,7 +11,7 @@ const SheepFeedPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-6">
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-wsf-brown">Premium Sheep Nuts</h2>
+            <h2 className="text-2xl font-semibold text-wsf-brown">Sheep Nuts</h2>
             <p className="text-gray-700">
               Sheep Nuts are formulated from grains and wheat products to give an economic feed 
               that will keep your stock in optimum condition in times of poor feed availability.
@@ -53,7 +53,7 @@ const SheepFeedPage = () => {
       </div>
 
       <section className="mt-8 space-y-6">
-        <h2 className="text-xl font-semibold">Premium Sheep Nuts: Optimal Nutrition</h2>
+        <h2 className="text-xl font-semibold">Sheep Nuts: Optimal Nutrition</h2>
         <p className="text-gray-700">
           Our Sheep Nuts are meticulously formulated to provide a balanced and economic feed solution 
           for your livestock. Designed to supplement feed during periods of poor availability, these 
