@@ -10,7 +10,7 @@ const benefits = [
   },
   {
     title: "Is Palatable",
-    description: "Cows love Molasses and when mixed with other feeds this in turn improves the palatability, especially PKE, and maize silage."
+    description: "Cows love Molasses and when mixed with other feeds this in turn improves the palatability, especially PKE, and silage."
   },
   {
     title: "Provides Energy",
@@ -18,7 +18,7 @@ const benefits = [
   },
   {
     title: "Feeds Rumen Microbes",
-    description: "The high sugar content of molasses stimulates the growth and activity of rumen microbes. Increased microbe activity improves fibre digestion in the rumen especially high fibre pasture, PKE and maize silage and improves overall feed conversion efficiency."
+    description: "The high sugar content of molasses stimulates the growth and activity of rumen microbes. Increased microbe activity improves fibre digestion in the rumen especially high fibre pasture, PKE and silage and improves overall feed conversion efficiency."
   },
   {
     title: "Builds Resistance",
