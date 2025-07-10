@@ -12,7 +12,7 @@ const DeerFeed = () => {
         <div className="space-y-6">
          <section className="space-y-4">
   <p>
-    WSF Deer Nuts provide an ideal way to supplement feed without the wastage of grains and to ensure the correct
+    Our Supreme Deer Nuts provide an ideal way to supplement feed without the wastage of grains and to ensure the correct
     balance of vitamins and minerals. They can be kept up to 4 months without deterioration.
   </p>
   <p>
@@ -71,7 +71,7 @@ const DeerFeed = () => {
         >
           <Button variant="default" className="gap-2">
             <FileDown className="h-4 w-4" />
-            Download Deer Feed PDF
+            Download Supreme Deer Nuts PDF
           </Button>
         </a>
       </div>
