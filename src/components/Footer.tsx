@@ -73,10 +73,10 @@ const Footer = () => {
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-2" /> 
                 <a 
-                  href="mailto:info@wintonstockfeed.co.nz" 
+                  href="mailto:orders@wintonstockfeed.co.nz" 
                   className="hover:text-wsf-cream transition-colors"
                 >
-                  info@wintonstockfeed.co.nz
+                  orders@wintonstockfeed.co.nz
                 </a>
               </li>
             </ul>
@@ -95,10 +95,10 @@ const Footer = () => {
                 </a>
                 <br></br>
                 <a 
-                  href="mailto:office@wintonstockfeed.co.nz" 
+                  href="mailto:orders@wintonstockfeed.co.nz" 
                   className="hover:text-wsf-cream transition-colors"
                 >
-                  office@wintonstockfeed.co.nz
+                  orders@wintonstockfeed.co.nz
                 </a>
               </li>
              
