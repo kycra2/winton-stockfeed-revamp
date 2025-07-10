@@ -27,6 +27,7 @@ const navItems = [
     ]
   },
   { name: 'Molasses', href: '/molasses' },
+  { name: 'Condose', href: '/condose' },
   {
     name: 'Sheep/Calf Feed', 
     href: '#', 

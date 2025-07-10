@@ -13,6 +13,7 @@ import ContactUs from "./pages/ContactUs";
 import SheepFeedPage from "./pages/SheepFeed";
 import AboutUs from "./pages/AboutUs";
 import CondoseCalculator from "./pages/CondoseCalculator";
+import Condose from "./pages/Condose";
 import FeedQualityDeclarations from "./pages/FeedQualityDeclarations";
 import Testimonials from "./pages/Testimonials";
 
@@ -62,6 +63,7 @@ const App = () => (
           <Route path="/dairy-feed/tapioca" element={<TapiocaPage />} />
           <Route path="/health-and-safety" element={<HealthAndSafety />} />
           <Route path="/condose-calculator" element={<CondoseCalculator />} />
+          <Route path="/condose" element={<Condose />} />
           <Route path="/feed-quality-declarations" element={<FeedQualityDeclarations />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="*" element={<NotFound />} />
