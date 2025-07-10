@@ -60,7 +60,7 @@ Contact our sales team to discuss how Soya Hulls can benefit your feeding progra
             and nutrient composition, making them a reliable feed ingredient.
           </p>
           <p>
-            They contain approximately 12-14% crude protein and have a high energy value due 
+            They contain approximately 10.5-12.5% crude protein and have a high energy value due 
             to their digestible fibre content, making them an excellent alternative to grains.
           </p>
           <p>
