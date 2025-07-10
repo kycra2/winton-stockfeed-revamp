@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -43,57 +44,63 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <MapPin className="w-5 h-5 mr-2 mt-0.5" /> 
-                <span>Head Office<br></br>
-                139 Florence Rd, Winton 9782 <br></br>
-                <a 
-                href="tel:0323660889" 
-                  className="ml-2 hover:text-wsf-cream transition-colors"
-                >
-                Phone 03 236 6089
-                </a>
-                <br></br>
-                <a 
-                  href="mailto:office@wintonstockfeed.co.nz" 
-                  className="hover:text-wsf-cream transition-colors"
-                >
-                  office@wintonstockfeed.co.nz
-                </a>
-                </span>
+                <MapPin className="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" /> 
+                <div>
+                  <div className="font-medium">Head Office</div>
+                  <div>139 Florence Rd, Winton 9782</div>
+                  <a 
+                    href="tel:0323660889" 
+                    className="hover:text-wsf-cream transition-colors"
+                  >
+                    Phone 03 236 6089
+                  </a>
+                  <br />
+                  <a 
+                    href="mailto:office@wintonstockfeed.co.nz" 
+                    className="hover:text-wsf-cream transition-colors"
+                  >
+                    office@wintonstockfeed.co.nz
+                  </a>
+                </div>
               </li>
-              <li className="flex items-center">
-                <Phone className="w-5 h-5 mr-2" /> 
-                <a 
-                  href="tel:0800665277" 
-                  className="hover:text-wsf-cream transition-colors"
-                >
-                  Orders Free Phone 0800 MOLASSES Ph 0800 665 277
-                </a>
+              <li className="flex items-start">
+                <Phone className="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" /> 
+                <div>
+                  <a 
+                    href="tel:0800665277" 
+                    className="hover:text-wsf-cream transition-colors"
+                  >
+                    Orders Free Phone 0800 MOLASSES Ph 0800 665 277
+                  </a>
+                </div>
               </li>
-              <li className="flex items-center">
-                <Mail className="w-5 h-5 mr-2" /> 
-                <a 
-                  href="mailto:orders@wintonstockfeed.co.nz" 
-                  className="hover:text-wsf-cream transition-colors"
-                >
-                  orders@wintonstockfeed.co.nz
-                </a>
+              <li className="flex items-start">
+                <Mail className="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" /> 
+                <div>
+                  <a 
+                    href="mailto:orders@wintonstockfeed.co.nz" 
+                    className="hover:text-wsf-cream transition-colors"
+                  >
+                    orders@wintonstockfeed.co.nz
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
           
           <div>
             <ul className="space-y-2">
-              <li>Feed Mill<br></br>
-                107 Clyde Street<br></br>
-                Invercargill<br></br>
+              <li>
+                <div className="font-medium">Feed Mill</div>
+                <div>107 Clyde Street</div>
+                <div>Invercargill</div>
                 <a 
                   href="tel:0323660889" 
                   className="hover:text-wsf-cream transition-colors"
                 >
                   Ph 03 236 6089
                 </a>
-                <br></br>
+                <br />
                 <a 
                   href="mailto:orders@wintonstockfeed.co.nz" 
                   className="hover:text-wsf-cream transition-colors"
@@ -101,7 +108,6 @@ const Footer = () => {
                   orders@wintonstockfeed.co.nz
                 </a>
               </li>
-             
             </ul>
           </div>
         </div>
