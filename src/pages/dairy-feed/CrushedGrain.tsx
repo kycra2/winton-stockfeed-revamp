@@ -80,7 +80,7 @@ const CrushedGrainPage: React.FC = () => {
           </div>
           <div>
             <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/crushed-grain-dairy-feed.png"
+              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/crushed-grain.png"
               alt="Crushed Grain Dairy Feed Product"
               className="rounded-lg shadow-md w-full h-auto object-cover"
             />
