@@ -131,7 +131,7 @@ const ContactUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ContactCard
               name="Jamie Stephens"
-              role="North Island"
+              role="North Island Sales Manager"
               phone="021 838 261"
               email="jamies@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/jamie-stephens.avif"
@@ -168,21 +168,21 @@ const ContactUs = () => {
               name="Nelson Lindsay"
               role="Director"
               phone="027 435 5176"
-              email="nelson@wintonstockfeed.co.nz"
+              email="nelsonl@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/nelson.jpg"
             />
             <ContactCard
               name="Pierre Neame"
               role="General Manager"
               phone="029 235 0737"
-              email="pierre@wintonstockfeed.co.nz"
+              email="pierren@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/pierre.jpg"
             />
             <ContactCard
               name="Sharyn Goodman"
-              role="Accountant"
+              role="Company Accountant"
               phone="03 236 6089"
-              email="sharyn@wintonstockfeed.co.nz"
+              email="sharyng@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Sharyn+Goodman.jpg"
             />
           </div>
