@@ -47,7 +47,7 @@ const CrushedGrainPage: React.FC = () => {
                 </p>
                 <h3 className="font-semibold">Improved Digestibility</h3>
                 <p>
-                  Fine crushing enhances digestibility and feed efficiency.
+                  Crushing enhances digestibility and feed efficiency.
                 </p>
               </div>
               <div className="space-y-3">
