@@ -18,7 +18,7 @@ const StockfeedSection = () => {
         </h2>
 
         <p className="mb-6">
-          Our typical raw material range can be selected from the following: PKE, Maize DDG, Crushed Grains, Soya Bean Meal, Soya Hulls, Grain Pellets and Molasses — all subject to availability.
+          Our typical raw material range can be selected from the following: PKE, Maize DDG, Crushed Grains, Soy Bean Meal, Soya Hulls, Grain Pellets and Molasses — all subject to availability.
           Worth noting is that all our PKE is screened before being blended.
         </p>
 
