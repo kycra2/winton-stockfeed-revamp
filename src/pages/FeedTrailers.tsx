@@ -48,9 +48,7 @@ const FeedTrailersPage: React.FC = () => {
             The wide bin can hold 2 Tonne of PKE or up to three round bales, its easy to 
             load which reduces spillage and wastage.
           </p>
-          <p>
-            The curved shape means cows can reach all the feed.
-          </p>
+          
           <p>
             Curved trough means cows can reach all the feed, high sides and large capacity 
             means no spillage during filling and minimises wastage during feeding.
