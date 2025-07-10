@@ -134,8 +134,7 @@ const CalfMuesli18Page: React.FC = () => {
           <h2 className="text-2xl font-semibold text-wsf-brown">Available In</h2>
           <ul className="list-disc pl-5 space-y-2">
             <li>25kg bags</li>
-            <li>Bulk (1 tonne bags)</li>
-            <li>Bulk delivery available</li>
+            
           </ul>
         </section>
 
