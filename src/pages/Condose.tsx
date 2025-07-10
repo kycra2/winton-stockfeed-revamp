@@ -3,7 +3,7 @@ import React from 'react';
 import ProductLayout from '../components/ProductLayout';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Zap, DollarSign, Target, Settings, Shield, Calculator } from 'lucide-react';
+import { CheckCircle, Zap, DollarSign, Target, Settings, Shield, Calculator, Download } from 'lucide-react';
 
 const Condose = () => {
   const benefits = [
@@ -97,7 +97,7 @@ const Condose = () => {
         </div>
 
         {/* Calculator Button Section */}
-        <div className="text-center bg-wsf-cream p-6 rounded-lg">
+        <div className="text-center bg-wsf-cream p-6 rounded-lg mb-8">
           <h3 className="text-2xl font-bold text-wsf-blue-dark mb-4">Calculate Your Perfect Mix</h3>
           <p className="text-lg text-gray-700 mb-6">
             Use our Condose Recipe Calculator to determine the correct mix ratios for your system and ensure optimal mineral delivery.
@@ -109,6 +109,22 @@ const Condose = () => {
           >
             <Calculator className="h-5 w-5 mr-2" />
             Open Calculator
+          </Button>
+        </div>
+
+        {/* PDF Download Section */}
+        <div className="text-center bg-white border border-gray-200 p-6 rounded-lg">
+          <h3 className="text-2xl font-bold text-wsf-blue-dark mb-4">Expert Insights on Mineral Nutrition</h3>
+          <p className="text-lg text-gray-700 mb-6">
+            Download Howard de Klerk's comprehensive guide on dairy cow mineral basics and learn how proper mineral supplementation can improve your herd's performance.
+          </p>
+          <Button 
+            variant="outline"
+            className="bg-white border-wsf-blue text-wsf-blue hover:bg-wsf-blue hover:text-white text-lg px-8 py-3"
+            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/con005hdeklerkdairycowmineralbasics+(1).pdf', '_blank')}
+          >
+            <Download className="h-5 w-5 mr-2" />
+            Download Mineral Basics Guide
           </Button>
         </div>
       </div>

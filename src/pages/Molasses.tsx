@@ -7,7 +7,6 @@ import MolassesInfo from '@/components/molasses/MolassesInfo';
 import WhyMolasses from '@/components/molasses/WhyMolasses';
 import MolassesLocations from '@/components/molasses/MolassesLocations';
 import MolassesDepots from '@/components/molasses/MolassesDepots';
-import ExpertInsight from '@/components/molasses/ExpertInsight';
 import { Button } from '@/components/ui/button';
 import { Download, ArrowRight } from 'lucide-react';
 
@@ -67,7 +66,6 @@ const Molasses = () => {
           </div>
         </section>
         
-        <ExpertInsight />
         <MolassesLocations />
         <MolassesDepots />
       </main>
