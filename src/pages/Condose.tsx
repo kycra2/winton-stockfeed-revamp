@@ -2,7 +2,8 @@
 import React from 'react';
 import ProductLayout from '../components/ProductLayout';
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Zap, DollarSign, Target, Settings, Shield } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { CheckCircle, Zap, DollarSign, Target, Settings, Shield, Calculator } from 'lucide-react';
 
 const Condose = () => {
   const benefits = [
@@ -90,9 +91,25 @@ const Condose = () => {
           </div>
         </div>
         
-        <div className="text-center bg-wsf-blue text-white p-6 rounded-lg">
+        <div className="text-center bg-wsf-blue text-white p-6 rounded-lg mb-8">
           <h3 className="text-xl font-semibold mb-2">Accurate mineral doses reaching every cow, every day</h3>
           <p className="text-lg">accurately, reliably and economically.</p>
+        </div>
+
+        {/* Calculator Button Section */}
+        <div className="text-center bg-wsf-cream p-6 rounded-lg">
+          <h3 className="text-2xl font-bold text-wsf-blue-dark mb-4">Calculate Your Perfect Mix</h3>
+          <p className="text-lg text-gray-700 mb-6">
+            Use our Condose Recipe Calculator to determine the correct mix ratios for your system and ensure optimal mineral delivery.
+          </p>
+          <Button 
+            variant="default"
+            className="bg-wsf-blue hover:bg-wsf-blue-dark text-lg px-8 py-3"
+            onClick={() => window.location.href = '/condose-calculator'}
+          >
+            <Calculator className="h-5 w-5 mr-2" />
+            Open Calculator
+          </Button>
         </div>
       </div>
 

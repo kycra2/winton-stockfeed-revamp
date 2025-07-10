@@ -9,7 +9,7 @@ import MolassesLocations from '@/components/molasses/MolassesLocations';
 import MolassesDepots from '@/components/molasses/MolassesDepots';
 import ExpertInsight from '@/components/molasses/ExpertInsight';
 import { Button } from '@/components/ui/button';
-import { Download } from 'lucide-react';
+import { Download, ArrowRight } from 'lucide-react';
 
 const Molasses = () => {
   return (
@@ -39,6 +39,29 @@ const Molasses = () => {
               >
                 <Download className="h-5 w-5 mr-2" />
                 Download PDF
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Condose Link Section */}
+        <section className="py-12 bg-wsf-cream">
+          <div className="container-custom">
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl font-bold text-wsf-blue-dark mb-6">
+                Maximize Your Molasses Investment
+              </h2>
+              <p className="text-lg text-gray-700 mb-6">
+                Take your molasses feeding to the next level with our fully automated Condose system. 
+                Deliver precise mineral doses to every cow, every day with complete accuracy and reliability.
+              </p>
+              <Button 
+                variant="default"
+                className="bg-wsf-blue hover:bg-wsf-blue-dark text-lg px-8 py-3"
+                onClick={() => window.location.href = '/condose'}
+              >
+                Discover Condose
+                <ArrowRight className="h-5 w-5 ml-2" />
               </Button>
             </div>
           </div>
