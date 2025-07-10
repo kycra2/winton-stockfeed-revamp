@@ -48,7 +48,7 @@ const Molasses = () => {
           <div className="container-custom">
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold text-wsf-blue-dark mb-6">
-                Maximize Your Molasses Investment
+                Maximise Your Molasses Investment
               </h2>
               <p className="text-lg text-gray-700 mb-6">
                 Take your molasses feeding to the next level with our fully automated Condose system. 

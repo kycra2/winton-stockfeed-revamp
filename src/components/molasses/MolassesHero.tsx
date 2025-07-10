@@ -15,7 +15,7 @@ const MolassesHero = () => {
       
       <div className="container-custom relative z-10 py-16 md:py-24 text-white">
         <h1 className="text-3xl md:text-5xl font-bold mb-6 animate-fade-in">
-          Molasses – New Zealand's Favorite Feed Supplement
+          Molasses – New Zealand's Favourite Feed Supplement
         </h1>
         
         <div className="max-w-3xl space-y-4 animate-fade-in" style={{animationDelay: '0.2s'}}>
