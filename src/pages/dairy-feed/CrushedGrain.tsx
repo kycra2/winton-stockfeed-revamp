@@ -74,7 +74,7 @@ const CrushedGrainPage: React.FC = () => {
               energy supplement for your dairy herd.
             </p>
             <p className="text-gray-700">
-              The consistent crushing process ensures reliable quality and maximizes the nutritional value 
+              The consistent crushing process ensures reliable quality and maximises the nutritional value 
               of every grain, supporting peak milk production and herd health.
             </p>
           </div>
