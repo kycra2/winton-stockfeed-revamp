@@ -14,13 +14,13 @@ const SoyBranHullsPage: React.FC = () => {
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <p className="text-lg">
-              Soy Bran Hulls are the outer covering of the soybean. They are separated from the bean during processing and are a valuable source of digestible fiber.
+              Soy Bran Hulls are the outer covering of the soybean. They are separated from the bean during processing and are a valuable source of digestible fibre.
             </p>
             <p>
               This byproduct from soybean oil extraction provides a highly digestible feed option that is both nutritious and economical for livestock producers.
             </p>
             <p>
-              Soy Bran Hulls are particularly effective when added to dairy feed rations, helping to improve rumen function and overall animal health. With their high fiber content and excellent digestibility, Soy Bran Hulls are an effective addition to dairy rations, helping to maintain proper rumen function.
+              Soy Bran Hulls are particularly effective when added to dairy feed rations, helping to improve rumen function and overall animal health. With their high fibre content and excellent digestibility, Soy Bran Hulls are an effective addition to dairy rations, helping to maintain proper rumen function.
 
 Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding program.
             </p>
@@ -39,7 +39,7 @@ Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding pr
           <CardContent className="p-6 space-y-4">
             <h2 className="text-xl font-semibold text-wsf-blue">Optimal Nutrition Solution</h2>
             <p>
-              With their high fiber content and excellent digestibility, Soy Bran Hulls are an effective addition to dairy rations, helping to maintain proper rumen function.
+              With their high fibre content and excellent digestibility, Soy Bran Hulls are an effective addition to dairy rations, helping to maintain proper rumen function.
 
 
             </p>
@@ -56,12 +56,12 @@ Contact our sales team to discuss how Soy Bran Hulls can benefit your feeding pr
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold text-wsf-brown">About Soy Bran Hulls</h2>
           <p>
-            Soy Bran Hulls are an excellent source of digestible fiber with consistent quality 
+            Soy Bran Hulls are an excellent source of digestible fibre with consistent quality 
             and nutrient composition, making them a reliable feed ingredient.
           </p>
           <p>
             They contain approximately 12-14% crude protein and have a high energy value due 
-            to their digestible fiber content, making them an excellent alternative to grains.
+            to their digestible fibre content, making them an excellent alternative to grains.
           </p>
           <p>
             The low starch content helps reduce the risk of acidosis while still providing 

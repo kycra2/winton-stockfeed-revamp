@@ -52,7 +52,7 @@ const HighEnergyPelletsPage: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <h3 className="text-xl font-medium mb-3 text-wsf-blue">Improved Digestibility</h3>
-              <p>Breaks down complex carbohydrates, proteins and fiber for better nutrient absorption and utilization.</p>
+              <p>Breaks down complex carbohydrates, proteins and fibre for better nutrient absorption and utilization.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <h3 className="text-xl font-medium mb-3 text-wsf-blue">Increased Production</h3>

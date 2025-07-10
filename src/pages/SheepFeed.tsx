@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Card } from '@/components/ui/card';
