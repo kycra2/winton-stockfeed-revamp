@@ -14,7 +14,7 @@ const PKEPage: React.FC = () => {
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <p className="text-lg">
-              Winton Stock Feed supplies the Southland and South Otago Region with Palm Kernel.
+              Winton Stock Feed supplies the Southland and Otago Region with Palm Kernel.
             </p>
             <p>
               We have our own Auger and Bulk Trucks to deliver into silos and sheds on farm, 
