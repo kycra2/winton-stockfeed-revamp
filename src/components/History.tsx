@@ -18,7 +18,7 @@ const History = () => {
               Over three decades later, we've expanded our product range and reach, but our commitment to quality, service, and value remains unchanged. We continue to be family-owned and operated, maintaining the personalized service and agricultural expertise that set us apart from the beginning.
             </p>
             <p className="text-gray-700">
-              Today, with seven depots nationwide and the largest molasses storage network in New Zealand, we're proud to remain 100% Kiwi-owned while supporting farmers across the country with innovative feed solutions.
+              Today, with seven depots nationwide for Molasses with the largest molasses storage network in New Zealand, we're proud to remain 100% Kiwi-owned while supporting farmers. We supply dry feeds through Southland and Otago.  
             </p>
           </div>
 
