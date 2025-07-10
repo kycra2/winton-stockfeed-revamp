@@ -13,7 +13,7 @@ const HighEnergyPelletsPage: React.FC = () => {
         {/* Intro Section with Image */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-wsf-brown">Maximize Feed Efficiency with High Energy Pellets</h2>
+            <h2 className="text-2xl font-semibold text-wsf-brown">Maximise Feed Efficiency with High Energy Pellets</h2>
             <p className="text-base leading-relaxed">
               Our High Energy Pellets supplement is specially formulated to improve digestibility and nutrient 
               absorption in dairy cows. By breaking down complex feed components, these pellets help release 
@@ -21,7 +21,7 @@ const HighEnergyPelletsPage: React.FC = () => {
             </p>
             <p className="text-base leading-relaxed">
               Developed specifically for New Zealand's pastoral-based dairy systems, our High Energy Pellets
-              works with a variety of feed types and helps reduce feed waste while optimizing milk production.
+              works with a variety of feed types and helps reduce feed waste while optimising milk production.
             </p>
             <div className="pt-4">
               <Button 
