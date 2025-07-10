@@ -27,7 +27,6 @@ const navItems = [
     ]
   },
   { name: 'Molasses', href: '/molasses' },
-  { name: 'Condose', href: '/condose' },
   {
     name: 'Sheep/Calf Feed', 
     href: '#', 
@@ -42,8 +41,7 @@ const navItems = [
     ]
   },
   { name: 'Feed Trailers', href: '/feed-trailers' },
- { name: 'About Us', href: '/about-us' },
-
+  { name: 'About Us', href: '/about-us' },
   { name: 'Testimonials', href: '/testimonials' },
   { name: 'Contact Us', href: '/contact-us' }
 ];
