@@ -36,7 +36,7 @@ const DeerFeed = () => {
             <h2 className="text-xl font-semibold mb-4">Ingredients Selected From</h2>
             <p className="text-gray-700">
               Barley, Wheat, Soybean Meal, Molasses, Di-Calcium Phosphate, Lime, Salt, 
-              Borresperse, Sodium Bentonite and a vitamin and mineral premix.
+              Sodium Bentonite and a vitamin and mineral premix.
             </p>
           </section>
         </div>
