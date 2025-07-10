@@ -103,7 +103,7 @@ const AboutUs = () => {
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold text-wsf-blue-dark">National Presence</h2>
           <p className="leading-relaxed">
-            Seven depots located throughout New Zealand ensure ease of supply for farmers nationwide. The company supplies PKE throughout Southland, South Otago and the rest of New Zealand. WSF purchased PFC Stock feeds in Feb 2014, to take advantage of the growing pelleted feed market in Southland. We have devised a way to mix any liquid or powdered mineral supplement including non water soluble products like Mg Oxide into molasses.
+            Seven depots located throughout New Zealand ensure ease of supply for farmers nationwide. The company supplies PKE throughout Southland, Otago and the rest of New Zealand. WSF purchased PFC Stock feeds in Feb 2014, to take advantage of the growing pelleted feed market in Southland. We have devised a way to mix any liquid or powdered mineral supplement including non water soluble products like Mg Oxide into molasses.
           </p>
         </div>
       </div>
