@@ -94,19 +94,7 @@ const Footer = () => {
                 <div className="font-medium">Feed Mill</div>
                 <div>107 Clyde Street</div>
                 <div>Invercargill</div>
-                <a 
-                  href="tel:0323660889" 
-                  className="hover:text-wsf-cream transition-colors"
-                >
-                  Ph 03 236 6089
-                </a>
-                <br />
-                <a 
-                  href="mailto:orders@wintonstockfeed.co.nz" 
-                  className="hover:text-wsf-cream transition-colors"
-                >
-                  orders@wintonstockfeed.co.nz
-                </a>
+                
               </li>
             </ul>
           </div>
