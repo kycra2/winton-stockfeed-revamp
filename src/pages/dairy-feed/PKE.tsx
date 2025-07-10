@@ -100,7 +100,7 @@ const PKEPage: React.FC = () => {
           <p>
             Palm Kernel is a slow but very fermentable 
             product. Palm Kernel has high digestibility in ruminants, therefore provides constant 
-            energy release and help maintain rumen pH in the optimum range for best rumen function 
+            energy release and helps maintain rumen pH in the optimum range for best rumen function 
             and animal performance.
           </p>
         </section>
