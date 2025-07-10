@@ -9,9 +9,7 @@ const FeedQualityDeclarations = () => {
     <ProductLayout title="Feed Quality Declarations">
       <div className="space-y-8">
         <p className="text-lg leading-relaxed">
-          Access our feed quality declarations and compliance documents. These documents provide 
-          detailed information about the nutritional content, quality standards, and compliance
-          certifications for our feed products.
+          
         </p>
         
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
