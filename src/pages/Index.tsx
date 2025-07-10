@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -34,7 +35,7 @@ const Index = () => {
                   <iframe 
                     width="100%" 
                     height="100%" 
-                    src="https://www.youtube.com/embed/Pd7s4s9DKgc?si=mVQvl2Dz1pkB_Fcs" 
+                    src="https://www.youtube.com/embed/c5s3ZviV9-c?si=x9z08Fx3y21BodKD" 
                     title="YouTube video player" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
