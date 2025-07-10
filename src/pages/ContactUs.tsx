@@ -75,6 +75,7 @@ const ContactUs = () => {
               name="Main Office"
               location="139 Florence Road, Winton. PO Box 132 Winton 9741"
               phone="03 236 6089"
+               email="office@wintonstockfeed.co.nz"
             />
             <ContactCard
               name="Engineering Workshop"
