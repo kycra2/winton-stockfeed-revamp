@@ -76,7 +76,7 @@ const Testimonials = () => {
                 <iframe 
                   width="100%" 
                   height="100%" 
-                  src="https://www.youtube.com/watch?v=azah79U3LNk" 
+                  src="https://www.youtube.com/embed/azah79U3LNk?si=ELfgE3uFJoSjQALP" 
                   title="YouTube video player" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
