@@ -28,9 +28,9 @@ const HighEnergyPelletsPage: React.FC = () => {
                 className="bg-wsf-blue hover:bg-wsf-blue-dark text-white"
                 asChild
               >
-                <a href="tel:032367224" className="flex items-center gap-2">
+                <a href="tel:032366089" className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  Call Us for Pricing: 03 236 7224
+                  Call Us for Pricing: 03 236 6089
                 </a>
               </Button>
             </div>
