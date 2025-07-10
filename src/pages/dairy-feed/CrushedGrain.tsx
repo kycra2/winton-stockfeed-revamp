@@ -113,7 +113,7 @@ const CrushedGrainPage: React.FC = () => {
           <h2 className="text-2xl font-semibold text-wsf-brown">Available In</h2>
           <ul className="list-disc pl-5 space-y-2">
             <li>Bulk (ex-farm or delivered)</li>
-            <li>1-tonne tote bags</li>
+            <li>1-tonne bags</li>
             <li>Custom blends by request</li>
           </ul>
         </section>
