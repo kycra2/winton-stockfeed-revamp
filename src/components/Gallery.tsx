@@ -5,7 +5,7 @@ const StockfeedSection = () => {
     <section
       className="relative bg-cover bg-center py-20"
       style={{
-        backgroundImage: `url('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/wsf+(1).png')`,
+        backgroundImage: `url('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/truck-outsode-wsf-office+.png')`,
       }}
     >
       {/* Blue overlay */}
