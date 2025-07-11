@@ -15,7 +15,7 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
-        <Features />
+        <Services />
         <BlendingFacility />
         
         {/* Video Section */}
@@ -49,7 +49,7 @@ const Index = () => {
           </div>
         </section>
         
-        <Services />
+        <Features />
         <Gallery />
         <History />
       </main>
