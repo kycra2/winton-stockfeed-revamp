@@ -17,6 +17,8 @@ const Index = () => {
         <Services />
         <BlendingFacility />
         
+        <Gallery />
+        
         {/* Video Section */}
         <section className="py-16 bg-gray-50">
           <div className="container-custom">
@@ -48,7 +50,6 @@ const Index = () => {
           </div>
         </section>
         
-        <Gallery />
         <Features />
       </main>
       <Footer />
