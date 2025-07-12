@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
@@ -7,6 +8,7 @@ import BlendingFacility from '@/components/BlendingFacility';
 import Services from '@/components/Services';
 import Gallery from '@/components/Gallery';
 import Footer from '@/components/Footer';
+import { Button } from '@/components/ui/button';
 
 const Index = () => {
   return (
@@ -15,6 +17,18 @@ const Index = () => {
       <main>
         <Hero />
         <Services />
+        
+        {/* Contact Us Button Section */}
+        <section className="py-12 bg-white">
+          <div className="container-custom text-center">
+            <Link to="/contact-us">
+              <Button className="bg-wsf-blue hover:bg-wsf-blue-dark text-white px-8 py-3 text-lg">
+                Contact Us
+              </Button>
+            </Link>
+          </div>
+        </section>
+        
         <BlendingFacility />
         
         <Gallery />
