@@ -6,7 +6,6 @@ import Features from '@/components/Features';
 import BlendingFacility from '@/components/BlendingFacility';
 import Services from '@/components/Services';
 import Gallery from '@/components/Gallery';
-import History from '@/components/History';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -51,7 +50,6 @@ const Index = () => {
         
         <Gallery />
         <Features />
-        <History />
       </main>
       <Footer />
     </div>
