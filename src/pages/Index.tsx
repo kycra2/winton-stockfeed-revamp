@@ -49,8 +49,8 @@ const Index = () => {
           </div>
         </section>
         
-        <Features />
         <Gallery />
+        <Features />
         <History />
       </main>
       <Footer />
