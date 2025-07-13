@@ -63,8 +63,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-        
-        <Features />
       </main>
       <Footer />
     </div>
