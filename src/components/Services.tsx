@@ -11,14 +11,13 @@ const services = [
     id: 'local-knowledge',
     image: 'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/client-meetong-wsf2.png',
     title: 'Local Knowledge',
-    description: 'Our team brings years of farm management and feed experience, offering on-farm visits and expert support to help you get the most from your feed throughout the season.
-',
+    description: 'Our team brings years of farm management and feed experience, offering on-farm visits and expert support to help you get the most from your feed throughout the season.',
   },
   {
     id: 'feed-trailers',
     image: 'https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F9920dad17d1a04325207ef56cfce6c7771137b46%2FScreenshot%202025-04-14%20at%2011.53.58%E2%80%AFAM.png',
     title: 'Feed Trailers',
-    description: 'WSF supply heavy duty multi-purpose feed trailers. These trailers are ideal for feeding PKE or straw/hay in the paddock. Molasses can be added to the dry bales which increases feed intake..',
+    description: 'WSF supply heavy duty multi-purpose feed trailers. These trailers are ideal for feeding PKE or straw/hay in the paddock. Molasses can be added to the dry bales which increases feed intake.',
   },
   {
     id: 'nutitional-advice',
