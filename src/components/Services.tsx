@@ -11,7 +11,8 @@ const services = [
     id: 'local-knowledge',
     image: 'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/client-meetong-wsf2.png',
     title: 'Local Knowledge',
-    description: 'Our stock feed operation supplies high-quality PKE and pelletised feeds tailored to the needs of southern farmers. We have three experienced sales representatives who provide on-farm visits, working closely with farmers to improve production and develop customised feeding strategies.',
+    description: 'Our team brings years of farm management and feed experience, offering on-farm visits and expert support to help you get the most from your feed throughout the season.
+',
   },
   {
     id: 'feed-trailers',
