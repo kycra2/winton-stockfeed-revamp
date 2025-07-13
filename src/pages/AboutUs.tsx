@@ -11,11 +11,19 @@ const AboutUs = () => {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-wsf-blue-dark">Company Overview</h2>
             <p className="leading-relaxed">
-              Located in Winton, Central Southland, Winton Stock Feed is a privately owned business that was started in 1988. The company employs around 40 people.
+              Winton Stock Feed is a privately owned business based in Central Southland, proudly supporting New Zealand farmers since 1988. From our base in Winton, we employ a team of around 40 staff and operate a robust distribution network serving both local and national farming communities.
             </p>
 
             <p className="leading-relaxed">
-              The Winton office is the hub for our nationwide network of Sales Representatives and Distributors servicing the Dairy Industry throughout the North and South Islands.
+              Our core stock feed business services Otago and Southland, supplying high-quality PKE and pelletised feeds tailored to local conditions. Across the country, we are a leading supplier of molasses, supported by a network of depots, experienced sales representatives, and a reliable fleet of company-owned and contracted trucks.
+            </p>
+
+            <p className="leading-relaxed">
+              Innovation is at the heart of what we do — including the development of custom blending methods that allow us to incorporate a wide range of supplements directly into molasses, including non-water-soluble minerals like magnesium oxide. This helps farmers improve animal health and feeding efficiency with minimal hassle.
+            </p>
+
+            <p className="leading-relaxed">
+              With decades of experience, a strong regional presence, and nationwide reach through our molasses operation, Winton Stock Feed is proud to be a trusted partner to hundreds of farmers and feed manufacturers across New Zealand.
             </p>
           </div>
           <div>
@@ -47,65 +55,6 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Molasses Business Section */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-semibold text-wsf-blue-dark">Molasses Business Development</h2>
-          <p className="leading-relaxed">
-            Nelson Lindsay, the director of Winton Stock Feed, launched the molasses business in 2003 and has been shipping molasses in container form (as opposed to bulk) throughout New Zealand.
-          </p>
-
-          <p className="leading-relaxed">
-            The use of containers, he says, is the key to the growth of his company in that it allows flexibility in his operation. "The benefits are that we can buy from several different places giving us lots of flexibility. We can go, in the Philippines, for example, into the back-blocks. We can buy from sources which have difficulty in getting enough products together to offer a ship tanker load."
-          </p>
-        </div>
-
-        {/* Competitive Advantage Section */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-semibold text-wsf-blue-dark">Our Competitive Advantage</h2>
-          <p className="leading-relaxed">
-            Another benefit is the cost of freight. We go to places which have container surpluses and where shipping companies want to get the containers out of there. We are taking them from container surplus areas and putting them into container deficit areas. It is all about being competitive – molasses is a commodity.
-          </p>
-
-          <p className="leading-relaxed">
-            A large proportion of Winton Stock Feed's product was traditionally sourced from the Fiji Islands, but the company has now imports molasses from Indonesia, Thailand and the Philippines.
-          </p>
-
-          <p className="leading-relaxed">
-            We can use different shipping companies, that service different ports by just changing our source of supply. You find your source to match the ships to go to those points which you want to go to. It's the flexibility which you have with containers which helps to make your operation competitive.
-          </p>
-        </div>
-
-        {/* Operational Benefits Section */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-semibold text-wsf-blue-dark">Operational Benefits</h2>
-          <p className="leading-relaxed">
-            Also, by using containers we can run lower stocks and don't have to have expensive port-side storage terminals which make for expensive storage costs.
-          </p>
-
-          <p className="leading-relaxed">
-            We can pick up a container and get away from the most expensive land in the country – which is usually on the ports! Winton Stock Feed has experienced dramatic growth since its inception. The company operates extensively throughout New Zealand.
-          </p>
-        </div>
-
-        {/* Company Growth Section */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-semibold text-wsf-blue-dark">Company Growth</h2>
-          <p className="leading-relaxed">
-            Winton Stock Feed is the only wholly New Zealand owned molasses importer and has experienced massive growth in recent years due to the growth in its molasses operation. The company has innovated the use of using dry goods containers to import molasses originally from the sugar mills in Fiji. Now the product is sourced from a variety of countries, including Thailand, Indonesia and Australia.
-          </p>
-
-          <p className="leading-relaxed">
-            The Company grew from being a Feed Mill based in the Southland and has become a New Zealand wide supplier and now serves many hundreds of farmers and Feed Mills and manufacturers. The company employs over 40 people including sales reps, covering the regions nationwide and molasses plants are run with a combination of contractor and company owned trucks.
-          </p>
-        </div>
-
-        {/* National Presence Section */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-semibold text-wsf-blue-dark">National Presence</h2>
-          <p className="leading-relaxed">
-            Seven depots located throughout New Zealand ensure ease of supply for farmers nationwide. The company supplies PKE throughout Southland, Otago and the rest of New Zealand. WSF purchased PFC Stock feeds in Feb 2014, to take advantage of the growing pelleted feed market in Southland. We have devised a way to mix any liquid or powdered mineral supplement including non water soluble products like Mg Oxide into molasses.
-          </p>
-        </div>
       </div>
     </ProductLayout>
   );
