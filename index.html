@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winton StockFeed - New Zealand's Independent Stock Feed Specialists</title>
     <meta name="description" content="Winton StockFeed - New Zealand's Independent Stock Feed Specialists since 1988. Quality molasses, dairy feed, calf feed, and more." />
     <meta name="author" content="Winton StockFeed" />
@@ -20,12 +19,248 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'wsf-blue': '#1e3a8a',
+                        'wsf-blue-dark': '#1e40af',
+                        'wsf-green': '#16a34a',
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container-custom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed top-0 left-0 right-0 z-50">
+        <div class="container-custom">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="src/components/images/winton-stock-feed-logo.png" alt="Winton StockFeed Logo" class="h-10 w-auto">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-wsf-blue font-medium">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-wsf-blue font-medium">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-wsf-blue font-medium">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-wsf-blue font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-16 md:pt-24 bg-wsf-blue overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-wsf-blue/30 to-wsf-blue/10"></div>
+            <img src="https://cdn.convertri.com/2584a160-56c5-11e6-829d-066a9bd5fb79%2F3ea2475657f394ce280c23d9ed0d427ab89a66e0%2Fwinton-hero.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2?auto=format&fit=crop&q=80" alt="New Zealand dairy farm landscape" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="container-custom relative z-10 py-16 md:py-24 text-white">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 animate-fade-in">
+                Winton StockFeed – New Zealand's Independent Stock Feed Specialists.
+            </h1>
+            
+            <div class="max-w-3xl space-y-4 animate-fade-in" style="animation-delay: 0.2s">
+                <p class="text-lg">
+                    Operating since 1988, Winton StockFeed is proud to be NZ's only independent national molasses importer and supplier — but we're much more than that. We specialise in supplying a wide range of high-quality stock feeds including PKE, Soyhulls, Distillers Dried Grains (DDGS), and other essential feed options, tailored to support Southland and Otago farmers year-round.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-wsf-blue mb-4">Our Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive feed solutions for New Zealand farmers
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="src/components/images/molasses-dairy-herd-feed.png" alt="Molasses" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-wsf-blue mb-2">Molasses</h3>
+                        <p class="text-gray-600">Premium quality molasses for enhanced feed palatability and nutrition.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="src/components/images/PKE-Feed-Southland.png" alt="PKE Feed" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-wsf-blue mb-2">PKE Feed</h3>
+                        <p class="text-gray-600">High-quality Palm Kernel Expeller for dairy and beef cattle nutrition.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="src/components/images/stock-feed-blending-southland (1).jpg" alt="Custom Blending" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-wsf-blue mb-2">Custom Blending</h3>
+                        <p class="text-gray-600">Tailored feed blends to meet your specific livestock requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Button Section -->
+    <section class="py-12 bg-white">
+        <div class="container-custom text-center">
+            <a href="#contact" class="inline-block bg-wsf-blue hover:bg-wsf-blue-dark text-white px-8 py-3 text-lg rounded-lg transition-colors">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Blending Facility Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-wsf-blue mb-6">Our Blending Facility</h2>
+                    <p class="text-gray-600 mb-4">
+                        Our state-of-the-art blending plant uses an automated system to provide blended dairy feeds with almost any additive. These blends are made straight onto the truck and delivered to your silo — meaning one less thing for farmers to worry about.
+                    </p>
+                    <p class="text-gray-600">
+                        Our typical raw material range includes PKE, Maize DDG, Tapioca, Crushed Grains, Soy Bean Meal, Soya Hulls, Grain Pellets and Molasses — all subject to availability. Worth noting is that all our PKE is screened before being blended.
+                    </p>
+                </div>
+                <div>
+                    <img src="src/components/images/stock-feed-blending-southland (1).jpg" alt="Blending Facility" class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minerals Section -->
+    <section class="py-20" style="background-color: rgb(245, 241, 232);">
+        <div class="container-custom text-wsf-blue-dark">
+            <h2 class="text-4xl font-bold text-center mb-12 text-wsf-blue-dark">
+                It has never been so easy to include minerals in your silo blend.
+            </h2>
+
+            <p class="mb-6">
+                Our typical raw material range can be selected from the following: PKE, Maize DDG, Tapioca, Crushed Grains, Soy Bean Meal, Soya Hulls, Grain Pellets and Molasses — all subject to availability.
+                Worth noting is that all our PKE is screened before being blended.
+            </p>
+
+            <p>
+                Our state-of-the-art blending plant uses an automated system to provide blended dairy feeds with almost any additive.
+                These blends are made straight onto the truck and delivered to your silo — meaning one less thing for farmers to worry about.
+            </p>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container-custom">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-wsf-blue-dark mb-4">
+                    See Us In Action
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Watch how Winton Stock Feed delivers quality solutions to New Zealand farmers.
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <div class="w-full max-w-4xl">
+                    <div class="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            src="https://www.youtube.com/embed/c5s3ZviV9-c?si=x9z08Fx3y21BodKD" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen
+                            class="absolute inset-0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-wsf-blue text-white py-12">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Winton StockFeed</h3>
+                    <p class="text-blue-200">New Zealand's Independent Stock Feed Specialists since 1988.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-blue-200">
+                        <p>Phone: 0800 WINTON</p>
+                        <p>Email: info@wintonstockfeed.co.nz</p>
+                        <p>Address: Southland, New Zealand</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="sheep-nuts.html" class="block text-blue-200 hover:text-white">Sheep Nuts</a>
+                        <a href="supreme-deer-nuts.html" class="block text-blue-200 hover:text-white">Supreme Deer Nuts</a>
+                        <a href="#services" class="block text-blue-200 hover:text-white">Services</a>
+                        <a href="#about" class="block text-blue-200 hover:text-white">About Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-600 mt-8 pt-8 text-center text-blue-200">
+                <p>&copy; 2024 Winton StockFeed. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
 </html>
