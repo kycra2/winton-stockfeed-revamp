@@ -11,7 +11,7 @@ const services = [
     id: 'local-knowledge',
     image: 'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/client-meetong-wsf2.png',
     title: 'Local Knowledge',
-    description: 'Our team brings years of farm management and feed experience, offering on-farm visits and expert support to help you get the most from your feed throughout the season.',
+    description: 'Our team brings years of farm management and feed experience, offering on-farm visits and expert support to help you get the most from your feed.',
   },
   {
     id: 'feed-trailers',
