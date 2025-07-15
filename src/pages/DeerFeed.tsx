@@ -7,7 +7,7 @@ import { FileDown } from 'lucide-react';
 
 const DeerFeed = () => {
   return (
-    <ProductLayout title="Deer Feed">
+    <ProductLayout title="Supreme Deer Nuts">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-6">
          <section className="space-y-4">
