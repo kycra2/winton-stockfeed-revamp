@@ -8,14 +8,14 @@ import { Link } from 'react-router-dom';
 
 const PrecalverPelletsPage: React.FC = () => {
   return (
-    <ProductLayout title="Precalver Pellets">
+    <ProductLayout title="Precalving Pellets">
       <div className="space-y-10 mb-12">
         {/* Intro Section with Image */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-wsf-brown">Prepare Your Herd for a Healthy Start</h2>
             <p className="text-base leading-relaxed">
-              Our Pre-Calver Pellets are specially formulated to support dairy cows during the critical 
+              Our Pre-Calving Pellets are specially formulated to support dairy cows during the critical 
               transition period before calving. Packed with magnesium, trace minerals, and balanced energy, 
               they help reduce the risk of metabolic issues, improve colostrum quality, and set your herd 
               up for a smooth calving season.
