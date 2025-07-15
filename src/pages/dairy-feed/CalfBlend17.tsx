@@ -20,7 +20,7 @@ const CalfBlend17Page: React.FC = () => {
               create a versatile and effective feed for growing calves.
             </p>
             <p>
-              This specialized 17% protein blend is formulated to promote steady growth, support 
+              This specialised 17% protein blend is formulated to promote steady growth, support 
               rumen development, and provide all essential nutrients in a highly palatable form.
             </p>
             <p>
@@ -45,7 +45,7 @@ const CalfBlend17Page: React.FC = () => {
             <h2 className="text-xl font-semibold text-wsf-blue">Key Benefits</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-3">
-                <h3 className="font-semibold">Optimized Protein</h3>
+                <h3 className="font-semibold">Optimised Protein</h3>
                 <p>
                   17% protein level provides an excellent balance for steady growth and development.
                 </p>
