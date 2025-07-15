@@ -22,7 +22,7 @@ const navItems = [
       { name: 'Soybean Meal', href: '/dairy-feed/soybean-meal' },
       { name: 'Crushed Grain', href: '/dairy-feed/crushed-grain' },
       { name: 'Tapioca', href: '/dairy-feed/tapioca' },
-      { name: 'Precalver Pellets', href: '/dairy-feed/precalver-pellets' },
+      { name: 'Precalving Pellets', href: '/dairy-feed/precalver-pellets' },
       { name: 'High Energy Pellets', href: '/dairy-feed/high-energy-pellets' },
     ]
   },
