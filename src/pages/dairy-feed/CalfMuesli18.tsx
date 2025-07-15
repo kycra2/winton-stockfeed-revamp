@@ -82,7 +82,7 @@ const CalfMuesli18Page: React.FC = () => {
                 <p>12.5 MJ ME/kg DM</p>
               </div>
               <div>
-                <h3 className="text-wsf-blue font-medium">Fiber</h3>
+                <h3 className="text-wsf-blue font-medium">Fibre</h3>
                 <p>10% maximum</p>
               </div>
               <div>
@@ -112,7 +112,7 @@ const CalfMuesli18Page: React.FC = () => {
             <li>Quality protein meals</li>
             <li>Molasses for palatability</li>
             <li>Essential vitamin and mineral premix</li>
-            <li>Carefully selected fiber sources</li>
+            <li>Carefully selected fibre sources</li>
           </ul>
         </section>
 
