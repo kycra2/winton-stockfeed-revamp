@@ -51,7 +51,7 @@ const CalfBlend17Page: React.FC = () => {
                 </p>
                 <h3 className="font-semibold">Rumen Development</h3>
                 <p>
-                  Special fiber profile promotes healthy rumen development and function.
+                  Special fibre profile promotes healthy rumen development and function.
                 </p>
               </div>
               <div className="space-y-3">
@@ -82,7 +82,7 @@ const CalfBlend17Page: React.FC = () => {
                 <p>12.2 MJ ME/kg DM</p>
               </div>
               <div>
-                <h3 className="text-wsf-blue font-medium">Fiber</h3>
+                <h3 className="text-wsf-blue font-medium">Fibre</h3>
                 <p>12% maximum</p>
               </div>
               <div>
