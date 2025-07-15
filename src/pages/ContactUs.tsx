@@ -7,7 +7,7 @@ import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 const ContactCard = ({ name, role, phone, email, location, photoUrl }: {
   name: string;
   role?: string;
-  phone?: string;
+  phone?: string | string[];
   email?: string;
   location?: string;
   photoUrl?: string;
@@ -25,9 +25,20 @@ const ContactCard = ({ name, role, phone, email, location, photoUrl }: {
           <h3 className="font-semibold text-lg">{name}</h3>
           {role && <p className="text-gray-600">{role}</p>}
           {phone && (
-            <div className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-gray-500" />
-              <span>{phone}</span>
+            <div className="space-y-1">
+              {Array.isArray(phone) ? (
+                phone.map((phoneNumber, index) => (
+                  <div key={index} className="flex items-center gap-2">
+                    <Phone className="h-4 w-4 text-gray-500" />
+                    <span>{phoneNumber}</span>
+                  </div>
+                ))
+              ) : (
+                <div className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-gray-500" />
+                  <span>{phone}</span>
+                </div>
+              )}
             </div>
           )}
           {email && (
@@ -99,7 +110,7 @@ const ContactUs = () => {
             <ContactCard
               name="Lisa Kennedy"
               role="Administration/Orders"
-              phone="03 236 6089 or 0800 Molasses (0800 665277)"
+              phone={["03 236 6089", "0800 Molasses (0800 665277)"]}
               email="orders@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Lisa-kennedy.jpg"
             />
