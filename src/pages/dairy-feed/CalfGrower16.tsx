@@ -82,7 +82,7 @@ const CalfGrower16Page: React.FC = () => {
                 <p>12 MJ ME/kg DM</p>
               </div>
               <div>
-                <h3 className="text-wsf-blue font-medium">Fiber</h3>
+                <h3 className="text-wsf-blue font-medium">Fibre</h3>
                 <p>12% maximum</p>
               </div>
               <div>
