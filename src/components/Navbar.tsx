@@ -41,7 +41,7 @@ const navItems = [
     ]
   },
   { name: 'Feed Trailers', href: '/feed-trailers' },
-  { name: 'Contact Us', href: '/contact-us' }
+  { name: 'Contact Us', href: '/contact-us' },
   { name: 'About Us', href: '/about-us' },
   { name: 'Testimonials', href: '/testimonials' },
   
