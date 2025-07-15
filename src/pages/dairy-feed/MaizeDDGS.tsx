@@ -67,7 +67,7 @@ const MaizeDDGSPage: React.FC = () => {
             With its balanced nutritional profile, Maize DDGS complements silage-based diets and helps reduce the need for more expensive protein sources.
           </p>
           <p>
-            The product's unique combination of protein, energy, and fiber makes it particularly valuable in dairy and beef production systems, supporting both growth and milk production goals.
+            The product's unique combination of protein, energy, and fibre makes it particularly valuable in dairy and beef production systems, supporting both growth and milk production goals.
           </p>
           <p>
             Using Maize DDGS in your feeding program may also contribute to improved feed efficiency and reduction in overall feed costs.
