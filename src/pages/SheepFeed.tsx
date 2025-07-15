@@ -7,7 +7,7 @@ import { Package2, AlertCircle, FileDown } from 'lucide-react';
 
 const SheepFeedPage = () => {
   return (
-    <ProductLayout title="Sheep Feed">
+    <ProductLayout title="Sheep Nuts">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-6">
           <section className="space-y-4">
