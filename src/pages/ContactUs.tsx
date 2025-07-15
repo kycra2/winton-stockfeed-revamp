@@ -98,28 +98,31 @@ const ContactUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ContactCard
               name="Lisa Kennedy"
-              role="Sales Team Orders"
+              role="Administration/Orders"
               phone="0800 Molasses (0800 665277)"
               email="orders@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Lisa-kennedy.jpg"
             />
             <ContactCard
               name="Kathryn McEwing"
-              role="Sales Team Orders"
+              role="Administration/Orders"
+              phone="03 236 6089"
               phone="0800 Molasses (0800 665277)"
               email="orders@wintonstockfeed.co.nz –"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Kathryn+McEwing+.jpg"
             />
             <ContactCard
               name="Bronwyn McCulloch"
-              role="Admin"
+              role="Administration/Orders"
+              role="Administration/Orders"
               phone="03 236 6089"
               email="orders@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Bronwyn+McCulloch.jpg"
             />
             <ContactCard
               name="Tayla Muir"
-              role="Admin"
+              role="Administration/Orders"
+              role="Administration/Orders"
               phone="03 236 6089"
               email="orders@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Tayla+Muir+.jpg"
