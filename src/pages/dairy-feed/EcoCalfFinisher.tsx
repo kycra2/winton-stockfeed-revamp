@@ -19,7 +19,7 @@ const EcoCalfFinisherPage: React.FC = () => {
               to support the final growth stage of calf development.
             </p>
             <p>
-              This sustainable formula utilizes quality by-product ingredients to reduce environmental impact 
+              This sustainable formula utilises quality by-product ingredients to reduce environmental impact 
               while providing complete nutrition for finishing calves.
             </p>
             <p>
@@ -46,7 +46,7 @@ const EcoCalfFinisherPage: React.FC = () => {
               <div className="space-y-3">
                 <h3 className="font-semibold">Sustainable Formulation</h3>
                 <p>
-                  Utilizes quality by-product ingredients to reduce environmental footprint.
+                  Utilises quality by-product ingredients to reduce environmental footprint.
                 </p>
                 <h3 className="font-semibold">Cost Effective</h3>
                 <p>
@@ -60,7 +60,7 @@ const EcoCalfFinisherPage: React.FC = () => {
                 </p>
                 <h3 className="font-semibold">Local Sourcing</h3>
                 <p>
-                  Prioritizes locally sourced ingredients to reduce carbon footprint.
+                  Prioritises locally sourced ingredients to reduce carbon footprint.
                 </p>
               </div>
             </div>
@@ -105,7 +105,7 @@ const EcoCalfFinisherPage: React.FC = () => {
           <h2 className="text-2xl font-semibold text-wsf-brown">Our Sustainability Commitment</h2>
           <p>
             The Eco Calf Finisher represents our commitment to sustainable agriculture practices. 
-            By utilizing quality by-products from food production that would otherwise go to waste, 
+            By utilising quality by-products from food production that would otherwise go to waste, 
             we help reduce the environmental impact of livestock feeding while maintaining excellent 
             nutritional standards.
           </p>
@@ -113,9 +113,9 @@ const EcoCalfFinisherPage: React.FC = () => {
             Our eco-friendly approach focuses on:
           </p>
           <ul className="list-disc pl-5 space-y-1">
-            <li>Reducing waste through by-product utilization</li>
+            <li>Reducing waste through by-product utilisation</li>
             <li>Supporting local ingredient sourcing where possible</li>
-            <li>Minimizing carbon footprint in feed production</li>
+            <li>Minimising carbon footprint in feed production</li>
             <li>Providing cost-effective solutions for farmers</li>
           </ul>
         </section>
