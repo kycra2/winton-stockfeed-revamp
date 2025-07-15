@@ -99,21 +99,19 @@ const ContactUs = () => {
             <ContactCard
               name="Lisa Kennedy"
               role="Administration/Orders"
-              phone="0800 Molasses (0800 665277)"
+              phone="03 236 6089 or 0800 Molasses (0800 665277)"
               email="orders@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Lisa-kennedy.jpg"
             />
             <ContactCard
               name="Kathryn McEwing"
               role="Administration/Orders"
-              phone="03 236 6089"
-              phone="0800 Molasses (0800 665277)"
-              email="orders@wintonstockfeed.co.nz "
+              phone="03 236 6089 or 0800 Molasses (0800 665277)"
+              email="orders@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Kathryn+McEwing+.jpg"
             />
             <ContactCard
               name="Bronwyn McCulloch"
-              role="Administration/Orders"
               role="Administration/Orders"
               phone="03 236 6089"
               email="orders@wintonstockfeed.co.nz"
@@ -121,7 +119,6 @@ const ContactUs = () => {
             />
             <ContactCard
               name="Tayla Muir"
-              role="Administration/Orders"
               role="Administration/Orders"
               phone="03 236 6089"
               email="orders@wintonstockfeed.co.nz"
