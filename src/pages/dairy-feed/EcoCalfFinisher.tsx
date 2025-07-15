@@ -81,7 +81,7 @@ const EcoCalfFinisherPage: React.FC = () => {
                 <p>11.5 MJ ME/kg DM</p>
               </div>
               <div>
-                <h3 className="text-wsf-blue font-medium">Fiber</h3>
+                <h3 className="text-wsf-blue font-medium">Fibre</h3>
                 <p>15% maximum</p>
               </div>
               <div>
