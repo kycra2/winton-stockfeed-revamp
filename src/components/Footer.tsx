@@ -88,17 +88,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
-            <ul className="space-y-2">
-              <li>
-                <div className="font-medium">Feed Mill</div>
-                <div>107 Clyde Street</div>
-                <div>Invercargill</div>
-                
-              </li>
-            </ul>
-          </div>
-        </div>
+          
         
         <div className="border-t border-wsf-blue pt-6 mt-8 text-center">
           <p>&copy; {new Date().getFullYear()} Winton StockFeed Ltd. All rights reserved.</p>
