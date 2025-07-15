@@ -87,8 +87,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
-          
+        </div>
         
         <div className="border-t border-wsf-blue pt-6 mt-8 text-center">
           <p>&copy; {new Date().getFullYear()} Winton StockFeed Ltd. All rights reserved.</p>
