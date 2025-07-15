@@ -70,7 +70,15 @@ const ContactUs = () => {
         {/* Office Locations Section - Moved to top */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold text-wsf-blue-dark">Our Locations</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <ContactCard
+              name="Blending Plant"
+              location="139 Florence Rd, Winton"
+            />
+            <ContactCard
+              name="Feed Mill"
+              location="107 Clyde Street Invercargill"
+            />
             <ContactCard
               name="Main Office"
               location="139 Florence Road, Winton. PO Box 132 Winton 9741"
