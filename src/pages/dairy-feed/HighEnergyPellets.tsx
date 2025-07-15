@@ -60,7 +60,7 @@ const HighEnergyPelletsPage: React.FC = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <h3 className="text-xl font-medium mb-3 text-wsf-blue">Cost Effective</h3>
-              <p>Reduces feed waste and improves feed conversion ratio, lowering the overall cost per liter of milk produced.</p>
+              <p>Reduces feed waste and improves feed conversion ratio, lowering the overall cost per litre of milk produced.</p>
             </div>
           </div>
         </section>
