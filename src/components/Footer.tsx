@@ -28,8 +28,6 @@ const Footer = () => {
             
               <li><Link to="/about-us" className="hover:text-wsf-cream transition-colors">About Us</Link></li>
               
-              <li><Link to="/condose-calculator" className="hover:text-wsf-cream transition-colors">Condose Calculator</Link></li>
-              
               <li>
                 <Link to="/feed-quality-declarations" className="hover:text-wsf-cream transition-colors">
                   Feed Quality Declarations
