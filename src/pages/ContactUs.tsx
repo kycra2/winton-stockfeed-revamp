@@ -158,7 +158,7 @@ const ContactUs = () => {
             />
             <ContactCard
               name="Brendon Corbett"
-              role="Central Southland/Southland Sales Rep"
+              role="Central/Eastern Southland Sales Rep"
               phone="021 311 281"
               email="brendonc@wintonstockfeed.co.nz"
               photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Brendon+Corbett.jpg"
