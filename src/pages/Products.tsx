@@ -7,14 +7,14 @@ import { Beef, Rabbit, TreePine, Droplets, Mountain, Egg } from 'lucide-react';
 const categories = [
   {
     title: "Dairy",
-    description: "Premium feed solutions for dairy cattle including PKE, crushed grain, and specialized pellets",
+    description: "Premium feed solutions for dairy cattle including PKE, crushed grain, and specialised pellets",
     icon: Beef,
     href: "/dairy-feed",
     color: "bg-primary/10 hover:bg-primary/20"
   },
   {
     title: "Calf", 
-    description: "Specialized nutrition for growing calves with premium calf blends and growers",
+    description: "Specialised nutrition for growing calves with premium calf blends and growers",
     icon: Mountain,
     href: "/calf-feed",
     color: "bg-secondary/10 hover:bg-secondary/20"
@@ -28,7 +28,7 @@ const categories = [
   },
   {
     title: "Deer",
-    description: "Specialized feed products for deer farming operations",
+    description: "Specialised feed products for deer farming operations",
     icon: TreePine,
     href: "/deer-feed",
     color: "bg-muted/10 hover:bg-muted/20"
