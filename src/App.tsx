@@ -17,6 +17,7 @@ import Condose from "./pages/Condose";
 import FeedQualityDeclarations from "./pages/FeedQualityDeclarations";
 import Testimonials from "./pages/Testimonials";
 import Products from "./pages/Products";
+import DairyFeed from "./pages/DairyFeed";
 
 import PKEPage from "./pages/dairy-feed/PKE";
 import MaizeDDGSPage from "./pages/dairy-feed/MaizeDDGS";
@@ -44,6 +45,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/dairy-feed" element={<DairyFeed />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/molasses" element={<Molasses />} />
           <Route path="/feed-trailers" element={<FeedTrailersPage />} />
