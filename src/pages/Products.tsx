@@ -1,51 +1,92 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import ProductLayout from '@/components/ProductLayout';
-import { Beef, Rabbit, TreePine, Truck, Droplets } from 'lucide-react';
+import { Beef, Rabbit, TreePine, Droplets, Mountain, Egg } from 'lucide-react';
 
 const categories = [
   {
-    title: "Dairy Feed",
+    title: "Dairy",
     description: "Premium feed solutions for dairy cattle including PKE, crushed grain, and specialized pellets",
     icon: Beef,
     href: "/dairy-feed",
     color: "bg-primary/10 hover:bg-primary/20"
   },
   {
-    title: "Sheep Feed", 
-    description: "Nutritious feed formulations designed specifically for sheep farming",
-    icon: Rabbit,
-    href: "/sheep-feed",
+    title: "Calf", 
+    description: "Specialized nutrition for growing calves with premium calf blends and growers",
+    icon: Mountain,
+    href: "/calf-feed",
     color: "bg-secondary/10 hover:bg-secondary/20"
   },
   {
-    title: "Deer Feed",
-    description: "Specialized feed products for deer farming operations", 
-    icon: TreePine,
-    href: "/deer-feed",
+    title: "Sheep",
+    description: "Nutritious feed formulations designed specifically for sheep farming", 
+    icon: Rabbit,
+    href: "/sheep-feed",
     color: "bg-accent/10 hover:bg-accent/20"
   },
   {
-    title: "Feed Trailers",
-    description: "Professional feed delivery services with modern trailer systems",
-    icon: Truck,
-    href: "/feed-trailers", 
+    title: "Deer",
+    description: "Specialized feed products for deer farming operations",
+    icon: TreePine,
+    href: "/deer-feed",
     color: "bg-muted/10 hover:bg-muted/20"
   },
   {
-    title: "Molasses",
-    description: "High-quality molasses products for livestock nutrition enhancement",
-    icon: Droplets,
-    href: "/molasses",
+    title: "Goat",
+    description: "High-quality feed solutions designed for goat nutrition and health",
+    icon: Mountain,
+    href: "/goat-feed",
     color: "bg-primary/10 hover:bg-primary/20"
+  },
+  {
+    title: "Chicken",
+    description: "Premium poultry feed for optimal chicken health and egg production",
+    icon: Egg,
+    href: "/chicken-feed",
+    color: "bg-secondary/10 hover:bg-secondary/20"
   }
 ];
 
 const Products: React.FC = () => {
+  const [selectedCategory, setSelectedCategory] = useState("ALL");
+
   return (
     <ProductLayout title="Our Products">
       <div className="space-y-8">
+        {/* Category Navigation Menu */}
+        <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
+          <button
+            onClick={() => setSelectedCategory("ALL")}
+            className={`px-4 py-2 transition-colors ${
+              selectedCategory === "ALL" 
+                ? "text-primary font-bold" 
+                : "hover:text-primary"
+            }`}
+          >
+            ALL
+          </button>
+          <span className="text-muted-foreground/50">|</span>
+          {categories.map((category, index) => (
+            <React.Fragment key={category.title}>
+              <button
+                onClick={() => setSelectedCategory(category.title.toUpperCase())}
+                className={`px-4 py-2 transition-colors ${
+                  selectedCategory === category.title.toUpperCase() 
+                    ? "text-primary font-bold" 
+                    : "hover:text-primary"
+                }`}
+              >
+                {category.title.toUpperCase()}
+              </button>
+              {index < categories.length - 1 && (
+                <span className="text-muted-foreground/50">|</span>
+              )}
+            </React.Fragment>
+          ))}
+        </div>
+
         {/* Categories Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((category) => {
