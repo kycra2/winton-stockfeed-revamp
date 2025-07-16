@@ -136,7 +136,7 @@ const DairyFeed: React.FC = () => {
             <h2 className="text-3xl font-bold text-foreground mb-4">Premium Dairy Feed Solutions</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Winton Stock Feed offers a comprehensive range of high-quality dairy feed products designed to maximise milk production, 
-              improve herd health, and optimize farm profitability. Our products are carefully selected and formulated to meet the 
+              improve herd health, and optimise farm profitability. Our products are carefully selected and formulated to meet the 
               specific nutritional needs of dairy cattle at every stage of production.
             </p>
           </div>
