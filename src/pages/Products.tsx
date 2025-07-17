@@ -103,29 +103,6 @@ const Products: React.FC = () => {
           })}
         </div>
 
-        {/* Product Categories Details */}
-        <div className="space-y-12 mt-12">
-          {categories.map((category) => {
-            const IconComponent = category.icon;
-            return (
-              <div key={category.title} className="border-t border-border pt-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <IconComponent className="w-8 h-8 text-primary" />
-                  <h2 className="text-2xl font-bold text-foreground">{category.title}</h2>
-                </div>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  {category.description}
-                </p>
-                <Link 
-                  to={category.href}
-                  className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
-                >
-                  Explore {category.title} →
-                </Link>
-              </div>
-            );
-          })}
-        </div>
       </div>
     </ProductLayout>
   );
