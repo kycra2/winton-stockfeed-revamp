@@ -43,9 +43,9 @@ const calfProducts = [
 ];
 
 const categories = [
-  { title: "Dairy", href: "/dairy-feed", active: false },
-  { title: "Calf", href: "/calf-feed", active: true },
-  { title: "Sheep", href: "/sheep-feed", active: false },
+  { title: "Dairy", href: "products/dairy-feed", active: false },
+  { title: "Calf", href: "products/calf-feed", active: true },
+  { title: "Sheep", href: "products/sheep-feed", active: false },
   { title: "Deer", href: "/deer-feed", active: false },
   { title: "Goat", href: "/goat-feed", active: false },
   { title: "Chicken", href: "/chicken-feed", active: false }
