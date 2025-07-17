@@ -1,12 +1,48 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProductLayout from '@/components/ProductLayout';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Package2, AlertCircle, FileDown } from 'lucide-react';
 
 const SheepNutsPage = () => {
+  const categories = [
+    { title: "DAIRY", href: "/products/dairy-feed" },
+    { title: "CALF", href: "/products/calf-feed" },
+    { title: "SHEEP", href: "/products/sheep-feed" },
+    { title: "DEER", href: "/products/deer-feed" },
+    { title: "GOAT", href: "/products/goat-feed" },
+    { title: "CHICKEN", href: "/products/chicken-feed" }
+  ];
+
   return (
     <ProductLayout title="Sheep Nuts">
+      {/* Category Navigation Menu */}
+      <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
+        <Link
+          to="/products"
+          className="px-4 py-2 transition-colors hover:text-primary"
+        >
+          ALL
+        </Link>
+        <span className="text-muted-foreground/50">|</span>
+        {categories.map((category, index) => (
+          <div key={category.title} className="flex items-center">
+            <Link
+              to={category.href}
+              className={`px-4 py-2 transition-colors hover:text-primary ${
+                category.title === "SHEEP" ? "text-primary font-bold" : ""
+              }`}
+            >
+              {category.title}
+            </Link>
+            {index < categories.length - 1 && (
+              <span className="text-muted-foreground/50">|</span>
+            )}
+          </div>
+        ))}
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-6">
           <section className="space-y-4">
