@@ -19,6 +19,7 @@ import Testimonials from "./pages/Testimonials";
 import Products from "./pages/Products";
 import DairyFeed from "./pages/DairyFeed";
 import CalfFeed from "./pages/CalfFeed";
+import ProductsDeerFeed from "./pages/products/DeerFeed";
 
 import PKEPage from "./pages/dairy-feed/PKE";
 import MaizeDDGSPage from "./pages/dairy-feed/MaizeDDGS";
@@ -50,6 +51,7 @@ const App = () => (
           <Route path="/products/dairy-feed" element={<DairyFeed />} />
           <Route path="/products/calf-feed" element={<CalfFeed />} />
           <Route path="/products/sheep-feed" element={<SheepFeedPage />} />
+          <Route path="/products/deer-feed" element={<ProductsDeerFeed />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/molasses" element={<Molasses />} />
           <Route path="/feed-trailers" element={<FeedTrailersPage />} />
