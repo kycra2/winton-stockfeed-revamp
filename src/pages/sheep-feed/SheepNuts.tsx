@@ -12,7 +12,8 @@ const SheepNutsPage = () => {
     { title: "SHEEP", href: "/products/sheep-feed" },
     { title: "DEER", href: "/products/deer-feed" },
     { title: "GOAT", href: "/products/goat-feed" },
-    { title: "CHICKEN", href: "/products/chicken-feed" }
+    { title: "CHICKEN", href: "/products/chicken-feed" },
+    { title: "MOLASSES", href: "/molasses" }
   ];
 
   return (

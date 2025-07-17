@@ -48,7 +48,8 @@ const categories = [
   { title: "Sheep", href: "/products/sheep-feed", active: false },
   { title: "Deer", href: "/deer-feed", active: false },
   { title: "Goat", href: "/goat-feed", active: false },
-  { title: "Chicken", href: "/chicken-feed", active: false }
+  { title: "Chicken", href: "/chicken-feed", active: false },
+  { title: "Molasses", href: "/molasses", active: false }
 ];
 
 const CalfFeed: React.FC = () => {

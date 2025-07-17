@@ -21,7 +21,8 @@ const categories = [
   { title: "Sheep", href: "/products/sheep-feed", active: false },
   { title: "Deer", href: "/products/deer-feed", active: true },
   { title: "Goat", href: "/products/goat-feed", active: false },
-  { title: "Chicken", href: "/products/chicken-feed", active: false }
+  { title: "Chicken", href: "/products/chicken-feed", active: false },
+  { title: "Molasses", href: "/molasses", active: false }
 ];
 
 const DeerFeed: React.FC = () => {
