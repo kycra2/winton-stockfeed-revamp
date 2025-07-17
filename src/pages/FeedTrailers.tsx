@@ -87,10 +87,11 @@ const FeedTrailersPage: React.FC = () => {
           <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
             <iframe 
               className="w-full h-full" 
-              src="https://www.youtube.com/embed/akMcc8unf5c" 
+              src="https://www.youtube.com/embed/Ds-jsn7FLhA?si=dvE2ewobTOvSU49i" 
               title="YouTube video player" 
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
           </div>
