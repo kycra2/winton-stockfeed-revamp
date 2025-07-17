@@ -10,7 +10,7 @@ const sheepProducts = [
     title: "Sheep Nuts",
     description: "Formulated from grains and wheat products to give an economic feed that will keep your stock in optimum condition in times of poor feed availability.",
     icon: Package2,
-    href: "/sheep-feed/sheep-nuts",
+    href: "/products/sheep-nuts",
     color: "bg-primary/10 hover:bg-primary/20"
   }
 ];
