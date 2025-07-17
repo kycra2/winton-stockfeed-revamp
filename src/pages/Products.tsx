@@ -46,6 +46,13 @@ const categories = [
     icon: Egg,
     href: "/products/chicken-feed",
     color: "bg-secondary/10 hover:bg-secondary/20"
+  },
+  {
+    title: "Molasses",
+    description: "Premium molasses products for enhanced palatability and nutrition",
+    icon: Droplets,
+    href: "/molasses",
+    color: "bg-accent/10 hover:bg-accent/20"
   }
 ];
 
