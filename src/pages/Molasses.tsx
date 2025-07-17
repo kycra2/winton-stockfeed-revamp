@@ -21,9 +21,9 @@ const Molasses = () => {
   ];
 
   return (
-    <ProductLayout title="Molasses – New Zealand's Favourite Feed Supplement">
+    <ProductLayout title="">
       {/* Category Navigation Menu */}
-      <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
+      <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-8">
         <Link
           to="/products"
           className="px-4 py-2 transition-colors hover:text-primary"
@@ -46,6 +46,11 @@ const Molasses = () => {
             )}
           </div>
         ))}
+      </div>
+
+      {/* Page Title */}
+      <div className="text-center mb-8">
+        <h1 className="text-3xl font-bold text-gray-900">Molasses – New Zealand's Favourite Feed Supplement</h1>
       </div>
 
       {/* Hero Statement */}
