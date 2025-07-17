@@ -16,12 +16,12 @@ const sheepProducts = [
 ];
 
 const categories = [
-  { title: "Dairy", href: "/dairy-feed", active: false },
-  { title: "Calf", href: "/calf-feed", active: false },
-  { title: "Sheep", href: "/sheep-feed", active: true },
-  { title: "Deer", href: "/deer-feed", active: false },
-  { title: "Goat", href: "/goat-feed", active: false },
-  { title: "Chicken", href: "/chicken-feed", active: false }
+  { title: "Dairy", href: "/products/dairy-feed", active: false },
+  { title: "Calf", href: "/products/calf-feed", active: false },
+  { title: "Sheep", href: "/products/sheep-feed", active: true },
+  { title: "Deer", href: "/products/deer-feed", active: false },
+  { title: "Goat", href: "/products/goat-feed", active: false },
+  { title: "Chicken", href: "/products/chicken-feed", active: false }
 ];
 
 const SheepFeedPage: React.FC = () => {
@@ -40,7 +40,7 @@ const SheepFeedPage: React.FC = () => {
           </Link>
           <span className="text-muted-foreground/50">|</span>
           {categories.map((category, index) => (
-            <React.Fragment key={category.title}>
+            <div key={category.title} className="flex items-center">
               <Link
                 to={category.href}
                 className={`px-4 py-2 transition-colors ${
@@ -54,7 +54,7 @@ const SheepFeedPage: React.FC = () => {
               {index < categories.length - 1 && (
                 <span className="text-muted-foreground/50">|</span>
               )}
-            </React.Fragment>
+            </div>
           ))}
         </div>
 
