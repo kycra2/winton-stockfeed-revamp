@@ -1,83 +1,98 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ProductLayout from '@/components/ProductLayout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Package2, ArrowRight } from 'lucide-react';
+import ProductLayout from '@/components/ProductLayout';
+import { Package2 } from 'lucide-react';
 
 const sheepProducts = [
   {
-    name: 'Sheep Nuts',
-    description: 'Formulated from grains and wheat products to give an economic feed that will keep your stock in optimum condition in times of poor feed availability.',
-    path: '/products/sheep-nuts',
-    features: ['Energy: 12.5% MJME/kg DM', 'Crude Protein: 11.0% Minimum', 'Available in 25kg bags, bulk bags and bulk delivery']
+    title: "Sheep Nuts",
+    description: "Formulated from grains and wheat products to give an economic feed that will keep your stock in optimum condition in times of poor feed availability.",
+    icon: Package2,
+    href: "/sheep-feed/sheep-nuts",
+    color: "bg-primary/10 hover:bg-primary/20"
   }
 ];
 
 const categories = [
-  { name: 'Dairy Feed', path: '/products/dairy-feed' },
-  { name: 'Calf Feed', path: '/products/calf-feed' },
-  { name: 'Sheep Feed', path: '/products/sheep-feed' },
-  { name: 'Deer Feed', path: '/products/deer-feed' }
+  { title: "Dairy", href: "/dairy-feed", active: false },
+  { title: "Calf", href: "/calf-feed", active: false },
+  { title: "Sheep", href: "/sheep-feed", active: true },
+  { title: "Deer", href: "/deer-feed", active: false },
+  { title: "Goat", href: "/goat-feed", active: false },
+  { title: "Chicken", href: "/chicken-feed", active: false }
 ];
 
-const SheepFeedPage = () => {
+const SheepFeedPage: React.FC = () => {
+  const [selectedCategory, setSelectedCategory] = useState("SHEEP");
+
   return (
     <ProductLayout title="Sheep Feed">
-      {/* Category Navigation */}
-      <div className="mb-8">
-        <div className="flex flex-wrap gap-2">
-          {categories.map((category) => (
-            <Link key={category.name} to={category.path}>
-              <Button 
-                variant={category.path === '/products/sheep-feed' ? 'default' : 'outline'}
-                className="mb-2"
+      <div className="space-y-8">
+        {/* Category Navigation Menu */}
+        <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
+          <Link 
+            to="/products"
+            className="px-4 py-2 transition-colors hover:text-primary"
+          >
+            ALL
+          </Link>
+          <span className="text-muted-foreground/50">|</span>
+          {categories.map((category, index) => (
+            <React.Fragment key={category.title}>
+              <Link
+                to={category.href}
+                className={`px-4 py-2 transition-colors ${
+                  category.active 
+                    ? "text-primary font-bold" 
+                    : "hover:text-primary"
+                }`}
               >
-                {category.name}
-              </Button>
-            </Link>
+                {category.title.toUpperCase()}
+              </Link>
+              {index < categories.length - 1 && (
+                <span className="text-muted-foreground/50">|</span>
+              )}
+            </React.Fragment>
           ))}
         </div>
-      </div>
 
-      {/* Products Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {sheepProducts.map((product) => (
-          <Card key={product.name} className="h-full flex flex-col hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <CardTitle className="text-xl text-wsf-brown">{product.name}</CardTitle>
-              <CardDescription className="text-gray-600">
-                {product.description}
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="flex-1 flex flex-col justify-between">
-              <div className="space-y-2 mb-4">
-                {product.features.map((feature, index) => (
-                  <div key={index} className="flex items-center gap-2 text-sm text-gray-700">
-                    <Package2 className="h-4 w-4 text-wsf-blue" />
-                    <span>{feature}</span>
-                  </div>
-                ))}
-              </div>
-              <Link to={product.path}>
-                <Button className="w-full group">
-                  View Details
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
+        {/* Products Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {sheepProducts.map((product) => {
+            const IconComponent = product.icon;
+            return (
+              <Link key={product.title} to={product.href}>
+                <Card className={`h-full transition-all duration-200 hover:shadow-lg ${product.color} border-border/50`}>
+                  <CardHeader className="text-center">
+                    <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                      <IconComponent className="w-6 h-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-xl text-foreground">{product.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-center text-muted-foreground">
+                      {product.description}
+                    </CardDescription>
+                  </CardContent>
+                </Card>
               </Link>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+            );
+          })}
+        </div>
 
-      {/* Back to Products */}
-      <div className="mt-8 text-center">
-        <Link to="/products">
-          <Button variant="outline">
-            ← Back to All Products
-          </Button>
-        </Link>
+        {/* Product Information */}
+        <div className="mt-12 space-y-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-foreground mb-4">Premium Sheep Feed Solutions</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Winton Stock Feed provides high-quality sheep feed products designed to maintain your flock in optimal condition 
+              during challenging periods. Our nutritionally balanced feeds help ensure your sheep receive the essential nutrients 
+              needed for health, growth, and productivity throughout the year.
+            </p>
+          </div>
+        </div>
       </div>
     </ProductLayout>
   );
