@@ -1,115 +1,84 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProductLayout from '@/components/ProductLayout';
-import { Card } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Package2, AlertCircle, FileDown } from 'lucide-react';
+import { Package2, ArrowRight } from 'lucide-react';
+
+const sheepProducts = [
+  {
+    name: 'Sheep Nuts',
+    description: 'Formulated from grains and wheat products to give an economic feed that will keep your stock in optimum condition in times of poor feed availability.',
+    path: '/products/sheep-nuts',
+    features: ['Energy: 12.5% MJME/kg DM', 'Crude Protein: 11.0% Minimum', 'Available in 25kg bags, bulk bags and bulk delivery']
+  }
+];
+
+const categories = [
+  { name: 'Dairy Feed', path: '/products/dairy-feed' },
+  { name: 'Calf Feed', path: '/products/calf-feed' },
+  { name: 'Sheep Feed', path: '/products/sheep-feed' },
+  { name: 'Deer Feed', path: '/products/deer-feed' }
+];
 
 const SheepFeedPage = () => {
   return (
-    <ProductLayout title="Sheep Nuts">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="space-y-6">
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-wsf-brown">Sheep Nuts</h2>
-            <p className="text-gray-700">
-              Sheep Nuts are formulated from grains and wheat products to give an economic feed 
-              that will keep your stock in optimum condition in times of poor feed availability.
-            </p>
-            <p className="text-gray-700">
-              They provide an ideal way to supplement feed without the wastage of grains and to 
-              ensure the correct balance of vitamins and minerals. They can be used as an emergency 
-              feed supply and will last up to 4 months without deterioration when stored under cool, 
-              dry conditions.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold mb-4">Typical Analysis</h2>
-            <ul className="space-y-2 text-gray-700">
-              <li>Energy: 12.5% MJME/kg DM</li>
-              <li>Crude Protein: 11.0% Minimum</li>
-              <li>Fibre: 7% Maximum</li>
-              <li>Fat: 5% Maximum</li>
-              <li>Salt: 1.5% Maximum</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold mb-4">Ingredients Selected From</h2>
-            <p className="text-gray-700">
-              Barley, Wheat, Molasses, Lime, Salt and a specialised vitamin and mineral mix.
-            </p>
-          </section>
-        </div>
-
-        <div>
-          <img 
-            src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/sheep-feeding.png"
-            alt="New Zealand sheep farm"
-            className="rounded-lg shadow-md w-full h-auto mb-6"
-          />
+    <ProductLayout title="Sheep Feed">
+      {/* Category Navigation */}
+      <div className="mb-8">
+        <div className="flex flex-wrap gap-2">
+          {categories.map((category) => (
+            <Link key={category.name} to={category.path}>
+              <Button 
+                variant={category.path === '/products/sheep-feed' ? 'default' : 'outline'}
+                className="mb-2"
+              >
+                {category.name}
+              </Button>
+            </Link>
+          ))}
         </div>
       </div>
 
-      <section className="mt-8 space-y-6">
-        <h2 className="text-xl font-semibold">Sheep Nuts: Optimal Nutrition</h2>
-        <p className="text-gray-700">
-          Our Sheep Nuts are meticulously formulated to provide a balanced and economic feed solution 
-          for your livestock. Designed to supplement feed during periods of poor availability, these 
-          nuts ensure your sheep maintain optimal condition and health.
-        </p>
-        <p className="text-gray-700">
-          The carefully selected blend of grains, wheat products, and specialized mineral mix 
-          guarantees essential nutrients while minimizing feed wastage.
-        </p>
-      </section>
+      {/* Products Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {sheepProducts.map((product) => (
+          <Card key={product.name} className="h-full flex flex-col hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="text-xl text-wsf-brown">{product.name}</CardTitle>
+              <CardDescription className="text-gray-600">
+                {product.description}
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex-1 flex flex-col justify-between">
+              <div className="space-y-2 mb-4">
+                {product.features.map((feature, index) => (
+                  <div key={index} className="flex items-center gap-2 text-sm text-gray-700">
+                    <Package2 className="h-4 w-4 text-wsf-blue" />
+                    <span>{feature}</span>
+                  </div>
+                ))}
+              </div>
+              <Link to={product.path}>
+                <Button className="w-full group">
+                  View Details
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
 
-      <section className="mt-8 space-y-6">
-        <h2 className="text-xl font-semibold">Feeding Recommendations</h2>
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 space-y-3">
-          <ul className="list-disc pl-5 space-y-2 text-gray-700">
-            <li>Feed 60 to 120 grams per day (One 40kg bag per 400 sheep) depending on other feed available.</li>
-            <li>Start slowly, say 30 to 60 grams for the first week.</li>
-            <li>Train ewes to nut feeding well before lambing.</li>
-            <li>Ensure equal access to each sheep.</li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="mt-8">
-        <a 
-          href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Sheep+Nuts.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="default" className="gap-2">
-            <FileDown className="h-4 w-4" />
-            Download Sheep Nuts PDF
+      {/* Back to Products */}
+      <div className="mt-8 text-center">
+        <Link to="/products">
+          <Button variant="outline">
+            ← Back to All Products
           </Button>
-        </a>
+        </Link>
       </div>
-
-      <section className="mt-8">
-        <Card className="p-6 bg-gray-50">
-          <div className="flex items-center gap-4 text-gray-700">
-            <Package2 className="h-6 w-6" />
-            <p>Available in 25kg bags, bulk bags and bulk delivery.</p> 
-            <p> All prices are Ex Store, Exclusive of GST, and subject to change, call us for the latest prices.</p>
-          </div>
-          
-        </Card>
-      </section>
-
-      <Card className="mt-12 p-6 bg-wsf-blue text-white">
-        <div className="space-y-4">
-          <div className="flex items-center gap-2">
-            <AlertCircle className="h-5 w-5" />
-            <p>Storage Recommendation</p>
-          </div>
-          <p>Store in cool, dry conditions for optimal preservation up to 4 months.</p>
-        </div>
-      </Card>
     </ProductLayout>
   );
 };

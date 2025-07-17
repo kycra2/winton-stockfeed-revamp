@@ -33,6 +33,7 @@ import CalfBlend17Page from "./pages/dairy-feed/CalfBlend17";
 import CalfMuesli18Page from "./pages/dairy-feed/CalfMuesli18";
 import EcoCalfFinisherPage from "./pages/dairy-feed/EcoCalfFinisher";
 import TapiocaPage from "./pages/dairy-feed/Tapioca";
+import SheepNutsPage from "./pages/sheep-feed/SheepNuts";
 import HealthAndSafety from './pages/HealthAndSafety';
 
 const queryClient = new QueryClient();
@@ -46,13 +47,14 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/dairy-feed" element={<DairyFeed />} />
-          <Route path="/calf-feed" element={<CalfFeed />} />
+          <Route path="/products/dairy-feed" element={<DairyFeed />} />
+          <Route path="/products/calf-feed" element={<CalfFeed />} />
+          <Route path="/products/sheep-feed" element={<SheepFeedPage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/molasses" element={<Molasses />} />
           <Route path="/feed-trailers" element={<FeedTrailersPage />} />
           <Route path="/deer-feed" element={<DeerFeed />} />
-          <Route path="/sheep-feed" element={<SheepFeedPage />} />
+          <Route path="/products/sheep-nuts" element={<SheepNutsPage />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/dairy-feed/pke" element={<PKEPage />} />
           <Route path="/dairy-feed/maize-ddgs" element={<MaizeDDGSPage />} />
