@@ -59,35 +59,23 @@ const Testimonials = () => {
           </Card>
         </div>
 
-        {/* Video Testimonial Section */}
-        <div className="space-y-6">
-          <div className="text-center">
-            <h2 className="text-2xl font-semibold text-wsf-blue-dark mb-4">
-              Video Testimonial
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Watch one of our valued customers share their experience with Winton Stock Feed.
-            </p>
-          </div>
-          
-          <div className="flex justify-center">
-            <div className="w-full max-w-4xl">
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
-                <iframe 
-                  width="100%" 
-                  height="100%" 
-                  src="https://www.youtube.com/embed/azah79U3LNk?si=ELfgE3uFJoSjQALP" 
-                  title="YouTube video player" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerPolicy="strict-origin-when-cross-origin" 
-                  allowFullScreen
-                  className="absolute inset-0"
-                />
-              </div>
+        {/* Sam O'Brien Testimonial */}
+        <Card className="shadow-lg max-w-4xl mx-auto">
+          <CardContent className="p-8">
+            <div className="flex mb-6">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+              ))}
             </div>
-          </div>
-        </div>
+            <blockquote className="text-gray-700 mb-6 italic text-lg leading-relaxed">
+              "We contract milk 700 cows at Scots Gap and have been using Winton Stock Feed for a number of years. Over the last two years especially, they've been fantastic to work with. Their knowledge around feeding cows, boosting production, and managing pasture is top-notch and aligns really well with our system. We've also recently started working with an independent nutritionist through Winton Stock Feed, and heading into next season, we're focused on hitting those 1% gains to maximize our production as much as possible."
+            </blockquote>
+            <div className="border-t pt-6">
+              <p className="font-semibold text-wsf-blue-dark text-lg">Sam O'Brien</p>
+              <p className="text-gray-600">Scots Gap Dairy Farm</p>
+            </div>
+          </CardContent>
+        </Card>
 
         {/* Call to Action */}
         <div className="text-center bg-gray-50 p-8 rounded-lg">
