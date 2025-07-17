@@ -25,6 +25,7 @@ const categories = [
 ];
 
 const SheepFeedPage: React.FC = () => {
+  console.log("SheepFeedPage component is rendering");
   const [selectedCategory, setSelectedCategory] = useState("SHEEP");
 
   return (
