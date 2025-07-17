@@ -9,42 +9,42 @@ const categories = [
     title: "Dairy",
     description: "Premium feed solutions for dairy cattle including PKE, crushed grain, and specialised pellets",
     icon: Beef,
-    href: "/dairy-feed",
+    href: "/products/dairy-feed",
     color: "bg-primary/10 hover:bg-primary/20"
   },
   {
     title: "Calf", 
     description: "Specialised nutrition for growing calves with premium calf blends and growers",
     icon: Mountain,
-    href: "/calf-feed",
+    href: "/products/calf-feed",
     color: "bg-secondary/10 hover:bg-secondary/20"
   },
   {
     title: "Sheep",
     description: "Nutritious feed formulations designed specifically for sheep farming", 
     icon: Rabbit,
-    href: "/sheep-feed",
+    href: "/products/sheep-feed",
     color: "bg-accent/10 hover:bg-accent/20"
   },
   {
     title: "Deer",
     description: "Specialised feed products for deer farming operations",
     icon: TreePine,
-    href: "/deer-feed",
+    href: "/products/deer-feed",
     color: "bg-muted/10 hover:bg-muted/20"
   },
   {
     title: "Goat",
     description: "High-quality feed solutions designed for goat nutrition and health",
     icon: Mountain,
-    href: "/goat-feed",
+    href: "/products/goat-feed",
     color: "bg-primary/10 hover:bg-primary/20"
   },
   {
     title: "Chicken",
     description: "Premium poultry feed for optimal chicken health and egg production",
     icon: Egg,
-    href: "/chicken-feed",
+    href: "/products/chicken-feed",
     color: "bg-secondary/10 hover:bg-secondary/20"
   }
 ];
@@ -57,33 +57,25 @@ const Products: React.FC = () => {
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
-          <button
-            onClick={() => setSelectedCategory("ALL")}
-            className={`px-4 py-2 transition-colors ${
-              selectedCategory === "ALL" 
-                ? "text-primary font-bold" 
-                : "hover:text-primary"
-            }`}
+          <Link
+            to="/products"
+            className="px-4 py-2 transition-colors text-primary font-bold"
           >
             ALL
-          </button>
+          </Link>
           <span className="text-muted-foreground/50">|</span>
           {categories.map((category, index) => (
-            <React.Fragment key={category.title}>
-              <button
-                onClick={() => setSelectedCategory(category.title.toUpperCase())}
-                className={`px-4 py-2 transition-colors ${
-                  selectedCategory === category.title.toUpperCase() 
-                    ? "text-primary font-bold" 
-                    : "hover:text-primary"
-                }`}
+            <div key={category.title} className="flex items-center">
+              <Link
+                to={category.href}
+                className="px-4 py-2 transition-colors hover:text-primary"
               >
                 {category.title.toUpperCase()}
-              </button>
+              </Link>
               {index < categories.length - 1 && (
                 <span className="text-muted-foreground/50">|</span>
               )}
-            </React.Fragment>
+            </div>
           ))}
         </div>
 
