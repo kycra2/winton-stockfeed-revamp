@@ -6,7 +6,7 @@ import { Mountain, FileText } from 'lucide-react';
 
 const GoatPellets: React.FC = () => {
   return (
-    <ProductLayout title="Goat Pellets MORE CONTENT COMING AND THIS STILL NEEDS SIGNING OFF> ">
+    <ProductLayout title="Goat Pellets MORE CONTENT COMING AND THIS STILL NEEDS SIGNED OFF> ">
       <div className="space-y-8">
         <Card className="shadow-lg">
           <CardHeader className="bg-primary/5">
