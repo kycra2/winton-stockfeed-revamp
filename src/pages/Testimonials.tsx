@@ -68,11 +68,11 @@ const Testimonials = () => {
               ))}
             </div>
             <blockquote className="text-gray-700 mb-6 italic text-lg leading-relaxed">
-              "We contract milk 700 cows at Scots Gap and have been using Winton Stock Feed for a number of years. Over the last two years especially, they've been fantastic to work with. Their knowledge around feeding cows, boosting production, and managing pasture is top-notch and aligns really well with our system. We've also recently started working with an independent nutritionist through Winton Stock Feed, and heading into next season, we're focused on hitting those 1% gains to maximize our production as much as possible."
+              "We contract milk 700 cows at Scots Gap and have been using Winton Stock Feed for a number of years. Over the last two years especially, they've been fantastic to work with. Their knowledge around feeding cows, boosting production, and managing pasture is top-notch and aligns really well with our system. We've also recently started working with an independent nutritionist through Winton Stock Feed, and heading into next season, we're focused on hitting those 1% gains to maximise our production as much as possible."
             </blockquote>
             <div className="border-t pt-6">
               <p className="font-semibold text-wsf-blue-dark text-lg">Sam O'Brien</p>
-              <p className="text-gray-600">Scots Gap Dairy Farm</p>
+              <p className="text-gray-600">Bush View Dairies Ltd</p>
             </div>
           </CardContent>
         </Card>
