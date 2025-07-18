@@ -45,14 +45,14 @@ const categories = [
     description: "High-quality feed solutions designed for goat nutrition and health",
     icon: Mountain,
     href: "/products/goat-feed",
-    color: "bg-accent/10 hover:bg-accent/20"
+    color: "bg-secondary/10 hover:bg-secondary/20"
   },
   {
     title: "Chicken",
     description: "Premium poultry feed for optimal chicken health and egg production",
     icon: Egg,
     href: "/products/chicken-feed",
-    color: "bg-secondary/10 hover:bg-secondary/20"
+    color: "bg-accent/10 hover:bg-accent/20"
   }
 ];
 
