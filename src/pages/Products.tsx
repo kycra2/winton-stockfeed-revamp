@@ -17,14 +17,14 @@ const categories = [
     description: "Premium molasses products for enhanced palatability and nutrition",
     icon: Droplets,
     href: "/molasses",
-    color: "bg-accent/10 hover:bg-accent/20"
+    color: "bg-secondary/10 hover:bg-secondary/20"
   },
   {
     title: "Calf", 
     description: "Specialised nutrition for growing calves with premium calf blends and growers",
     icon: Mountain,
     href: "/products/calf-feed",
-    color: "bg-secondary/10 hover:bg-secondary/20"
+    color: "bg-accent/10 hover:bg-accent/20"
   },
   {
     title: "Sheep",
