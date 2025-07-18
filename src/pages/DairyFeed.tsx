@@ -17,14 +17,14 @@ const dairyProducts = [
     description: "High-quality Maize Distillers Dried Grains with Solubles",
     icon: Wheat,
     href: "/dairy-feed/maize-ddgs",
-    color: "bg-secondary/10 hover:bg-secondary/20"
+    color: "bg-accent/10 hover:bg-accent/20"
   },
   {
     title: "Soya Hulls",
     description: "Nutritious soybean hulls for optimal dairy feed",
     icon: Wheat,
     href: "/dairy-feed/soy-bran-hulls",
-    color: "bg-accent/10 hover:bg-accent/20"
+    color: "bg-secondary/10 hover:bg-secondary/20"
   },
   {
     title: "Soybean Meal",
