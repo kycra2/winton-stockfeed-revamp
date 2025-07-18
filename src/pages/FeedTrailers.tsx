@@ -122,7 +122,7 @@ const FeedTrailersPage: React.FC = () => {
           <Button 
             variant="default" 
             className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/169438+WSF+A4+Flyers+Trailer.pdf', '_blank')}
+            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/XL+Multi+Feed+Trailer+(updated).pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download PDF
