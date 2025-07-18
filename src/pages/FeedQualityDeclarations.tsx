@@ -77,7 +77,7 @@ const FeedQualityDeclarations = () => {
           </div>
 
           <div className="border border-gray-200 rounded-lg p-6 shadow-sm bg-white">
-            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">25/26 Dry Feed</h2>
+            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Dry Feed Declaration 25/26</h2>
             <p className="mb-4 text-gray-700">
               Feed declaration for dry feed products for the 2025-2026 season with detailed nutritional 
               information and quality specifications.
@@ -92,7 +92,28 @@ const FeedQualityDeclarations = () => {
                 className="flex items-center gap-2"
               >
                 <FileText className="w-5 h-5" />
-                25/26 Dry Feed
+                Dry Feed Declaration 25/26
+              </a>
+            </Button>
+          </div>
+
+          <div className="border border-gray-200 rounded-lg p-6 shadow-sm bg-white">
+            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Molasses Feed Declaration 25/26</h2>
+            <p className="mb-4 text-gray-700">
+              Feed declaration for Molasses products for the 2025-2026 season with detailed nutritional 
+              information and quality specifications.
+            </p>
+            <Button 
+              className="bg-wsf-blue hover:bg-wsf-blue-dark text-white"
+              asChild
+            >
+              <a href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Molasses+Signed+Feed+Declaration+June+25.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <FileText className="w-5 h-5" />
+                Molasses Feed Declaration 25/26
               </a>
             </Button>
           </div>
