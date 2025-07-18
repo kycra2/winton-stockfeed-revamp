@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import ProductLayout from '@/components/ProductLayout';
 import { FileText, Phone, Download, Egg } from 'lucide-react';
-import goldenLayerImage from '@/components/images/golden-layer-chicken-pellets.png';
+import goldenLayerImage from '../../components/images/golden-layer-chicken-pellets.png';
 import goldenLayerPDF from '@/components/chicken-feed/Golden-Layer-Pellets.pdf';
 
 const categories = [
