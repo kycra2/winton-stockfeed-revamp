@@ -1,13 +1,53 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import ProductLayout from '@/components/ProductLayout';
 import { Mountain, FileText } from 'lucide-react';
 
+const categories = [
+  { title: "Dairy", href: "/products/dairy-feed", active: false },
+  { title: "Calf", href: "/products/calf-feed", active: false },
+  { title: "Sheep", href: "/products/sheep-feed", active: false },
+  { title: "Deer", href: "/products/deer-feed", active: false },
+  { title: "Goat", href: "/products/goat-feed", active: true },
+  { title: "Chicken", href: "/products/chicken-feed", active: false },
+  { title: "Molasses", href: "/molasses", active: false }
+];
+
 const GoatPellets: React.FC = () => {
   return (
     <ProductLayout title="Goat Pellets MORE CONTENT COMING AND THIS STILL NEEDS SIGNED OFF> ">
       <div className="space-y-8">
+        {/* Category Navigation Menu */}
+        <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
+          <Link 
+            to="/products"
+            className="px-4 py-2 transition-colors hover:text-primary"
+          >
+            ALL
+          </Link>
+          <span className="text-muted-foreground/50">|</span>
+          {categories.map((category, index) => (
+            <div key={category.title} className="flex items-center">
+              <Link
+                to={category.href}
+                className={`px-4 py-2 transition-colors ${
+                  category.active 
+                    ? "text-primary font-bold" 
+                    : "hover:text-primary"
+                }`}
+              >
+                {category.title.toUpperCase()}
+              </Link>
+              {index < categories.length - 1 && (
+                <span className="text-muted-foreground/50">|</span>
+              )}
+            </div>
+          ))}
+        </div>
+
+        <div className="space-y-8">
         <Card className="shadow-lg">
           <CardHeader className="bg-primary/5">
             <div className="flex items-center gap-3">
@@ -81,6 +121,7 @@ const GoatPellets: React.FC = () => {
             </div>
           </CardContent>
         </Card>
+        </div>
       </div>
     </ProductLayout>
   );

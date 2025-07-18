@@ -1,14 +1,54 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { FileDown } from 'lucide-react';
 
+const categories = [
+  { title: "Dairy", href: "/products/dairy-feed", active: false },
+  { title: "Calf", href: "/products/calf-feed", active: false },
+  { title: "Sheep", href: "/products/sheep-feed", active: false },
+  { title: "Deer", href: "/products/deer-feed", active: true },
+  { title: "Goat", href: "/products/goat-feed", active: false },
+  { title: "Chicken", href: "/products/chicken-feed", active: false },
+  { title: "Molasses", href: "/molasses", active: false }
+];
+
 const DeerFeed = () => {
   return (
     <ProductLayout title="Supreme Deer Nuts">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="space-y-8">
+        {/* Category Navigation Menu */}
+        <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
+          <Link 
+            to="/products"
+            className="px-4 py-2 transition-colors hover:text-primary"
+          >
+            ALL
+          </Link>
+          <span className="text-muted-foreground/50">|</span>
+          {categories.map((category, index) => (
+            <div key={category.title} className="flex items-center">
+              <Link
+                to={category.href}
+                className={`px-4 py-2 transition-colors ${
+                  category.active 
+                    ? "text-primary font-bold" 
+                    : "hover:text-primary"
+                }`}
+              >
+                {category.title.toUpperCase()}
+              </Link>
+              {index < categories.length - 1 && (
+                <span className="text-muted-foreground/50">|</span>
+              )}
+            </div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-6">
          <section className="space-y-4">
   <p>
@@ -85,6 +125,7 @@ const DeerFeed = () => {
           </div>
         </div>
       </Card>
+      </div>
     </ProductLayout>
   );
 };
