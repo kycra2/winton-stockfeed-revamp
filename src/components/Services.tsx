@@ -22,7 +22,7 @@ const services = [
   {
     id: 'nutitional-advice',
     image: 'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/WSF-12.jpg',
-    title: 'Free Independent Nutritional Advice',
+    title: 'Independent Nutritional Advice',
     description: 'Boost milk production by changing your feed ratios with our independent nutritional consultant. ',
   },
   {
