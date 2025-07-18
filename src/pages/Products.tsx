@@ -13,46 +13,46 @@ const categories = [
     color: "bg-primary/10 hover:bg-primary/20"
   },
   {
+    title: "Molasses",
+    description: "Premium molasses products for enhanced palatability and nutrition",
+    icon: Droplets,
+    href: "/molasses",
+    color: "bg-green-100 hover:bg-green-200 dark:bg-green-900/20 dark:hover:bg-green-800/30"
+  },
+  {
     title: "Calf", 
     description: "Specialised nutrition for growing calves with premium calf blends and growers",
     icon: Mountain,
     href: "/products/calf-feed",
-    color: "bg-secondary/10 hover:bg-secondary/20"
+    color: "bg-blue-50 hover:bg-blue-100 dark:bg-blue-900/20 dark:hover:bg-blue-800/30"
   },
   {
     title: "Sheep",
     description: "Nutritious feed formulations designed specifically for sheep farming", 
     icon: Rabbit,
     href: "/products/sheep-feed",
-    color: "bg-accent/10 hover:bg-accent/20"
+    color: "bg-purple-50 hover:bg-purple-100 dark:bg-purple-900/20 dark:hover:bg-purple-800/30"
   },
   {
     title: "Deer",
     description: "Specialised feed products for deer farming operations",
     icon: TreePine,
     href: "/products/deer-feed",
-    color: "bg-secondary/10 hover:bg-secondary/20"
+    color: "bg-amber-50 hover:bg-amber-100 dark:bg-amber-900/20 dark:hover:bg-amber-800/30"
   },
   {
     title: "Goat",
     description: "High-quality feed solutions designed for goat nutrition and health",
     icon: Mountain,
     href: "/products/goat-feed",
-    color: "bg-accent/10 hover:bg-accent/20"
+    color: "bg-rose-50 hover:bg-rose-100 dark:bg-rose-900/20 dark:hover:bg-rose-800/30"
   },
   {
     title: "Chicken",
     description: "Premium poultry feed for optimal chicken health and egg production",
     icon: Egg,
     href: "/products/chicken-feed",
-    color: "bg-primary/10 hover:bg-primary/20"
-  },
-  {
-    title: "Molasses",
-    description: "Premium molasses products for enhanced palatability and nutrition",
-    icon: Droplets,
-    href: "/molasses",
-    color: "bg-accent/10 hover:bg-accent/20"
+    color: "bg-orange-50 hover:bg-orange-100 dark:bg-orange-900/20 dark:hover:bg-orange-800/30"
   }
 ];
 
