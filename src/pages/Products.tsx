@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import ProductLayout from '@/components/ProductLayout';
-import { Beef, Rabbit, TreePine, Droplets, Mountain, Egg } from 'lucide-react';
+import { Beef, Rabbit, TreePine, Droplets, Mountain, Egg, Wheat } from 'lucide-react';
 
 const categories = [
   {
@@ -29,7 +29,7 @@ const categories = [
   {
     title: "Sheep",
     description: "Nutritious feed formulations designed specifically for sheep farming", 
-    icon: Rabbit,
+    icon: Wheat,
     href: "/products/sheep-feed",
     color: "bg-primary/10 hover:bg-primary/20"
   },
