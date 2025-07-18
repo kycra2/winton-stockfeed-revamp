@@ -16,7 +16,7 @@ const GoatPellets: React.FC = () => {
               </div>
               <div>
                 <CardTitle className="text-2xl text-foreground">Goat Pellets</CardTitle>
-                <CardDescription className="text-base">December 2016</CardDescription>
+                <CardDescription className="text-base">Goat Pellets</CardDescription>
               </div>
             </div>
           </CardHeader>
@@ -57,7 +57,7 @@ const GoatPellets: React.FC = () => {
             <div className="bg-muted/30 p-6 rounded-lg">
               <h3 className="text-xl font-semibold text-foreground mb-3">To Order</h3>
               <div className="space-y-2 text-muted-foreground">
-                <p><span className="font-medium">Sales Rep:</span> Jo Scharvi 029 201 7361</p>
+                
                 <p><span className="font-medium">Winton Office:</span> 03 236 6089</p>
               </div>
             </div>
