@@ -31,7 +31,7 @@ const categories = [
     description: "Specialised feed products for deer farming operations",
     icon: TreePine,
     href: "/products/deer-feed",
-    color: "bg-accent/20 hover:bg-accent/30"
+    color: "bg-secondary/10 hover:bg-secondary/20"
   },
   {
     title: "Goat",
