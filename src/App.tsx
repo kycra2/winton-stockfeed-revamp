@@ -19,6 +19,7 @@ import Testimonials from "./pages/Testimonials";
 import Products from "./pages/Products";
 import DairyFeed from "./pages/DairyFeed";
 import CalfFeed from "./pages/CalfFeed";
+import ChickenFeed from "./pages/ChickenFeed";
 import GoatFeed from "./pages/GoatFeed";
 import ProductsDeerFeed from "./pages/products/DeerFeed";
 
@@ -36,6 +37,7 @@ import CalfMuesli18Page from "./pages/dairy-feed/CalfMuesli18";
 import EcoCalfFinisherPage from "./pages/dairy-feed/EcoCalfFinisher";
 import TapiocaPage from "./pages/dairy-feed/Tapioca";
 import SheepNutsPage from "./pages/sheep-feed/SheepNuts";
+import GoldenLayerPelletsPage from "./pages/chicken-feed/GoldenLayerPellets";
 import GoatPelletsPage from "./pages/goat-feed/GoatPellets";
 import HealthAndSafety from './pages/HealthAndSafety';
 
@@ -54,6 +56,7 @@ const App = () => (
           <Route path="/products/calf-feed" element={<CalfFeed />} />
           <Route path="/products/sheep-feed" element={<SheepFeedPage />} />
           <Route path="/products/deer-feed" element={<ProductsDeerFeed />} />
+          <Route path="/products/chicken-feed" element={<ChickenFeed />} />
           <Route path="/products/goat-feed" element={<GoatFeed />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/molasses" element={<Molasses />} />
@@ -74,6 +77,7 @@ const App = () => (
           <Route path="/dairy-feed/calf-muesli-18" element={<CalfMuesli18Page />} />
           <Route path="/dairy-feed/eco-calf-finisher" element={<EcoCalfFinisherPage />} />
           <Route path="/dairy-feed/tapioca" element={<TapiocaPage />} />
+          <Route path="/chicken-feed/golden-layer-pellets" element={<GoldenLayerPelletsPage />} />
           <Route path="/goat-feed/goat-pellets" element={<GoatPelletsPage />} />
           <Route path="/health-and-safety" element={<HealthAndSafety />} />
           <Route path="/condose-calculator" element={<CondoseCalculator />} />
