@@ -6,10 +6,47 @@ import { Phone, Download } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Link } from 'react-router-dom';
 
+const categories = [
+  { title: "Dairy", href: "/products/dairy-feed", active: false },
+  { title: "Calf", href: "/products/calf-feed", active: true },
+  { title: "Sheep", href: "/products/sheep-feed", active: false },
+  { title: "Deer", href: "/products/deer-feed", active: false },
+  { title: "Goat", href: "/products/goat-feed", active: false },
+  { title: "Chicken", href: "/products/chicken-feed", active: false },
+  { title: "Molasses", href: "/molasses", active: false }
+];
+
 const EcoCalfFinisherPage: React.FC = () => {
   return (
     <ProductLayout title="Eco Calf Finisher">
       <div className="space-y-8">
+        {/* Category Navigation Menu */}
+        <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
+          <Link 
+            to="/products"
+            className="px-4 py-2 transition-colors hover:text-primary"
+          >
+            ALL
+          </Link>
+          <span className="text-muted-foreground/50">|</span>
+          {categories.map((category, index) => (
+            <div key={category.title} className="flex items-center">
+              <Link
+                to={category.href}
+                className={`px-4 py-2 transition-colors ${
+                  category.active 
+                    ? "text-primary font-bold" 
+                    : "hover:text-primary"
+                }`}
+              >
+                {category.title.toUpperCase()}
+              </Link>
+              {index < categories.length - 1 && (
+                <span className="text-muted-foreground/50">|</span>
+              )}
+            </div>
+          ))}
+        </div>
         {/* Intro Section */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
