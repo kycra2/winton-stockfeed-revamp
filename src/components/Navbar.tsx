@@ -17,7 +17,8 @@ const navItems = [
     name: 'Resources', 
     href: '#',
     children: [
-      { name: 'Feed Quality Declarations', href: '/feed-quality-declarations' }
+      { name: 'Feed Quality Declarations', href: '/feed-quality-declarations' },
+      { name: 'Health and Safety', href: '/health-and-safety' }
     ]
   },
   { name: 'Feed Trailers', href: '/feed-trailers' },
