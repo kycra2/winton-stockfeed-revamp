@@ -49,6 +49,13 @@ const GoldenLayerPellets: React.FC = () => {
           ))}
         </div>
 
+        {/* Product Header */}
+        <div className="text-center mb-8">
+          <div className="mx-auto w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+            <Egg className="w-8 h-8 text-primary" />
+          </div>
+          <h2 className="text-2xl font-bold text-foreground mb-2">Golden Layer Pellets</h2>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Product Image */}
