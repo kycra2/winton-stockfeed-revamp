@@ -31,21 +31,21 @@ const categories = [
     description: "Specialised feed products for deer farming operations",
     icon: TreePine,
     href: "/products/deer-feed",
-    color: "bg-muted/10 hover:bg-muted/20"
+    color: "bg-accent/10 hover:bg-accent/20"
   },
   {
     title: "Goat",
     description: "High-quality feed solutions designed for goat nutrition and health",
     icon: Mountain,
     href: "/products/goat-feed",
-    color: "bg-primary/10 hover:bg-primary/20"
+    color: "bg-secondary/10 hover:bg-secondary/20"
   },
   {
     title: "Chicken",
     description: "Premium poultry feed for optimal chicken health and egg production",
     icon: Egg,
     href: "/products/chicken-feed",
-    color: "bg-secondary/10 hover:bg-secondary/20"
+    color: "bg-primary/10 hover:bg-primary/20"
   },
   {
     title: "Molasses",
