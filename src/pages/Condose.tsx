@@ -105,7 +105,7 @@ const Condose = () => {
           <Button 
             variant="default"
             className="bg-wsf-blue hover:bg-wsf-blue-dark text-lg px-8 py-3"
-            onClick={() => window.location.href = '/condose-calculator'}
+            onClick={() => window.location.href = '/conedose-calculator'}
           >
             <Calculator className="h-5 w-5 mr-2" />
             Open Calculator
