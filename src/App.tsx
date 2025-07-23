@@ -83,7 +83,7 @@ const App = () => (
           <Route path="/goat-feed/goat-pellets" element={<GoatPelletsPage />} />
           <Route path="/health-and-safety" element={<HealthAndSafety />} />
           <Route path="/condose-calculator" element={<CondoseCalculator />} />
-          <Route path="/condose" element={<Condose />} />
+          <Route path="/conedose" element={<Condose />} />
           <Route path="/feed-quality-declarations" element={<FeedQualityDeclarations />} />
           <Route path="/testimonials" element={<Testimonials />} />
           {/* Redirect old URLs to new ones */}

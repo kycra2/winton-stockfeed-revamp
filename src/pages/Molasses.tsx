@@ -101,7 +101,7 @@ const Molasses = () => {
             <Button 
               variant="default"
               className="bg-wsf-blue hover:bg-wsf-blue-dark text-lg px-8 py-3"
-              onClick={() => window.location.href = '/condose'}
+              onClick={() => window.location.href = '/conedose'}
             >
               Discover Condose
               <ArrowRight className="h-5 w-5 ml-2" />
