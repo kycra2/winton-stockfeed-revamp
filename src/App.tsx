@@ -87,7 +87,30 @@ const App = () => (
           <Route path="/feed-quality-declarations" element={<FeedQualityDeclarations />} />
           <Route path="/testimonials" element={<Testimonials />} />
           {/* Redirect old URLs to new ones */}
-          <Route path="/pages/winton-team" element={<Navigate to="/about-us" replace />} />
+          <Route path="/pages/feed-trailers" element={<Navigate to="/feed-trailers" replace />} />
+          <Route path="/pages/deer-nuts" element={<Navigate to="/deer-feed" replace />} />
+          <Route path="/pages/about-us" element={<Navigate to="/about-us" replace />} />
+          <Route path="/pages/feed-quality-declarations" element={<Navigate to="/feed-quality-declarations" replace />} />
+          <Route path="/pages/products" element={<Navigate to="/products" replace />} />
+          <Route path="/pages/condose" element={<Navigate to="/conedose" replace />} />
+          <Route path="/pages/contact-us-1" element={<Navigate to="/contact-us" replace />} />
+          <Route path="/pages/copy-of-conedose-calculator" element={<Navigate to="/conedose" replace />} />
+          <Route path="/pages/health-and-safety" element={<Navigate to="/health-and-safety" replace />} />
+          <Route path="/collections" element={<Navigate to="/products" replace />} />
+          <Route path="/pages/palm-kernel" element={<Navigate to="/dairy-feed/pke" replace />} />
+          <Route path="/collections/frontpage" element={<Navigate to="/products" replace />} />
+          <Route path="/pages/container-services" element={<Navigate to="/about-us" replace />} />
+          <Route path="/pages/conedose-original-calculator" element={<Navigate to="/conedose-calculator" replace />} />
+          <Route path="/pages/winton-team" element={<Navigate to="/contact-us" replace />} />
+          <Route path="/pages/feed-mill-products-southland-otago-only" element={<Navigate to="/contact-us" replace />} />
+          <Route path="/pages/calf-grower-16" element={<Navigate to="/dairy-feed/calf-grower-16" replace />} />
+          <Route path="/pages/supreme-dairy-pellets" element={<Navigate to="/dairy-feed/high-energy-pellets" replace />} />
+          <Route path="/pages/summer-pellets" element={<Navigate to="/products" replace />} />
+          <Route path="/pages/molasses" element={<Navigate to="/molasses" replace />} />
+          <Route path="/pages/conedose-calculator" element={<Navigate to="/conedose-calculator" replace />} />
+          <Route path="/pages/sheep-nuts" element={<Navigate to="/products/sheep-nuts" replace />} />
+          <Route path="/collections/all" element={<Navigate to="/products" replace />} />
+          <Route path="/pages/barley-and-molasses-pellet" element={<Navigate to="/products" replace />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
