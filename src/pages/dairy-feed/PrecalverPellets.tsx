@@ -140,9 +140,7 @@ const PrecalverPelletsPage: React.FC = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold text-wsf-brown">Feeding Guidelines</h2>
           <p>
-            Begin feeding 2-3 weeks before expected calving date at a rate of 0.5-2kg per cow per day, 
-            depending on condition score and pasture quality. Continue for 1-2 weeks after calving to support 
-            transition into lactation.
+            Begin feeding 2-3 weeks before expected calving date at a rate of 2kg per cow per day
           </p>
           <p>
             For tailored feeding recommendations specific to your herd and farm conditions, 
