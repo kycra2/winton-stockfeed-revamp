@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Winton StockFeed</h3>
+            <h3 className="text-xl font-semibold mb-4">Winton Stock Feed</h3>
             <p className="mb-4">New Zealand's Independent Stock Feed Specialists since 1988.</p>
             <div className="flex space-x-4">
               {/* Social media icons would go here */}
