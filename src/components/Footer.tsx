@@ -66,7 +66,7 @@ const Footer = () => {
                 <div>
                   <a 
                     href="tel:0800665277" 
-                    className="hover:text-wsf-cream transition-colors"
+                    className="hover:text-wsf-cream transition-colors whitespace-nowrap"
                   >
                     0800 MOLASSES (0800 665 277)
                   </a>
