@@ -78,11 +78,17 @@ const ContactUs = () => {
           <h2 className="text-2xl font-bold text-wsf-blue-dark">Our Locations</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <ContactCard
-              name="Main Office"
-              location="139 Florence Road, Winton. PO Box 132 Winton 9741"
-              phone="03 236 6089"
-               email="office@wintonstockfeed.co.nz"
-            />
+  name="Main Office"
+  location={
+    <>
+      139 Florence Road, Winton 9782.<br />
+      PO Box 132 Winton 9741
+    </>
+  }
+  phone="03 236 6089"
+  email="office@wintonstockfeed.co.nz"
+/>
+
             <ContactCard
               name="Blending Plant"
               location="139 Florence Rd, Winton"
