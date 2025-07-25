@@ -68,7 +68,7 @@ const Footer = () => {
                     href="tel:0800665277" 
                     className="hover:text-wsf-cream transition-colors"
                   >
-                    Orders Free Phone 0800 MOLASSES Ph 0800 665 277
+                    0800 MOLASSES (0800 665 277)
                   </a>
                 </div>
               </li>
