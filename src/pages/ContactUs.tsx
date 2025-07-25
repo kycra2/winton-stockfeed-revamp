@@ -81,7 +81,7 @@ const ContactUs = () => {
   name="Main Office"
   location={
     <>
-      139 Florence Road, Winton 9782.<br />
+      139 Florence Road, Winton 9782 <br />
       PO Box 132 Winton 9741
     </>
   }
@@ -91,15 +91,15 @@ const ContactUs = () => {
 
             <ContactCard
               name="Blending Plant"
-              location="139 Florence Rd, Winton"
+              location="139 Florence Rd, Winton 9782"
             />
             <ContactCard
               name="Feed Mill"
-              location="107 Clyde Street Invercargill"
+              location="107 Clyde Street, Invercargill 9810"
             />
             <ContactCard
               name="Engineering Workshop"
-              location="7 Montgomerie Street, Winton 9741"
+              location="7 Montgomerie Street, Winton 9720"
             />
           </div>
         </section>
