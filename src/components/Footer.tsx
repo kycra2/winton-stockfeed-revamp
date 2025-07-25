@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-wsf-blue pt-6 mt-8 text-center">
-          <p>&copy; {new Date().getFullYear()} Winton StockFeed Ltd. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Winton Stock Feed Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>
