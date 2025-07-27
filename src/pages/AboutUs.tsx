@@ -35,6 +35,16 @@ const AboutUs = () => {
           </div>
         </div>
 
+        {/* Our Staff Link */}
+        <div className="text-center">
+          <a 
+            href="/contact-us" 
+            className="inline-flex items-center px-6 py-3 bg-wsf-blue text-white rounded-lg hover:bg-wsf-blue-dark transition-colors duration-200 font-semibold"
+          >
+            Our Staff
+          </a>
+        </div>
+
         {/* Video Section */}
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold text-wsf-blue-dark">Our Story in Action</h2>

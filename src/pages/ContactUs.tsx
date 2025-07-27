@@ -9,7 +9,7 @@ const ContactCard = ({ name, role, phone, email, location, photoUrl }: {
   role?: string;
   phone?: string | string[];
   email?: string;
-  location?: string;
+  location?: string | React.ReactNode;
   photoUrl?: string;
 }) => (
   <Card className="p-6 space-y-4">
