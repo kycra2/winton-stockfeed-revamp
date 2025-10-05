@@ -17,7 +17,7 @@ const categories = [
 
 const GoatPellets: React.FC = () => {
   return (
-    <ProductLayout title="Goat Pellets MORE CONTENT COMING AND THIS STILL NEEDS SIGNED OFF> ">
+    <ProductLayout title="Goat Pellets">
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
