@@ -61,6 +61,27 @@ const Molasses = () => {
       </div>
 
       <MolassesInfo />
+      
+      {/* Testimonial Section */}
+      <section className="py-12 bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-wsf-brown/5 to-wsf-blue/5 p-8 rounded-lg border-l-4 border-wsf-brown">
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-wsf-brown">Best in the Business...</h3>
+              <blockquote className="text-lg italic text-gray-700 leading-relaxed">
+                "Winton Stock Feed didn't just deliver molasses — they delivered professionalism. 
+                Your driver gave the best display of truck handling I've seen in all my years on the farm. 
+                Smooth, careful, respectful, and a tight turnaround without fuss. It's easy to complain 
+                these days, but this was worth a call to say: well done!"
+              </blockquote>
+              <p className="text-sm font-medium text-gray-600">
+                — Adrian Thurston, Fairfield Farms Ltd – Manawatu
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <WhyMolasses />
       
       {/* Specs Download Section - Fixed for mobile */}
