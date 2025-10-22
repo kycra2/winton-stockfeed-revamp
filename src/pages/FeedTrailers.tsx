@@ -59,6 +59,21 @@ const FeedTrailersPage: React.FC = () => {
           </p>
         </section>
 
+        {/* Testimonial Section */}
+        <section className="bg-gradient-to-br from-wsf-brown/5 to-wsf-blue/5 p-8 rounded-lg border-l-4 border-wsf-brown">
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-wsf-brown">Safer, Stronger, Smarter</h3>
+            <blockquote className="text-lg italic text-gray-700 leading-relaxed">
+              "Winton Stock Feed nailed it with these 2-tonne feed trailers. They're solid, 
+              well-designed, and tough enough to stand up to daily farm use. Most importantly, 
+              the size means the team uses the tractor – much safer than towing with bikes."
+            </blockquote>
+            <p className="text-sm font-medium text-gray-600">
+              — Scott Paterson, Waterside Dairies Ltd – Bay of Plenty
+            </p>
+          </div>
+        </section>
+
         {/* Specifications Section with Image */}
         <section className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
