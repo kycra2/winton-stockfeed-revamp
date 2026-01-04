@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import ProductLayout from '@/components/ProductLayout';
 import { Package2 } from 'lucide-react';
+import SEOHead, { generateBreadcrumbSchema, generateProductSchema } from '@/components/SEOHead';
 
 const sheepProducts = [
   {
@@ -25,12 +26,35 @@ const categories = [
   { title: "Molasses", href: "/molasses", active: false }
 ];
 
+const sheepFeedSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    generateProductSchema({
+      name: "Sheep Nuts",
+      description: "Formulated from grains and wheat products to give an economic feed that will keep your stock in optimum condition in times of poor feed availability.",
+      category: "Sheep Feed"
+    }),
+    generateBreadcrumbSchema([
+      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
+      { name: "Sheep Feed", url: "https://wintonstockfeed.co.nz/products/sheep-feed" }
+    ])
+  ]
+};
+
 const SheepFeedPage: React.FC = () => {
   console.log("SheepFeedPage component is rendering");
   const [selectedCategory, setSelectedCategory] = useState("SHEEP");
 
   return (
     <ProductLayout title="Sheep Feed">
+      <SEOHead
+        title="Sheep Feed NZ - Sheep Nuts & Pellets | Winton Stock Feed"
+        description="Premium sheep feed products for New Zealand farmers. Sheep Nuts formulated from quality grains and wheat products. Economic feed to maintain stock in optimum condition. Winton Stock Feed."
+        keywords="sheep feed NZ, sheep nuts, sheep pellets, sheep nutrition, Winton Stock Feed sheep feed, Southland sheep feed"
+        canonicalUrl="https://wintonstockfeed.co.nz/products/sheep-feed"
+        schema={sheepFeedSchema}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

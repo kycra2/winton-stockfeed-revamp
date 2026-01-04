@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import ProductLayout from '@/components/ProductLayout';
 import { Beef, Wheat, Milk, Egg, Droplets, Mountain } from 'lucide-react';
+import SEOHead, { generateBreadcrumbSchema } from '@/components/SEOHead';
 
 const dairyProducts = [
   {
@@ -73,11 +74,41 @@ const categories = [
   { title: "Molasses", href: "/molasses", active: false }
 ];
 
+const dairyFeedSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ItemList",
+      "name": "Dairy Feed Products",
+      "description": "Premium dairy feed solutions from Winton Stock Feed",
+      "itemListElement": dairyProducts.map((product, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": product.title,
+        "description": product.description,
+        "url": `https://wintonstockfeed.co.nz${product.href}`
+      }))
+    },
+    generateBreadcrumbSchema([
+      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
+      { name: "Dairy Feed", url: "https://wintonstockfeed.co.nz/products/dairy-feed" }
+    ])
+  ]
+};
+
 const DairyFeed: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState("DAIRY");
 
   return (
     <ProductLayout title="Dairy Feed">
+      <SEOHead
+        title="Dairy Feed NZ - PKE, Pellets & Grain | Winton Stock Feed"
+        description="Premium dairy feed solutions for New Zealand farmers. PKE, Maize DDGS, Soya Hulls, Crushed Grain, High Energy Pellets and more. Quality dairy nutrition from Winton Stock Feed."
+        keywords="dairy feed NZ, PKE New Zealand, dairy cattle feed, dairy pellets, dairy nutrition, Winton Stock Feed dairy"
+        canonicalUrl="https://wintonstockfeed.co.nz/products/dairy-feed"
+        schema={dairyFeedSchema}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

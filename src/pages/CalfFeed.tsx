@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import ProductLayout from '@/components/ProductLayout';
 import { Beef, Wheat, Milk, Egg, Droplets, Mountain } from 'lucide-react';
+import SEOHead, { generateBreadcrumbSchema } from '@/components/SEOHead';
 
 const calfProducts = [
   {
@@ -52,11 +53,41 @@ const categories = [
   { title: "Molasses", href: "/molasses", active: false }
 ];
 
+const calfFeedSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ItemList",
+      "name": "Calf Feed Products",
+      "description": "Premium calf feed solutions from Winton Stock Feed",
+      "itemListElement": calfProducts.map((product, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": product.title,
+        "description": product.description,
+        "url": `https://wintonstockfeed.co.nz${product.href}`
+      }))
+    },
+    generateBreadcrumbSchema([
+      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
+      { name: "Calf Feed", url: "https://wintonstockfeed.co.nz/products/calf-feed" }
+    ])
+  ]
+};
+
 const CalfFeed: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState("CALF");
 
   return (
     <ProductLayout title="Calf Feed">
+      <SEOHead
+        title="Calf Feed NZ - Calf Grower, Muesli & Pellets | Winton Stock Feed"
+        description="Premium calf feed products for New Zealand farmers. Calf Grower 16, Calf Grower 20, Calf Blend 17, Calf Muesli 18 and Eco Calf Finisher. Quality calf nutrition from Winton Stock Feed."
+        keywords="calf feed NZ, calf grower, calf pellets, calf muesli, calf nutrition, Winton Stock Feed calf feed"
+        canonicalUrl="https://wintonstockfeed.co.nz/products/calf-feed"
+        schema={calfFeedSchema}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

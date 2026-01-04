@@ -8,6 +8,7 @@ import MolassesLocations from '@/components/molasses/MolassesLocations';
 import MolassesDepots from '@/components/molasses/MolassesDepots';
 import { Button } from '@/components/ui/button';
 import { Download, ArrowRight } from 'lucide-react';
+import SEOHead, { generateProductSchema, generateBreadcrumbSchema } from '@/components/SEOHead';
 
 const Molasses = () => {
   const categories = [
@@ -20,8 +21,33 @@ const Molasses = () => {
     { title: "MOLASSES", href: "/molasses" }
   ];
 
+  const molassesSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateProductSchema({
+        name: "Molasses Feed Supplement",
+        description: "Premium quality molasses for livestock. New Zealand's favourite feed supplement since 1988. High palatability and energy for all livestock including dairy cattle, beef, sheep, and deer.",
+        image: "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/molasses-dairy-herd-feed.png",
+        category: "Molasses Feed"
+      }),
+      generateBreadcrumbSchema([
+        { name: "Home", url: "https://wintonstockfeed.co.nz/" },
+        { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
+        { name: "Molasses", url: "https://wintonstockfeed.co.nz/molasses" }
+      ])
+    ]
+  };
+
   return (
     <ProductLayout title="">
+      <SEOHead
+        title="Molasses Feed Supplement NZ - Premium Livestock Feed | Winton Stock Feed"
+        description="New Zealand's largest independent importer of molasses since 1988. Premium quality molasses for dairy, beef, sheep and deer. 7 strategic depots nationwide. High energy, high palatability feed supplement."
+        keywords="molasses NZ, molasses feed, livestock molasses, dairy cattle feed, molasses supplement, Winton Stock Feed molasses, New Zealand molasses"
+        canonicalUrl="https://wintonstockfeed.co.nz/molasses"
+        ogType="product"
+        schema={molassesSchema}
+      />
       {/* Category Navigation Menu */}
       <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-8">
         <Link

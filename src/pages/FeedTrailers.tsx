@@ -6,10 +6,35 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Package, Truck, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import SEOHead, { generateProductSchema, generateBreadcrumbSchema } from '@/components/SEOHead';
+
+const feedTrailerSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    generateProductSchema({
+      name: "Feed Trailers",
+      description: "Large capacity 2-tonne feed trailers designed in Winton for easy tractor loading and towing. Perfect for PKE or hay feeding in the paddock.",
+      image: "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/feed-trailer-winton-stock-feed.jpg",
+      category: "Farm Equipment"
+    }),
+    generateBreadcrumbSchema([
+      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
+      { name: "Feed Trailers", url: "https://wintonstockfeed.co.nz/feed-trailers" }
+    ])
+  ]
+};
 
 const FeedTrailersPage: React.FC = () => {
   return (
     <ProductLayout title="Feed Trailers">
+      <SEOHead
+        title="Feed Trailers NZ - 2 Tonne PKE Trailers | Winton Stock Feed"
+        description="Exclusive 2-tonne feed trailers designed in Winton. Large capacity for PKE or hay, easy tractor loading, quick hitch system. The best and strongest feed trailer around. Ideal for paddock feeding."
+        keywords="feed trailers NZ, PKE trailers, farm trailers, feed out trailer, 2 tonne trailer, Winton Stock Feed trailers"
+        canonicalUrl="https://wintonstockfeed.co.nz/feed-trailers"
+        ogType="product"
+        schema={feedTrailerSchema}
+      />
       <div className="space-y-8">
         {/* Intro Section */}
         <section className="space-y-4">

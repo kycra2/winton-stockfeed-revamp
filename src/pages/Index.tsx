@@ -9,10 +9,18 @@ import Services from '@/components/Services';
 import Gallery from '@/components/Gallery';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import SEOHead, { generateLocalBusinessSchema } from '@/components/SEOHead';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Winton Stock Feed - New Zealand's Independent Stock Feed Specialists Since 1988"
+        description="New Zealand's largest independent importer of molasses and stock feed. Quality PKE, dairy feed, calf feed, sheep feed, deer feed and more with nationwide delivery from Winton, Southland."
+        keywords="stock feed NZ, molasses New Zealand, PKE feed, dairy feed, calf feed, sheep feed, Winton Stock Feed, Southland farm feed"
+        canonicalUrl="https://wintonstockfeed.co.nz/"
+        schema={generateLocalBusinessSchema()}
+      />
       <Navbar />
       <main>
         <Hero />
