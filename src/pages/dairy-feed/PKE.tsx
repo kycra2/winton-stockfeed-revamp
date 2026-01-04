@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEOHead, { generateProductSchema, generateBreadcrumbSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: true },
@@ -16,9 +17,35 @@ const categories = [
   { title: "Molasses", href: "/molasses", active: false }
 ];
 
+const pkeSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    generateProductSchema({
+      name: "Palm Kernel Expeller (PKE)",
+      description: "Premium Palm Kernel Extract for dairy cattle nutrition. Palatable feed with cost-effective energy and protein. Excellent for calf and ruminant feeds.",
+      image: "https://github.com/kycra2/winton-stockfeed-revamp/blob/main/src/components/images/PKE-Feed-Southland.png?raw=true",
+      category: "Dairy Feed"
+    }),
+    generateBreadcrumbSchema([
+      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
+      { name: "Dairy Feed", url: "https://wintonstockfeed.co.nz/products/dairy-feed" },
+      { name: "PKE", url: "https://wintonstockfeed.co.nz/dairy-feed/pke" }
+    ])
+  ]
+};
+
 const PKEPage: React.FC = () => {
   return (
     <ProductLayout title="Palm Kernel Expeller (PKE)">
+      <SEOHead
+        title="PKE - Palm Kernel Expeller Feed NZ | Winton Stock Feed"
+        description="Premium Palm Kernel Expeller (PKE) for Southland and Otago dairy farmers. Cost-effective energy and protein source for cattle. Own auger trucks for direct farm delivery. Contracts and spot pricing available."
+        keywords="PKE NZ, palm kernel expeller, palm kernel feed, dairy cattle feed, PKE Southland, PKE Otago, Winton Stock Feed PKE"
+        canonicalUrl="https://wintonstockfeed.co.nz/dairy-feed/pke"
+        ogType="product"
+        schema={pkeSchema}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

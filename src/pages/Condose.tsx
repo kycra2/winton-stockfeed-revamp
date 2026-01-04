@@ -4,6 +4,7 @@ import ProductLayout from '../components/ProductLayout';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Zap, DollarSign, Target, Settings, Shield, Calculator, Download } from 'lucide-react';
+import SEOHead, { generateProductSchema, generateBreadcrumbSchema, generateFAQSchema } from '@/components/SEOHead';
 
 const Condose = () => {
   const benefits = [
@@ -65,8 +66,37 @@ const Condose = () => {
     }
   ];
 
+  const condoseSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateProductSchema({
+        name: "Condose Automated Mineral Dispenser",
+        description: "Fully automated mineral dosing system that mixes minerals with molasses for accurate, reliable delivery to every cow, every day.",
+        image: "https://wintonstockfeed.co.nz/lovable-uploads/3e09f268-ff8d-4b14-89b9-094199595f99.png",
+        category: "Farm Equipment"
+      }),
+      generateBreadcrumbSchema([
+        { name: "Home", url: "https://wintonstockfeed.co.nz/" },
+        { name: "Condose", url: "https://wintonstockfeed.co.nz/conedose" }
+      ]),
+      generateFAQSchema([
+        { question: "How does Condose work?", answer: "The Condose system uses compressed air to mix soluble and insoluble minerals with molasses which acts as a mineral suspension carrier. The fully automated system manages the mixing process, delivery to each cow in-shed and is self-cleaning after every milking." },
+        { question: "What minerals can Condose deliver?", answer: "Condose can deliver a wide range of macro and micro minerals and additives at any dosage rate, including minerals with strict dosage thresholds such as Rumensin®." },
+        { question: "Is Condose available for lease?", answer: "Yes, Condose is available on a fully maintained operating lease providing cost certainty for farmers." }
+      ])
+    ]
+  };
+
   return (
     <ProductLayout title="Condose - Fully Automated Mineral Dispenser">
+      <SEOHead
+        title="Condose Mineral Dispenser - Automated Mineral Dosing for Dairy | Winton Stock Feed"
+        description="Condose fully automated mineral dispenser delivers accurate mineral doses to every cow, every day. Mix minerals with molasses for reliable, economic mineral supplementation. Available for purchase or lease."
+        keywords="Condose, mineral dispenser, automated mineral dosing, dairy minerals, molasses minerals, cow minerals NZ, Winton Stock Feed"
+        canonicalUrl="https://wintonstockfeed.co.nz/conedose"
+        ogType="product"
+        schema={condoseSchema}
+      />
       {/* Hero Section */}
       <div className="mb-12">
         <div className="flex flex-col lg:flex-row items-center gap-8 mb-8">

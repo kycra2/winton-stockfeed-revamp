@@ -3,10 +3,39 @@ import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Star } from 'lucide-react';
+import SEOHead from '@/components/SEOHead';
+
+const testimonialSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Customer Testimonials - Winton Stock Feed",
+  "description": "Read what New Zealand farmers say about Winton Stock Feed products and service",
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Organization", "name": "Nourish South" },
+      "reviewBody": "Since introducing molasses to our goat herd, we've seen a remarkable improvement in animal health.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    },
+    {
+      "@type": "Review", 
+      "author": { "@type": "Person", "name": "Gregor & Lynne Ramsay" },
+      "reviewBody": "Winton Stock Feeds are more than just a feed company. They are a vital part of the success of our business.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    }
+  ]
+};
 
 const Testimonials = () => {
   return (
     <ProductLayout title="Customer Testimonials">
+      <SEOHead
+        title="Customer Testimonials - Winton Stock Feed | NZ Farmer Reviews"
+        description="Read what New Zealand farmers say about Winton Stock Feed. Testimonials from dairy farmers, goat farmers and more about our molasses, PKE and stock feed products and service."
+        keywords="Winton Stock Feed reviews, stock feed testimonials, NZ farmer reviews, molasses reviews, PKE reviews"
+        canonicalUrl="https://wintonstockfeed.co.nz/testimonials"
+        schema={testimonialSchema}
+      />
       <div className="space-y-12">
         {/* Introduction */}
         <div className="text-center">

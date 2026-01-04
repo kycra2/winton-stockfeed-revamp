@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import ProductLayout from '@/components/ProductLayout';
 import { Beef, Rabbit, TreePine, Droplets, Mountain, Egg, Wheat } from 'lucide-react';
+import SEOHead, { generateBreadcrumbSchema } from '@/components/SEOHead';
 
 const categories = [
   {
@@ -56,11 +57,40 @@ const categories = [
   }
 ];
 
+const productsSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ItemList",
+      "name": "Stock Feed Products",
+      "description": "Complete range of stock feed products from Winton Stock Feed",
+      "itemListElement": categories.map((cat, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": cat.title,
+        "description": cat.description,
+        "url": `https://wintonstockfeed.co.nz${cat.href}`
+      }))
+    },
+    generateBreadcrumbSchema([
+      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://wintonstockfeed.co.nz/products" }
+    ])
+  ]
+};
+
 const Products: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState("ALL");
 
   return (
     <ProductLayout title="Our Products">
+      <SEOHead
+        title="Stock Feed Products NZ - Dairy, Calf, Sheep, Deer Feed | Winton Stock Feed"
+        description="Complete range of premium stock feed products for New Zealand farmers. Dairy feed, calf feed, sheep feed, deer feed, goat feed, chicken feed and molasses. Quality nutrition from Winton Stock Feed."
+        keywords="stock feed products NZ, dairy feed, calf feed, sheep feed, deer feed, goat feed, chicken feed, molasses, Winton Stock Feed"
+        canonicalUrl="https://wintonstockfeed.co.nz/products"
+        schema={productsSchema}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

@@ -3,6 +3,7 @@ import ProductLayout from '@/components/ProductLayout';
 import { User, Users, Phone, Mail, MapPin } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import SEOHead from '@/components/SEOHead';
 
 const ContactCard = ({ name, role, phone, email, location, photoUrl }: {
   name: string;
@@ -69,9 +70,36 @@ const ContactCard = ({ name, role, phone, email, location, photoUrl }: {
   </Card>
 );
 
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Winton Stock Feed",
+  "description": "Get in touch with Winton Stock Feed for all your stock feed needs",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Winton Stock Feed",
+    "telephone": "+64 3 236 6089",
+    "email": "office@wintonstockfeed.co.nz",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "139 Florence Road",
+      "addressLocality": "Winton",
+      "postalCode": "9782",
+      "addressCountry": "NZ"
+    }
+  }
+};
+
 const ContactUs = () => {
   return (
     <ProductLayout title="Contact Us">
+      <SEOHead
+        title="Contact Us - Winton Stock Feed | Phone 03 236 6089"
+        description="Contact Winton Stock Feed for all your stock feed needs. Main office at 139 Florence Road, Winton. Phone 03 236 6089 or 0800 MOLASSES. Sales representatives across New Zealand."
+        keywords="contact Winton Stock Feed, stock feed Winton, Southland stock feed, molasses supplier NZ contact"
+        canonicalUrl="https://wintonstockfeed.co.nz/contact-us"
+        schema={contactSchema}
+      />
       <div className="space-y-12">
         {/* Office Locations Section - Moved to top */}
         <section className="space-y-6">

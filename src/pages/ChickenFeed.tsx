@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import ProductLayout from '@/components/ProductLayout';
 import { Egg } from 'lucide-react';
+import SEOHead, { generateBreadcrumbSchema, generateProductSchema } from '@/components/SEOHead';
 
 const chickenProducts = [
   {
@@ -24,11 +25,34 @@ const categories = [
   { title: "Molasses", href: "/molasses", active: false }
 ];
 
+const chickenFeedSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    generateProductSchema({
+      name: "Golden Layer Pellets",
+      description: "Barley & molasses pellets specifically formulated to meet the nutritional needs of laying hens, supporting healthy egg production.",
+      category: "Chicken Feed"
+    }),
+    generateBreadcrumbSchema([
+      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
+      { name: "Chicken Feed", url: "https://wintonstockfeed.co.nz/products/chicken-feed" }
+    ])
+  ]
+};
+
 const ChickenFeed: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState("CHICKEN");
 
   return (
     <ProductLayout title="Chicken Feed">
+      <SEOHead
+        title="Chicken Feed NZ - Golden Layer Pellets | Winton Stock Feed"
+        description="Premium chicken feed for New Zealand poultry. Golden Layer Pellets with barley & molasses, specifically formulated for laying hens. Supports healthy egg production. Winton Stock Feed."
+        keywords="chicken feed NZ, layer pellets, poultry feed, hen feed, egg production feed, Winton Stock Feed chicken feed"
+        canonicalUrl="https://wintonstockfeed.co.nz/products/chicken-feed"
+        schema={chickenFeedSchema}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

@@ -5,6 +5,7 @@ import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { FileDown } from 'lucide-react';
+import SEOHead, { generateProductSchema, generateBreadcrumbSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: false },
@@ -16,9 +17,34 @@ const categories = [
   { title: "Molasses", href: "/molasses", active: false }
 ];
 
+const deerFeedSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    generateProductSchema({
+      name: "Supreme Deer Nuts",
+      description: "Premium deer feed pellets providing ideal supplementary nutrition without grain wastage. Correct balance of vitamins and minerals for deer farming.",
+      image: "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/deer-feed-new-zealand-farm+(1)+(1).png",
+      category: "Deer Feed"
+    }),
+    generateBreadcrumbSchema([
+      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
+      { name: "Deer Feed", url: "https://wintonstockfeed.co.nz/deer-feed" }
+    ])
+  ]
+};
+
 const DeerFeed = () => {
   return (
     <ProductLayout title="Supreme Deer Nuts">
+      <SEOHead
+        title="Deer Feed NZ - Supreme Deer Nuts | Winton Stock Feed"
+        description="Premium Supreme Deer Nuts for New Zealand deer farmers. Ideal supplementary feed with correct vitamin and mineral balance. 12.5% energy, 13% protein. Available in 25kg bags, bulk bags and bulk delivery."
+        keywords="deer feed NZ, deer nuts, deer pellets, deer nutrition, Winton Stock Feed deer feed, New Zealand deer farming"
+        canonicalUrl="https://wintonstockfeed.co.nz/deer-feed"
+        ogType="product"
+        schema={deerFeedSchema}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

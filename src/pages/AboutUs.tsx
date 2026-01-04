@@ -1,10 +1,26 @@
 
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
+import SEOHead, { generateOrganizationSchema } from '@/components/SEOHead';
+
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Winton Stock Feed",
+  "description": "Learn about Winton Stock Feed - New Zealand's largest independent stock feed supplier since 1988",
+  "mainEntity": generateOrganizationSchema()
+};
 
 const AboutUs = () => {
   return (
     <ProductLayout title="About Us">
+      <SEOHead
+        title="About Us - Winton Stock Feed | NZ Stock Feed Specialists Since 1988"
+        description="Winton Stock Feed is a privately owned business based in Central Southland, supporting New Zealand farmers since 1988. Learn about our team of 40 staff, nationwide distribution network, and commitment to quality stock feed."
+        keywords="about Winton Stock Feed, stock feed history, Southland stock feed, New Zealand farm feed supplier, molasses importer NZ"
+        canonicalUrl="https://wintonstockfeed.co.nz/about-us"
+        schema={aboutSchema}
+      />
       <div className="space-y-8">
         {/* Company Overview Section */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
