@@ -18,7 +18,7 @@ const AboutUs = () => {
         title="About Us - Winton Stock Feed | NZ Stock Feed Specialists Since 1988"
         description="Winton Stock Feed is a privately owned business based in Central Southland, supporting New Zealand farmers since 1988. Learn about our team of 40 staff, nationwide distribution network, and commitment to quality stock feed."
         keywords="about Winton Stock Feed, stock feed history, Southland stock feed, New Zealand farm feed supplier, molasses importer NZ"
-        canonicalUrl="https://wintonstockfeed.co.nz/about-us"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/about-us"
         schema={aboutSchema}
       />
       <div className="space-y-8">

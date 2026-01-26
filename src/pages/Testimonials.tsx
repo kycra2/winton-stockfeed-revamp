@@ -33,7 +33,7 @@ const Testimonials = () => {
         title="Customer Testimonials - Winton Stock Feed | NZ Farmer Reviews"
         description="Read what New Zealand farmers say about Winton Stock Feed. Testimonials from dairy farmers, goat farmers and more about our molasses, PKE and stock feed products and service."
         keywords="Winton Stock Feed reviews, stock feed testimonials, NZ farmer reviews, molasses reviews, PKE reviews"
-        canonicalUrl="https://wintonstockfeed.co.nz/testimonials"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/testimonials"
         schema={testimonialSchema}
       />
       <div className="space-y-12">

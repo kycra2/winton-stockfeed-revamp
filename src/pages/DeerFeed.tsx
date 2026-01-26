@@ -27,9 +27,9 @@ const deerFeedSchema = {
       category: "Deer Feed"
     }),
     generateBreadcrumbSchema([
-      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
-      { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
-      { name: "Deer Feed", url: "https://wintonstockfeed.co.nz/deer-feed" }
+      { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://www.wintonstockfeed.co.nz/products" },
+      { name: "Deer Feed", url: "https://www.wintonstockfeed.co.nz/deer-feed" }
     ])
   ]
 };
@@ -41,7 +41,7 @@ const DeerFeed = () => {
         title="Deer Feed NZ - Supreme Deer Nuts | Winton Stock Feed"
         description="Premium Supreme Deer Nuts for New Zealand deer farmers. Ideal supplementary feed with correct vitamin and mineral balance. 12.5% energy, 13% protein. Available in 25kg bags, bulk bags and bulk delivery."
         keywords="deer feed NZ, deer nuts, deer pellets, deer nutrition, Winton Stock Feed deer feed, New Zealand deer farming"
-        canonicalUrl="https://wintonstockfeed.co.nz/deer-feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/deer-feed"
         ogType="product"
         schema={deerFeedSchema}
       />

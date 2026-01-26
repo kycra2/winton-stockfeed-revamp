@@ -35,9 +35,9 @@ const goatFeedSchema = {
       category: "Goat Feed"
     }),
     generateBreadcrumbSchema([
-      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
-      { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
-      { name: "Goat Feed", url: "https://wintonstockfeed.co.nz/products/goat-feed" }
+      { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://www.wintonstockfeed.co.nz/products" },
+      { name: "Goat Feed", url: "https://www.wintonstockfeed.co.nz/products/goat-feed" }
     ])
   ]
 };
@@ -51,7 +51,7 @@ const GoatFeed: React.FC = () => {
         title="Goat Feed NZ - Goat Pellets & Nutrition | Winton Stock Feed"
         description="Premium goat feed products for New Zealand farmers. Quality Goat Pellets providing essential protein, energy, vitamins and minerals for goats of all ages. Winton Stock Feed."
         keywords="goat feed NZ, goat pellets, goat nutrition, Winton Stock Feed goat feed, New Zealand goat farming"
-        canonicalUrl="https://wintonstockfeed.co.nz/products/goat-feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/products/goat-feed"
         schema={goatFeedSchema}
       />
       <div className="space-y-8">

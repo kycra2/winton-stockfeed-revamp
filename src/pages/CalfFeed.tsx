@@ -65,13 +65,13 @@ const calfFeedSchema = {
         "position": index + 1,
         "name": product.title,
         "description": product.description,
-        "url": `https://wintonstockfeed.co.nz${product.href}`
+        "url": `https://www.wintonstockfeed.co.nz${product.href}`
       }))
     },
     generateBreadcrumbSchema([
-      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
-      { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
-      { name: "Calf Feed", url: "https://wintonstockfeed.co.nz/products/calf-feed" }
+      { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://www.wintonstockfeed.co.nz/products" },
+      { name: "Calf Feed", url: "https://www.wintonstockfeed.co.nz/products/calf-feed" }
     ])
   ]
 };
@@ -85,7 +85,7 @@ const CalfFeed: React.FC = () => {
         title="Calf Feed NZ - Calf Grower, Muesli & Pellets | Winton Stock Feed"
         description="Premium calf feed products for New Zealand farmers. Calf Grower 16, Calf Grower 20, Calf Blend 17, Calf Muesli 18 and Eco Calf Finisher. Quality calf nutrition from Winton Stock Feed."
         keywords="calf feed NZ, calf grower, calf pellets, calf muesli, calf nutrition, Winton Stock Feed calf feed"
-        canonicalUrl="https://wintonstockfeed.co.nz/products/calf-feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/products/calf-feed"
         schema={calfFeedSchema}
       />
       <div className="space-y-8">

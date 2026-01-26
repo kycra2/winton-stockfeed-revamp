@@ -31,9 +31,9 @@ const Molasses = () => {
         category: "Molasses Feed"
       }),
       generateBreadcrumbSchema([
-        { name: "Home", url: "https://wintonstockfeed.co.nz/" },
-        { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
-        { name: "Molasses", url: "https://wintonstockfeed.co.nz/molasses" }
+        { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+        { name: "Products", url: "https://www.wintonstockfeed.co.nz/products" },
+        { name: "Molasses", url: "https://www.wintonstockfeed.co.nz/molasses" }
       ])
     ]
   };
@@ -44,7 +44,7 @@ const Molasses = () => {
         title="Molasses Feed Supplement NZ - Premium Livestock Feed | Winton Stock Feed"
         description="New Zealand's largest independent importer of molasses since 1988. Premium quality molasses for dairy, beef, sheep and deer. 7 strategic depots nationwide. High energy, high palatability feed supplement."
         keywords="molasses NZ, molasses feed, livestock molasses, dairy cattle feed, molasses supplement, Winton Stock Feed molasses, New Zealand molasses"
-        canonicalUrl="https://wintonstockfeed.co.nz/molasses"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/molasses"
         ogType="product"
         schema={molassesSchema}
       />

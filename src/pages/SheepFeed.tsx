@@ -35,9 +35,9 @@ const sheepFeedSchema = {
       category: "Sheep Feed"
     }),
     generateBreadcrumbSchema([
-      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
-      { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
-      { name: "Sheep Feed", url: "https://wintonstockfeed.co.nz/products/sheep-feed" }
+      { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://www.wintonstockfeed.co.nz/products" },
+      { name: "Sheep Feed", url: "https://www.wintonstockfeed.co.nz/products/sheep-feed" }
     ])
   ]
 };
@@ -52,7 +52,7 @@ const SheepFeedPage: React.FC = () => {
         title="Sheep Feed NZ - Sheep Nuts & Pellets | Winton Stock Feed"
         description="Premium sheep feed products for New Zealand farmers. Sheep Nuts formulated from quality grains and wheat products. Economic feed to maintain stock in optimum condition. Winton Stock Feed."
         keywords="sheep feed NZ, sheep nuts, sheep pellets, sheep nutrition, Winton Stock Feed sheep feed, Southland sheep feed"
-        canonicalUrl="https://wintonstockfeed.co.nz/products/sheep-feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/products/sheep-feed"
         schema={sheepFeedSchema}
       />
       <div className="space-y-8">

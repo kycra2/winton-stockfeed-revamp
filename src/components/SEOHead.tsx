@@ -100,7 +100,7 @@ export const generateLocalBusinessSchema = () => ({
   "@type": "LocalBusiness",
   "name": "Winton Stock Feed",
   "description": "New Zealand's largest independent importer and specialist distributor of molasses and stock feed since 1988",
-  "url": "https://wintonstockfeed.co.nz",
+  "url": "https://www.wintonstockfeed.co.nz",
   "telephone": "+64 3 236 6089",
   "email": "office@wintonstockfeed.co.nz",
   "address": {
@@ -186,7 +186,7 @@ export const generateOrganizationSchema = () => ({
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Winton Stock Feed",
-  "url": "https://wintonstockfeed.co.nz",
+  "url": "https://www.wintonstockfeed.co.nz",
   "logo": "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/winton-stock-feed-logo.png",
   "description": "New Zealand's largest independent importer and specialist distributor of molasses and stock feed since 1988",
   "foundingDate": "1988",
