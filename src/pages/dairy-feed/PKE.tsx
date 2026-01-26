@@ -27,10 +27,10 @@ const pkeSchema = {
       category: "Dairy Feed"
     }),
     generateBreadcrumbSchema([
-      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
-      { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
-      { name: "Dairy Feed", url: "https://wintonstockfeed.co.nz/products/dairy-feed" },
-      { name: "PKE", url: "https://wintonstockfeed.co.nz/dairy-feed/pke" }
+      { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://www.wintonstockfeed.co.nz/products" },
+      { name: "Dairy Feed", url: "https://www.wintonstockfeed.co.nz/products/dairy-feed" },
+      { name: "PKE", url: "https://www.wintonstockfeed.co.nz/dairy-feed/pke" }
     ])
   ]
 };
@@ -42,7 +42,7 @@ const PKEPage: React.FC = () => {
         title="PKE - Palm Kernel Expeller Feed NZ | Winton Stock Feed"
         description="Premium Palm Kernel Expeller (PKE) for Southland and Otago dairy farmers. Cost-effective energy and protein source for cattle. Own auger trucks for direct farm delivery. Contracts and spot pricing available."
         keywords="PKE NZ, palm kernel expeller, palm kernel feed, dairy cattle feed, PKE Southland, PKE Otago, Winton Stock Feed PKE"
-        canonicalUrl="https://wintonstockfeed.co.nz/dairy-feed/pke"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/dairy-feed/pke"
         ogType="product"
         schema={pkeSchema}
       />

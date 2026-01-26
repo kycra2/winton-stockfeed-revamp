@@ -69,12 +69,12 @@ const productsSchema = {
         "position": index + 1,
         "name": cat.title,
         "description": cat.description,
-        "url": `https://wintonstockfeed.co.nz${cat.href}`
+        "url": `https://www.wintonstockfeed.co.nz${cat.href}`
       }))
     },
     generateBreadcrumbSchema([
-      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
-      { name: "Products", url: "https://wintonstockfeed.co.nz/products" }
+      { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://www.wintonstockfeed.co.nz/products" }
     ])
   ]
 };
@@ -88,7 +88,7 @@ const Products: React.FC = () => {
         title="Stock Feed Products NZ - Dairy, Calf, Sheep, Deer Feed | Winton Stock Feed"
         description="Complete range of premium stock feed products for New Zealand farmers. Dairy feed, calf feed, sheep feed, deer feed, goat feed, chicken feed and molasses. Quality nutrition from Winton Stock Feed."
         keywords="stock feed products NZ, dairy feed, calf feed, sheep feed, deer feed, goat feed, chicken feed, molasses, Winton Stock Feed"
-        canonicalUrl="https://wintonstockfeed.co.nz/products"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/products"
         schema={productsSchema}
       />
       <div className="space-y-8">

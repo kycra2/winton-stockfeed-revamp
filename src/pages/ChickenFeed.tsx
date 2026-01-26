@@ -34,9 +34,9 @@ const chickenFeedSchema = {
       category: "Chicken Feed"
     }),
     generateBreadcrumbSchema([
-      { name: "Home", url: "https://wintonstockfeed.co.nz/" },
-      { name: "Products", url: "https://wintonstockfeed.co.nz/products" },
-      { name: "Chicken Feed", url: "https://wintonstockfeed.co.nz/products/chicken-feed" }
+      { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+      { name: "Products", url: "https://www.wintonstockfeed.co.nz/products" },
+      { name: "Chicken Feed", url: "https://www.wintonstockfeed.co.nz/products/chicken-feed" }
     ])
   ]
 };
@@ -50,7 +50,7 @@ const ChickenFeed: React.FC = () => {
         title="Chicken Feed NZ - Golden Layer Pellets | Winton Stock Feed"
         description="Premium chicken feed for New Zealand poultry. Golden Layer Pellets with barley & molasses, specifically formulated for laying hens. Supports healthy egg production. Winton Stock Feed."
         keywords="chicken feed NZ, layer pellets, poultry feed, hen feed, egg production feed, Winton Stock Feed chicken feed"
-        canonicalUrl="https://wintonstockfeed.co.nz/products/chicken-feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/products/chicken-feed"
         schema={chickenFeedSchema}
       />
       <div className="space-y-8">
