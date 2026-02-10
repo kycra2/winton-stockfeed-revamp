@@ -86,7 +86,7 @@ const FeedQualityDeclarations = () => {
               className="bg-wsf-blue hover:bg-wsf-blue-dark text-white"
               asChild
             >
-              <a href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Dry+Feeds+signed+Feed+Declarations+June+25.pdf" 
+              <a href="/documents/Feed_Declaration_Dry_Feeds_October_2025.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
