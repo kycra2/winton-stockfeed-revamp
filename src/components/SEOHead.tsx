@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 interface SEOHeadProps {
   title: string;
@@ -10,6 +11,8 @@ interface SEOHeadProps {
   schema?: object;
 }
 
+const BASE_URL = 'https://www.wintonstockfeed.co.nz';
+
 const SEOHead = ({
   title,
   description,
@@ -19,6 +22,11 @@ const SEOHead = ({
   ogType = 'website',
   schema
 }: SEOHeadProps) => {
+  const location = useLocation();
+  
+  // Auto-generate canonical from current route if not explicitly provided
+  const resolvedCanonical = canonicalUrl || (location.pathname === '/' ? `${BASE_URL}/` : `${BASE_URL}${location.pathname}`);
+
   useEffect(() => {
     // Update document title
     document.title = title;
@@ -48,22 +56,21 @@ const SEOHead = ({
     updateMeta('og:description', description, true);
     updateMeta('og:type', ogType, true);
     updateMeta('og:image', ogImage, true);
+    updateMeta('og:url', resolvedCanonical, true);
     
     // Update Twitter tags
     updateMeta('twitter:title', title);
     updateMeta('twitter:description', description);
     updateMeta('twitter:image', ogImage);
 
-    // Update canonical URL
-    if (canonicalUrl) {
-      let canonical = document.querySelector('link[rel="canonical"]');
-      if (!canonical) {
-        canonical = document.createElement('link');
-        canonical.setAttribute('rel', 'canonical');
-        document.head.appendChild(canonical);
-      }
-      canonical.setAttribute('href', canonicalUrl);
+    // Update canonical URL - always set it
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
     }
+    canonical.setAttribute('href', resolvedCanonical);
 
     // Add schema markup
     if (schema) {
@@ -87,7 +94,7 @@ const SEOHead = ({
         pageSchema.remove();
       }
     };
-  }, [title, description, keywords, canonicalUrl, ogImage, ogType, schema]);
+  }, [title, description, keywords, resolvedCanonical, ogImage, ogType, schema]);
 
   return null;
 };
