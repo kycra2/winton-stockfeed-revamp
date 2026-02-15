@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Download, FileDown } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Link } from 'react-router-dom';
+import SEOHead, { generateProductSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: true },
@@ -19,6 +20,13 @@ const categories = [
 const PrecalverPelletsPage: React.FC = () => {
   return (
     <ProductLayout title="Precalving Pellets">
+      <SEOHead
+        title="Precalver Pellets - Transition Cow Feed | Winton Stock Feed"
+        description="Precalver pellets formulated for transition dairy cows. Essential minerals and nutrients for calving preparation. Winton Stock Feed NZ."
+        keywords="precalver pellets, transition cow feed, calving feed, dairy feed, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/dairy-feed/precalver-pellets"
+        schema={generateProductSchema({ name: "Precalver Pellets", description: "Pellets formulated for transition dairy cows preparing for calving.", category: "Dairy Feed" })}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEOHead, { generateProductSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: true },
@@ -19,6 +20,13 @@ const categories = [
 const MaizeDDGSPage: React.FC = () => {
   return (
      <ProductLayout title="Maize DDGS">
+      <SEOHead
+        title="Maize DDGS - Dried Distillers Grains | Winton Stock Feed"
+        description="Maize DDGS (Dried Distillers Grains with Solubles) - a high protein, high energy feed ingredient for dairy cows. Available from Winton Stock Feed NZ."
+        keywords="maize DDGS, dried distillers grains, dairy feed, protein feed, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/dairy-feed/maize-ddgs"
+        schema={generateProductSchema({ name: "Maize DDGS", description: "High protein dried distillers grains feed ingredient for dairy cows.", category: "Dairy Feed" })}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

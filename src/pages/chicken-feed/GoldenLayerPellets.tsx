@@ -6,6 +6,7 @@ import ProductLayout from '@/components/ProductLayout';
 import { FileText, Phone, Download, Egg } from 'lucide-react';
 import goldenLayerImage from '../../components/images/golden-layer-chicken-pellets.png';
 import goldenLayerPDF from '@/components/chicken-feed/Golden-Layer-Pellets.pdf';
+import SEOHead, { generateProductSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: false },
@@ -20,6 +21,13 @@ const categories = [
 const GoldenLayerPellets: React.FC = () => {
   return (
     <ProductLayout title="Golden Layer Pellets">
+      <SEOHead
+        title="Golden Layer Pellets - Chicken Feed | Winton Stock Feed"
+        description="Golden Layer Pellets for backyard and free-range laying hens. Complete nutrition for egg production. Available from Winton Stock Feed NZ."
+        keywords="golden layer pellets, chicken feed, layer pellets, egg production, poultry feed, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/chicken-feed/golden-layer-pellets"
+        schema={generateProductSchema({ name: "Golden Layer Pellets", description: "Complete layer pellets for backyard and free-range laying hens.", category: "Chicken Feed" })}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

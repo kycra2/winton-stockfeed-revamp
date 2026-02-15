@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Phone, FileText, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEOHead, { generateProductSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: true },
@@ -19,6 +20,13 @@ const categories = [
 const HighEnergyPelletsPage: React.FC = () => {
   return (
     <ProductLayout title="High Energy Pellets">
+      <SEOHead
+        title="High Energy Pellets - Dairy Cow Feed | Winton Stock Feed"
+        description="High energy pellets for dairy cows providing concentrated nutrition. Custom blended at our Southland facility. Winton Stock Feed NZ."
+        keywords="high energy pellets, dairy pellets, dairy cow feed, stock feed, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/dairy-feed/high-energy-pellets"
+        schema={generateProductSchema({ name: "High Energy Pellets", description: "Concentrated high energy pellets for dairy cows.", category: "Dairy Feed" })}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

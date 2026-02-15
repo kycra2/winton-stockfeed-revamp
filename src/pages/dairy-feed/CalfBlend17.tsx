@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Download } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Link } from 'react-router-dom';
+import SEOHead, { generateProductSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: false },
@@ -20,6 +21,13 @@ const categories = [
 const CalfBlend17Page: React.FC = () => {
   return (
     <ProductLayout title="Calf Blend 17%">
+      <SEOHead
+        title="Calf Blend 17% - Calf Rearing Feed | Winton Stock Feed"
+        description="Calf Blend 17% protein feed for growing calves. A balanced blend for healthy calf development. Available from Winton Stock Feed NZ."
+        keywords="calf blend, 17% protein, calf feed, calf rearing, stock feed, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/dairy-feed/calf-blend-17"
+        schema={generateProductSchema({ name: "Calf Blend 17%", description: "17% protein balanced blend for healthy calf development.", category: "Calf Feed" })}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

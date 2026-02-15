@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
@@ -6,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Download } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Link } from 'react-router-dom';
+import SEOHead, { generateProductSchema, generateBreadcrumbSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: true },
@@ -20,6 +20,24 @@ const categories = [
 const TapiocaPage: React.FC = () => {
   return (
     <ProductLayout title="Tapioca">
+      <SEOHead
+        title="Tapioca Pellets - High-Starch Livestock Feed | Winton Stock Feed"
+        description="Tapioca pellets are a high-starch feed ingredient and grain substitute for dairy cows and livestock. Available from Winton Stock Feed, Southland NZ."
+        keywords="tapioca pellets, livestock feed, dairy cow feed, grain substitute, stock feed Southland, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/dairy-feed/tapioca"
+        schema={{
+          ...generateProductSchema({
+            name: "Tapioca Pellets",
+            description: "High-starch feed ingredient produced from tapioca roots, used as a grain substitute in livestock rations.",
+            category: "Dairy Feed"
+          }),
+          ...generateBreadcrumbSchema([
+            { name: "Home", url: "https://www.wintonstockfeed.co.nz" },
+            { name: "Dairy Feed", url: "https://www.wintonstockfeed.co.nz/dairy-feed" },
+            { name: "Tapioca", url: "https://www.wintonstockfeed.co.nz/dairy-feed/tapioca" }
+          ])
+        }}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
