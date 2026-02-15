@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Download } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Link } from 'react-router-dom';
+import SEOHead, { generateProductSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: true },
@@ -20,6 +21,13 @@ const categories = [
 const SoyBranHullsPage: React.FC = () => {
   return (
      <ProductLayout title="Soya Hulls">
+      <SEOHead
+        title="Soy Bran Hulls - Digestible Fibre Feed | Winton Stock Feed"
+        description="Soy bran hulls provide highly digestible fibre for dairy cows. A cost-effective feed ingredient from Winton Stock Feed, Southland NZ."
+        keywords="soy bran hulls, soya hulls, fibre feed, dairy feed, stock feed, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/dairy-feed/soy-bran-hulls"
+        schema={generateProductSchema({ name: "Soy Bran Hulls", description: "Highly digestible fibre feed ingredient for dairy cows.", category: "Dairy Feed" })}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

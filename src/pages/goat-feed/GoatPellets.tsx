@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import ProductLayout from '@/components/ProductLayout';
 import { Mountain, FileText } from 'lucide-react';
+import SEOHead, { generateProductSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: false },
@@ -18,6 +19,13 @@ const categories = [
 const GoatPellets: React.FC = () => {
   return (
     <ProductLayout title="Goat Pellets">
+      <SEOHead
+        title="Goat Pellets - Goat Feed | Winton Stock Feed"
+        description="Quality goat pellets formulated for New Zealand goat farming. Balanced nutrition for dairy and fibre goats. Winton Stock Feed."
+        keywords="goat pellets, goat feed, dairy goat feed, stock feed, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/goat-feed/goat-pellets"
+        schema={generateProductSchema({ name: "Goat Pellets", description: "Balanced nutrition pellets for dairy and fibre goats.", category: "Goat Feed" })}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

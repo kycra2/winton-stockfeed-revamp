@@ -3,10 +3,17 @@ import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import { Button } from '@/components/ui/button';
 import { FileText } from 'lucide-react';
+import SEOHead from '@/components/SEOHead';
 
 const FeedQualityDeclarations = () => {
   return (
     <ProductLayout title="Feed Quality Declarations">
+      <SEOHead
+        title="Feed Quality Declarations | Winton Stock Feed"
+        description="Download official feed quality declarations for Winton Stock Feed products. Dry feeds, liquid feeds, and molasses declarations available."
+        keywords="feed quality declarations, feed analysis, stock feed quality, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/feed-quality-declarations"
+      />
       <div className="space-y-8">
         <p className="text-lg leading-relaxed">
           

@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import SEOHead, { generateProductSchema, generateBreadcrumbSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: true },
@@ -20,6 +21,13 @@ const categories = [
 const CrushedGrainPage: React.FC = () => {
   return (
     <ProductLayout title="Crushed Grain Dairy Feed">
+      <SEOHead
+        title="Crushed Grain Dairy Feed | Winton Stock Feed"
+        description="Quality crushed grain for dairy cows. A versatile and palatable feed option for New Zealand dairy herds. Available from Winton Stock Feed."
+        keywords="crushed grain, dairy feed, dairy cow feed, stock feed Southland, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/dairy-feed/crushed-grain"
+        schema={generateProductSchema({ name: "Crushed Grain Dairy Feed", description: "Quality crushed grain for dairy cows.", category: "Dairy Feed" })}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

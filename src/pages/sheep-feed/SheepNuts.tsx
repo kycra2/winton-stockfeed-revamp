@@ -4,6 +4,7 @@ import ProductLayout from '@/components/ProductLayout';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Package2, AlertCircle, FileDown } from 'lucide-react';
+import SEOHead, { generateProductSchema } from '@/components/SEOHead';
 
 const SheepNutsPage = () => {
   const categories = [
@@ -18,6 +19,13 @@ const SheepNutsPage = () => {
 
   return (
     <ProductLayout title="Sheep Nuts">
+      <SEOHead
+        title="Sheep Nuts - Sheep Feed Pellets | Winton Stock Feed"
+        description="Quality sheep nuts for New Zealand sheep farming. Balanced nutrition pellets for ewes and lambs. Available from Winton Stock Feed, Southland."
+        keywords="sheep nuts, sheep feed, sheep pellets, ewe feed, lamb feed, stock feed, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/sheep-feed/sheep-nuts"
+        schema={generateProductSchema({ name: "Sheep Nuts", description: "Balanced nutrition pellets for ewes and lambs.", category: "Sheep Feed" })}
+      />
       {/* Category Navigation Menu */}
       <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
         <Link

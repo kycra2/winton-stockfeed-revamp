@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Download } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Link } from 'react-router-dom';
+import SEOHead, { generateProductSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: false },
@@ -20,6 +21,13 @@ const categories = [
 const CalfMuesli18Page: React.FC = () => {
   return (
     <ProductLayout title="Calf Muesli 18%">
+      <SEOHead
+        title="Calf Muesli 18% - Textured Calf Feed | Winton Stock Feed"
+        description="Calf Muesli 18% protein textured feed for young calves. Palatable and nutritious calf starter from Winton Stock Feed NZ."
+        keywords="calf muesli, 18% protein, textured feed, calf starter, calf feed, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/dairy-feed/calf-muesli-18"
+        schema={generateProductSchema({ name: "Calf Muesli 18%", description: "18% protein textured muesli feed for young calves.", category: "Calf Feed" })}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

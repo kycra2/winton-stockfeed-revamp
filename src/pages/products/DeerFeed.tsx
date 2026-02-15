@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import ProductLayout from '@/components/ProductLayout';
 import { TreePine } from 'lucide-react';
+import SEOHead, { generateProductSchema } from '@/components/SEOHead';
 
 const deerProducts = [
   {
@@ -30,6 +31,13 @@ const DeerFeed: React.FC = () => {
 
   return (
     <ProductLayout title="Deer Feed">
+      <SEOHead
+        title="Deer Feed - Deer Nuts & Pellets | Winton Stock Feed"
+        description="Premium deer feed including Supreme Deer Nuts for New Zealand deer farming. Quality deer nutrition from Winton Stock Feed, Southland."
+        keywords="deer feed, deer nuts, deer pellets, venison feed, stock feed, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/products/deer-feed"
+        schema={generateProductSchema({ name: "Deer Feed", description: "Premium deer feed including Supreme Deer Nuts.", category: "Deer Feed" })}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">

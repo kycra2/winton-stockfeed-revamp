@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Download } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Link } from 'react-router-dom';
+import SEOHead, { generateProductSchema } from '@/components/SEOHead';
 
 const categories = [
   { title: "Dairy", href: "/products/dairy-feed", active: false },
@@ -19,6 +20,13 @@ const categories = [
 const EcoCalfFinisherPage: React.FC = () => {
   return (
     <ProductLayout title="Eco Calf Finisher">
+      <SEOHead
+        title="Eco Calf Finisher - Calf Finishing Feed | Winton Stock Feed"
+        description="Eco Calf Finisher feed for finishing calves economically. Cost-effective nutrition for calf rearing from Winton Stock Feed NZ."
+        keywords="eco calf finisher, calf finishing feed, calf rearing, stock feed, Winton Stock Feed"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/dairy-feed/eco-calf-finisher"
+        schema={generateProductSchema({ name: "Eco Calf Finisher", description: "Economical calf finishing feed for cost-effective calf rearing.", category: "Calf Feed" })}
+      />
       <div className="space-y-8">
         {/* Category Navigation Menu */}
         <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
