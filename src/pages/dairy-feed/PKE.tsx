@@ -27,7 +27,7 @@ const pkeSchema = {
       category: "Dairy Feed"
     }),
     generateBreadcrumbSchema([
-      { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+      { name: "Home", url: "https://www.wintonstockfeed.co.nz" },
       { name: "Products", url: "https://www.wintonstockfeed.co.nz/products" },
       { name: "Dairy Feed", url: "https://www.wintonstockfeed.co.nz/products/dairy-feed" },
       { name: "PKE", url: "https://www.wintonstockfeed.co.nz/dairy-feed/pke" }

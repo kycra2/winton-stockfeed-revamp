@@ -13,7 +13,7 @@ const CondoseCalculatorPage = () => {
         title="Condose Recipe Calculator | Winton Stock Feed"
         description="Use the Condose recipe calculator to determine correct mix ratios for your Condose mineral dispensing system. Winton Stock Feed NZ."
         keywords="condose calculator, mineral mix, condose recipe, stock feed calculator, Winton Stock Feed"
-        canonicalUrl="https://www.wintonstockfeed.co.nz/condose-calculator"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/conedose-calculator"
       />
       <main className="flex-1 pt-24 md:pt-28">
         <div className="container-custom py-12 md:py-20">

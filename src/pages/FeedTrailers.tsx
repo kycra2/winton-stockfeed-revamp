@@ -18,7 +18,7 @@ const feedTrailerSchema = {
       category: "Farm Equipment"
     }),
     generateBreadcrumbSchema([
-      { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+      { name: "Home", url: "https://www.wintonstockfeed.co.nz" },
       { name: "Feed Trailers", url: "https://www.wintonstockfeed.co.nz/feed-trailers" }
     ])
   ]

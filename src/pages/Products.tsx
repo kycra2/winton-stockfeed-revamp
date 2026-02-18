@@ -73,7 +73,7 @@ const productsSchema = {
       }))
     },
     generateBreadcrumbSchema([
-      { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+      { name: "Home", url: "https://www.wintonstockfeed.co.nz" },
       { name: "Products", url: "https://www.wintonstockfeed.co.nz/products" }
     ])
   ]
