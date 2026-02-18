@@ -86,6 +86,15 @@ const App = () => (
           <Route path="/conedose" element={<Condose />} />
           <Route path="/feed-quality-declarations" element={<FeedQualityDeclarations />} />
           <Route path="/testimonials" element={<Testimonials />} />
+          {/* Redirect category pages to /products/* canonical URLs */}
+          <Route path="/dairy-feed" element={<Navigate to="/products/dairy-feed" replace />} />
+          <Route path="/chicken-feed" element={<Navigate to="/products/chicken-feed" replace />} />
+          <Route path="/calf-feed" element={<Navigate to="/products/calf-feed" replace />} />
+          <Route path="/sheep-feed" element={<Navigate to="/products/sheep-feed" replace />} />
+          <Route path="/goat-feed" element={<Navigate to="/products/goat-feed" replace />} />
+          <Route path="/sheep-feed/sheep-nuts" element={<Navigate to="/products/sheep-nuts" replace />} />
+          <Route path="/condose" element={<Navigate to="/conedose" replace />} />
+          <Route path="/condose-calculator" element={<Navigate to="/conedose-calculator" replace />} />
           {/* Redirect old URLs to new ones */}
           <Route path="/pages/feed-trailers" element={<Navigate to="/feed-trailers" replace />} />
           <Route path="/pages/deer-nuts" element={<Navigate to="/deer-feed" replace />} />
