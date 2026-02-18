@@ -9,11 +9,24 @@
     <meta name="description" content="Winton Stock Feed - New Zealand's largest independent importer of molasses and stock feed since 1988. Quality molasses, PKE, dairy feed, calf feed, sheep feed and more. Nationwide delivery." />
     <meta name="author" content="Winton Stock Feed" />
     <meta name="keywords" content="stock feed NZ, molasses New Zealand, PKE feed, dairy feed, calf feed, sheep feed, deer feed, goat feed, chicken feed, Winton Stock Feed, Southland, Otago, farm feed, animal nutrition" />
-    <!-- canonical URL is set dynamically per page by SEOHead component -->
-
+    <!-- Canonical + og:url set immediately via inline JS (before React) for SEO reliability -->
+    <script>
+      (function(){
+        var base='https://www.wintonstockfeed.co.nz';
+        var path=window.location.pathname.replace(/\/+$/,'');
+        var url=base+path;
+        var link=document.createElement('link');
+        link.rel='canonical';
+        link.href=url;
+        document.head.appendChild(link);
+        var og=document.createElement('meta');
+        og.setAttribute('property','og:url');
+        og.setAttribute('content',url);
+        document.head.appendChild(og);
+      })();
+    </script>
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <!-- og:url is set dynamically per page by SEOHead component -->
     <meta property="og:title" content="Winton Stock Feed - NZ's Independent Stock Feed Specialists Since 1988" />
     <meta property="og:description" content="New Zealand's largest independent importer of molasses and stock feed. Quality dairy feed, calf feed, sheep feed and more with nationwide delivery." />
     <meta property="og:image" content="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/winton-stock-feed-og.jpg" />
