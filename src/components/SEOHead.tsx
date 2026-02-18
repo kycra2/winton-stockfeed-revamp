@@ -25,7 +25,9 @@ const SEOHead = ({
   const location = useLocation();
   
   // Auto-generate canonical from current route if not explicitly provided
-  const resolvedCanonical = canonicalUrl || (location.pathname === '/' ? `${BASE_URL}/` : `${BASE_URL}${location.pathname}`);
+  // Strip trailing slashes from all URLs (including homepage) for consistency
+  const cleanPath = location.pathname === '/' ? '' : location.pathname.replace(/\/+$/, '');
+  const resolvedCanonical = canonicalUrl || `${BASE_URL}${cleanPath}`;
 
   useEffect(() => {
     // Update document title
