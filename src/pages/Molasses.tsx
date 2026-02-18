@@ -31,7 +31,7 @@ const Molasses = () => {
         category: "Molasses Feed"
       }),
       generateBreadcrumbSchema([
-        { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+        { name: "Home", url: "https://www.wintonstockfeed.co.nz" },
         { name: "Products", url: "https://www.wintonstockfeed.co.nz/products" },
         { name: "Molasses", url: "https://www.wintonstockfeed.co.nz/molasses" }
       ])

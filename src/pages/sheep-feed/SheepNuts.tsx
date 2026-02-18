@@ -23,7 +23,7 @@ const SheepNutsPage = () => {
         title="Sheep Nuts - Sheep Feed Pellets | Winton Stock Feed"
         description="Quality sheep nuts for New Zealand sheep farming. Balanced nutrition pellets for ewes and lambs. Available from Winton Stock Feed, Southland."
         keywords="sheep nuts, sheep feed, sheep pellets, ewe feed, lamb feed, stock feed, Winton Stock Feed"
-        canonicalUrl="https://www.wintonstockfeed.co.nz/sheep-feed/sheep-nuts"
+        canonicalUrl="https://www.wintonstockfeed.co.nz/products/sheep-nuts"
         schema={generateProductSchema({ name: "Sheep Nuts", description: "Balanced nutrition pellets for ewes and lambs.", category: "Sheep Feed" })}
       />
       {/* Category Navigation Menu */}

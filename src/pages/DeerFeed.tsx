@@ -27,7 +27,7 @@ const deerFeedSchema = {
       category: "Deer Feed"
     }),
     generateBreadcrumbSchema([
-      { name: "Home", url: "https://www.wintonstockfeed.co.nz/" },
+      { name: "Home", url: "https://www.wintonstockfeed.co.nz" },
       { name: "Products", url: "https://www.wintonstockfeed.co.nz/products" },
       { name: "Deer Feed", url: "https://www.wintonstockfeed.co.nz/deer-feed" }
     ])
