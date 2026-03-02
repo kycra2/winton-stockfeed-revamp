@@ -84,7 +84,7 @@ const GoldenLayerPellets: React.FC = () => {
               </CardHeader>
               <CardContent>
                 <Button asChild className="w-full">
-                  <a href="/documents/Golden-Layer-Pellets.pdf" download="Golden-Layer-Pellets.pdf">
+                  <a href="/documents/Golden-Layer-Pellets.pdf" target="_blank" rel="noopener noreferrer">
                     <Download className="w-4 h-4 mr-2" />
                     Download Product Sheet (PDF)
                   </a>
