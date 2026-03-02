@@ -91,7 +91,7 @@ const PKEPage: React.FC = () => {
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/female-farmer-winton-stock-feed-southland+(1).png" 
+              src="/images/female-farmer-southland.png" 
               alt="Female Farmer at Winton Stock Feed" 
               className="w-full h-auto object-cover"
             />
@@ -182,7 +182,7 @@ const PKEPage: React.FC = () => {
           <Button 
             variant="default" 
             className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/PKE+-+Palm+Kernel.pdf', '_blank')}
+            onClick={() => window.open('/documents/PKE-Palm-Kernel.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download PDF

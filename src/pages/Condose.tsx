@@ -151,7 +151,7 @@ const Condose = () => {
           <Button 
             variant="outline"
             className="bg-white border-wsf-blue text-wsf-blue hover:bg-wsf-blue hover:text-white text-lg px-8 py-3"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/con005hdeklerkdairycowmineralbasics+(1).pdf', '_blank')}
+            onClick={() => window.open('/documents/Mineral-Basics-Howard-de-Klerk.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download Mineral Basics Guide

@@ -85,7 +85,7 @@ const TapiocaPage: React.FC = () => {
           <div className="rounded-lg overflow-hidden shadow-md">
             <AspectRatio ratio={16/9} className="bg-muted">
               <img 
-                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/dairy-cows-winton+(1).png" 
+                src="/images/dairy-cows-winton.png" 
                 alt="Dairy cows feeding on tapioca supplement" 
                 className="w-full h-full object-cover"
               />
@@ -145,7 +145,7 @@ const TapiocaPage: React.FC = () => {
           <Button 
             variant="default" 
             className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Tapioca.pdf', '_blank')}
+            onClick={() => window.open('/documents/Tapioca.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download PDF

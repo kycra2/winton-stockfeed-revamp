@@ -7,7 +7,7 @@ const MolassesHero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-wsf-blue-dark/60 to-wsf-blue/30" />
         <img
-          src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/female-farmer-winton-stock-feed-southland+(1).png"
+          src="/images/female-farmer-southland.png"
           alt="Molasses being poured"
           className="w-full h-full object-cover"
         />

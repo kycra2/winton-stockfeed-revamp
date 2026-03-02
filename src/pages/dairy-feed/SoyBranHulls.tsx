@@ -73,7 +73,7 @@ Contact our sales team to discuss how Soya Hulls can benefit your feeding progra
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/farmers-southland-new-zealand+(1).png" 
+              src="/images/farmers-southland-nz.png" 
               alt="Feeding out for cattle" 
               className="w-full h-auto object-cover"
             />
@@ -148,7 +148,7 @@ Contact our sales team to discuss how Soya Hulls can benefit your feeding progra
           <Button 
             variant="default" 
             className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/soy-bran-hulls-2025.pdf', '_blank')}
+            onClick={() => window.open('/documents/Soy-Bran-Hulls.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download PDF

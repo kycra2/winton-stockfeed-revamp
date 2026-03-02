@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import SEOHead from '@/components/SEOHead';
 
-const HEALTH_AND_SAFETY_PDF = "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/H_S_Signed_Policy_Statement_November_2024.pdf";
-const HEALTH_AND_SAFETY_IMG = "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/winton-health-and-safety.jpg";
+const HEALTH_AND_SAFETY_PDF = "/documents/Health-Safety-Policy.pdf";
+const HEALTH_AND_SAFETY_IMG = "/images/winton-health-and-safety.jpg";
 
 const HealthAndSafety = () => (
   <div className="flex min-h-screen flex-col">

@@ -24,7 +24,7 @@ const SheepNutsPage = () => {
         description="Quality sheep nuts for New Zealand sheep farming. Balanced nutrition pellets for ewes and lambs. Available from Winton Stock Feed, Southland."
         keywords="sheep nuts, sheep feed, sheep pellets, ewe feed, lamb feed, stock feed, Winton Stock Feed"
         canonicalUrl="https://www.wintonstockfeed.co.nz/products/sheep-nuts"
-        schema={generateProductSchema({ name: "Sheep Nuts", description: "Formulated from grains and wheat products to give an economic feed that will keep your stock in optimum condition. Available in 25kg bags, bulk bags and bulk delivery.", category: "Sheep Feed", image: "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/sheep-feeding.png" })}
+        schema={generateProductSchema({ name: "Sheep Nuts", description: "Formulated from grains and wheat products to give an economic feed that will keep your stock in optimum condition. Available in 25kg bags, bulk bags and bulk delivery.", category: "Sheep Feed", image: "https://www.wintonstockfeed.co.nz/images/sheep-feeding.png" })}
       />
       {/* Category Navigation Menu */}
       <div className="flex flex-wrap justify-center items-center gap-1 text-lg font-semibold text-muted-foreground mb-12">
@@ -89,7 +89,7 @@ const SheepNutsPage = () => {
 
         <div>
           <img 
-            src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/sheep-feeding.png"
+            src="/images/sheep-feeding.png"
             alt="New Zealand sheep farm"
             className="rounded-lg shadow-md w-full h-auto mb-6"
           />
@@ -123,7 +123,7 @@ const SheepNutsPage = () => {
 
       <div className="mt-8">
         <a 
-          href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Sheep+Nuts.pdf"
+          href="/documents/Sheep-Nuts.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -9,7 +9,7 @@ const services = [
   },
   {
     id: 'local-knowledge',
-    image: 'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/client-meetong-wsf2.png',
+    image: '/images/client-meeting-wsf.png',
     title: 'Local Knowledge',
     description: 'Our team brings years of farm management and feed experience, offering on-farm visits and expert support to help you get the most from your feed.',
   },
@@ -21,19 +21,19 @@ const services = [
   },
   {
     id: 'nutitional-advice',
-    image: 'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/WSF-12.jpg',
+    image: '/images/wsf-12.jpg',
     title: 'Independent Nutritional Advice',
     description: 'Boost milk production by changing your feed ratios with our independent nutritional consultant. ',
   },
   {
     id: 'reliable-transport',
-    image: 'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/DJI_0152-15_Web.jpg',
+    image: '/images/dji-aerial-fleet.jpg',
     title: 'Our Own Reliable Transport',
     description: 'We maintain our fleet of trucks so you get reliablity and prompt deliveries. From phonecall to delivery you only deal with Winton Stock Feed staff.',
   },
   {
     id: 'modern-feed-blending-plant',
-    image: 'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/stock-feed-blending-facility.png?raw=true',
+    image: '/images/stock-feed-blending-facility.png',
     title: 'Modern Feed Blending Facility',
     description: 'We can add in macro minerals, trace minerals and a range of feed additives, saving you time and money (no dusting or dosatron required) so your cows receive their daily requirements. '
     ,

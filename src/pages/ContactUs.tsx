@@ -141,35 +141,35 @@ const ContactUs = () => {
               role="Administration/Orders"
               phone={["03 236 6089", "0800 Molasses (0800 665277)"]}
               email="orders@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Lisa-kennedy.jpg"
+              photoUrl="/images/staff/lisa-kennedy.jpg"
             />
             <ContactCard
               name="Kathryn McEwing"
               role="Administration/Orders"
               phone={["03 236 6089", "0800 Molasses (0800 665277)"]}
               email="orders@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Kathryn+McEwing+.jpg"
+              photoUrl="/images/staff/kathryn-mcewing.jpg"
             />
             <ContactCard
               name="Bronwyn McCulloch"
               role="Administration/Orders"
               phone={["03 236 6089", "0800 Molasses (0800 665277)"]}
               email="orders@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Bronwyn+McCulloch.jpg"
+              photoUrl="/images/staff/bronwyn-mcculloch.jpg"
             />
             <ContactCard
               name="Tayla Muir"
               role="Administration/Orders"
               phone={["03 236 6089", "0800 Molasses (0800 665277)"]}
               email="orders@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Tayla+Muir+.jpg"
+              photoUrl="/images/staff/tayla-muir.jpg"
             />
             <ContactCard
               name="Ray Sanson"
               role="Dispatcher/Logistics"
               phone="03 236 6089"
               email="rays@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Ray+Sanson.jpg"
+              photoUrl="/images/staff/ray-sanson.jpg"
             />
           </div>
         </section>
@@ -183,28 +183,28 @@ const ContactUs = () => {
               role="North Island Sales Manager"
               phone="021 838 261"
               email="jamies@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/jamie-stephens.avif"
+              photoUrl="/images/staff/jamie-stephens.avif"
             />
             <ContactCard
               name="Brendon Corbett"
               role="Central/Eastern Southland Sales Rep"
               phone="021 311 281"
               email="brendonc@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Brendon+Corbett.jpg"
+              photoUrl="/images/staff/brendon-corbett.jpg"
             />
             <ContactCard
               name="Riaan Crous"
               role="Western Southland Sales Rep"
               phone="021 912 699"
               email="riaan@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Riaan+Crous.jpg"
+              photoUrl="/images/staff/riaan-crous.jpg"
             />
             <ContactCard
               name="Andy Chrystall"
               role="Northern Southland Sales Rep"
               phone="029 201 7361"
               email="andyc@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/thumbnail_andy-new.jpg"
+              photoUrl="/images/staff/andy-chrystall.jpg"
             />
           </div>
         </section>
@@ -218,21 +218,21 @@ const ContactUs = () => {
               role="Director"
               phone="027 435 5176"
               email="nelsonl@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/nelson.jpg"
+              photoUrl="/images/staff/nelson-lindsay.jpg"
             />
             <ContactCard
               name="Pierre Neame"
               role="General Manager"
               phone="029 235 0737"
               email="pierren@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/pierre.jpg"
+              photoUrl="/images/staff/pierre-neame.jpg"
             />
             <ContactCard
               name="Sharyn Goodman"
               role="Company Accountant"
               phone="03 236 6089"
               email="sharyng@wintonstockfeed.co.nz"
-              photoUrl="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Sharyn+Goodman.jpg"
+              photoUrl="/images/staff/sharyn-goodman.jpg"
             />
           </div>
         </section>

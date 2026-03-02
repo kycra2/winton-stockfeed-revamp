@@ -74,7 +74,7 @@ const SoybeanMealPage: React.FC = () => {
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/soy-bran-winton-nz+(1).png" 
+              src="/images/soy-bran-winton-nz.png" 
               alt="Soybean Meal" 
               className="w-full h-auto object-cover"
             />
@@ -129,7 +129,7 @@ const SoybeanMealPage: React.FC = () => {
             </div>
             <div className="md:w-1/3 flex flex-col items-center md:items-end">
               <img 
-                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/soybean-meal-winton-stock-feed.png" 
+                src="/images/soybean-meal.png" 
                 alt="Soybean Meal" 
                 className="rounded-md shadow-sm max-h-60 object-contain"
               />
@@ -183,7 +183,7 @@ const SoybeanMealPage: React.FC = () => {
           <Button 
             variant="default" 
             className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Soybean+Meal.pdf', '_blank')}
+            onClick={() => window.open('/documents/Soybean-Meal.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download PDF

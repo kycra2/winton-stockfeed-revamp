@@ -27,7 +27,7 @@ const Molasses = () => {
       generateProductSchema({
         name: "Molasses Feed Supplement",
         description: "Premium quality molasses for livestock. New Zealand's favourite feed supplement since 1988. High palatability and energy for all livestock including dairy cattle, beef, sheep, and deer.",
-        image: "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/molasses-dairy-herd-feed.png",
+        image: "https://www.wintonstockfeed.co.nz/images/molasses-dairy-herd-feed.png",
         category: "Molasses Feed"
       }),
       generateBreadcrumbSchema([
@@ -125,7 +125,7 @@ const Molasses = () => {
             <Button 
               variant="default" 
               className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-              onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Molasses.pdf', '_blank')}
+              onClick={() => window.open('/documents/Molasses.pdf', '_blank')}
             >
               <Download className="h-5 w-5 mr-2" />
               Download PDF

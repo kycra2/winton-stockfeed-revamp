@@ -54,7 +54,7 @@ const MolassesInfo = () => {
           
           <div className="rounded-lg overflow-hidden shadow-xl">
             <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/molasses-for-cows-new-zealand.jpg" 
+              src="/images/molasses-for-cows-nz.jpg" 
               alt="Molasses being poured into feed" 
               className="w-full h-auto" 
             />
