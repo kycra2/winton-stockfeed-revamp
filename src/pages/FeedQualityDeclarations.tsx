@@ -30,7 +30,7 @@ const FeedQualityDeclarations = () => {
               className="bg-wsf-blue hover:bg-wsf-blue-dark text-white"
               asChild
             >
-              <a href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Molasses_Signed_Feed_Declaration_24-25.pdf" 
+              <a href="/documents/Molasses-Feed-Declaration-24-25.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -51,7 +51,7 @@ const FeedQualityDeclarations = () => {
               className="bg-wsf-blue hover:bg-wsf-blue-dark text-white"
               asChild
             >
-              <a href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Dry_Feeds_Signed_Feed_Declaration_24-25.pdf" 
+              <a href="/documents/Dry-Feeds-Declaration-24-25.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -72,7 +72,7 @@ const FeedQualityDeclarations = () => {
               className="bg-wsf-blue hover:bg-wsf-blue-dark text-white"
               asChild
             >
-              <a href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Dry_Feeds_Signed_Feed_Declaration_24-25+(1).pdf" 
+              <a href="/documents/Stock-Feed-Pellets-Declaration-24-25.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -114,7 +114,7 @@ const FeedQualityDeclarations = () => {
               className="bg-wsf-blue hover:bg-wsf-blue-dark text-white"
               asChild
             >
-              <a href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Molasses+Signed+Feed+Declaration+June+25.pdf" 
+              <a href="/documents/Molasses-Feed-Declaration-25-26.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
