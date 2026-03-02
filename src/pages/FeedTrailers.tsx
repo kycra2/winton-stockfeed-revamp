@@ -14,7 +14,7 @@ const feedTrailerSchema = {
     generateProductSchema({
       name: "Feed Trailers",
       description: "Large capacity 2-tonne feed trailers designed in Winton for easy tractor loading and towing. Perfect for PKE or hay feeding in the paddock.",
-      image: "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/feed-trailer-winton-stock-feed.jpg",
+      image: "https://www.wintonstockfeed.co.nz/images/feed-trailer-main.jpg",
       category: "Farm Equipment"
     }),
     generateBreadcrumbSchema([
@@ -53,9 +53,9 @@ const FeedTrailersPage: React.FC = () => {
         {/* Image Gallery - Updated to show full images */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/feed-trailer-winton-stock-feed-3.jpg",
-            "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/feed-trailer-winton-stock-feed.jpg",
-            "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/feed-trailer-winton-stock-feed-1.jpg"
+            "/images/feed-trailer-3.jpg",
+            "/images/feed-trailer-main.jpg",
+            "/images/feed-trailer-1.jpg"
           ].map((src, index) => (
             <div key={index} className="rounded-lg overflow-hidden shadow-md">
               <img 
@@ -114,7 +114,7 @@ const FeedTrailersPage: React.FC = () => {
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/winton-stock-feed-trailer-specs.jpg" 
+              src="/images/trailer-specs.jpg" 
               alt="Winton Stock Feed Trailer Specifications" 
               className="w-full h-auto"
             />
@@ -162,7 +162,7 @@ const FeedTrailersPage: React.FC = () => {
           <Button 
             variant="default" 
             className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/XL+Multi+Feed+Trailer+(updated).pdf', '_blank')}
+            onClick={() => window.open('/documents/Feed-Trailer-Specs.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download PDF

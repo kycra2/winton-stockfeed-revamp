@@ -44,7 +44,7 @@ const AboutUs = () => {
           </div>
           <div>
             <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/winton-stock-feed-fleet.jpg" 
+              src="/images/winton-stock-feed-fleet.jpg" 
               alt="Winton Stock Feed Fleet"
               className="rounded-lg shadow-lg w-full"
             />

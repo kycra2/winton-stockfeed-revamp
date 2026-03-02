@@ -72,7 +72,7 @@ const CrushedGrainPage: React.FC = () => {
           <div className="rounded-lg overflow-hidden shadow-md">
             <AspectRatio ratio={4/3} className="bg-muted">
               <img 
-                src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/southland-farmer-nz+(1).png" 
+                src="/images/southland-farmer-nz.png" 
                 alt="Farmer having tea in New Zealand" 
                 className="w-full h-full object-cover"
               />
@@ -125,7 +125,7 @@ const CrushedGrainPage: React.FC = () => {
           </div>
           <div>
             <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/crushed-grain.png"
+              src="/images/crushed-grain.png"
               alt="Crushed Grain Dairy Feed Product"
               className="rounded-lg shadow-md w-full h-auto object-cover"
             />
@@ -176,7 +176,7 @@ const CrushedGrainPage: React.FC = () => {
           <Button 
             variant="default" 
             className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Crushed+Grain.pdf', '_blank')}
+            onClick={() => window.open('/documents/Crushed-Grain.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download PDF

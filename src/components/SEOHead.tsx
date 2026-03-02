@@ -18,7 +18,7 @@ const SEOHead = ({
   description,
   keywords,
   canonicalUrl,
-  ogImage = 'https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/winton-stock-feed-og.jpg',
+  ogImage = 'https://www.wintonstockfeed.co.nz/images/winton-stock-feed-fleet.jpg',
   ogType = 'website',
   schema
 }: SEOHeadProps) => {
@@ -126,7 +126,7 @@ export const generateLocalBusinessSchema = () => ({
   },
   "openingHours": "Mo-Fr 08:00-17:00",
   "priceRange": "$$",
-  "image": "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/winton-stock-feed-fleet.jpg",
+  "image": "https://www.wintonstockfeed.co.nz/images/winton-stock-feed-fleet.jpg",
   "sameAs": [
     "https://www.facebook.com/wintonstockfeed"
   ],
@@ -146,7 +146,7 @@ export const generateProductSchema = (product: {
   "@type": "Product",
   "name": product.name,
   "description": product.description,
-  "image": product.image || "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/winton-stock-feed-og.jpg",
+  "image": product.image || "https://www.wintonstockfeed.co.nz/images/winton-stock-feed-fleet.jpg",
   "brand": {
     "@type": "Brand",
     "name": "Winton Stock Feed"
@@ -199,7 +199,7 @@ export const generateOrganizationSchema = () => ({
   "@type": "Organization",
   "name": "Winton Stock Feed",
   "url": "https://www.wintonstockfeed.co.nz",
-  "logo": "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/winton-stock-feed-logo.png",
+  "logo": "https://www.wintonstockfeed.co.nz/images/winton-stock-feed-fleet.jpg",
   "description": "New Zealand's largest independent importer and specialist distributor of molasses and stock feed since 1988",
   "foundingDate": "1988",
   "contactPoint": {

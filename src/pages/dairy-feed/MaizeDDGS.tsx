@@ -70,7 +70,7 @@ const MaizeDDGSPage: React.FC = () => {
           </div>
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/friesian-cows-feed-new-zealand+(1).png" 
+              src="/images/friesian-cows-feed-nz.png" 
               alt="Feeding out for cattle" 
               className="w-full h-auto object-cover"
             />
@@ -94,7 +94,7 @@ const MaizeDDGSPage: React.FC = () => {
         <section className="space-y-2">
           <div className="rounded-lg overflow-hidden shadow-md">
             <img 
-              src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Truck+pic+%2324.JPG" 
+              src="/images/delivery-truck.jpg" 
               alt="Our Delivery Truck" 
               className="w-full h-auto object-cover"
             />
@@ -133,7 +133,7 @@ const MaizeDDGSPage: React.FC = () => {
           <Button 
             variant="default" 
             className="bg-wsf-blue hover:bg-wsf-blue-dark w-full sm:w-auto"
-            onClick={() => window.open('https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Maize+DDG.pdf', '_blank')}
+            onClick={() => window.open('/documents/Maize-DDG.pdf', '_blank')}
           >
             <Download className="h-5 w-5 mr-2" />
             Download PDF

@@ -23,7 +23,7 @@ const deerFeedSchema = {
     generateProductSchema({
       name: "Supreme Deer Nuts",
       description: "Premium deer feed pellets providing ideal supplementary nutrition without grain wastage. Correct balance of vitamins and minerals for deer farming.",
-      image: "https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/deer-feed-new-zealand-farm+(1)+(1).png",
+      image: "https://www.wintonstockfeed.co.nz/images/deer-feed-nz-farm.png",
       category: "Deer Feed"
     }),
     generateBreadcrumbSchema([
@@ -109,7 +109,7 @@ const DeerFeed = () => {
 
         <div>
           <img 
-            src="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/deer-feed-new-zealand-farm+(1)+(1).png"
+            src="/images/deer-feed-nz-farm.png"
             alt="New Zealand deer farm"
             className="rounded-lg shadow-md w-full h-auto mb-6"
           />
@@ -131,7 +131,7 @@ const DeerFeed = () => {
 
       <div className="mt-8">
         <a 
-          href="https://evp-5783e02c62446-6a755ff09bfda58c6e9423a7c237a863.s3.us-east-1.amazonaws.com/Supreme+Deer+Nuts.pdf"
+          href="/documents/Supreme-Deer-Nuts.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
