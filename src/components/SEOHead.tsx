@@ -157,9 +157,12 @@ export const generateProductSchema = (product: {
   },
   "category": product.category || "Animal Feed",
   "offers": {
-    "@type": "Offer",
+    "@type": "AggregateOffer",
     "availability": "https://schema.org/InStock",
     "priceCurrency": "NZD",
+    "lowPrice": "0",
+    "highPrice": "0",
+    "offerCount": "1",
     "seller": {
       "@type": "Organization",
       "name": "Winton Stock Feed"
