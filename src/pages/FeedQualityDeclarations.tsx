@@ -124,6 +124,27 @@ const FeedQualityDeclarations = () => {
               </a>
             </Button>
           </div>
+
+          <div className="border border-gray-200 rounded-lg p-6 shadow-sm bg-white">
+            <h2 className="text-xl font-semibold text-wsf-blue-dark mb-4">Molasses Feed Declaration 26/27</h2>
+            <p className="mb-4 text-gray-700">
+              Feed declaration for Molasses products for the 2026-2027 season with detailed nutritional
+              information and quality specifications.
+            </p>
+            <Button
+              className="bg-wsf-blue hover:bg-wsf-blue-dark text-white"
+              asChild
+            >
+              <a href="/documents/Molasses-Feed-Declaration-26-27.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <FileText className="w-5 h-5" />
+                Molasses Feed Declaration 26/27
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </ProductLayout>
