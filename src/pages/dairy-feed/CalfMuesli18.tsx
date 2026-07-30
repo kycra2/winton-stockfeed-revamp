@@ -178,7 +178,7 @@ const CalfMuesli18Page: React.FC = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold text-wsf-brown">Available In</h2>
           <ul className="list-disc pl-5 space-y-2">
-            <li>25kg bags</li>
+            <li>20kg bags</li>
             
           </ul>
         </section>

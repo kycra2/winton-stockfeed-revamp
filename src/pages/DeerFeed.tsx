@@ -39,7 +39,7 @@ const DeerFeed = () => {
     <ProductLayout title="Supreme Deer Nuts">
       <SEOHead
         title="Deer Feed NZ - Supreme Deer Nuts | Winton Stock Feed"
-        description="Premium Supreme Deer Nuts for New Zealand deer farmers. Ideal supplementary feed with correct vitamin and mineral balance. 12.5% energy, 13% protein. Available in 25kg bags, bulk bags and bulk delivery."
+        description="Premium Supreme Deer Nuts for New Zealand deer farmers. Ideal supplementary feed with correct vitamin and mineral balance. 12.5% energy, 13% protein. Available in 20kg bags, bulk bags and bulk delivery."
         keywords="deer feed NZ, deer nuts, deer pellets, deer nutrition, Winton Stock Feed deer feed, New Zealand deer farming"
         canonicalUrl="https://www.wintonstockfeed.co.nz/deer-feed"
         ogType="product"
@@ -82,7 +82,7 @@ const DeerFeed = () => {
     balance of vitamins and minerals. They can be kept up to 4 months without deterioration.
   </p>
   <p>
-    Available in 25kg bags, bulk bags and bulk delivery.
+    Available in 20kg bags, bulk bags and bulk delivery.
   </p>
 </section>
 
